@@ -67,8 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
+  font-style:italic;
 }
 
 h2 {
@@ -231,12 +232,6 @@ padding: 0;
   
  }
  
- tr {
-
-margin: 0;
-padding: 0;
-  
- }
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -281,7 +276,7 @@ Full-Width Styles
   color: #fff;
   background: #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   font-size:12px;
