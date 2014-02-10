@@ -1,1 +1,29 @@
-<!--social-->
+<style>
+
+#social{
+
+background-color:#E6F0FF;
+height: 300px;
+
+}
+
+#social .inner{
+
+margin: 2px 2px 2px 2px;
+
+}
+
+</style>
+
+
+<div id="social">
+
+<table>
+<tr>
+		<td>Tweets</td>
+		<td>Facebook Recent Activity</td>
+		<td>Linkedin</td>
+		</tr>
+</table>
+
+</div>

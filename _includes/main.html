@@ -1,32 +1,19 @@
 
-<table>
-<tr>
-<td>
- {% include events %}
-</td>
-<td>
- {% include mrr %}
-</td>
-</tr>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;"> {% include events %} </div>
+    <div style="margin-left: 620px;">{% include mrr %} </div>
+</div>
 
-<tr>
-<td>
- {% include faqs %}
-</td>
-<td>
- {% include articles %}
-</td>
-</tr>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">  {% include faqs %} </div>
+    <div style="margin-left: 620px;">{% include articles %} </div>
+</div>
 
-<tr>
-<td>
- {% include resources %}
-</td>
-<td>
- {% include network %}
-</td>
-</tr>
-</table>    
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px; float: left;">   {% include resources %} </div>
+    <div style="margin-left: 550px;"> {% include network %} </div>
+</div>
+    
 
       {% include social %}
       {% include council %}

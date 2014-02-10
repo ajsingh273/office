@@ -1,3 +1,63 @@
 <!--faqs-->
 
-faqs
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Frequently Asked Questions (FAQs)</h3>
+     </header>
+<div class="articles3">
+<dl class="article3">
+    <dd class="event_name"></dd>
+    <dd class="start_date"></dd>
+    <dd class="description"></dd>          
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles3, article3, i, _i, _len, _results;
+    articles3 = data.results;
+    directive = {
+      '.article3': {
+        'article3 <- articles3': {
+          '.event_name': 'article3.event_name',
+          '.start_date': 'article3.start_date',
+          '.description': 'article3.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles3').compile(directive);
+    return $p('.articles3').render({ articles3: articles3 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = '';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

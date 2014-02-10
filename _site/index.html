@@ -468,49 +468,431 @@ Email:		Ryan.Kainne@trade.gov
 
 
 
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;"> <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Trade Events</h3>
+     </header>
+<div class="articles2">
+<dl class="article2">
+    <dd class="event_name"></dd>
+    <dd class="start_date"></dd>
+    <dd class="description"></dd>          
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles2, article2, i, _i, _len, _results;
+    articles2 = data.results;
+    directive = {
+      '.article2': {
+        'article2 <- articles2': {
+          '.event_name': 'article2.event_name',
+          '.start_date': 'article2.start_date',
+          '.description': 'article2.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles2').compile(directive);
+    return $p('.articles2').render({ articles2: articles2 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+    <div style="margin-left: 620px;"><!--mrr-->
+
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Market Research Reports</h3>
+     </header>
+<div class="articles">
+<dl class="article">
+    <dd class="title"></dd>
+    <dd class="pub_date"></dd>
+    <dd class="content"></dd>          
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles, article, i, _i, _len, _results;
+    articles = data.results;
+    directive = {
+      '.article': {
+        'article <- articles': {
+          '.title': 'article.title',
+          '.pub_date': 'article.pub_date',
+          '.content': 'article.content',
+          
+        }
+      }
+    };
+    rfn = $p('.articles').compile(directive);
+    return $p('.articles').render({ articles: articles }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/market_research_library/search?callback=?&q=modernization';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+</div>
+
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;">  <!--faqs-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Frequently Asked Questions (FAQs)</h3>
+     </header>
+<div class="articles3">
+<dl class="article3">
+    <dd class="event_name"></dd>
+    <dd class="start_date"></dd>
+    <dd class="description"></dd>          
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles3, article3, i, _i, _len, _results;
+    articles3 = data.results;
+    directive = {
+      '.article3': {
+        'article3 <- articles3': {
+          '.event_name': 'article3.event_name',
+          '.start_date': 'article3.start_date',
+          '.description': 'article3.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles3').compile(directive);
+    return $p('.articles3').render({ articles3: articles3 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = '';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+    <div style="margin-left: 620px;"><!--articles-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Latest Export Articles</h3>
+     </header>
+<div class="articles4">
+<dl class="article4">
+    <dd class="title"></dd>
+    <dd class="update_date"></dd>
+    <dd class="content"></dd>          
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles4, article4, i, _i, _len, _results;
+    articles4 = data.results;
+    directive = {
+      '.article4': {
+        'article4 <- articles4': {
+          '.title': 'article4.title',
+          '.update_date': 'article4.update_date',
+          '.content': 'article4.content',
+          
+        }
+      }
+    };
+    rfn = $p('.articles4').compile(directive);
+    return $p('.articles4').render({ articles4: articles4 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = ' http://api.trade.gov/trade_articles/search?callback=?&q=logistics';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+</div>
+
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 500px; float: left;">   <!--resources-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Resources to Help Your Business Export</h3>
+     </header>
+
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles2, article2, i, _i, _len, _results;
+    articles2 = data.results;
+    directive = {
+      '.article2': {
+        'article2 <- articles2': {
+          '.event_name': 'article2.event_name',
+          '.start_date': 'article2.start_date',
+          '.description': 'article2.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles2').compile(directive);
+    return $p('.articles2').render({ articles2: articles2 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+    <div style="margin-left: 550px;"> <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3>Our Global Network at Work</h3>
+     </header>
+
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles2, article2, i, _i, _len, _results;
+    articles2 = data.results;
+    directive = {
+      '.article2': {
+        'article2 <- articles2': {
+          '.event_name': 'article2.event_name',
+          '.start_date': 'article2.start_date',
+          '.description': 'article2.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles2').compile(directive);
+    return $p('.articles2').render({ articles2: articles2 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+ </div>
+</div>
+    
+
+      <style>
+
+#social{
+
+background-color:#E6F0FF;
+height: 300px;
+
+}
+
+#social .inner{
+
+margin: 2px 2px 2px 2px;
+
+}
+
+</style>
+
+
+<div id="social">
+
 <table>
 <tr>
-<td>
- <!--events-->
+		<td>Tweets</td>
+		<td>Facebook Recent Activity</td>
+		<td>Linkedin</td>
+		</tr>
+</table>
 
-events
-</td>
-<td>
- <!--mrr-->
-
-mrr
-</td>
-</tr>
-
-<tr>
-<td>
- <!--faqs-->
-
-faqs
-</td>
-<td>
- <!--articles-->
-
-articles
-</td>
-</tr>
-
-<tr>
-<td>
- <!--resources-->
-
-resources
-</td>
-<td>
- <!--network-->
-
-network
-</td>
-</tr>
-</table>    
-
-      <!--social-->
+</div>
       <!--council-->
+
+<p>
+ 
+<strong><a>Minnesota District Export Council</a></strong></br></br>
+ 
+The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
+ 
+The Minnesota District Export Council encourages and supports:</br>
+•	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
+•	Export expansion activities by working with the US & FCS domestic offices; and</br>
+•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.
+
+
+
+</p>
       </section>
     </div>
     <div id="footer_wrap2" class="outer">
