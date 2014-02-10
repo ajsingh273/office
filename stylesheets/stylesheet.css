@@ -193,8 +193,12 @@ ul, ol, dl {
 }
 
 ul {
-  list-style: inside;
+  list-style: none;
   padding-left: 20px;
+}
+
+li {
+display: inline;
 }
 
 ol {
