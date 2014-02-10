@@ -1,1 +1,39 @@
-<!--contact-->
+<!--contact, pure rendered-->
+
+<style>
+
+#cont{
+background-color:#E6F0FF;
+}
+
+#cont .inner{
+margin: 2px 2px 2px 2px;
+}
+
+
+</style>
+
+<div class="inner" id="cont">
+<p><h3>Contact Us</h3></P>
+
+<p>Minneapolis U.S. Export Assistance Center</br></br>
+
+100 N. 6th Street, Suite 210-C</br>
+
+Minneapolis, MN 55403</br>
+
+Phone:		612-348-1638</br>
+Fax:		612-348-1650</br>
+Email:		Ryan.Kainne@trade.gov
+
+</p>
+
+<ul>
+<li><a href="#">Contact a Trade Specialist</a></li>
+<li><a href="#">Tell Us About You</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Press Room</a></li>
+<li><a href="#">Internships</a></li>
+</ul>
+</div>
