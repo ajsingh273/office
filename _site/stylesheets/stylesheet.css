@@ -122,7 +122,7 @@ a:hover, a:focus {text-decoration: none;}
 
 footer a {
   color: #F2F2F2;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 em {
@@ -189,17 +189,14 @@ blockquote {
 
 
 ul, ol, dl {
-  margin-bottom: 15px
+
 }
 
 ul {
   list-style: none;
-  padding-left: 20px;
+  
 }
 
-li {
-display: inline;
-}
 
 ol {
   list-style: decimal inside;
@@ -228,9 +225,17 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
+
+margin: 0;
+padding: 0;
+  
+ }
+ 
+ tr {
+
+margin: 0;
+padding: 0;
+  
  }
 
 th {
@@ -238,11 +243,12 @@ th {
   padding: 10px;
   background: #373737;
   color: #fff;
+  text-align: center;
  }
 
 td {
-  padding: 10px;
-  border: 1px solid #373737;
+  padding: 15px;
+
  }
 
 form {
@@ -283,6 +289,10 @@ Full-Width Styles
 
 #forkme_banner a{
   color: #f2f2f2;
+}
+
+#forkme_banner li{
+  display: inline;
 }
 
 #forkme_banner a:hover{
@@ -362,8 +372,42 @@ Full-Width Styles
   padding-top: 40px;
 }
 
+#footer_wrap2 {
+  background: #505050;
+  font-size:15px;
+  border-top-color: #FAA523;
+  
+}
+
+#footer_wrap2 li{
+  padding: 0;
+  margin: 0;
+}
+
 #footer_wrap {
   background: #212121;
+  font-size:12px;
+  
+}
+
+#footer_wrap li{
+  display: inline;
+}
+
+#footer_wrap2 a{
+  color: #f2f2f2;
+}
+
+#footer_wrap2 a:hover{
+  color: #c1c1c1;
+}
+
+#footer_wrap a{
+  color: #f2f2f2;
+}
+
+#footer_wrap a:hover{
+  color: #c1c1c1;
 }
 
 
@@ -377,7 +421,12 @@ Small Device Styles
     font-size:14px;
   }
   
+table {
 
+margin: 0;
+padding: 0;
+  
+ }
   #downloads {
     display: none;
   }
