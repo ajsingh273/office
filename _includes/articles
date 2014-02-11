@@ -21,8 +21,7 @@
 <div class="articles4">
 <dl class="article4">
     <dd class="title"></dd>
-    <dd class="update_date"></dd>
-    <dd class="content"></dd>          
+    <dd class="pub_date"></dd>        
 </dl>
 </div>
 
@@ -36,8 +35,8 @@
       '.article4': {
         'article4 <- articles4': {
           '.title': 'article4.title',
-          '.update_date': 'article4.update_date',
-          '.content': 'article4.content',
+          '.pub_date': 'article4.pub_date',
+
           
         }
       }
@@ -48,7 +47,7 @@
 
   ready = function() {
     var url;
-    url = ' http://api.trade.gov/trade_articles/search?callback=?&q=logistics';
+    url = 'http://api.trade.gov/trade_articles/search?callback=?q=logistics';
     return $.getJSON(url, renderData);
   };
 

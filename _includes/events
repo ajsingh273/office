@@ -19,8 +19,7 @@
 <div class="articles2">
 <dl class="article2">
     <dd class="event_name"></dd>
-    <dd class="start_date"></dd>
-    <dd class="description"></dd>          
+    <dd class="start_date"></dd>        
 </dl>
 </div>
 
@@ -35,7 +34,6 @@
         'article2 <- articles2': {
           '.event_name': 'article2.event_name',
           '.start_date': 'article2.start_date',
-          '.description': 'article2.description',
           
         }
       }
