@@ -1,22 +1,8 @@
-<style>
+     </section>
+    </div>
 
-#social{
-
-background-color:#E6F0FF;
-height: 300px;
-
-}
-
-#social .inner{
-
-margin: 2px 2px 2px 2px;
-
-}
-
-</style>
-
-
-<div id="social">
+    <div id="footer_wrap4" class="outer">
+      <footer class="inner">
 
 <table>
 <tr>
@@ -26,4 +12,8 @@ margin: 2px 2px 2px 2px;
 		</tr>
 </table>
 
-</div>
+      </footer>
+    </div>
+
+
+

@@ -1,8 +1,11 @@
 <!--council-->
 
-<p>
+    <div id="footer_wrap3" class="outer">
+      <footer class="inner">
+
+<div>
  
-<strong><a>Minnesota District Export Council</a></strong></br></br>
+<strong>Minnesota District Export Council</strong></br></br>
  
 The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
  
@@ -13,4 +16,7 @@ The Minnesota District Export Council encourages and supports:</br>
 
 
 
-</p>
+</div>
+
+      </footer>
+    </div>
