@@ -229,7 +229,7 @@ table {
 
 margin: 0;
 padding: 0;
-  
+
  }
  
 
@@ -274,11 +274,10 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 10px 10px 10px;
   color: #fff;
-  background: #0090ff no-repeat 95% 50%;
+  background: #0B5394 no-repeat 95% 50%;
   font-weight: 700;
 
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+
   font-size:12px;
 }
 
@@ -373,15 +372,15 @@ background-color:#E6F0FF;
 }
 
 #footer_wrap3 {
-  background: #C0C0C0 ;
+  background: #fff ;
   text-decoration: none;
   color:#000;
 }
 
 
 #footer_wrap2 {
-  background: #505050;
-  font-size:15px;
+  background: #0B5394;
+
 
   
 }
@@ -392,8 +391,13 @@ background-color:#E6F0FF;
 }
 
 #footer_wrap {
-  background: #212121;
+  background: #C0C0C0;
   font-size:12px;
+  
+}
+
+#footer_wrap p {
+  color: #000;
   
 }
 
@@ -410,11 +414,11 @@ background-color:#E6F0FF;
 }
 
 #footer_wrap a{
-  color: #f2f2f2;
+  color: #000;
 }
 
 #footer_wrap a:hover{
-  color: #c1c1c1;
+  color: #505050;
 }
 
 
@@ -430,8 +434,8 @@ Small Device Styles
   
 table {
 
-margin: 0;
-padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
   
  }
   #downloads {
@@ -451,6 +455,7 @@ padding: 0;
   float: none;
   position: relative;
   }
+
 
   h1 {
     font-size: 28px;
