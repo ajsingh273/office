@@ -18,8 +18,9 @@
      </header>
 <div class="articles2">
 <dl class="article2">
-    <dd class="event_name"></dd>
-    <dd class="start_date"></dd>        
+    <a href="#"<dd class="event_name"></dd></a>
+    <a href="#"<dd class="start_date"></dd>  </a>
+    <a href="#"<dd class="state"></dd>    </a>    
 </dl>
 </div>
 
@@ -34,6 +35,7 @@
         'article2 <- articles2': {
           '.event_name': 'article2.event_name',
           '.start_date': 'article2.start_date',
+          '.state': 'article2.state',
           
         }
       }
@@ -44,7 +46,7 @@
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
+    url = 'http://api.trade.gov/trade_events/search?callback=?&q=NY';
     return $.getJSON(url, renderData);
   };
 

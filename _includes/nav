@@ -115,20 +115,17 @@ nav {
 		<li>
 			<a href="#">Home<span class="caret"></span></a>
 			<div>
-				<ul>
-					<li><a href="#">Sign In</a></li>
-					<li><a href="#">Register</a></li>
-				</ul>
+
 			</div>
 		</li>
 		<li>
 			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
 				<ul>
-					<li><a href="#">Export Basics</a></li>
-					<li><a href="#">Basic Guide to Exporting</a></li>
-					<li><a href="#">Readiness Assessment</a></li>
-					<li><a href="#">International Logistics</a></li>
+					<li><a href="/community/users/export-basics">Export Basics</a></li>
+					<li><a href="/basic-guide/">Basic Guide to Exporting</a></li>
+					<li><a href="/export-readiness-assessment/login">Export Readiness Assessment</a></li>
+					<li><a href="/community/users/international-logistics">International Logistics</a></li>
 				</ul>
 			</div>
 		</li>
@@ -137,27 +134,24 @@ nav {
 			<div>
 				<ul>
 					<li>Conduct Research</li>
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="/community/users/expand-your-exports">Expand Into New Markets</a></li>
+					<li><a href="/community/users/market-research">Market Research</a></li>
+					<li><a href="/community/users/export-success-stories">Success Stories</a></li>
 					<li>Learn Marketing Tactics</li>
-					<li><a href="#">International Sales & Marketing</a></li>
-					<li><a href="#">Selling Online</a></li>
+					<li><a href="/community/users/international-sales-and-marketing">International Sales & Marketing</a></li>
+					<li><a href="/community/users/selling-online">Selling Online</a></li>
 					<li>Explore Markets</li>
-					<li><a href="#">Find Business Partners</a></li>
-					<li><a href="#">Find Trade Leads</a></li>
-					<li><a href="#">Trade Missions</a></li>
-					<li><a href="#">Free Trade Agreements</a></li>
-					<li><a href="#">Opportunities - By Industry</a></li>
-					<li><a href="#">Opportunities - By Country</a></li>
-					<li><a href="#">Doing Business in Africa</a></li>
+					<li><a href="/community/users/trade-leads">Find Trade Leads</a></li>
+					<li><a href="/community/users/trade-missions">Trade Missions</a></li>
+					<li><a href="/community/users/free-trade-agreements">Free Trade Agreements</a></li>
+					<li><a href="/doing-business-in-africa">Doing Business in Africa</a></li>
 					<li>Explore Programs</li>
-					<li><a href="#">Civil Nuclear Guide to Exporting</a></li>
-					<li><a href="#">Environmental Solutions Exporters Portal</a></li>
-					<li><a href="#">Renewable Energy & Energy Efficiency Exporter Portal</a></li>
-					<li><a href="#">League of Green Embassies</a></li>
-					<li><a href="#">Minority Exporters Seminar</a></li>
-					<li><a href="#">Seaport Partnerships</a></li>
+					<li><a href="/community/users/civil-nuclear-guide-to-exporting">Civil Nuclear Guide to Exporting</a></li>
+					<li><a href="/community/users/environmental-solutions-exporters-portal">Environmental Solutions Exporters</a></li>
+					<li><a href="/community/users/renewable-energy-energy-efficiency-exporter-portal">Renewable Energy & Energy Efficiency Exporters</a></li>
+					<li><a href="/community/users/league-of-green-embassies">League of Green Embassies</a></li>
+					<li><a href="/community/users/minority-exporters-seminar">Minority Exporters Seminar</a></li>
+					<li><a href="/community/users/seaport-partnerships">Seaport Partnerships</a></li>
 		
 				</ul>
 			</div>
@@ -168,9 +162,9 @@ nav {
 			<a href="#">Financing<span class="caret"></span></a>
 			<div>
 				<ul>
-					<li><a href="#">Finance Your Exports</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
+					<li><a href="/international-finance-questionnaire/">Assess Your Finance Options</a></li>
+					<li><a href="/trade-finance-guide">Trade Finance Guide</a></li>
 		
 				</ul>
 			</div>
@@ -180,10 +174,12 @@ nav {
 			<a href="#">Regulations<span class="caret"></span></a>
 			<div>
 				<ul>
-					
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li>US Export Regulations</li>
+					<li><a href="/community/users/export-licenses-regulations">Export Licenses & Regulations</a></li>
+					<li><a href="/consolidated-screening-list">Consolidated Screening List</a></li>
+					<li>European Regulations</li>
+					<li><a href="/community/users/ce-marking">CE Marking</a></li>
+					<li><a href="/safe-harbor">Safe Harbor</a></li>
 		
 				</ul>
 			</div>
@@ -194,22 +190,19 @@ nav {
 			<div>
 				<ul>
 					
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="/community/users/trade-problems">Help with Trade Problems</a></li>
 		
 				</ul>
 			</div>
 		</li>
 		
 							<li>
-			<a href="#">Events & Training<span class="caret"></span></a>
+			<a href="#">Trade Events<span class="caret"></span></a>
 			<div>
 				<ul>
 					
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="/trade-events/">Trade Events</a></li>
+					<li><a href="/community/users/training-programs">Training & Webinars</a></li>
 		
 				</ul>
 			</div>
@@ -219,21 +212,21 @@ nav {
 			<div>
 				<ul>
 					
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="https://help.export.gov/">Browse FAQs</a></li>
+					<li><a href="https://help.export.gov/ics/support/ticketnewwizard.asp?style=classic">Market Research</a></li>
 		
 				</ul>
 			</div>
 		</li>
 									<li>
-			<a href="#">Get Export Assistance<span class="caret"></span></a>
+			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
 			<div>
 				<ul>
 					
-					<li><a href="#">Expand Into New Markets</a></li>
-					<li><a href="#">Market Research</a></li>
-					<li><a href="#">Success Stories</a></li>
+					<li><a href="https://help.export.gov/ics/support/contactUs.asp">Contact a Trade Specialist</a></li>
+					<li><a href="/centers">Domestic Offices</a></li>
+					<li><a href="/international-offices">International Offices</a></li>
+					<li><a href="/community/users/district-export-councils">District Export Councils</a></li>
 		
 				</ul>
 			</div>
