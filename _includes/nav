@@ -47,7 +47,7 @@ nav {
       }
 
       nav > ul > li > a {
-      font-weight:bold;
+      
         color: #fff;
         display: block;
         line-height: 56px;

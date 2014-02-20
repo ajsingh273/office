@@ -267,6 +267,20 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 #forkme_banner {
   display: block;
   position: absolute;
@@ -318,6 +332,33 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#art{
+background-color:#fff;
+display: inline-block;
+float:left;
+width:300px;	
+padding:10px;
+}
+
+#main {
+background-color:#fff;
+width:400px;	
+display: inline-block;
+float:left;
+margin: 50px;
+padding:10px;
+}
+
+#foot {
+width:150px;	
+display: inline-block;
+float:left;
+padding-right: 5px;
+}
+
+#whi {
+color:#c1c1c1;
+}
 #downloads {
   position: absolute;
   width: 210px;
@@ -447,6 +488,7 @@ table {
     min-width: 320px;
     max-width: 480px;
   }
+  
 
   #project_title {
   font-size: 32px;

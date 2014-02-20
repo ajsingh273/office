@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
   <head>
@@ -17,10 +19,10 @@
      <header class="without-description"><h3>Trade Events</h3>
      </header>
 <div class="articles2">
-<dl class="article2">
+<div ><dl class="article2">
     <a href="#"<dd class="event_name"></dd></a>
     <a href="#"<dd class="start_date"></dd>  </a>
-    <a href="#"<dd class="state"></dd>    </a>    
+    <a href="#"<dd class="state"></dd>    </a> 
 </dl>
 </div>
 

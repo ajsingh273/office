@@ -1,26 +1,10 @@
-<style>
-#art{
-background-color:#fff;
-padding: 20px;
-margin: 40px;
-width: 400px;
-}
 
-
-</style>
-
-<table>
-<tr>
-<td>
-<div id="art">{% include events %} </div>
-<div id="art">{% include faqs %} </div>
-<div id="art">{% include resources %}</div>
-</td>
-<td>
-<div id="art">{% include mrr %} </div>
-<div id="art">{% include articles %}</div>
-<div id="art">{% include network %}</div>
-</td>
-</tr>
-</table>
- 
+	
+<div class="clearfix">
+<ul id="main">{% include events %} </ul>
+<ul id="main">{% include mrr %} </ul>
+<ul id="main">{% include faqs %} </ul>
+<ul id="main">{% include articles %}</ul>
+<ul id="main">{% include resources %}</ul>
+<ul id="main">{% include network %}</ul>
+ </div>
