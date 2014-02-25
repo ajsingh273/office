@@ -299,22 +299,8 @@ nav {
      	
 
 
-<!--info.html-->
-
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-
-<!--title, Pure rendered-->
-
-<center><h1>U.S. Commercial Service in Minnesota</h1></center>
-</br>
-
-
-
-<div style="width: 100%; overflow: hidden;">
-    <div style="float:left"> 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<center><h1>Market Research</h1></center>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -476,192 +462,9 @@ $(document).ready(function(){
 </div>
 </body>
 </html>
-  </div>
-    <div style="float:right"><!--contact, pure rendered-->
-
-<style>
-
-#cont{
-background-color:#E6F0FF;
-}
-
-#cont .inner{
-margin: 2px 2px 2px 2px;
-}
 
 
-</style>
-
-<div class="inner" id="cont">
-<p><h3>Contact Us</h3></P>
-
-<p>Minneapolis U.S. Export Assistance Center</br></br>
-
-100 N. 6th Street, Suite 210-C</br>
-
-Minneapolis, MN 55403</br>
-
-Phone:		612-348-1638</br>
-Fax:		612-348-1650</br>
-Email:		Ryan.Kainne@trade.gov
-
-</p>
-
-<ul>
-<li><a href="#">Contact a Trade Specialist</a></li>
-<li><a href="#">Tell Us About You</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Press Room</a></li>
-<li><a href="#">Internships</a></li>
-</ul>
-</div> </div>
-</div>
-
-
-
-
-	
 <div class="clearfix">
-<ul id="main">
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <header class="without-description"><h3>Trade Events</h3>
-     </header>
-<div class="articles2">
-<div ><dl class="article2">
-    <a href="#"<dd class="event_name"></dd></a>
-    <a href="#"<dd class="start_date"></dd>  </a>
-    <a href="#"<dd class="state"></dd>    </a> 
-</dl>
-</div>
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles2, article2, i, _i, _len, _results;
-    articles2 = data.results;
-    directive = {
-      '.article2': {
-        'article2 <- articles2': {
-          '.event_name': 'article2.event_name',
-          '.start_date': 'article2.start_date',
-          '.state': 'article2.state',
-          
-        }
-      }
-    };
-    rfn = $p('.articles2').compile(directive);
-    return $p('.articles2').render({ articles2: articles2 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=NY';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
- </ul>
-<ul id="main"><!--mrr-->
-
-
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <header class="without-description"><h3>Market Research Reports</h3>
-     </header>
-<div class="articles">
-<div ><dl class="article">
-    <dd class="title"></dd>
-    <dd class="pub_date"></dd>
-    <dd class="content"></dd>          
-</dl>
-</div>
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles, article, i, _i, _len, _results;
-    articles = data.results;
-    directive = {
-      '.article': {
-        'article <- articles': {
-          '.title': 'article.title',
-          '.pub_date': 'article.pub_date',
-          '.content': 'article.content',
-          
-        }
-      }
-    };
-    rfn = $p('.articles').compile(directive);
-    return $p('.articles').render({ articles: articles }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/market_research_library/search?callback=?&q=modernization';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
- </ul>
-<ul id="main"><h3>Frequently Asked Questions (FAQs)</h3></br></br>
-<a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
-<a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
-<a href="#">·    How can I find export financing?</a></br>
-<a href="#">·    What do all of these Free Trade Agreements do for me?</a></br>
-<a href="#">·    How can I determine the tariff rate for my product?</a></br></br>
- 
-<a href="#">See More FAQs</a>
- </ul>
 <ul id="main"><!--articles-->
 
 <!doctype html>
@@ -724,68 +527,17 @@ Email:		Ryan.Kainne@trade.gov
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>
-</ul>
-<ul id="main"><h3>Resources to Help Your Business Export</h3></br></br>
+ </br> <h3>Frequently Asked Questions (FAQs)</h3></br></br>
+<a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
+<a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
+<a href="#">·    How can I find export financing?</a></br>
+<a href="#">·    What do all of these Free Trade Agreements do for me?</a></br>
+<a href="#">·    How can I determine the tariff rate for my product?</a></br></br>
  
-<ul> 
-<li><a href="#">Exporters Resource Database</a></li>
-<li><a href="#">International Finance</a></li>
-<li><a href="#">Certificate of Origin</a></li>
-<li><a href="#">NAFTA</a></li>
-<li><a href="#">MN Tourism Destination</a></li>
-</ul>
-</ul>
-<ul id="main"><h3>Our Global Network at Work</h3></br></br>
- 
-
-<ul> 
-<li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
-<li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
-<li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
-</ul></ul>
+<a href="#">See More FAQs</a>
+ </br> <h3>Useful Links</h3></br> <h3>Join My Export</h3></ul>
+<ul id="main"><h3>Browse Articles By ...</h3></ul>
  </div>
-     </section>
-    </div>
-
-    <div id="footer_wrap4" class="outer">
-      <footer class="inner">
-
-<table>
-<tr>
-		<td>Tweets</td>
-		<td>Facebook Recent Activity</td>
-		<td>Linkedin</td>
-		</tr>
-</table>
-
-      </footer>
-    </div>
-
-
-
-
-<!--council-->
-
-    <div id="footer_wrap3" class="outer">
-      <footer class="inner">
-
-<div>
- 
-<strong>Minnesota District Export Council</strong></br></br>
- 
-The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
- 
-The Minnesota District Export Council encourages and supports:</br>
-•	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
-•	Export expansion activities by working with the US & FCS domestic offices; and</br>
-•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.
-
-
-
-</div>
-
-      </footer>
-    </div>
 
 
 
@@ -906,4 +658,3 @@ The Minnesota District Export Council encourages and supports:</br>
 
   </body>
 </html>
-    
