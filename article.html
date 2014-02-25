@@ -5,7 +5,70 @@ permalink:
 
 {% include header.html %}
 <div class="clearfix">
-<ul id="main">{% include articles %} </ul>
+<ul id="main">
+ 
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+   
+<div class="articles4">
+<dl class="article4">
+    <h3><dd class="title"></dd></h3>
+   <dd class="content"></dd></br>
+	<dd class="update_date"></dd></br></br>        
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles4, article4, i, _i, _len, _results;
+    articles4 = data.results;
+    directive = {
+      '.article4': {
+        'article4 <- articles4': {
+          '.title': 'article4.title',
+          '.content': 'article4.content',
+          '.update_date': 'article4.pub_date',
+
+          
+        }
+      }
+    };
+    rfn = $p('.articles4').compile(directive);
+    return $p('.articles4').render({ articles4: articles4 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+</ul>
 <ul id="main"><h3>Related Articles</h3> </br><h3>Related Markets</h3> </ul>
  </div>
  {% include footer.html %}

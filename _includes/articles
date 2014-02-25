@@ -16,12 +16,11 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="without-description"><h3>Latest Export Articles</h3>
-     </header>
+     <h3>Latest Export Articles</h3>
 <div class="articles4">
 <dl class="article4">
-    <a href="#"<dd class="title"></dd></a>
-    <a href="#"<dd class="pub_date"></dd></a>        
+    <a href="/article.html"<dd class="title"></dd></a>
+    <a href="/article.html"<dd class="pub_date"></dd></a>        
 </dl>
 </div>
 

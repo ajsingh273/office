@@ -1,0 +1,18 @@
+<style>
+
+#join {
+background-color: #C0C0C0;
+padding: 20px;
+}
+
+</style>
+
+
+<div id="join">
+  <h3>JOIN MY EXPORT</h3></br>
+
+Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
+
+<a href="#" class="btn-blue">Sign Up Now!</a>
+
+</div>
