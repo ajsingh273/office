@@ -1,0 +1,21 @@
+<style>
+#search {
+background-color: transparent;
+padding: 0px 0px 0px 0px;
+}
+
+#search input[type="text"] {
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+
+
+    }
+
+
+</style>
+
+<form method="get" action="http://trade.gov" id="search">
+  <input name="q" type="text" size="30" placeholder="Search Trade.gov" />
+</form>
