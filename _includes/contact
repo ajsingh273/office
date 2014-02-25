@@ -4,6 +4,9 @@
 
 #cont{
 background-color:#E6F0FF;
+background-image:url('images/usfcs.jpg');
+background-repeat:no-repeat;
+background-position:right bottom;
 }
 
 #cont .inner{
