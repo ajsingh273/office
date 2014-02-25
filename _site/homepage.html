@@ -311,21 +311,21 @@ nav {
  */
 #slideshow {
 	margin:0 auto;
-	width:700px;
-	height:400px;
+	width:100%;
+	height:100%;
 	background-color:#0B5394;
 	position:relative;
 }
 #slideshow #slidesContainer {
   margin:0 auto;
-  width:560px;
+  width:800px;
   height:350px;
   overflow:auto; /* allow scrollbar */
   position:relative;
 }
 #slideshow #slidesContainer .slide {
   margin:0 auto;
-  width:540px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  width:940px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
   height:263px;
 }
 
@@ -341,12 +341,12 @@ nav {
   cursor: pointer;
 }
 #leftControl {
-  top:70px;
+  top:50px;
   left:0;
   background:transparent url(images/control_left.jpg) no-repeat 0 0;
 }
 #rightControl {
-  top:70px;
+  top:50px;
   right:0;
   background:transparent url(images/control_right.jpg) no-repeat 0 0;
 }
@@ -365,10 +365,10 @@ a:hover {
 
 
 
-.slide h2, .slide p {
+.slide h3, .slide p {
   margin:15px;
 }
-.slide h2 {
+.slide h3 {
   
   color:#ccc;
   letter-spacing:-1px;
@@ -386,7 +386,7 @@ a:hover {
 <script type="text/javascript">
 $(document).ready(function(){
   var currentPosition = 0;
-  var slideWidth = 560;
+  var slideWidth = 800;
   var slides = $('.slide');
   var numberOfSlides = slides.length;
 
@@ -443,16 +443,17 @@ $(document).ready(function(){
   <div id="slideshow">
     <div id="slidesContainer">
       <div class="slide">
-        <h2>LEARN ABOUT EXPORTING</h2>
-        <p><a href="#"><img src="images/eg2-1.png" /></a>Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.</p>
+        <h3>PLAN YOUR MARKET ENTRY</h3>
+        <p><a href="#"><img src="images/handshake.jpg" /></a>Use market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you first export.</p>
+        <p><a href="#" class="btn-green">Read Full Story</a></p>
       </div>
       <div class="slide">
-        <h2>READY TO EXPORT</h2>
+        <h3>READY TO EXPORT</h3>
         <p><a href="#"><img src="images/eg2-2.jpg"  /></a>You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.</p>
         <p> 
       </div>
       <div class="slide">
-        <h2>EXPAND MY EXPORTS</h2>
+        <h3>EXPAND MY EXPORTS</h3>
         <p><a href="#"><img src="images/eg2-3.jpg" /></a>Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.</p>
 </div>
 	
@@ -463,7 +464,7 @@ $(document).ready(function(){
 </body>
 </html>
 
-<h3>Attend an Upcoming Trade Event</h3>
+<h3>Attend Upcoming</h3>
 
 
 <!doctype html>
@@ -529,6 +530,24 @@ $(document).ready(function(){
 </html>
 
 
+	<style>
+
+#join {
+background-color: #C0C0C0;
+padding: 20px;
+}
+
+</style>
+
+
+<div id="join">
+  <h3>JOIN MY EXPORT</h3></br>
+
+Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
+
+<a href="#" class="btn-blue">Sign Up Now!</a>
+
+</div>
 
 
 
