@@ -507,18 +507,19 @@ font-size:12px;
 }
 
 #footer_wrap {
-  background: #C0C0C0;
+  background: #000;
   font-size:12px;
   
 }
 
 #footer_wrap p {
-  color: #000;
+  color: #f2f2f2;
   
 }
 
 #footer_wrap li{
   display: inline;
+color: #f2f2f2;
 }
 
 #footer_wrap2 a{
@@ -530,11 +531,11 @@ font-size:12px;
 }
 
 #footer_wrap a{
-  color: #000;
+  color: #f2f2f2;
 }
 
 #footer_wrap a:hover{
-  color: #505050;
+  color: #c1c1c1;
 }
 
 
