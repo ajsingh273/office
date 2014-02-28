@@ -2,6 +2,7 @@
 
 #join {
 background-color: #C0C0C0;
+width:300px;
 padding: 20px;
 }
 

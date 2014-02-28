@@ -75,6 +75,7 @@ nav {
   display: block;
   overflow: hidden;
   width: 100%; 
+  
 }
 
 
@@ -300,6 +301,7 @@ nav {
 </nav>
 
     <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
      	
 
 
@@ -317,7 +319,7 @@ nav {
 	margin:0 auto;
 	width:100%;
 	height:100%;
-	background-color:#0B5394;
+	background-color:#7A7A7A;
 	position:relative;
 }
 #slideshow #slidesContainer {
@@ -447,9 +449,8 @@ $(document).ready(function(){
   <div id="slideshow">
     <div id="slidesContainer">
       <div class="slide">
-        <h3>PLAN YOUR MARKET ENTRY</h3>
-        <p><a href="#"><img src="images/handshake.jpg" /></a>Use market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you first export.</p>
-        <p><a href="#" class="btn-green">Read Full Story</a></p>
+<h3>LEARN ABOUT EXPORTING</h3>
+        <p><a href="#"><img src="images/eg2-1.png" /></a>Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.</p>
       </div>
       <div class="slide">
         <h3>READY TO EXPORT</h3>
@@ -467,8 +468,7 @@ $(document).ready(function(){
 </div>
 </body>
 </html>
-
-<h3>Attend Upcoming</h3>
+</br>
 
 
 <!doctype html>
@@ -486,40 +486,40 @@ $(document).ready(function(){
     
   </head>
   <body>
-    <div class="wrapper">
-     <header class="without-description"><h3>Trade Events</h3>
-     </header>
-<div class="articles2">
-<div ><dl class="article2">
-    <a href="#"<dd class="event_name"></dd></a>
-    <a href="#"<dd class="start_date"></dd>  </a>
-    <a href="#"<dd class="state"></dd>    </a> 
-</dl>
+    <div class="wrapper" >
+   
+<div class="articles9" style="padding: 24px; color: black; background-color: #0C9; opacity: .5;">
+<h3>Attend Upcoming Trade Events</h3>
+<div ><dl class="article9">
+    <table ><tr><td class="event_name" style="width:250px"></dd>
+    <td class="start_date" style="width:100px"></dd>  
+    <td class="industries"></dd> 
+</dl></tr></table>
 </div>
 
 <script>
 (function() {
   var ready, renderData;
   renderData = function(data) {
-    var articles2, article2, i, _i, _len, _results;
-    articles2 = data.results;
+    var articles9, article9, i, _i, _len, _results;
+    articles9 = data.results;
     directive = {
-      '.article2': {
-        'article2 <- articles2': {
-          '.event_name': 'article2.event_name',
-          '.start_date': 'article2.start_date',
-          '.state': 'article2.state',
+      '.article9': {
+        'article9 <- articles9': {
+          '.event_name': 'article9.event_name',
+          '.start_date': 'article9.start_date',
+          '.industries': 'article9.industries',
           
         }
       }
     };
-    rfn = $p('.articles2').compile(directive);
-    return $p('.articles2').render({ articles2: articles2 }, directive);
+    rfn = $p('.articles9').compile(directive);
+    return $p('.articles9').render({ articles9: articles9 }, directive);
   };
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=NY';
+    url = 'http://api.trade.gov/trade_events/search?callback=?&industry=Iron/Steel';
     return $.getJSON(url, renderData);
   };
 
@@ -533,11 +533,363 @@ $(document).ready(function(){
   </body>
 </html>
 
+<!DOCTYPE html>
 
-	<style>
+
+<html dir="ltr" lang="en-US">
+
+
+
+<head>
+
+<meta charset="UTF-8" />
+
+
+<meta name="viewport" content="width=device-width" />
+
+
+
+<!--[if lt IE 9]>
+
+<script src="http://amazingcarousel.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Amazing Carousel &raquo; Feed" href="http://amazingcarousel.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Amazing Carousel &raquo; Comments Feed" href="http://amazingcarousel.com/comments/feed/" />
+
+
+			<script type="text/javascript">//<![CDATA[
+
+			// Google Analytics for WordPress by Yoast v4.2.8 | http://yoast.com/wordpress/google-analytics/
+
+			var _gaq = _gaq || [];
+
+			_gaq.push(['_setAccount', 'UA-42549293-1']);
+
+							_gaq.push(['_trackPageview']);
+
+			(function () {
+
+				var ga = document.createElement('script');
+
+				ga.type = 'text/javascript';
+
+				ga.async = true;
+
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+				var s = document.getElementsByTagName('script')[0];
+
+				s.parentNode.insertBefore(ga, s);
+
+			})();
+
+			//]]></script>
+
+			<link rel="alternate" type="application/rss+xml" title="Amazing Carousel &raquo; jQuery Carousel with Images and YouTube Videos Comments Feed" href="http://amazingcarousel.com/examples/jquery-carousel-with-images-and-youtube-videos-id2/feed/" />
+<script type='text/javascript' src='http://amazingcarousel.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<script type='text/javascript' src='http://amazingcarousel.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://amazingcarousel.com/wp-content/uploads/amazingcarousel/sharedengine/amazingcarousel.js?ver=1.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://amazingcarousel.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://amazingcarousel.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.2" />
+<script type="text/javascript">var icl_lang = 'en';var icl_home = 'http://amazingcarousel.com/';</script>
+<script type="text/javascript" src="http://amazingcarousel.com/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:1;0" />
+
+
+<style type="text/css">#header_language_list{
+
+  margin-bottom: 25px;
+
+  text-align: center;
+
+}
+
+
+
+#header_language_list ul{
+
+  list-style: none;
+
+  margin:0;
+
+  padding:0;
+
+}
+
+
+
+#header_language_list ul li img{
+
+  margin-right:5px;
+
+  width: 18px !important;
+
+}
+
+
+
+#header_language_list ul li{
+
+  display:inline;
+
+  margin:0 5px 0 5px;
+
+  padding:0;
+
+}
+
+
+
+#header_language_list ul li a, #header_language_list ul li a:visited{
+
+  color: #fff;
+
+  text-decoration:underline;
+
+}
+
+
+
+#header_language_list ul li a:hover, #header_language_list ul li a:active{
+
+  color: #fff;
+
+}
+
+</style><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f1f1f1; }
+</style>
+
+
+</head>
+
+
+
+<body class="page page-id-2170 page-child parent-pageid-2039 page-template page-template-demopage-php custom-background single-author singular two-column right-sidebar">
+
+
+
+
+
+	<div id="main" style="width:1000px;">
+
+		<div id="primary">
+
+			<div class="demo-title">
+
+				<h3>View Webinars & Videos</h3>
+
+			</div>
+
+                        
+
+			<div class="demo-slider"><link rel="stylesheet" type="text/css" media="all" href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/carouselengine/initcarousel.css" />
+
+<div id="amazingcarousel-container-2">
+    <div id="amazingcarousel-2" style="display:block;position:relative;width:100%;max-width:720px;margin:0px auto 0px;">
+        <div class="amazingcarousel-list-container" style="overflow:hidden;">
+            <ul class="amazingcarousel-list">
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/golden-wheat-field-lightbox.jpg" title="Golden Wheat Field"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/golden-wheat-field.jpg"  alt="Golden Wheat Field" /></a></div>
+<div class="amazingcarousel-title">Golden Wheat Field</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/sunny-day-lightbox.jpg" title="Autumn"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/sunny-day.jpg"  alt="Autumn" /></a></div>
+<div class="amazingcarousel-title">Autumn</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://www.youtube.com/embed/YE7VzlLtp-4" title="Big Buck Bunny"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/big_buck_bunny_480_270.jpg"  alt="Big Buck Bunny" /></a></div>
+<div class="amazingcarousel-title">Big Buck Bunny</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/night-in-the-city-lightbox.jpg" title="Night In The City"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/night-in-the-city.jpg"  alt="Night In The City" /></a></div>
+<div class="amazingcarousel-title">Night In The City</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://www.youtube.com/embed/eRsGyueVLvQ" title="Sintel"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/Sintel.jpg"  alt="Sintel" /></a></div>
+<div class="amazingcarousel-title">Sintel</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/daffodil-flowers-lightbox.jpg" title="Daffodil Flowers"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/daffodil-flowers.jpg"  alt="Daffodil Flowers" /></a></div>
+<div class="amazingcarousel-title">Daffodil Flowers</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/dandelion-lightbox.jpg" title="Dandelion"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/dandelion.jpg"  alt="Dandelion" /></a></div>
+<div class="amazingcarousel-title">Dandelion</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/sakura trees-lightbox.jpg" title="Sakura Trees"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/sakura trees.jpg"  alt="Sakura Trees" /></a></div>
+<div class="amazingcarousel-title">Sakura Trees</div>                    </div>
+                </li>
+                <li class="amazingcarousel-item">
+                    <div class="amazingcarousel-item-container">
+<div class="amazingcarousel-image"><a href="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/lightbox/tulips-lightbox.jpg" title="Red Tulips"  class="html5lightbox" data-group="amazingcarousel-2"><img src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/images/tulips.jpg"  alt="Red Tulips" /></a></div>
+<div class="amazingcarousel-title">Red Tulips</div>                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="amazingcarousel-prev"></div>
+        <div class="amazingcarousel-next"></div>
+        <div class="amazingcarousel-nav"></div>
+        <div class="amazingcarousel-engine" style="display:none;"><a href="http://amazingcarousel.com">jQuery Image Scroller</a></div>
+        <div class="amazingcarousel-engine" style="display:none;"><a href="http://amazingcarousel.com">WordPress Carousel</a></div>
+    </div>
+</div>
+<script src="http://amazingcarousel.com/wp-content/uploads/amazingcarousel/2/carouselengine/initcarousel.js"></script>
+</div>			
+
+			<div id="content" role="main">
+
+
+
+				
+
+					
+
+<article id="post-2170" class="post-2170 page type-page status-publish hentry">
+
+
+
+	<div class="entry-content">
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+			</footer><!-- .entry-meta -->
+
+</article><!-- #post-2170 -->
+
+						<div id="comments">
+	
+	
+	
+									
+</div><!-- #comments -->
+
+
+				
+
+			</div><!-- #content -->
+
+		</div><!-- #primary -->
+
+
+
+
+
+	</div><!-- #main -->
+
+
+
+	<footer id="colophon" role="contentinfo">
+
+
+
+			
+
+	
+
+			<div style="clear:both;"></div>
+
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+
+
+
+<!-- Google Code for Remarketing tag -->
+
+<script type="text/javascript">
+
+/* <![CDATA[ */
+
+var google_conversion_id = 1026191125;
+
+var google_conversion_label = "zVclCIuBjAQQld6p6QM";
+
+var google_custom_params = window.google_tag_params;
+
+var google_remarketing_only = true;
+
+/* ]]> */
+
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+
+</script>
+
+<noscript>
+
+<div style="display:inline;">
+
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1026191125/?value=0&amp;label=zVclCIuBjAQQld6p6QM&amp;guid=ON&amp;script=0"/>
+
+</div>
+
+</noscript>
+
+
+
+</body>
+
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+
+
+Page Caching using disk: enhanced
+
+Database Caching using disk: basic
+
+Object Caching 730/824 objects using disk: basic
+
+
+
+ Served from: amazingcarousel.com @ 2014-02-24 22:59:47 by W3 Total Cache -->
+<div class="clearfix">
+<ul id="main">
+<h3>Success Stories</h3>
+
+<p>Success stories are stories about companies that are successfully exporting their products internationally. To assist you in locating stories that closely resemble your situation, we have broken the archive down into the service(s) that was used by the company and industry of the product(s) being exported.</p>
+ </ul>
+<ul id="main"><style>
 
 #join {
 background-color: #C0C0C0;
+width:300px;
 padding: 20px;
 }
 
@@ -551,9 +903,10 @@ Get the latest info about events, market research and opportunities tailored to 
 
 <a href="#" class="btn-blue">Sign Up Now!</a>
 
-</div>
+</div> </ul>
+ </div>
 
-
+</section>
 
     <div id="footer_wrap2" class="outer">
       <footer class="inner">
@@ -651,21 +1004,20 @@ Get the latest info about events, market research and opportunities tailored to 
     <div id="footer_wrap" class="outer">
       <footer class="inner">
 
-        <p class="copyright"><div id="footerdivider">
+        <p class="copyright">
 <center><div class="footerdivideotitle">www.TRADE.gov</div><br />
 <div><p><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia/">FOIA</a> | <a href="http://trade.gov/privacy.asp">Privacy Policy</a> | <a href="http://trade.gov/endorse.asp">Disclaimer</a> |
 <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></p>
 </div>
-</div></center>
-<div class="disclamier">
+</center>
+
 <p>The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
 Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
 the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
 sites should not be construed as an endorsement of the views or privacy policies contained therein. This site contains PDF documents.
-A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe Systems Incorporated.</p></div>
-</div><!--ending Main Div -->
-</div><!--ending Inside Wrapper Div -->
-</div><!--ending Wrapper Div -->
+A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe Systems Incorporated.</p>
+
+
         </p>
    
       </footer>

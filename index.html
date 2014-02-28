@@ -2,12 +2,15 @@
 
 title: homepage
 ---
+
     
 {% include header.html %}
 </br>
-{% include heroboxwide %}
-<h3>Attend Upcoming</h3>
-{% include events %}
+{% include heroboxhome %}</br>
+{% include eventshome %}
 {% include webinar %}
-{% include success %}	{% include join %}
+<div class="clearfix">
+<ul id="main">{% include success %} </ul>
+<ul id="main">{% include join %} </ul>
+ </div>
 {% include footer.html %}

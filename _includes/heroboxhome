@@ -141,9 +141,8 @@ $(document).ready(function(){
   <div id="slideshow">
     <div id="slidesContainer">
       <div class="slide">
-        <h3>PLAN YOUR MARKET ENTRY</h3>
-        <p><a href="#"><img src="images/handshake.jpg" /></a>Use market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you first export.</p>
-        <p><a href="#" class="btn-green">Read Full Story</a></p>
+<h3>LEARN ABOUT EXPORTING</h3>
+        <p><a href="#"><img src="images/eg2-1.png" /></a>Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.</p>
       </div>
       <div class="slide">
         <h3>READY TO EXPORT</h3>
