@@ -212,8 +212,7 @@ dl dt {
 }
 
 dl dd {
-  padding-left: 20px;
-  font-style: italic;
+
 }
 
 dl p {
@@ -355,6 +354,12 @@ padding:10px;
 display: inline-block;
 float:left;
 margin: 20px;
+}
+#link{
+display:inline-block; margin:2px; padding:8px; background-color:#007edf; width:375px;
+}
+#link a{
+color:#fff;
 }
 
 #foot {
