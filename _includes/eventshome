@@ -31,7 +31,7 @@
     <td class="industries"></dd> 
 </dl></tr></table>
 </div>
-
+<a href="/office/events.html"><strong>View All Events</strong></a>
 <script>
 (function() {
   var ready, renderData;
