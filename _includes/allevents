@@ -1,5 +1,3 @@
-<!--mrr-->
-
 
 
 <!doctype html>
@@ -18,13 +16,15 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="without-description"><h3 >Market Research Reports</h3>
      </header>
-<div class="articles">
-<div ><dl class="article">
-    <a href="/office/search.html"><dd class="title"></dd></a>
-    <dd class="pub_date"></dd>
-    <dd class="content"></dd>          
+<div class="articles10">
+<div ><dl class="article10" >
+    <h3><dd class="event_name"></dd></h3>
+    <dd class="start_date"></dd>  
+    <dd class="state"></dd>
+    <dd class="country"></dd> 
+    <dd class="description"></dd> 
+    <a><dd class="registration_link"></dd></a>
 </dl>
 </div>
 
@@ -32,25 +32,28 @@
 (function() {
   var ready, renderData;
   renderData = function(data) {
-    var articles, article, i, _i, _len, _results;
-    articles = data.results;
+    var articles10, article10, i, _i, _len, _results;
+    articles10 = data.results;
     directive = {
-      '.article': {
-        'article <- articles': {
-          '.title': 'article.title',
-          '.pub_date': 'article.pub_date',
-          '.content': 'article.content',
+      '.article10': {
+        'article10 <- articles10': {
+          '.event_name': 'article10.event_name',
+          '.start_date': 'article10.start_date',
+          '.state': 'article10.state',
+          '.country': 'article10.country',
+          '.description': 'article10.description',
+          '.registration_link': 'article10.registration_link',
           
         }
       }
     };
-    rfn = $p('.articles').compile(directive);
-    return $p('.articles').render({ articles: articles }, directive);
+    rfn = $p('.articles10').compile(directive);
+    return $p('.articles10').render({ articles10: articles10 }, directive);
   };
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/market_research_library/search?callback=?&q=modernization';
+    url = 'http://api.trade.gov/trade_events/search?callback=?';
     return $.getJSON(url, renderData);
   };
 

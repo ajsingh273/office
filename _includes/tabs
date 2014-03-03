@@ -36,7 +36,7 @@ input:checked + .section label {
   <label for="tab3">Recent</label>
   <div id="content1" class="content">
 {% include articles %} 
-</br><a href="/guide.html">View Articles A-Z</a> 
+</br><a href="/office/articlelist.html">View Articles A-Z</a> 
   </div>
   <div id="content2" class="content">
 

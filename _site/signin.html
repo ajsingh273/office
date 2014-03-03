@@ -305,136 +305,157 @@ nav {
      	
 
 
-
-<center><h1>CE Marking Guide</h1></center>
-<div class="clearfix">
-<ul id="main"><!--council-->
-
-    <div id="footer_wrap3" class="outer">
-      <footer class="inner">
-
-<div>
- 
-<strong>Minnesota District Export Council</strong></br></br>
- 
-The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
- 
-The Minnesota District Export Council encourages and supports:</br>
-•	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
-•	Export expansion activities by working with the US & FCS domestic offices; and</br>
-•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.
-
-
-
-</div>
-
-      </footer>
-    </div> </ul>
-<ul id="main"><!--articles-->
-
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <h3 >Latest Export Articles</h3>
-<div class="articles4">
-<dl class="article4" id="link">
-    <a href="/office/article.html"><dd class="title" ></dd>
-    <dd class="pub_date"></dd></a>        
-</dl>
-</div>
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles4, article4, i, _i, _len, _results;
-    articles4 = data.results;
-    directive = {
-      '.article4': {
-        'article4 <- articles4': {
-          '.title': 'article4.title',
-          '.pub_date': 'article4.pub_date',
-
-          
-        }
-      }
-    };
-    rfn = $p('.articles4').compile(directive);
-    return $p('.articles4').render({ articles4: articles4 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
- </ul>
- </div>
- 
- <div class="clearfix">
-<ul id="main"><h3 style="color:#f30;">Frequently Asked Questions (FAQs)</h3>
-<a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
-<a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
-<a href="#">·    How can I find export financing?</a></br>
-<a href="#">·    What do all of these Free Trade Agreements do for me?</a></br>
-<a href="#">·    How can I determine the tariff rate for my product?</a></br></br>
- 
-
- </ul>
-<ul id="main"><h3 >Resources to Help Your Business Export</h3>
- 
-<ul> 
-<li><a href="#">Exporters Resource Database</a></li>
-<li><a href="#">International Finance</a></li>
-<li><a href="#">Certificate of Origin</a></li>
-<li><a href="#">NAFTA</a></li>
-<li><a href="#">MN Tourism Destination</a></li>
-</ul>
-</br> <style>
-
-#join {
-background-color: #C0C0C0;
-width:300px;
-padding: 20px;
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+body {
+
+}
+
+h2 {
+	color: rgb(34,34,34);
+	font-size: 2.2em;	
+	font-weight: 200;
+	margin: 0 0 24px 0;
+}
+
+/*BUTTON DESIGN*/
+[class*='btn-'] {
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,.15);
+	border-top: 1px solid rgba(255,255,255,.15);
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font: -webkit-small-control;
+	font-size: .7em;
+	letter-spacing: 1px;
+	line-height: 140%;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+	text-transform: uppercase;
+	
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	  transition: all 0.1s linear;
+}
+
+	.btn-minimal {
+		background-color: rgb(255,255,255);
+		border-radius: 0;
+		border: 1px solid rgb( 186, 186, 186 );
+		color: rgb( 186, 186, 186 );
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+	}
+	
+		.btn-minimal:hover {
+			background-color: #4195fc;
+			border: 1px solid rgba(0,0,0,.1);
+			color: rgb(255,255,255);
+			cursor: pointer;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+		}
+		
+		.btn-minimal:active {
+			box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+			text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+		}
+
+/*SECTION CONTAINER*/
+section#loginBox {
+	background-color: rgb(255,255,255);
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 0 4px rgba(0,0,0,0.2);
+	margin: 40px auto; /*aligns center*/
+	padding: 24px;
+	width: 500px;
+}
+
+/*FORM*/
+form.minimal label {
+	display: block;
+	margin: 6px 0;	
+}
+
+	form.minimal input[type="text"],
+	form.minimal input[type="email"],
+	form.minimal input[type="number"],
+	form.minimal input[type="search"],
+	form.minimal input[type="password"],
+	form.minimal textarea {
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb( 186, 186, 186 );
+		border-radius: 2px;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+		display: block;
+		font-size: 14px;
+		margin: 6px 0 12px 0;
+		padding: 8px;	
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+		width: 90%;
+		
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		  transition: all 0.1s linear;
+	}
+	
+	form.minimal input[type="text"]:focus,
+	form.minimal input[type="email"]:focus,
+	form.minimal input[type="number"]:focus,
+	form.minimal input[type="search"]:focus,
+	form.minimal input[type="password"]:focus,
+	form.minimal textarea:focus,
+	form.minimal select:focus { 
+		border-color: #4195fc;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+		-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+		color: rgb(0,0,0);
+	}
+	
+		form.minimal input[type="text"]:invalid:focus,
+		form.minimal input[type="email"]:invalid:focus,
+		form.minimal input[type="number"]:invalid:focus,
+		form.minimal input[type="search"]:invalid:focus,
+		form.minimal input[type="password"]:invalid:focus,
+		form.minimal textarea:invalid:focus,
+		form.minimal select:invalid:focus { 
+			border-color: #fff;
+			
+		}
+			
 </style>
 
-
-<div id="join">
-  <h3>JOIN MY EXPORT</h3>
-
-Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
-
-<a href="#" class="btn-blue">Sign Up Now!</a>
-
-</div></ul>
- </div>
+<body>
+<section id="loginBox">
+	<h3>Login</h3>
+	<form method="post" class="minimal">
+		<label for="username">
+			Username:
+			<input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required="required" />
+		</label>
+		<label for="password">
+			Password:
+			<input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+		</label>
+		<button type="submit" class="btn-minimal">Sign in</button>
+	</form>
+</section>
+</body>	
 
 </section>
 
@@ -555,4 +576,3 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
 
   </body>
 </html>
-

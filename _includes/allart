@@ -1,5 +1,4 @@
-<!--mrr-->
-
+<!--articles-->
 
 
 <!doctype html>
@@ -18,13 +17,11 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="without-description"><h3 >Market Research Reports</h3>
-     </header>
-<div class="articles">
-<div ><dl class="article">
-    <a href="/office/search.html"><dd class="title"></dd></a>
-    <dd class="pub_date"></dd>
-    <dd class="content"></dd>          
+<div class="articles9">
+<dl class="article9" >
+    <h3><dd class="title"></dd></h3>
+   <dd class="content"></dd></br>
+	<strong><dd class="update_date"></dd></strong></br></br>    
 </dl>
 </div>
 
@@ -32,25 +29,26 @@
 (function() {
   var ready, renderData;
   renderData = function(data) {
-    var articles, article, i, _i, _len, _results;
-    articles = data.results;
+    var articles9, article9, i, _i, _len, _results;
+    articles9 = data.results;
     directive = {
-      '.article': {
-        'article <- articles': {
-          '.title': 'article.title',
-          '.pub_date': 'article.pub_date',
-          '.content': 'article.content',
+      '.article9': {
+        'article9 <- articles9': {
+          '.title': 'article9.title',
+           '.content': 'article9.content',
+          '.update_date': 'article9.update_date',
+
           
         }
       }
     };
-    rfn = $p('.articles').compile(directive);
-    return $p('.articles').render({ articles: articles }, directive);
+    rfn = $p('.articles9').compile(directive);
+    return $p('.articles9').render({ articles9: articles9 }, directive);
   };
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/market_research_library/search?callback=?&q=modernization';
+    url = 'http://api.trade.gov/trade_articles/search?callback=?';
     return $.getJSON(url, renderData);
   };
 
@@ -58,6 +56,7 @@
 
   }).call(this);
 </script>
+
      </div>
      
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
