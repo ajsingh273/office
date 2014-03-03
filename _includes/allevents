@@ -1,0 +1,68 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     </header>
+<div class="articles10">
+<div ><dl class="article10" >
+    <h3><dd class="event_name"></dd></h3>
+    <dd class="start_date"></dd>  
+    <dd class="state"></dd>
+    <dd class="country"></dd> 
+    <dd class="description"></dd> 
+    <a><dd class="registration_link"></dd></a>
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles10, article10, i, _i, _len, _results;
+    articles10 = data.results;
+    directive = {
+      '.article10': {
+        'article10 <- articles10': {
+          '.event_name': 'article10.event_name',
+          '.start_date': 'article10.start_date',
+          '.state': 'article10.state',
+          '.country': 'article10.country',
+          '.description': 'article10.description',
+          '.registration_link': 'article10.registration_link',
+          
+        }
+      }
+    };
+    rfn = $p('.articles10').compile(directive);
+    return $p('.articles10').render({ articles10: articles10 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_events/search?callback=?';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
