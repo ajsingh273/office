@@ -305,211 +305,6 @@ nav {
      	
 
 
-
-<center><h1>Market Research</h1></center>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-<!--
-/** 
- * Slideshow style rules.
- */
-#slideshow {
-	margin:0 auto;
-	width:100%;
-	height:100%;
-	background-color:#7A7A7A;
-	position:relative;
-}
-#slideshow #slidesContainer {
-  margin:0 auto;
-  width:800px;
-  height:350px;
-  overflow:auto; /* allow scrollbar */
-  position:relative;
-}
-#slideshow #slidesContainer .slide {
-  margin:0 auto;
-  width:940px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
-  height:263px;
-}
-
-/** 
- * Slideshow controls style rules.
- */
-.control {
-  display:block;
-  width:39px;
-  height:350px;
-  text-indent:-10000px;
-  position:absolute;
-  cursor: pointer;
-}
-#leftControl {
-  top:150px;
-  left:0;
-  background:transparent url(images/lnext.png) no-repeat 0 0;
-}
-#rightControl {
-  top:150px;
-  right:0;
-  background:transparent url(images/rnext.png) no-repeat 0 0;
-}
-
-/** 
- * Style rules for Demo page
- */
-*
-a {
-
-  text-decoration:none;
-}
-a:hover {
-  text-decoration:none;
-}
-
-
-
-.slide h3, .slide p {
-  margin:15px;
-}
-.slide h3 {
-  
-  color:#ccc;
-  letter-spacing:-1px;
-}
-.slide p {
- color:#ccc;	
-}
-.slide img {
-  float:right;
-  margin:0 15px;
-}
--->
-</style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  var currentPosition = 0;
-  var slideWidth = 800;
-  var slides = $('.slide');
-  var numberOfSlides = slides.length;
-
-  // Remove scrollbar in JS
-  $('#slidesContainer').css('overflow', 'hidden');
-
-  // Wrap all .slides with #slideInner div
-  slides
-    .wrapAll('<div id="slideInner"></div>')
-    // Float left to display horizontally, readjust .slides width
-	.css({
-      'float' : 'left',
-      'width' : slideWidth
-    });
-
-  // Set #slideInner width equal to total width of all slides
-  $('#slideInner').css('width', slideWidth * numberOfSlides);
-
-  // Insert controls in the DOM
-  $('#slideshow')
-    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
-    .append('<span class="control" id="rightControl">Clicking moves right</span>');
-
-  // Hide left arrow control on first load
-  manageControls(currentPosition);
-
-  // Create event listeners for .controls clicks
-  $('.control')
-    .bind('click', function(){
-    // Determine new position
-	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
-    
-	// Hide / show controls
-    manageControls(currentPosition);
-    // Move slideInner using margin-left
-    $('#slideInner').animate({
-      'marginLeft' : slideWidth*(-currentPosition)
-    });
-  });
-
-  // manageControls: Hides and Shows controls depending on currentPosition
-  function manageControls(position){
-    // Hide left arrow if position is first slide
-	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
-	// Hide right arrow if position is last slide
-    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
-  }	
-});
-</script>
-</head>
-<body>
-<div id="pageContainer">	
-  <!-- Slideshow HTML -->
-  <div id="slideshow">
-    <div id="slidesContainer">
-      <div class="slide">
-        <h3>PLAN YOUR MARKET ENTRY</h3>
-        <p><a href="#"><img src="images/handshake.jpg" /></a>Use market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you first export.</p>
-        <p><a href="#" class="btn-green">Read Full Story</a></p>
-      </div>
-      <div class="slide">
-        <h3>READY TO EXPORT</h3>
-        <p><a href="#"><img src="images/eg2-2.jpg"  /></a>You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.</p>
-        <p> 
-      </div>
-      <div class="slide">
-        <h3>EXPAND MY EXPORTS</h3>
-        <p><a href="#"><img src="images/eg2-3.jpg" /></a>Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.</p>
-</div>
-	
-    </div>
-  </div>
-
-</div>
-</body>
-</html>
-
-
-<div class="clearfix">
-<ul id="main" style="width:600px"><style>
-#container {
-  margin: 20px;
-}
-#container input, .content {
-  display: none;
-}
-label {
-  font-weight: bold;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #EEE;
-}
-label:hover {
-  cursor: pointer;
-}
-#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
-  display: block;
-}
-#tab1:checked ~ label[for=tab1], #tab2:checked ~ label[for=tab2], #tab3:checked ~ label[for=tab3], #tab4:checked ~ label[for=tab4] {
-  background-color: #DDD;
-}
-input:checked + .section label {
-  background-color: #DDD;
-}
-</style>
-
-
-<div id="container">
-  <input id="tab1" type="radio" name="tabs" checked>
-  <input id="tab2" type="radio" name="tabs">
-  <input id="tab3" type="radio" name="tabs">
-  <input id="tab4" type="radio" name="tabs">
-  <label for="tab1">Articles</label>
-  <label for="tab2">Important</label>
-  <label for="tab3">Recent</label>
-  <div id="content1" class="content">
 <!--articles-->
 
 
@@ -529,11 +324,11 @@ input:checked + .section label {
   </head>
   <body>
     <div class="wrapper">
-     <h3 >Latest Export Articles</h3>
-<div class="articles4">
-<dl class="article4" id="link">
-    <a href="/office/article.html"><dd class="title" ></dd>
-    <dd class="pub_date"></dd></a>        
+<div class="articles9">
+<dl class="article9" >
+    <h3><dd class="title"></dd></h3>
+   <dd class="content"></dd></br>
+	<strong><dd class="update_date"></dd></strong></br></br>    
 </dl>
 </div>
 
@@ -541,25 +336,26 @@ input:checked + .section label {
 (function() {
   var ready, renderData;
   renderData = function(data) {
-    var articles4, article4, i, _i, _len, _results;
-    articles4 = data.results;
+    var articles9, article9, i, _i, _len, _results;
+    articles9 = data.results;
     directive = {
-      '.article4': {
-        'article4 <- articles4': {
-          '.title': 'article4.title',
-          '.pub_date': 'article4.pub_date',
+      '.article9': {
+        'article9 <- articles9': {
+          '.title': 'article9.title',
+           '.content': 'article9.content',
+          '.update_date': 'article9.update_date',
 
           
         }
       }
     };
-    rfn = $p('.articles4').compile(directive);
-    return $p('.articles4').render({ articles4: articles4 }, directive);
+    rfn = $p('.articles9').compile(directive);
+    return $p('.articles9').render({ articles9: articles9 }, directive);
   };
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
+    url = 'http://api.trade.gov/trade_articles/search?callback=?';
     return $.getJSON(url, renderData);
   };
 
@@ -573,120 +369,7 @@ input:checked + .section label {
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
   </body>
 </html>
- 
-</br><a href="/office/articlelist.html">View Articles A-Z</a> 
-  </div>
-  <div id="content2" class="content">
 
-  </div>
-  <div id="content3" class="content">
-
-  </div>
-  <div id="content4" class="content">
-    <h3>Tab 4 Content</h3>
-    <p>But it's easier than copying and pasting lorem ipsum right now.</p>
-  </div>
-</div> </br> <h3 style="color:#f30;">Frequently Asked Questions (FAQs)</h3>
-<a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
-<a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
-<a href="#">·    How can I find export financing?</a></br>
-<a href="#">·    What do all of these Free Trade Agreements do for me?</a></br>
-<a href="#">·    How can I determine the tariff rate for my product?</a></br></br>
- 
-<a href="/guide.html">View All FAQs</a>
- </br>
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <header class="without-description"><h3>Trade Events</h3>
-     </header>
-<div class="articles2">
-<div ><dl class="article2" id="link" style="color: black; background-color: #0C9; opacity: .5;">
-    <a href="/office"><dd style="color: black;" class="event_name"></dd>
-    <dd style="color: black;" class="start_date"></dd>  
-    <dd style="color: black;" class="state"></dd></a> 
-</dl>
-</div>
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles2, article2, i, _i, _len, _results;
-    articles2 = data.results;
-    directive = {
-      '.article2': {
-        'article2 <- articles2': {
-          '.event_name': 'article2.event_name',
-          '.start_date': 'article2.start_date',
-          '.state': 'article2.state',
-          
-        }
-      }
-    };
-    rfn = $p('.articles2').compile(directive);
-    return $p('.articles2').render({ articles2: articles2 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=NY';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
- </br><a href="/guide.html">View All Events</a> </br> <h3 >Resources to Help Your Business Export</h3>
- 
-<ul> 
-<li><a href="#">Exporters Resource Database</a></li>
-<li><a href="#">International Finance</a></li>
-<li><a href="#">Certificate of Origin</a></li>
-<li><a href="#">NAFTA</a></li>
-<li><a href="#">MN Tourism Destination</a></li>
-</ul>
-</br> <style>
-
-#join {
-background-color: #C0C0C0;
-width:300px;
-padding: 20px;
-}
-
-</style>
-
-
-<div id="join">
-  <h3>JOIN MY EXPORT</h3>
-
-Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
-
-<a href="#" class="btn-blue">Sign Up Now!</a>
-
-</div> </ul>
-<ul id="main" style="width:250px"><h3>Browse Articles By ...</h3></ul>
- </div>
 
 </section>
 

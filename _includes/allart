@@ -1,0 +1,64 @@
+<!--articles-->
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+<div class="articles9">
+<dl class="article9" >
+    <h3><dd class="title"></dd></h3>
+   <dd class="content"></dd></br>
+	<strong><dd class="update_date"></dd></strong></br></br>    
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles9, article9, i, _i, _len, _results;
+    articles9 = data.results;
+    directive = {
+      '.article9': {
+        'article9 <- articles9': {
+          '.title': 'article9.title',
+           '.content': 'article9.content',
+          '.update_date': 'article9.update_date',
+
+          
+        }
+      }
+    };
+    rfn = $p('.articles9').compile(directive);
+    return $p('.articles9').render({ articles9: articles9 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
