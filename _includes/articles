@@ -1,5 +1,6 @@
 <!--articles-->
 
+
 <!doctype html>
 <html>
   <head>
@@ -16,12 +17,11 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="without-description"><h3>Latest Export Articles</h3>
-     </header>
+     <h3 >Latest Export Articles</h3>
 <div class="articles4">
-<dl class="article4">
-    <dd class="title"></dd>
-    <dd class="pub_date"></dd>        
+<dl class="article4" id="link">
+    <a href="/office/article.html"><dd class="title" ></dd>
+    <dd class="pub_date"></dd></a>        
 </dl>
 </div>
 
@@ -47,7 +47,7 @@
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?q=logistics';
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
     return $.getJSON(url, renderData);
   };
 
@@ -55,6 +55,7 @@
 
   }).call(this);
 </script>
+
      </div>
      
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->

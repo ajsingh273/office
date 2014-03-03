@@ -1,0 +1,69 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper" >
+   
+<div class="articles9" style="padding: 24px; color: black; background-color: #0C9; opacity: .5;">
+<h3>Attend Upcoming Trade Events</h3>
+<table class="partialTable"><tr>
+<th style="width:250px">Event</th>
+<th style="width:100px">Date</th>
+<th style="width:600px">Industry</th>
+</tr>
+</table>
+<div ><dl class="article9">
+    <table ><tr><td class="event_name" style="width:250px"></dd>
+    <td class="start_date" style="width:100px"></dd>  
+    <td class="industries"></dd> 
+</dl></tr></table>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles9, article9, i, _i, _len, _results;
+    articles9 = data.results;
+    directive = {
+      '.article9': {
+        'article9 <- articles9': {
+          '.event_name': 'article9.event_name',
+          '.start_date': 'article9.start_date',
+          '.industries': 'article9.industries',
+          
+        }
+      }
+    };
+    rfn = $p('.articles9').compile(directive);
+    return $p('.articles9').render({ articles9: articles9 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_events/search?callback=?&industry=Iron/Steel';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>

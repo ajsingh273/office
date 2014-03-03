@@ -1,57 +1,9 @@
-<!--resources-->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <header class="without-description"><h3>Resources to Help Your Business Export</h3>
-     </header>
-
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles2, article2, i, _i, _len, _results;
-    articles2 = data.results;
-    directive = {
-      '.article2': {
-        'article2 <- articles2': {
-          '.event_name': 'article2.event_name',
-          '.start_date': 'article2.start_date',
-          '.description': 'article2.description',
-          
-        }
-      }
-    };
-    rfn = $p('.articles2').compile(directive);
-    return $p('.articles2').render({ articles2: articles2 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
+<h3 >Resources to Help Your Business Export</h3>
+ 
+<ul> 
+<li><a href="#">Exporters Resource Database</a></li>
+<li><a href="#">International Finance</a></li>
+<li><a href="#">Certificate of Origin</a></li>
+<li><a href="#">NAFTA</a></li>
+<li><a href="#">MN Tourism Destination</a></li>
+</ul>

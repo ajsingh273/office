@@ -1,0 +1,248 @@
+<style>
+.thumb{position:relative;float:left;display:inline;margin:20px;width:280px;height:140px}.thumbb{position:absolute;left:-1px;top:-1px;width:282px;height:142px;background-color:#fff}.thumbb:hover{background-color:#ff8400}.thumbcb,.thumbc{position:absolute;left:1px;top:1px;width:280px;height:30px}.thumbcb{background-color:#000;filter:alpha(opacity=50);opacity:.5}.thumbb:hover .thumbcb{background-color:#ff8400}.thumbc{font-size:18px;line-height:30px;text-align:center}.thumbb img{position:absolute;left:1px;top:1px;width:280px;height:140px;border:none}
+</style>
+
+<div style="margin:0 auto;width:100%;max-width:980px;background-color:#E8E8E8;overflow:hidden;">
+
+<div style="position:relative;margin:0 auto;padding:0px;width:100%;max-width:960px;height:100%;overflow:hidden;">
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/full-width-slider.html">
+
+<img src="../img/demo/t-full-width-slider.jpg" alt="Full Width Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Full Width Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/image-slider.html">
+
+<img src="../img/demo/t-image-slider.jpg" alt="Image Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Image Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/content-slider.html">
+
+<img src="../img/demo/t-content-slider.jpg" alt="Content Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Content Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/banner-slider.html">
+
+<img src="../img/demo/t-banner-slider.jpg" alt="Banner Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Banner Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/image-gallery-vertical-bar.html">
+
+<img src="../img/demo/t-image-gallery-vertical-bar.jpg" alt="Image Gallery with Vertical Thumbnail Navigation Bar">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Image Gallery with Vertical Bar</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/image-gallery.html">
+
+<img src="../img/demo/t-image-gallery.jpg" alt="Image Gallery">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Image Gallery</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/grid-slider.html">
+
+<img src="../img/demo/t-grid-slider.jpg" alt="Grid Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Grid Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/list-slider.html">
+
+<img src="../img/demo/t-list-slider.jpg" alt="List Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">List Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/tab-slider.html">
+
+<img src="../img/demo/t-tab-slider.jpg" alt="Tab Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Tab Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/carousel.html">
+
+<img src="../img/demo/t-carousel.jpg" alt="Carousel">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Carousel</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/slider-cluster.html">
+
+<img src="../img/demo/t-slider-cluster.jpg" alt="Slider Cluster">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Slider Cluster</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/introduction-slider.html">
+
+<img src="../img/demo/t-introduction-slider.jpg" alt="Introduction Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Introduction Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/banner-rotator.html">
+
+<img src="../img/demo/t-banner-rotator.jpg" alt="Banner Rotator">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Banner Rotator</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/tiled-menu-slider.html">
+
+<img src="../img/demo/t-tiled-menu-slider.jpg" alt="Tiled Menu Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Tiled Menu Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/responsive-slider.html">
+
+<img src="../img/demo/t-responsive-slider.jpg" alt="Responsive Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Responsive Slider</div>
+
+</a>
+
+</div>
+
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/vertical-slider.html">
+
+<img src="../img/demo/t-vertical-slider.jpg" alt="Vertical Slider">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Vertical Slider</div>
+
+</a>
+
+</div> 
+<div class="thumb">
+
+<a class="thumbb" href="http://www.jssor.com/demos/video-gallery.html">
+
+<img src="../img/demo/t-youtube-video-gallery.jpg" alt="Youtube Video Gallery">
+
+<div class="thumbcb"></div>
+
+<div class="thumbc">Youtube Video Gallery</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>

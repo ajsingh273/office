@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 ol, ul {
   list-style: none;
+  
 }
 
 table {
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
+  
 }
 
 h1 {
@@ -76,6 +78,7 @@ h2 {
   padding-bottom: 10px;
   font-size: 32px;
   background: url('../images/bg_hr.png') repeat-x bottom;
+  
 }
 
 h3 {
@@ -209,8 +212,7 @@ dl dt {
 }
 
 dl dd {
-  padding-left: 20px;
-  font-style: italic;
+
 }
 
 dl p {
@@ -229,7 +231,7 @@ table {
 
 margin: 0;
 padding: 0;
-  
+
  }
  
 
@@ -266,6 +268,20 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 #forkme_banner {
   display: block;
   position: absolute;
@@ -274,11 +290,10 @@ Full-Width Styles
   z-index: 10;
   padding: 10px 10px 10px 10px;
   color: #fff;
-  background: #0090ff no-repeat 95% 50%;
+  background: #0B5394 no-repeat 95% 50%;
   font-weight: 700;
 
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+
   font-size:12px;
 }
 
@@ -318,6 +333,45 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#art{
+background-color:#fff;
+display: inline-block;
+float:left;
+width:300px;	
+padding:10px;
+}
+
+#main {
+background-color:#fff;
+width:400px;	
+display: inline-block;
+float:left;
+margin: 50px;
+padding:10px;
+}
+
+#soc {	
+display: inline-block;
+float:left;
+margin: 20px;
+}
+#link{
+display:inline-block; margin:2px; padding:8px; background-color:#007edf; width:375px;
+}
+#link a{
+color:#fff;
+}
+
+#foot {
+width:150px;	
+display: inline-block;
+float:left;
+padding-right: 5px;
+}
+
+#whi {
+color:#c1c1c1;
+}
 #downloads {
   position: absolute;
   width: 210px;
@@ -349,6 +403,80 @@ Full-Width Styles
   margin-left: 10px;
 }
 
+[class*='btn-'] {
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+	  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+	color: #fff;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+	
+	-webkit-transition: background-color 0.1s linear;
+	-moz-transition: background-color 0.1s linear;
+	-o-transition: background-color 0.1s linear;
+	  transition: background-color 0.1s linear;	
+}
+
+	[class*='btn-']:hover {
+		cursor: pointer;
+	}
+
+	.btn-blue {
+		background-color: rgb( 51, 102, 204 );
+		border: 1px solid rgb( 44, 91, 104 );	
+	}
+	
+		.btn-blue:hover {
+			background-color: rgb( 58, 131, 213 );	
+		}
+		
+		.btn-blue:active {
+			background-color: rgb( 42, 91, 191 );	
+		}
+		
+	.btn-primary {
+		background-color: rgb( 74, 61, 117 );
+		border: 1px solid rgb( 44, 37, 59 );
+	}
+	
+		.btn-primary:hover {
+			background-color: rgb( 92, 76, 131 );	
+		}
+		
+		.btn-primary:active {
+			background-color: rgb( 54, 44, 87 );	
+		}
+	
+	.btn-red {
+		background-color: rgb( 207, 56, 91 );
+		border: 1px solid rgb( 187, 40, 74 );
+	}
+	
+		.btn-red:hover {
+			background-color: rgb( 227, 77, 130 );
+		}
+		
+		.btn-red:active {
+			background-color: rgb( 187, 40, 74 );
+		}
+	
+	.btn-green {
+		background-color: rgb( 43, 153, 91 );
+		border: 1px solid rgb( 33, 126, 74 );
+	}
+	
+		.btn-green:hover {
+			background-color: rgb( 75, 183, 141 );
+		}
+		
+		.btn-green:active {
+			background-color: rgb( 33, 126, 74 );
+		}
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
 }
@@ -373,15 +501,15 @@ background-color:#E6F0FF;
 }
 
 #footer_wrap3 {
-  background: #C0C0C0 ;
+  background: #fff ;
   text-decoration: none;
   color:#000;
 }
 
 
 #footer_wrap2 {
-  background: #505050;
-  font-size:15px;
+  background: #7A7A7A;
+font-size:12px;
 
   
 }
@@ -392,13 +520,19 @@ background-color:#E6F0FF;
 }
 
 #footer_wrap {
-  background: #212121;
+  background:#0B5394;
   font-size:12px;
+  
+}
+
+#footer_wrap p {
+  color: #f2f2f2;
   
 }
 
 #footer_wrap li{
   display: inline;
+color: #f2f2f2;
 }
 
 #footer_wrap2 a{
@@ -417,6 +551,14 @@ background-color:#E6F0FF;
   color: #c1c1c1;
 }
 
+.footerdivideotitle {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:24px;
+color:#b3b2b2;
+text-align:center;
+font-weight:lighter;
+
+}
 
 
 /*******************************************************************************
@@ -430,8 +572,8 @@ Small Device Styles
   
 table {
 
-margin: 0;
-padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
   
  }
   #downloads {
@@ -442,6 +584,7 @@ padding: 0;
     min-width: 320px;
     max-width: 480px;
   }
+  
 
   #project_title {
   font-size: 32px;
@@ -451,6 +594,7 @@ padding: 0;
   float: none;
   position: relative;
   }
+
 
   h1 {
     font-size: 28px;
@@ -483,3 +627,5 @@ padding: 0;
   }
 
 }
+
+

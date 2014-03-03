@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
   <head>
@@ -17,9 +19,10 @@
      <header class="without-description"><h3>Trade Events</h3>
      </header>
 <div class="articles2">
-<dl class="article2">
-    <dd class="event_name"></dd>
-    <dd class="start_date"></dd>        
+<div ><dl class="article2" id="link" style="color: black; background-color: #0C9; opacity: .5;">
+    <a href="#"><dd style="color: black;" class="event_name"></dd>
+    <dd style="color: black;" class="start_date"></dd>  
+    <dd style="color: black;" class="state"></dd></a> 
 </dl>
 </div>
 
@@ -34,6 +37,7 @@
         'article2 <- articles2': {
           '.event_name': 'article2.event_name',
           '.start_date': 'article2.start_date',
+          '.state': 'article2.state',
           
         }
       }
@@ -44,7 +48,7 @@
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&q=computer';
+    url = 'http://api.trade.gov/trade_events/search?callback=?&q=NY';
     return $.getJSON(url, renderData);
   };
 
