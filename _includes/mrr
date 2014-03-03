@@ -22,7 +22,7 @@
      </header>
 <div class="articles">
 <div ><dl class="article">
-    <a href="/office/search.html"<dd class="title"></dd></a>
+    <a href="/office/search.html"><dd class="title"></dd></a>
     <dd class="pub_date"></dd>
     <dd class="content"></dd>          
 </dl>
