@@ -23,7 +23,7 @@
     <dd class="start_date"></dd>  
     <dd class="state"></dd>
     <dd class="country"></dd> 
-    <dd class="description"></dd> 
+    <dd class="description"></dd>
     <a><dd class="registration_link"></dd></a>
 </dl>
 </div>
