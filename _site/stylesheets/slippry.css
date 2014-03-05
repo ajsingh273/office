@@ -177,7 +177,8 @@
 /* added to the original element calling slippry */
 /* line 71, ../src/slippry.scss */
 .sy-box.sy-loading {
-  background: url(/images/sy-loader.gif) 50% 50% no-repeat;
+  background: url(../images/sy-loader.gif) 50% 50% no-repeat;
+  
   -webkit-background-size: 32px;
   -moz-background-size: 32px;
   -o-background-size: 32px;
@@ -346,7 +347,7 @@
 /* line 193, ../src/slippry.scss */
 .sy-controls li a:after {
   content: "";
-  background-image: url(/images/arrows.svg);
+  background-image: url(../images/arrows.svg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
