@@ -124,7 +124,7 @@ nav {
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
-					<li><a href="/basic-guide/">Basic Guide to Exporting</a></li>
+					<li><a href="/office/guide.html">Basic Guide to Exporting</a></li>
 					<li><a href="/export-readiness-assessment/login">Export Readiness Assessment</a></li>
 					<li><a href="/community/users/international-logistics">International Logistics</a></li>
 				</ul>
@@ -214,7 +214,9 @@ nav {
 				<ul>
 					
 					<li><a href="/office/faqs.html">Browse FAQs</a></li>
-					<li><a href="https://help.export.gov/ics/support/ticketnewwizard.asp?style=classic">Market Research</a></li>
+					<li><a href="/office/toolkit.html">Market Research</a></li>
+					
+					
 		
 				</ul>
 			</div>
