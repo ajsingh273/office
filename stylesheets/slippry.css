@@ -178,6 +178,7 @@
 /* line 71, ../src/slippry.scss */
 .sy-box.sy-loading {
   background: url(/images/sy-loader.gif) 50% 50% no-repeat;
+  
   -webkit-background-size: 32px;
   -moz-background-size: 32px;
   -o-background-size: 32px;
