@@ -300,175 +300,148 @@ nav {
 	</ul>
 </nav>
 
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+
      	
 
 
 
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-<!--
-/** 
- * Slideshow style rules.
- */
-#slideshow {
-	margin:0 auto;
-	width:100%;
-	height:100%;
-	background-color:#7A7A7A;
-	position:relative;
-}
-#slideshow #slidesContainer {
-  margin:0 auto;
-  width:800px;
-  height:350px;
-  overflow:auto; /* allow scrollbar */
-  position:relative;
-}
-#slideshow #slidesContainer .slide {
-  margin:0 auto;
-  width:940px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
-  height:263px;
-}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/slippry.min.js"></script>
+<link rel="stylesheet" href="stylesheets/slippry.css" />
 
-/** 
- * Slideshow controls style rules.
- */
-.control {
-  display:block;
-  width:39px;
-  height:350px;
-  text-indent:-10000px;
-  position:absolute;
-  cursor: pointer;
+<style>
+/* News */
+.news-slider {
+  background-color:#fff;
+  height: 250px;
 }
-#leftControl {
-  top:150px;
-  left:0;
-  background:transparent url(images/lnext.png) no-repeat 0 0;
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+  width: 60%;
+  height: 100%;
 }
-#rightControl {
-  top:150px;
-  right:0;
-  background:transparent url(images/rnext.png) no-repeat 0 0;
+.news-slider .text-content h2 {
+  margin: 0;
 }
-
-/** 
- * Style rules for Demo page
- */
-*
-a {
-
-  text-decoration:none;
+.news-slider .text-content p {
+  margin: 1em 0;
 }
-a:hover {
-  text-decoration:none;
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
-
-
-
-.slide h3, .slide p {
-  margin:15px;
+.news-slider .image-content {
+  line-height: 0;
 }
-.slide h3 {
-  
-  color:#ccc;
-  letter-spacing:-1px;
+.news-slider .image-content img {
+  max-width: 100%;
 }
-.slide p {
- color:#ccc;	
+.news-slider .news-pager {
+  text-align: right;
+  display: block;
+  margin: 0.2em 0 0;
+  padding: 0;
+  list-style: none;
 }
-.slide img {
-  float:right;
-  margin:0 15px;
+.news-slider .news-pager li {
+  display: inline-block;
+  padding: 0.6em;
+  margin: 0 0 0 1em;
 }
--->
+.news-slider .news-pager li.sy-active a {
+  color: #31ace2;
+}
+.news-slider .news-pager li a {
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
 </style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  var currentPosition = 0;
-  var slideWidth = 800;
-  var slides = $('.slide');
-  var numberOfSlides = slides.length;
+<div id="header_wrap" class="outer">
+        <header class="inner">
+<section id="news-demo">
+  <article>
+    <div class="text-content">
+      <h3>LEARN ABOUT EXPORTING</h3>
+      <p>
+                      Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Learn - </a>
+                    </p>
+                      <a href="#">Export Readiness Assessment</a><a href="/learn-about-exporting">Where do I Start?</a>
+    </div>
+    <div class="image-content"><img src="images/eg2-1.png" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>READY TO EXPORT</h3>
+<p>
+                      You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Start - </a>
+                    </p>
+                      <a href="#">Export Readiness Assessment</a><a href="#">Responding to Market Pressure?</a>
+    </div>
+    <div class="image-content"><img src="images/eg2-3.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>EXPAND MY EXPORTS</h3>
+                    <p>
+                      Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Expand - </a>
+                    </p>
+                    
+                      <a href="#">Find Markets</a><a href="#">Find Local Resources</a>
+    </div>
+    <div class="image-content"><img src="images/eg2-2.jpg" alt="demo1_1"></div>
+  </article>
+</section>
+        </header>
+    </div>
 
-  // Remove scrollbar in JS
-  $('#slidesContainer').css('overflow', 'hidden');
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
 
-  // Wrap all .slides with #slideInner div
-  slides
-    .wrapAll('<div id="slideInner"></div>')
-    // Float left to display horizontally, readjust .slides width
-	.css({
-      'float' : 'left',
-      'width' : slideWidth
-    });
+<script>
+$(document).ready()
+jQuery(document).ready(function(){
+  jQuery('selector').slippry()
+});
 
-  // Set #slideInner width equal to total width of all slides
-  $('#slideInner').css('width', slideWidth * numberOfSlides);
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
 
-  // Insert controls in the DOM
-  $('#slideshow')
-    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
-    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
 
-  // Hide left arrow control on first load
-  manageControls(currentPosition);
+  // pager
+  pagerClass: 'news-pager',
 
-  // Create event listeners for .controls clicks
-  $('.control')
-    .bind('click', function(){
-    // Determine new position
-	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
-    
-	// Hide / show controls
-    manageControls(currentPosition);
-    // Move slideInner using margin-left
-    $('#slideInner').animate({
-      'marginLeft' : slideWidth*(-currentPosition)
-    });
-  });
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
 
-  // manageControls: Hides and Shows controls depending on currentPosition
-  function manageControls(position){
-    // Hide left arrow if position is first slide
-	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
-	// Hide right arrow if position is last slide
-    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
-  }	
+  // slideshow
+  autoDirection: 'next'
 });
 </script>
-</head>
-<body>
-<div id="pageContainer">	
-  <!-- Slideshow HTML -->
-  <div id="slideshow">
-    <div id="slidesContainer">
-      <div class="slide">
-<h3>LEARN ABOUT EXPORTING</h3>
-        <p><a href="#"><img src="images/eg2-1.png" /></a>Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.</p>
-      </div>
-      <div class="slide">
-        <h3>READY TO EXPORT</h3>
-        <p><a href="#"><img src="images/eg2-2.jpg"  /></a>You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.</p>
-        <p> 
-      </div>
-      <div class="slide">
-        <h3>EXPAND MY EXPORTS</h3>
-        <p><a href="#"><img src="images/eg2-3.jpg" /></a>Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.</p>
-</div>
-	
-    </div>
-  </div>
-
-</div>
-</body>
-</html>
-</br>
 
 
 <!doctype html>
