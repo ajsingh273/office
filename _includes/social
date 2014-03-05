@@ -34,8 +34,19 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoin
 <div class="clearfix">
 <p id="soc" style="width:300px;"><a class="twitter-timeline" height="400" href="https://twitter.com/twitterapi" data-widget-id="243046062967885824">Tweets by @twitterapi</a></p>
 <p id="soc"> <iframe allowtransparency="true" src="http://www.facebook.com/connect/connect.php?id=154004811319982&amp;connections=0&amp;stream=1" style="border: 1px; width: 300; height: 380px; padding: 0px 0px 0px 15px; float: right;" scrolling="no"></iframe></p>
-<p id="soc"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="/in/jeffweiner08" data-format="inline"></script></p>
+<p id="soc"><p style="color:#000;">
+
+</br>Twitter embedded timeline:</br>
+
+1. Sign in:https://twitter.com/login?redirect_after_login=%2Fsettings%2Fwidgets</br>
+2. Customize</br>
+3. Copy/paste iframe into html</br></br></br></br>
+
+Facebook Recent Activity:</br>
+
+1. Sign in https://developers.facebook.com/docs/plugins/activity/</br>
+2. Hit get code</br>
+3. Copy/paste iframe into html</p></p>
 
 </div>
 
