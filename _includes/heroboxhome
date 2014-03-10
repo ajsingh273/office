@@ -7,13 +7,15 @@
 .news-slider {
   background-color:#fff;
   height: 250px;
+  padding: 10px;
+  box-shadow: 0 0 20px #C0C0C0;
 }
 .news-slider .text-content {
   position: absolute;
   top: 0;
   left: 400px;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   padding: 1em;
   width: 60%;
   height: 100%;
@@ -35,28 +37,9 @@
 }
 .news-slider .image-content img {
   max-width: 100%;
+  
 }
-.news-slider .news-pager {
-  text-align: right;
-  display: block;
-  margin: 0.2em 0 0;
-  padding: 0;
-  list-style: none;
-}
-.news-slider .news-pager li {
-  display: inline-block;
-  padding: 0.6em;
-  margin: 0 0 0 1em;
-}
-.news-slider .news-pager li.sy-active a {
-  color: #31ace2;
-}
-.news-slider .news-pager li a {
-  font-weight: 500;
-  text-decoration: none;
-  display: block;
-  color: #222;
-}
+
 </style>
 <div id="header_wrap" class="outer">
         <header class="inner">
@@ -68,9 +51,8 @@
                       Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Learn - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Learn - </a>
                     </p>
-                      <a href="#">Export Readiness Assessment</a><a href="/learn-about-exporting">Where do I Start?</a>
     </div>
     <div class="image-content"><img src="images/eg2-1.png" alt="demo1_1"></div>
   </article>
@@ -81,9 +63,8 @@
                       You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Start - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Start - </a>
                     </p>
-                      <a href="#">Export Readiness Assessment</a><a href="#">Responding to Market Pressure?</a>
     </div>
     <div class="image-content"><img src="images/eg2-3.jpg" alt="demo1_1"></div>
   </article>
@@ -94,10 +75,9 @@
                       Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Expand - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Expand - </a>
                     </p>
                     
-                      <a href="#">Find Markets</a><a href="#">Find Local Resources</a>
     </div>
     <div class="image-content"><img src="images/eg2-2.jpg" alt="demo1_1"></div>
   </article>
@@ -123,8 +103,7 @@ jQuery('#news-demo').slippry({
   adaptiveHeight: false, // height of the sliders adapts to current 
   captions: false,
 
-  // pager
-  pagerClass: 'news-pager',
+
 
   // transitions
   transition: 'horizontal', // fade, horizontal, kenburns, false

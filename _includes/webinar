@@ -145,7 +145,7 @@ body.custom-background { background-color: #f1f1f1; }
 
 			<div class="demo-title">
 
-				<h3>View Webinars & Videos</h3>
+				<h4>View Webinars & Videos</h4>
 
 			</div>
 
@@ -223,6 +223,11 @@ body.custom-background { background-color: #f1f1f1; }
 
 
 	</div><!-- #main -->
+	
+	 <div class="clearfix">
+<ul id="main" style="width:600px;">{% include success %} </ul>
+<ul id="main">{% include join %}</ul>
+ </div>
 
 
 

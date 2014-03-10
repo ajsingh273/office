@@ -16,7 +16,7 @@
     
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" style="padding:10px;">
      <h3>Evergreen Articles</h3>
 <div class="articles12">
 <dl class="article12" >
