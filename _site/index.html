@@ -306,7 +306,6 @@ nav {
      	
 
 
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="javascripts/slippry.min.js"></script>
 <link rel="stylesheet" href="stylesheets/slippry.css" />
@@ -316,13 +315,15 @@ nav {
 .news-slider {
   background-color:#fff;
   height: 250px;
+  padding: 10px;
+  box-shadow: 0 0 20px #C0C0C0;
 }
 .news-slider .text-content {
   position: absolute;
   top: 0;
   left: 400px;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   padding: 1em;
   width: 60%;
   height: 100%;
@@ -344,28 +345,9 @@ nav {
 }
 .news-slider .image-content img {
   max-width: 100%;
+  
 }
-.news-slider .news-pager {
-  text-align: right;
-  display: block;
-  margin: 0.2em 0 0;
-  padding: 0;
-  list-style: none;
-}
-.news-slider .news-pager li {
-  display: inline-block;
-  padding: 0.6em;
-  margin: 0 0 0 1em;
-}
-.news-slider .news-pager li.sy-active a {
-  color: #31ace2;
-}
-.news-slider .news-pager li a {
-  font-weight: 500;
-  text-decoration: none;
-  display: block;
-  color: #222;
-}
+
 </style>
 <div id="header_wrap" class="outer">
         <header class="inner">
@@ -377,9 +359,8 @@ nav {
                       Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Learn - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Learn - </a>
                     </p>
-                      <a href="#">Export Readiness Assessment</a><a href="/learn-about-exporting">Where do I Start?</a>
     </div>
     <div class="image-content"><img src="images/eg2-1.png" alt="demo1_1"></div>
   </article>
@@ -390,9 +371,8 @@ nav {
                       You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Start - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Start - </a>
                     </p>
-                      <a href="#">Export Readiness Assessment</a><a href="#">Responding to Market Pressure?</a>
     </div>
     <div class="image-content"><img src="images/eg2-3.jpg" alt="demo1_1"></div>
   </article>
@@ -403,10 +383,9 @@ nav {
                       Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-primary btn-large hero-box-button"> - Expand - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Expand - </a>
                     </p>
                     
-                      <a href="#">Find Markets</a><a href="#">Find Local Resources</a>
     </div>
     <div class="image-content"><img src="images/eg2-2.jpg" alt="demo1_1"></div>
   </article>
@@ -432,8 +411,7 @@ jQuery('#news-demo').slippry({
   adaptiveHeight: false, // height of the sliders adapts to current 
   captions: false,
 
-  // pager
-  pagerClass: 'news-pager',
+
 
   // transitions
   transition: 'horizontal', // fade, horizontal, kenburns, false
@@ -443,75 +421,209 @@ jQuery('#news-demo').slippry({
   // slideshow
   autoDirection: 'next'
 });
-</script></br></br>
+</script>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin:0 auto;
+	width:100%;
+	height:200px;
+	background-color:transparent;
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:800px;
+  height:350px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:940px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:263px;
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:39px;
+  height:350px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:100px;
+  left:0;
+  background:transparent url(images/lnext.png) no-repeat 0 0;
+}
+#rightControl {
+  top:100px;
+  right:0;
+  background:transparent url(images/rnext.png) no-repeat 0 0;
+}
+
+/** 
+ * Style rules for Demo page
+ */
+*
+a {
+
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:none;
+}
 
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+.slide h3, .slide p {
+  margin:15px;
+}
+.slide h3 {
+  
+  color:#212121;
+  letter-spacing:-1px;
+}
+.slide p {
+ color:#212121;	
+}
+.slide img {
+  float:right;
+  margin:0 15px;
+}
+-->
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 800;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+
+  // Remove scrollbar in JS
+  $('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides
+    .wrapAll('<div id="slideInner"></div>')
+    // Float left to display horizontally, readjust .slides width
+	.css({
+      'float' : 'left',
+      'width' : slideWidth
+    });
+
+  // Set #slideInner width equal to total width of all slides
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert controls in the DOM
+  $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
+    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+
+  // Hide left arrow control on first load
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control')
+    .bind('click', function(){
+    // Determine new position
+	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
     
-  </head>
-  <body>
-    <div class="wrapper" >
-   
-<div class="articles9" style="padding: 24px; color: black; background-color: #0C9; opacity: .5;">
-<h3>Attend Upcoming Trade Events</h3>
-<table class="partialTable"><tr>
-<th style="width:250px">Event</th>
-<th style="width:100px">Date</th>
-<th style="width:600px">Industry</th>
+	// Hide / show controls
+    manageControls(currentPosition);
+    // Move slideInner using margin-left
+    $('#slideInner').animate({
+      'marginLeft' : slideWidth*(-currentPosition)
+    });
+  });
+
+  // manageControls: Hides and Shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
+	// Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
+  }	
+});
+</script>
+</head>
+<body>
+<h4>Attend an Upcoming Trade Event</h4>
+<div id="pageContainer" style="border:1px solid #C0C0C0; padding:5px;">	
+  <!-- Slideshow HTML -->
+  
+  <div id="slideshow">
+  <center><table class="partialTable"><tr>
+<td style="width:150px; font-weight:bold; font-size:18px;">Event</td>
+<td style="width:150px; font-weight:bold; font-size:18px;">Location</td>
+<td style="width:150px; font-weight:bold; font-size:18px;">Date</td>
+<td style="width:150px; font-weight:bold; font-size:18px;">Industry</td>
+</tr>
+</table></center>
+    <div id="slidesContainer">
+      <div class="slide">
+          <table class="partialTable"><tr>
+<td style="width:260px">2014 Spring OH! Student International Education Expo</td>
+<td style="width:260px">Taipei, TW</td>
+<td style="width:260px">2014-03-08</td>
+<td style="width:260px"></td>
 </tr>
 </table>
-<div ><dl class="article9">
-    <table ><tr><td class="event_name" style="width:250px"></dd>
-    <td class="start_date" style="width:100px"></dd>  
-    <td class="industries"></dd> 
-</dl></tr></table>
+      </div>
+      <div class="slide">
+          <table class="partialTable"><tr>
+<td style="width:260px">Secretarial Infrastructure Business Development Mission to the UAE Saudi Arabia and Qatar</td>
+<td style="width:260px">Abu Dhabi, AE</td>
+<td style="width:260px">2014-03-08</td>
+<td style="width:260px">Environmental Technologies</td>
+</tr>
+</table>
+      </div>
+      <div class="slide">
+          <table class="partialTable"><tr>
+<td style="width:260px">Travel and Tourism Trade Mission to Taiwan, Japan and Korea</td>
+<td style="width:260px">Taipei, TW</td>
+<td style="width:260px">2014-03-09</td>
+<td style="width:260px">Travel and Tourism Industries</td>
+</tr>
+</table></div>
+      <div class="slide">
+          <table class="partialTable"><tr>
+<td style="width:260px">Beginning Steps to Exporting - Schedule B Codes and Tariff Data</td>
+<td style="width:260px">CT, US</td>
+<td style="width:260px">2014-03-11</td>
+<td style="width:260px"></td>
+</tr>
+</table>
+      </div>
+            <div class="slide">
+          <table class="partialTable"><tr>
+<td style="width:260px">JEC COMPOSITES EUROPE 2014</td>
+<td style="width:260px">FR</td>
+<td style="width:260px">2014-03-11</td>
+<td style="width:260px">Composite Materials</td>
+</tr>
+</table>
+      </div>
+	
+    </div>
+  </div>
+
 </div>
 <a href="/office/events.html"><strong>View All Events</strong></a>
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles9, article9, i, _i, _len, _results;
-    articles9 = data.results;
-    directive = {
-      '.article9': {
-        'article9 <- articles9': {
-          '.event_name': 'article9.event_name',
-          '.start_date': 'article9.start_date',
-          '.industries': 'article9.industries',
-          
-        }
-      }
-    };
-    rfn = $p('.articles9').compile(directive);
-    return $p('.articles9').render({ articles9: articles9 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&industry=Iron/Steel';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
+</body>
 </html>
 
 <!DOCTYPE html>
@@ -661,7 +773,7 @@ body.custom-background { background-color: #f1f1f1; }
 
 			<div class="demo-title">
 
-				<h3>View Webinars & Videos</h3>
+				<h4>View Webinars & Videos</h4>
 
 			</div>
 
@@ -739,6 +851,39 @@ body.custom-background { background-color: #f1f1f1; }
 
 
 	</div><!-- #main -->
+	
+	 <div class="clearfix">
+<ul id="main" style="width:600px;"><style>
+#success{
+	
+}
+</style>
+
+
+<h4>Success Stories</h4>
+
+<p id="success">Success stories are stories about companies that are successfully exporting their products internationally. To assist you in locating stories that closely resemble your situation, we have broken the archive down into the service(s) that was used by the company and industry of the product(s) being exported.</p>
+ </ul>
+<ul id="main"><style>
+
+#join {
+background-color: #C0C0C0;
+width:300px;
+padding: 20px;
+}
+
+</style>
+
+
+<div id="join">
+  <h3>JOIN MY EXPORT</h3>
+
+Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
+
+<a href="#" class="btn-blue">Sign Up Now!</a>
+
+</div></ul>
+ </div>
 
 
 
@@ -800,36 +945,6 @@ var google_remarketing_only = true;
 
 
 
-<div class="clearfix">
-<ul id="main"><style>
-#success{
-font-style:italic;
-}
-</style>
-<h3>Success Stories</h3>
-
-<p id="success">Success stories are stories about companies that are successfully exporting their products internationally. To assist you in locating stories that closely resemble your situation, we have broken the archive down into the service(s) that was used by the company and industry of the product(s) being exported.</p>
- </ul>
-<ul id="main" style="background-color:transparent;"><style>
-
-#join {
-background-color: #C0C0C0;
-width:300px;
-padding: 20px;
-}
-
-</style>
-
-
-<div id="join">
-  <h3>JOIN MY EXPORT</h3>
-
-Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
-
-<a href="#" class="btn-blue">Sign Up Now!</a>
-
-</div> </ul>
- </div>
 
 </section>
 
@@ -848,23 +963,23 @@ Get the latest info about events, market research and opportunities tailored to 
 
 		<ul id="foot">
 		<p><strong>Opportunities</strong></p>
-		<li id="whi">Conduct Research</li>
+		<li >Conduct Research</li>
 		<li><a href="/community/users/expand-your-exports">Expand Into New Markets</a></li>
 		<li><a href="/community/users/market-research">Market Research</a></li>
 		<li><a href="/community/users/export-success-stories">Success Stories</a></li>
-		<li id="whi">Learn Marketing Tactics</li>
+		<li >Learn Marketing Tactics</li>
 		<li><a href="/community/users/international-sales-and-marketing">International Sales & Marketing</a></li>
 		<li><a href="/community/users/selling-online">Selling Online</a></li>
 		</ul>
 				
 		<ul id="foot">
 		<p></p>
-		<li id="whi">Explore Markets</li>
+		<li >Explore Markets</li>
 		<li><a href="/community/users/trade-leads">Find Trade Leads</a></li>
 		<li><a href="/community/users/trade-missions">Trade Missions</a></li>
 		<li><a href="/community/users/free-trade-agreements">Free Trade Agreements</a></li>
 		<li><a href="/doing-business-in-africa">Doing Business in Africa</a></li>
-		<li id="whi">Explore Programs</li>
+		<li >Explore Programs</li>
 		<li><a href="/community/users/civil-nuclear-guide-to-exporting">Civil Nuclear Guide to Exporting</a></li>
 		<li><a href="/community/users/environmental-solutions-exporters-portal">Environmental Solutions Exporters</a></li>
 		<li><a href="/community/users/renewable-energy-energy-efficiency-exporter-portal">Renewable Energy & Energy Efficiency Exporters</a></li>
@@ -882,10 +997,10 @@ Get the latest info about events, market research and opportunities tailored to 
 
 		<ul id="foot">
 		<p><strong>Regulations</strong></p>
-		<li id="whi">US Export Regulations</li>
+		<li>US Export Regulations</li>
 		<li><a href="/community/users/export-licenses-regulations">Export Licenses & Regulations</a></li>
 		<li><a href="/consolidated-screening-list">Consolidated Screening List</a></li>
-		<li id="whi">European Regulations<li>
+		<li >European Regulations<li>
 		<li><a href="/community/users/ce-marking">CE Marking</a></li>
 		<li><a href="/safe-harbor">Safe Harbor</a></li>
 		</ul>

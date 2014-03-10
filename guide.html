@@ -3,18 +3,172 @@ Title: Guide
 permalink: 
 ---
 
+<!doctype html>  
+<html lang="en">
+
+<head>
+	
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!--CSS-->
+	<style type="text/css">
+	/* CORE STYLES */
+	* { 
+		margin: 0px;
+		padding: 0px;
+		}
+	html {
+		
+		}
+	body {
+			
+		font-size: 18px;
+		line-height: 22px;
+		color: #333;
+		}
+		
+	/* SIDEBAR */
+	#sidebar { 
+		background: #eee;
+		float: left;
+		left: 300px;
+		margin-left: -300px;
+		position: relative;
+		width: 300px;
+		overflow-y: auto;
+		position: relative;
+		}
+	#sidebar h1 {
+		padding: 30px;
+		}
+	#sidebar ul {
+		margin: 0px 30px 0px 50px;
+		list-style: disc;
+		}
+	#sidebar li {
+		margin: 0px 0px 5px;
+		float: left;
+    clear: left;
+		}
+		
+	/* MAIN CONTENT AREA */
+	#contentWrapper { 
+		float: left;
+		width: 100%;
+		}
+	#content {
+		background: #ccc;
+		margin-left: 300px;
+		overflow-y: auto;
+		padding-left: 50px;
+		}
+	#content h1 {
+		padding: 30px;
+		font-size: 26px;
+		}
+	#content p {
+		padding: 0px 30px 20px;
+		}
+	</style>
+	
+	<!--JS-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		
+		//GET BROWSER WINDOW HEIGHT
+		var currHeight = $(window).height();
+		$('#sidebar, #content').css('height', currHeight);
+		
+		//ON RESIZE OF WINDOW
+		$(window).resize(function() {
+			
+			//GET NEW HEIGHT
+			var currHeight = $(window).height();	
+			//RESIZE BOTH ELEMENTS TO NEW HEIGHT
+			$('#sidebar, #content').css('height', currHeight);
+			
+		});
+		
+	});
+	</script>
+
+</head>
+
+<body>
+
 {% include header.html %}
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-<center><h1>CE Marking Guide</h1></center>
-<div class="clearfix">
-<ul id="main">{% include aboutus %} </ul>
-<ul id="main">{% include articles2 %} </br><a href="/office/articlelist.html">View All Articles</a> </ul>
- </div>
+
+	<div id="page">
+		
+		<header id="sidebar">
+		</br></br>
+		
+			
+			<nav role="navigation">
+				<ul>
+					<li><a href="#1">About Us</a></li>
+					<li><a href="#2">Articles</a></li>
+					<li><a href="#3">FAQs</a></li>
+					<li><a href="#4">Useful Links</a></li>
+					<li><a href="#5">Join My Export</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article id="contentWrapper" role="main">
+			<section id="content">
+				
+				<h3><center>CE Marking Guide</center></h3></br></br>
+				
+				<p id="1"><strong>Minnesota District Export Council</strong></br></br>
  
- <div class="clearfix">
-<ul id="main">{% include faqs %} <a href="/office/faqs.html">View All FAQs</a></ul>
-<ul id="main">{% include resources %}</br> {% include join %}</ul>
- </div>
-{% include footer.html %}
+The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
+ 
+The Minnesota District Export Council encourages and supports:</br>
+•	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
+•	Export expansion activities by working with the US & FCS domestic offices; and</br>
+•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.</p>
+				
+				<p id="2">{% include articles2 %}</p>
+				
+				<p id="3"><ul><h3>FAQs</h3>
+<p><a href="#">1. What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></p>
+<p><a href="#">2. How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></p>
+<p><a href="#">3. How can I find export financing?</a></p>
+<p><a href="#">4. What do all of these Free Trade Agreements do for me?</a></p>
+<p><a href="#">5. How can I determine the tariff rate for my product?</a></p><a href="/office/faqs.html">View All FAQs</a>
+</ul><a href="/office/articlelist.html">View All Articles</a></p>
+				
+				<p id="4"><ul><h3>Useful Links</h3>
+ 
+<ul> 
+<li><a href="#">Exporters Resource Database</a></li>
+<li><a href="#">International Finance</a></li>
+<li><a href="#">Certificate of Origin</a></li>
+<li><a href="#">NAFTA</a></li>
+<li><a href="#">MN Tourism Destination</a></li>
+</ul>
+</ul>
+
+
+<ul> 
+<li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
+<li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
+<li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
+</ul></ul></p>
+				
+				<p id="5">{% include join %}</p>
+
+			</section>
+		</article>
+		
+	</div>
+
+</body>
+</html>
+
+
+
 

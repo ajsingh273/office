@@ -18,13 +18,13 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="without-description"><h3 >Market Research Reports</h3>
+     <header class="without-description"><h3 >Market Research Reports</h3></br>
      </header>
 <div class="articles">
 <div ><dl class="article">
-    <a href="/office/search.html"><dd class="title"></dd></a>
-    <dd class="pub_date"></dd>
-    <dd class="content"></dd>          
+    <strong><dd class="title"></dd></strong>
+    </br>
+    <dd class="description"></dd>          
 </dl>
 </div>
 
@@ -38,8 +38,7 @@
       '.article': {
         'article <- articles': {
           '.title': 'article.title',
-          '.pub_date': 'article.pub_date',
-          '.content': 'article.content',
+          '.description': 'article.description',
           
         }
       }
@@ -50,7 +49,7 @@
 
   ready = function() {
     var url;
-    url = 'http://api.trade.gov/market_research_library/search?callback=?&q=modernization';
+    url = 'http://api.trade.gov/market_research_library/search?callback=?';
     return $.getJSON(url, renderData);
   };
 

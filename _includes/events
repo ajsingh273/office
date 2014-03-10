@@ -1,5 +1,5 @@
 
-
+<!--
 <!doctype html>
 <html>
   <head>
@@ -19,10 +19,10 @@
      <header class="without-description"><h3>Trade Events</h3>
      </header>
 <div class="articles2">
-<div ><dl class="article2" id="link" style="color: black; background-color: #0C9; opacity: .5;">
-    <a href="/office"><dd style="color: black;" class="event_name"></dd>
-    <dd style="color: black;" class="start_date"></dd>  
-    <dd style="color: black;" class="state"></dd></a> 
+<div ><dl class="article2"  >
+    <a href="/office"><dd class="event_name"></dd>
+    <dd class="start_date"></dd>  
+    <dd class="state"></dd></a> 
 </dl>
 </div>
 

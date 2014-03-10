@@ -62,7 +62,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#212121;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
   
@@ -87,10 +87,12 @@ h3 {
 
 h4 {
   font-size: 21px;
+    color:#C0C0C0;
 }
 
 h5 {
   font-size: 18px;
+      color:#C0C0C0;
 }
 
 h6 {
@@ -334,7 +336,7 @@ Full-Width Styles
 }
 
 #art{
-background-color:#fff;
+
 display: inline-block;
 float:left;
 width:300px;	
@@ -342,12 +344,12 @@ padding:10px;
 }
 
 #main {
-background-color:#fff;
+
 width:400px;	
 display: inline-block;
 float:left;
-margin: 50px;
-padding:10px;
+margin: 20px;
+
 }
 
 #soc {	
@@ -440,12 +442,12 @@ color:#c1c1c1;
 		}
 		
 	.btn-primary {
-		background-color: rgb( 74, 61, 117 );
+		background-color: #0B5394;
 		border: 1px solid rgb( 44, 37, 59 );
 	}
 	
 		.btn-primary:hover {
-			background-color: rgb( 92, 76, 131 );	
+			color: #c1c1c1;	
 		}
 		
 		.btn-primary:active {
@@ -486,12 +488,24 @@ color:#c1c1c1;
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #fff;
 
 }
 
 #main_content {
   padding-top: 40px;
+  font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;
+}
+
+#main_content a{
+  color:#212121;
+  font-weight:bold;
+}
+
+#main_content a:hover{
+  text-decoration: underline;
 }
 
 #footer_wrap4 {
@@ -508,7 +522,7 @@ background-color:#E6F0FF;
 
 
 #footer_wrap2 {
-  background: #7A7A7A;
+  background-color: #C0C0C0;
 font-size:12px;
 
   
@@ -517,10 +531,11 @@ font-size:12px;
 #footer_wrap2 li{
   padding: 0;
   margin: 0;
+  color:#212121;
 }
 
 #footer_wrap {
-  background:#0B5394;
+  background-color:#0B5394;
   font-size:12px;
   
 }
@@ -529,6 +544,11 @@ font-size:12px;
   color: #f2f2f2;
   
 }
+#footer_wrap2 p {
+  color: #212121;	
+  
+}
+
 
 #footer_wrap li{
   display: inline;
@@ -536,11 +556,11 @@ color: #f2f2f2;
 }
 
 #footer_wrap2 a{
-  color: #f2f2f2;
+  color: #212121;
 }
 
 #footer_wrap2 a:hover{
-  color: #c1c1c1;
+  text-decoration:underline;
 }
 
 #footer_wrap a{
@@ -548,7 +568,7 @@ color: #f2f2f2;
 }
 
 #footer_wrap a:hover{
-  color: #c1c1c1;
+  text-decoration:underline;
 }
 
 .footerdivideotitle {
