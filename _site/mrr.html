@@ -308,181 +308,71 @@ nav {
 
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-<!--title, Pure rendered-->
+<!--mrr-->
 
-<center><h1>U.S. Commercial Service in Minnesota</h1></center>
-</br>      
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="javascripts/slippry.min.js"></script>
-<link rel="stylesheet" href="stylesheets/slippry.css" />
 
-<style>
-/* News */
-.news-slider {
-  background-color:#fff;
-  height: 250px;
-  padding: 10px;
-  box-shadow: 0 0 20px #C0C0C0;
-}
-.news-slider .text-content {
-  position: absolute;
-  top: 0;
-  left: 400px;
-  right: 0;
-  background-color: transparent;
-  padding: 1em;
-  width: 60%;
-  height: 100%;
-}
-.news-slider .text-content h2 {
-  margin: 0;
-}
-.news-slider .text-content p {
-  margin: 1em 0;
-}
-.news-slider .text-content a.button-link {
-  padding: 0.25em 0.5em;
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-}
-.news-slider .image-content {
-  line-height: 0;
-}
-.news-slider .image-content img {
-  max-width: 100%;
-  
-}
 
-</style>
-<div id="header_wrap" class="outer">
-        <header class="inner">
-<section id="news-demo">
-  <article>
-    <div class="text-content">
-      <h3>LEARN ABOUT EXPORTING</h3>
-      <p>
-                      Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.
-                    </p>
-                    <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Learn - </a>
-                    </p>
-    </div>
-    <div class="image-content"><img src="images/eg2-1.png" alt="demo1_1"></div>
-  </article>
-  <article>
-    <div class="text-content">
-      <h3>READY TO EXPORT</h3>
-<p>
-                      You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.
-                    </p>
-                    <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Start - </a>
-                    </p>
-    </div>
-    <div class="image-content"><img src="images/eg2-3.jpg" alt="demo1_1"></div>
-  </article>
-  <article>
-    <div class="text-content">
-      <h3>EXPAND MY EXPORTS</h3>
-                    <p>
-                      Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.
-                    </p>
-                    <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Expand - </a>
-                    </p>
-                    
-    </div>
-    <div class="image-content"><img src="images/eg2-2.jpg" alt="demo1_1"></div>
-  </article>
-</section>
-        </header>
-    </div>
-
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="without-description"><h3 >Market Research Reports</h3></br>
+     </header>
+<div class="articles">
+<div ><dl class="article">
+    <strong><dd class="title"></dd></strong>
+    </br>
+    <dd class="description"></dd>          
+</dl>
+</div>
 
 <script>
-$(document).ready()
-jQuery(document).ready(function(){
-  jQuery('selector').slippry()
-});
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles, article, i, _i, _len, _results;
+    articles = data.results;
+    directive = {
+      '.article': {
+        'article <- articles': {
+          '.title': 'article.title',
+          '.description': 'article.description',
+          
+        }
+      }
+    };
+    rfn = $p('.articles').compile(directive);
+    return $p('.articles').render({ articles: articles }, directive);
+  };
 
-jQuery('#news-demo').slippry({
-  // general elements & wrapper
-  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
-  elements: 'article', // elments cointaining slide content
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/market_research_library/search?callback=?';
+    return $.getJSON(url, renderData);
+  };
 
-  // options
-  adaptiveHeight: false, // height of the sliders adapts to current 
-  captions: false,
+  $(document).ready(ready);
 
-
-
-  // transitions
-  transition: 'horizontal', // fade, horizontal, kenburns, false
-  speed: 1200,
-  pause: 8000,
-
-  // slideshow
-  autoDirection: 'next'
-});
+  }).call(this);
 </script>
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
 
-	
-<div class="clearfix" style="margin-left:100px">
-<ul id="main"><h5>Upcoming Trade Events</h5>
-<p><img  src="images/eventicon.png" width="20px"> CONEXPO-CON/AGG 2014 - 2014-03-04</p>
-<p><img  src="images/eventicon.png" width="20px"> Feria Internacional de Franquicias 2014 - 2014-03-06</p>
-<p><img  src="images/eventicon.png" width="20px"> Natural Products Expo West 2014 - 2014-03-06</p>
-<p><img  src="images/eventicon.png" width="20px"> 2014 Spring OH! Student International Education Expo - 2014-03-08</p>
-<a href="/office/events.html"><strong>View All Events</strong></a>
-</ul>
-<ul id="main"><h5>Market Research Library</h5>
-<p>$ 700 Million Millennium Challenge Compact Procurement for Morocco</br>
-Opportunities for U.S. firms to provide products and services to Morocco, under the Millennium Challenge Compact.</p>
-<p>$14.5 BILLION OIL SAND PROJECT IN ALBERTA CANADA</br>
-Alberta ranks third, after Saudi Arabia and Venezuela, in terms of global crude oil reserves. Of Alberta's total oil reserves about 99% come from the oil sands and the remaining 1% come from conventional crude oil. The oil sand is the worldís largest reserve open to private sector investment and Alberta remains the Canadian gateway to procurement and supply opportunities</p><a href="/office/mrr.html">View MRR</a></ul>
-<ul id="main"><h5>Top FAQs</h5>
-<p><a href="#">1. What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></p>
-<p><a href="#">2. How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></p>
-<p><a href="#">3. How can I find export financing?</a></p>
-<p><a href="#">4. What do all of these Free Trade Agreements do for me?</a></p>
-<p><a href="#">5. How can I determine the tariff rate for my product?</a></p><a href="/office/faqs.html">View All FAQs</a>
-</ul>
-<ul id="main"><h5>Recent Articles</h5>
-<p>Factoring and Forfaiting</br>
-2013-04-30</br>
-A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable. Export factoring is offered under an agreement between the factor and the exporter, in which the factor purchases the exporter's short-term foreign accounts receivable for cash at a discount from the face value, normally without recourse, and assumes the risk on the ability of the foreign buyer to pay, and handles collections on the receivables.
-</p><a href="/office/articlelist.html">View All Articles</a></ul>
-
-</div>
-<div class="clearfix" style="margin-left:100px;">
-<ul id="main"><h5>Resources to Help Your Business Export</h5>
- 
-<ul> 
-<li><a href="#">Exporters Resource Database</a></li>
-<li><a href="#">International Finance</a></li>
-<li><a href="#">Certificate of Origin</a></li>
-<li><a href="#">NAFTA</a></li>
-<li><a href="#">MN Tourism Destination</a></li>
-</ul>
-</ul>
-<ul id="main"><h5>Our Global Network at Work</h5>
-
-<ul> 
-<li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
-<li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
-<li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
-</ul></ul>
- </div>
- 
- </br>
- <div id="promo" style="font-size:30px;">
- <center>Minnesotta Trade Show this week!</center>
- </div>
-         </header>
-    </div>
 
 </section>
 
