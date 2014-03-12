@@ -6,18 +6,18 @@
 /* News */
 .news-slider {
   background-color:#fff;
-  height: 250px;
+  height: 310px;
   padding: 10px;
   box-shadow: 0 0 20px #C0C0C0;
 }
 .news-slider .text-content {
   position: absolute;
   top: 0;
-  left: 400px;
+  left: 600px;
   right: 0;
   background-color: transparent;
   padding: 1em;
-  width: 60%;
+  width: 40%;
   height: 100%;
 }
 .news-slider .text-content h2 {
@@ -46,40 +46,63 @@
 <section id="news-demo">
   <article>
     <div class="text-content">
-      <h3>LEARN ABOUT EXPORTING</h3>
-      <p>
-                      Learn about upcoming training opportunities, review the Basic Guide to Exporting, and connect with counselors who can answer your exporting questions.
-                    </p>
+      <h3>Secretary Pritzker Announces Look South Initiative</h3>
+      <p style="font-size:14px;">
+                     
+
+The Look South initiative will help businesses across the country explore eleven countries that all have a rapidly growing base of middle-class consumers and diversifying industries. Read more about these exciting markets and the Look South initiative.</p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Learn - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
     </div>
-    <div class="image-content"><img src="images/eg2-1.png" alt="demo1_1"></div>
+    <div class="image-content"><img src="images/eg1.jpg" alt="demo1_1"></div>
   </article>
   <article>
     <div class="text-content">
-      <h3>READY TO EXPORT</h3>
-<p>
-                      You have an established business and your product or service is selling well. View information about potential markets and make your first international sale.
+      <h3>Discover Global Markets</h3>
+<p style="font-size:14px;">
+
+
+Join us for this unprecedented national series of conferences to help U.S. business compete, win, and grow in the international marketplace.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Start - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
     </div>
-    <div class="image-content"><img src="images/eg2-3.jpg" alt="demo1_1"></div>
+    <div class="image-content"><img src="images/eg2.jpg" alt="demo1_1"></div>
   </article>
   <article>
     <div class="text-content">
-      <h3>EXPAND MY EXPORTS</h3>
-                    <p>
-                      Already exporting? Great! Grow your sales by expanding into new markets. Register/Login to Export.gov to receive personalized information on your markets.
+      <h3>Market Research Library</h3>
+                    <p style="font-size:14px;">
+
+
+Plan your market entry the right way – use our market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you export.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button"> - Expand - </a>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
                     
     </div>
-    <div class="image-content"><img src="images/eg2-2.jpg" alt="demo1_1"></div>
+    <div class="image-content"><img src="images/eg3.jpg" alt="demo1_1"></div>
+  </article>
+  
+  <article>
+    <div class="text-content">
+      <h3>Secretary's West Africa Energy Mission</h3>
+                    <p style="font-size:14px;">
+
+
+
+
+U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Development Mission to West Africa with stops in Ghana and Nigeria from May 18-23, 2014. Register now to join this mission!
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="images/eg4.jpg" alt="demo1_1"></div>
   </article>
 </section>
         </header>
