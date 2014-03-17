@@ -18,7 +18,7 @@
   background-color: transparent;
   padding: 1em;
   width: 40%;
-  height: 100%;
+  height: 300px;
 }
 .news-slider .text-content h2 {
   margin: 0;

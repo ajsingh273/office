@@ -514,120 +514,471 @@ $(document).ready(function(){
 </html>
 
 <div class="clearfix">
-<ul id="main" style="width:750px"><style>
-#container {
-  margin: 20px;
-}
-#container input, .content {
-  display: none;
-}
-label {
-  font-weight: bold;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #EEE;
-}
-label:hover {
-  cursor: pointer;
-}
-#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
-  display: block;
-}
-#tab1:checked ~ label[for=tab1], #tab2:checked ~ label[for=tab2], #tab3:checked ~ label[for=tab3], #tab4:checked ~ label[for=tab4] {
-  background-color: #DDD;
-}
-input:checked + .section label {
-  background-color: #DDD;
-}
-</style>
+<ul id="main" style="width:750px">
+
+<!DOCTYPE html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head><link rel="shortcut icon" href="/favicon.ico" /><title>
 
 
-<div id="container">
-  <input id="tab1" type="radio" name="tabs" checked>
-  <input id="tab2" type="radio" name="tabs">
-  <input id="tab3" type="radio" name="tabs">
-  <input id="tab4" type="radio" name="tabs">
-  <label for="tab1">Articles</label>
-  <label for="tab2">Important</label>
-  <label for="tab3">Recent</label>
-  <div id="content1" class="content">
-<!--articles-->
+
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="description" content="Welcome to opm.gov" /><meta name="keywords" content="OPM,Office of Personnel Management,opm.gov" /><meta name="Expires" /><meta name="TemplateVersion" content="3.0" />
+	
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="http://www.opm.gov/css/home/home.css" />
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="http://www.opm.gov/faqs/styles/opmanswers.css" />
+
+<link rel="stylesheet" type="text/css" media="print" href="http://www.opm.gov/css/print.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" language="Javascript"></script>
+
+<!--[if lt IE 9]><script src="/js/jquery.json-2.3.min.js" language="Javascript"></script><![endif]-->
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" language="Javascript"></script><![endif]-->
+
+<script src="http://www.opm.gov/js/jstorage.min.js" language="Javascript"></script>
+
+<script src="http://www.opm.gov/Banner/scripts/standard.js" language="Javascript"></script>
+
+<script src="http://www.opm.gov/Banner/scripts/modalOverlay.js" language="Javascript"></script>
 
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-     <h3 >Latest Export Articles</h3>
-<div class="articles4">
-<dl class="article4" id="link">
-    <a href="/office/article.html"><dd class="title" ></dd>
-    <dd class="pub_date"></dd></a>        
-</dl>
-</div>
 
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles4, article4, i, _i, _len, _results;
-    articles4 = data.results;
-    directive = {
-      '.article4': {
-        'article4 <- articles4': {
-          '.title': 'article4.title',
-          '.pub_date': 'article4.pub_date',
+<script type="text/javascript"> 
 
-          
-        }
-      }
-    };
-    rfn = $p('.articles4').compile(directive);
-    return $p('.articles4').render({ articles4: articles4 }, directive);
-  };
+var AlwaysShowAjaxWorking = false;
 
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
 </script>
 
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
+
+
+
+
+<script type="text/javascript" language="javascript">		
+
+		var AccessibilityMode = false;
+
+</script>
+  <script type="text/javascript">
+
+
+
+			$("#AudienceSelector a").live("click", function () {
+
+				var slide = $(this).attr('href');
+
+				$(this).addClass("current");
+
+				$("a", $(this).parents("li").siblings("li")).removeClass("current");
+
+				// show slide
+
+				$(this).parents("ul").siblings("div").hide();
+
+				$(slide).show();
+
+				return false;
+
+			});
+
+
+
+	</script>
+</head>
+  <body id="ContentPlaceHolderDefault_htmBody">
+  <form method="post" action="/" id="frmMain">
+
+
+
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+var theForm = document.forms['frmMain'];
+
+if (!theForm) {
+
+    theForm = document.frmMain;
+
+}
+
+function __doPostBack(eventTarget, eventArgument) {
+
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+
+        theForm.__EVENTTARGET.value = eventTarget;
+
+        theForm.__EVENTARGUMENT.value = eventArgument;
+
+        theForm.submit();
+
+    }
+
+}
+
+//]]>
+
+</script>
+
+
+
+
+
+<script src="http://ajax.aspnetcdn.com/ajax/4.0/2/WebForms.js" type="text/javascript"></script>
+
+
+<script src="http://ajax.microsoft.com/ajax/4.0/4/MicrosoftAjax.js" type="text/javascript"></script>
+
+<script src="http://ajax.microsoft.com/ajax/4.0/4/MicrosoftAjaxWebForms.js" type="text/javascript"></script> <script type="text/javascript">
+
+//<![CDATA[
+
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ctl00$ContentPlaceHolderDefault$ScriptManager1', 'frmMain', [], [], [], 90, 'ctl00$ctl00$ctl00');
+
+//]]>
+
+</script>
+
+
+
+      <header>
+        <div id="Top_Wrapper">
+          
+
+      <div id="MainContent_Gutter">
+        
  
-</br><a href="/office/articlelist.html">View Articles A-Z</a> 
-  </div>
-  <div id="content2" class="content">
+    <div id="HomepageSections">
+      <ul id="AudienceSelector">
 
-  </div>
-  <div id="content3" class="content">
+<li><a class="current" href="#FederalEmployees">Federal Employees</a></li>
 
+<li><a href="#HRPractitioners">HR Practitioners</a></li>
+
+<li><a href="#JobSeekers">Job Seekers</a></li>
+
+<li><a href="#Disabilities">Job Seekers with Disabilities</a></li>
+
+<li><a href="#RetireesFamilies">Retirees &amp; Families</a></li>
+
+<li><a href="#Veterans">Veterans</a></li>
+
+</ul>
+
+<div id="FederalEmployees" class="audienceSlides current">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a title="Telework" href="/policy-data-oversight/worklife/telework/">Telework</a></h3>
+
+Improve Continuity of Operations, Promote Management Effectiveness and Enhance Work/Life Balance</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a title="Career Development" href="/policy-data-oversight/training-and-development/career-development/">Career Development</a></h3>
+
+Learn how you can achieve your personal and professional development goals</div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a title="Healthcare" href="/healthcare-insurance/healthcare/">Healthcare</a></h3>
+
+Learn more about healthcare coverage for Federal employees, retirees, and their families</div>
+
+</div>
+
+<div id="HRPractitioners" class="audienceSlides">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a title="Human Capital Management" href="/policy-data-oversight/human-capital-management/">Human Capital</a></h3>
+
+Get the best from your agency's employees to deliver the highest quality products and services</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a title="Hiring Authorities" href="/policy-data-oversight/hiring-authorities/">Hiring Authorities</a></h3>
+
+Hire the best workforce to support your agency's mission and goals using these hiring authorities</div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a title="Classification &amp; Qualifications" href="/policy-data-oversight/classification-qualifications/">Classification &amp; Quals</a></h3>
+
+Set the standards for recruiting and hiring Federal employees to build the best workforce for America</div>
+
+</div>
+
+<div id="JobSeekers" class="audienceSlides">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a href="http://www.usajobs.gov">USAJOBS</a></h3>
+
+Advance your career by searching through the Federal Goverment's largest online jobs portal</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a href="http://www.usajobs.gov/StudentJobs">Students &amp; Grads</a></h3>
+
+Learn more about opportunities for students and new graduates to join the Federal Service</div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a href="/FAQS/topic/employment/index.aspx?cid=5d9058d6-78fb-42a2-9d2a-9d14c22982f0">Federal Hiring FAQs</a></h3>
+
+Find answers to your questions about applying to open positions in the Federal Service</div>
+
+</div>
+
+<div id="Disabilities" class="audienceSlides">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a title="Disability Employment" href="/policy-data-oversight/disability-employment/">Hiring Authorities</a></h3>
+
+Find out how to get a job with the Schedule A appointing authority for people with disabilities</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a href="http://www.usajobs.gov/IndividualsWithDisabilities">USAJOBS</a></h3>
+
+Advance your career with the Federal Government's largest online jobs portal for people with disabilities</div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a title="Selective Placement Program Coordinator" href="/policy-data-oversight/disability-employment/selective-placement-program-coordinator/">Program Coordinators</a></h3>
+
+Find Program Coordinators who help recruit, hire &amp; accommodate people with disabilities</div>
+
+</div>
+
+<div id="RetireesFamilies" class="audienceSlides">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a title="My Annuity and Benefits" href="/retirement-services/my-annuity-and-benefits/">Annuity &amp; Benefits</a></h3>
+
+Map out your retirement benefits, discover how benefits are affected by life events, and more</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a href="https://www.servicesonline.opm.gov/">Services Online</a></h3>
+
+<span>Manage your retirement online, update your personal information, sign up for direct deposit, and more</span></div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a title="Retirement FAQs" href="/retirement-services/retirement-faqs/">Retirement FAQs</a></h3>
+
+Find answers to your questions about retiring from a career in the Federal Service</div>
+
+</div>
+
+<div id="Veterans" class="audienceSlides">
+
+<div class="audienceSlide audienceSlide1">
+
+<h3><a href="http://www.fedshirevets.gov">America's Veteran</a></h3>
+
+Discover more about Federal employment opportunities for veterans and their families</div>
+
+<div class="audienceSlide audienceSlide2">
+
+<h3><a title="Veterans Services" href="/policy-data-oversight/veterans-services/">Veterans Services</a></h3>
+
+Learn more about governmentwide leadership to improve employment opportunities for veterans.</div>
+
+<div class="audienceSlide audienceSlide3">
+
+<h3><a href="/FAQS/topic/veterans/index.aspx">Veterans FAQs</a></h3>
+
+Find answers to your questions about Federal employment and veterans' preference</div>
+
+</div>
+    </div>
   </div>
-  <div id="content4" class="content">
-    <h3>Tab 4 Content</h3>
-    <p>But it's easier than copying and pasting lorem ipsum right now.</p>
-  </div>
-</div> <h3>Frequently Asked Questions (FAQs)</h3>
+ 	
+	  <style type="text/css">
+      
+				  #ControlPanelTab {
+					  padding: 10px;
+					  width: 150px;
+					  background: #e2e0e1;
+					  border-bottom: 1px solid #d6d6d6;
+					  z-index:10000;
+					  display:none;
+				  }      
+			</style>
+			<div id="ControlPanelTab">
+				<a class="cpTab" href="#">Control Panel</a>
+			</div>
+      <script src="http://www.opm.gov/js/standard.libs.js?v=20131205" language="Javascript"></script>
+
+<script src="http://www.opm.gov/js/standard.js" language="Javascript"></script>
+
+<script src="http://www.opm.gov/faqs/scripts/scripts.js" language="Javascript"></script>
+
+<script src="http://www.opm.gov/js/loadfaqs.js" language="Javascript"></script>
+
+<script src="http://www.opm.gov/js/core/webmethods.js" language="Javascript"></script>
+
+
+
+<script>
+
+	core.webMethods.post("controlpanelitems", { "dynamicCall":true, "url": "/" },
+
+                    function (data) {
+
+						if (typeof(data.Result.Impersonate) != 'undefined'){
+
+							$("#ControlPanelTab").append(data.Result.Impersonate);
+
+							if (typeof(controlPanelInit) != 'undefined')
+
+								controlPanelInit();						
+
+						}
+
+					}
+
+	);
+
+</script>
+
+
+
+
+
+
+
+	<script type="text/javascript" language="javascript">
+
+		var manager;
+
+
+
+		function pageLoad(){
+
+			if (Sys && Sys.WebForms && Sys.WebForms.PageRequestManager) {
+
+                manager = Sys.WebForms.PageRequestManager.getInstance();
+
+			    if(manager)
+
+				    manager.add_endRequest(endRequest);
+
+            }
+
+		}
+
+
+
+		function endRequest(sender, args){
+
+			var Error = args.get_error();
+
+			if (Error){
+
+				if (typeof(HandleAjaxError) == 'function')
+
+					HandleAjaxError(sender,args);
+
+				else{
+
+					if ($.fn.colorbox){
+
+						$.fn.colorbox({html:Error.message + ' - ' + Error.description});
+
+					}else{
+
+						alert(Error.message + ' - ' + Error.description);
+
+					}
+
+
+
+				}
+
+				args.set_errorHandled(true);
+
+			}
+
+		}	
+
+	</script>
+
+
+
+<script type="text/javascript" language="javascript">		
+
+		function AlertItem(){}
+
+
+
+		function AlertUser(){}
+
+
+
+		if (typeof fireAlertItem != 'undefined' && fireAlertItem) {
+
+			AlertItem();
+
+		}
+
+</script>
+  <script type="text/javascript">
+
+preload("/img/home/audiences/hr_classifications.png",
+
+            "/img/home/audiences/hr_hiring.png",
+
+            "/img/home/audiences/hr_management.png",
+
+            "/img/home/audiences/jobseekers_faqs.png",
+
+            "/img/home/audiences/jobseekers_students.png",
+
+            "/img/home/audiences/jobseekers_usajobs.png"
+
+    );
+
+</script>
+
+    </form>
+  
+
+	<script type="text/javascript">
+
+		function sendEmail(encodedEmail) {
+
+			var email = '';
+
+			for (i = 0; i < encodedEmail.length;)
+
+			{
+
+				var letter = encodedEmail.charAt(i) + encodedEmail.charAt(i + 1);
+
+				email += String.fromCharCode(parseInt(letter, 16));
+
+				i += 2;
+
+			}
+
+			location.href = email;
+
+		}
+
+	</script>
+
+</body>
+</html>
+ <h3>Frequently Asked Questions (FAQs)</h3>
 <a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
 <a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
 <a href="#">·    How can I find export financing?</a></br>

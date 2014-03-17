@@ -8,7 +8,15 @@
 
 
 </title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="description" content="Welcome to opm.gov" /><meta name="keywords" content="OPM,Office of Personnel Management,opm.gov" /><meta name="Expires" /><meta name="TemplateVersion" content="3.0" />
-	
+      <meta  property="fb:admins" content="568256384"/>
+      <meta  property="fb:app_id" content="121223957945585"/>
+      <meta  property="og:type" content="government"/>
+      <meta  property="og:site_name" content="U.S. Office of Personnel Management"/>
+      <meta  property="og:title" content="U.S. Office of Personnel Management - www.OPM.gov"/>
+      <meta  property="og:description" content="OPM works in several broad categories to recruit, retain and honor a world-class workforce for the American people."/>
+      <meta  property="og:url" content="http://www.opm.gov/"/><link rel="stylesheet" type="text/css" media="screen,projection" href="http://www.opm.gov/css/global.css" />
+
+
 
 <link rel="stylesheet" type="text/css" media="screen,projection" href="http://www.opm.gov/css/home/home.css" />
 
@@ -285,7 +293,66 @@ Find answers to your questions about Federal employment and veterans' preference
 </div>
     </div>
   </div>
- 	
+  <div id="HomepageLowerContainer">    
+    <div id="MidBody_Container">
+      <div id="MidBody_Blog"><h3>What's New <a class="rss_icon" href="/rss/whats-new/"><img src="/img/global/rss_14_gray.gif" width="14" height="14" alt="RSS Feed" border="0" align="absmiddle" /></a></h3><div class="Blog_Entry"><div class="Blog_Date">Mar<span>14</span></div><div class="Blog_Title"><a href="/about-us/budget-performance/strategic-plans/2014-2018-strategic-plan.pdf">OPM’s Strategic Plan FY2014-2018 </a></div><p class="Blog_Text">The Office of Personnel Management exists to support the men and women who serve the American people as Federal workers. Over the next four years, this strategic plan will guide the agency’s efforts to recruit, retain, and honor a world-class workforce and continue to be a model employer for the 21st Century.</p></div><div class="Blog_Entry"><div class="Blog_Date">Mar<span>13</span></div><div class="Blog_Title"><a href="/news/speeches-remarks/usda-women’s-history-month-observance/">Remarks of OPM Director Katherine Archuleta</a></div><p class="Blog_Text">OPM Director Katherine Archuleta gives remarks at the USDA’s celebration of Women’s History Month.</p></div><div class="Blog_Entry"><div class="Blog_Date">Mar<span>11</span></div><div class="Blog_Title"><a href="/news/speeches-remarks/fma-national-conference-and-management-training-seminar/">Remarks of OPM Director Katherine Archuleta</a></div><p class="Blog_Text">OPM Director Katherine Archuleta gave remarks at the Federal Managers Association’s 76th National Conference and Management Training Seminar.</p></div><div class="Blog_Entry"><div class="Blog_Date">Mar<span>11</span></div><div class="Blog_Title"><a href="/blogs/Director/2014/3/11/OPMs-Strategic-IT-Plan/">Strategic Information Technology Plan</a></div><p class="Blog_Text">The Plan provides a framework rooted in the use of human resources data throughout an HR lifecycle. It also establishes enabling, enterprise and business initiatives that define OPM’s IT efforts.</p></div><div class="Blog_Entry"><div class="Blog_Date">Mar<span>06</span></div><div class="Blog_Title"><a href="http://www.opm.gov/blogs/Director/2014/3/6/National-Womens-History-Month/">National Women's History Month</a></div><p class="Blog_Text">Each year, the President designates March as National Women’s History Month as one way that Americans in schools, workplaces and local communities can take the time to reflect on the accomplishments and legacies of women who have shaped our great country’s history.</p></div><p class="more"><a href="/news/whats-new/">View What’s New Archives</a></p></div>    
+      <div id="MidBody_Links">
+        
+
+
+
+
+
+<div id="TopFAQsList">
+
+<h3>Frequently Asked Questions</h3>
+
+<h4>Search FAQs</h4>
+
+<div class="FAQsSearch">
+
+	<input type="text" id="TopFAQsSearchText" class="txtHomeFAQs"><a href="/FAQs/" id="TopFAQsSearch" class="btnHomeFAQs">Search</a>
+
+</div>
+
+
+
+<h4 class="FAQsList">Top FAQs<a href="/FAQs/">See all questions</a></h4>  
+
+
+
+<ol class="FAQsList" style="display:none">
+
+	<li style="display:none" id="FAQListItem">
+
+    	<h4><a href="">Topic</a></h4>
+
+        <p><a href="#">Item</a></p>
+
+    </li>
+
+</ol>
+
+
+
+    
+
+</div>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+        <div id="MainContent_Container">
+          
+         
+        </div><!-- MainContent_Container -->
+      </div><!-- MainContent_Gutter -->
+      
+  
+
 	  <style type="text/css">
       
 				  #ControlPanelTab {
