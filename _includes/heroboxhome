@@ -8,7 +8,7 @@
   background-color:#fff;
   height: 310px;
   padding: 10px;
-  box-shadow: 0 0 20px #C0C0C0;
+  box-shadow: 0 0 10px #C0C0C0;
 }
 .news-slider .text-content {
   position: absolute;
@@ -18,7 +18,7 @@
   background-color: transparent;
   padding: 1em;
   width: 40%;
-  height: 300px;
+  height: 100%;
 }
 .news-slider .text-content h2 {
   margin: 0;
@@ -104,8 +104,13 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
     </div>
     <div class="image-content"><img src="images/eg4.jpg" alt="demo1_1"></div>
   </article>
+  
+  
 </section>
+
+{% include tabs %}
         </header>
+        
     </div>
 
     <div id="main_content_wrap" class="outer">

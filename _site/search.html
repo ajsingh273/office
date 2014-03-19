@@ -1,2 +1,157 @@
-Included file faqshome not found in _includes directory
+<style>
+.list {
+
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  padding:1px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 1px;
+  border-color:#c0c0c0;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:4px 10px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #C0C0C0;
+  height:26px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#000;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.nav {margin-bottom:30px;}
+
+.name a{  color:#212121;
+  font-size: 12px;text-decoration: none; font-weight:normal;}
+  
+.name a:hover { text-decoration: underline;}
+
+.container {min-height:400px; }
+</style>
+
+<div class="container">
+  
+
+  
+<h4>Frequently Asked Questions</h4>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  
+  <!-- Tab 1 -->
+  <div class="tab-pane active" id="home">
+    <div id="hacker-list">  <!-- List ID -->
+        <!-- Search / Sort buttons -->
+<input class="search"  />
+<button class="sort" data-sort="name">Search</button>
+    <ul class="list">
+    <li><h5 class="name"><a href="#">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="#">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="#">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="#">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="#">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    </ul> 
+    </div>
+  </div> <!-- /!Tab 1 -->
+  
+  
+ </div> <!-- /!Tabs -->
+    
+   <ul>
+  
+  
+  </div> <!-- /container -->
+  
+  
+  <script src="http://listjs.com/no-cdn/list.js"></script>
+  
+  <script>
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list', options);
+
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list-2', options);
+  
+  
+})
+  </script>
 

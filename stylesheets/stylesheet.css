@@ -352,6 +352,32 @@ margin: 20px;
 
 }
 
+#main2 {
+
+width:400px;	
+display: inline-block;
+float:left;
+margin-left: 75px;
+margin-right: 75px;
+
+}
+
+#main4 {
+	
+display: inline-block;
+float:left;
+margin-bottom: 50px;
+}
+
+#main3 {
+
+width:250px;	
+display: inline-block;
+float:left;
+padding-right: 20px;
+margin-bottom: 50px;
+}
+
 #soc {	
 display: inline-block;
 float:left;
@@ -503,6 +529,7 @@ color:#c1c1c1;
   color:#212121;
   font-weight:bold;
 }
+
 
 #main_content a:hover{
   text-decoration: underline;
