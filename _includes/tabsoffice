@@ -1,0 +1,196 @@
+<style>
+
+.wrapper
+{
+
+    width: 100%;
+    margin: 0px auto;
+    min-height: 200px;
+    padding-top: 75px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+.wrapper h1 {
+    vertical-align:middle;
+    
+}
+
+
+.wrapper li
+{
+    outline: 0;
+    text-decoration: none;
+}
+
+#v-nav
+{
+    height: 100%;
+    margin: auto;
+    color: #333;
+    
+}
+
+#v-nav >ul
+{
+    float: left;
+    width: 210px;
+    display: block;
+    position: relative;
+    top: 0;
+    border: 1px solid #DDD;
+    border-right-width: 0;
+    margin: auto 0 !important;
+    padding:0;
+}
+
+#v-nav >ul >li
+{
+    width: 180px;
+    list-style-type: none;
+    display: block;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    font-size: 14px;
+    position: relative;
+    border-right-width: 0;
+    border-bottom: 1px solid #DDD;
+    margin: auto;
+    padding: 15px 15px !important;  
+    background: whiteSmoke; /* Old browsers */      
+}
+
+#v-nav >ul >li.current
+{
+    color: #C0C0C0;
+    border-right: none;
+    z-index: 10;
+    background: #212121;
+    background-image:url('../images/Arrow-Right.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    position: relative;
+
+}
+
+#v-nav >ul >li.first.current
+{
+    border-bottom: 1px solid #DDD;
+}
+
+#v-nav >ul >li.last
+{
+    border-bottom: none;
+}
+
+#v-nav >div.tab-content
+{
+    margin-left: 210px;
+    background-color: #FFF;
+    min-height: 200px;
+    position: relative;
+    z-index: 9;
+    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+    box-shadow: inset 0 0 35px 5px #fafbfd;
+    display: none;
+    
+    
+}
+
+#v-nav >div.tab-content >h4
+{
+    font-size: 1.2em;
+    color: Black;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    border-bottom: 1px dotted #EEEDED;
+    padding-bottom: 5px;
+}
+
+#expand a{
+  color:#212121;
+  font-size: 14px;
+}
+
+#expand a:hover {
+text-decoration: underline;
+}
+
+}
+</style>
+
+<section id="wrapper" class="wrapper" >
+    
+  <div id="v-nav">
+
+  <ul>
+    <li tab="tab1" class="first current">LEARN ABOUT EXPORTING</li>
+    <li tab="tab2">READY TO EXPORT</li>
+    <li tab="tab3">EXPAND MY EXPORTS</li>
+ </ul>
+
+ <div class="tab-content">
+   <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:125px; top:25px;"></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style="top:25px;"></a>
+ </div>
+
+ <div class="tab-content">
+    <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:125px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:125px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:125px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+ </div>
+
+ <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:30px; margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+ </div>
+
+</div>
+
+</section>
+
+
+<script>
+$(function() {
+        
+ $('.close').click(function () {
+        console.log( 'close' );
+        $('.tab-content').hide();
+    });
+    
+    var items = $('#v-nav>ul>li').each(function() {
+        $(this).click(function() {
+            //remove previous class and add it to clicked tab
+            items.removeClass('current');
+            $(this).addClass('current');
+
+            //hide all content divs and show current one
+            $('#v-nav>div.tab-content').hide().eq(items.index($(this))).show('fast');
+
+            window.location.hash = $(this).attr('tab');
+        });
+    });
+
+    if (location.hash) {
+        showTab(location.hash);
+    }
+    else {
+        showTab("tab1");
+    }
+
+    function showTab(tab) {
+        $("#v-nav ul li:[tab*=" + tab + "]").click();
+    }
+
+    // Bind the event hashchange, using jquery-hashchange-plugin
+    $(window).hashchange(function() {
+        showTab(location.hash.replace("#", ""));
+    })
+
+    // Trigger the event hashchange on page load, using jquery-hashchange-plugin
+    $(window).hashchange();
+
+});
+</script>

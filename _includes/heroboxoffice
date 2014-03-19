@@ -1,0 +1,143 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/slippry.min.js"></script>
+<link rel="stylesheet" href="stylesheets/slippry.css" />
+
+<style>
+/* News */
+.news-slider {
+  background-color:#c0c0c0;
+  height: 310px;
+  padding: 10px;
+  box-shadow: 0 0 10px #C0C0C0;
+}
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 600px;
+  right: 0;
+  background-color: transparent;
+  padding: 1em;
+  width: 40%;
+  height: 100%;
+}
+.news-slider .text-content h2 {
+  margin: 0;
+}
+.news-slider .text-content p {
+  margin: 1em 0;
+}
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.news-slider .image-content {
+  line-height: 0;
+}
+.news-slider .image-content img {
+  max-width: 100%;
+  
+}
+
+</style>
+
+<section id="news-demo">
+  <article>
+    <div class="text-content">
+      <h3>Secretary Pritzker Announces Look South Initiative</h3>
+      <p style="font-size:14px;">
+                     
+
+The Look South initiative will help businesses across the country explore eleven countries that all have a rapidly growing base of middle-class consumers and diversifying industries. Read more about these exciting markets and the Look South initiative.</p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/eg1.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>Discover Global Markets</h3>
+<p style="font-size:14px;">
+
+
+Join us for this unprecedented national series of conferences to help U.S. business compete, win, and grow in the international marketplace.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/eg2.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>Market Research Library</h3>
+                    <p style="font-size:14px;">
+
+
+Plan your market entry the right way – use our market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you export.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="images/eg3.jpg" alt="demo1_1"></div>
+  </article>
+  
+  <article>
+    <div class="text-content">
+      <h3>Secretary's West Africa Energy Mission</h3>
+                    <p style="font-size:14px;">
+
+
+
+
+U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Development Mission to West Africa with stops in Ghana and Nigeria from May 18-23, 2014. Register now to join this mission!
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="images/eg4.jpg" alt="demo1_1"></div>
+  </article>
+  
+  
+</section>
+
+{% include tabsoffice %}
+        </header>
+        
+    </div>
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+<script>
+$(document).ready()
+jQuery(document).ready(function(){
+  jQuery('selector').slippry()
+});
+
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
+
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
+
+
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
+
+  // slideshow
+  autoDirection: 'next'
+});
+</script>

@@ -4,9 +4,30 @@ permalink:
 ---
 
 {% include header.html %}
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-{% include title %}      
-{% include heroboxhome %}
-{% include maintype %}
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" style="margin-top:0px;"class="outer">
+      
+
+{% include title %}
+{% include heroboxoffice %}
+<div class="clearfix" >
+<ul id="main" style="width:200px;margin-right:75px;"><h4>Export Resources</h4>
+ 
+<ul> 
+<li><a href="#">Exporters Resource Database</a></li>
+<li><a href="#">International Finance</a></li>
+<li><a href="#">Certificate of Origin</a></li>
+<li><a href="#">NAFTA</a></li>
+<li><a href="#">MN Tourism Destination</a></li>
+</ul>
+</ul>
+
+<ul id="main" style="width:600px;">
+{% include eventshome %}
+</ul>
+</div>
+
+
+</section>
+</div>
 {% include footer.html %}
