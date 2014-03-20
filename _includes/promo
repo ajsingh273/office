@@ -30,4 +30,5 @@ Horton, Inc. St. Paul, MN
 <a href="#">Read More Testimonials</a>
 </ul>
 </div>
+{% include socailbar %}
 </div>

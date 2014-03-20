@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Example 3</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#social-tabs').dcSocialTabs({
+						method: 'static',
+						width: 450,
+						height: 600,
+						rotate: {
+							delay: 8000,
+							direction: 'down'
+						},
+						widgets: 'google,facebook,fblike,fbrec,rss,twitter,pinterest,delicious,tumblr,youtube,linkedin',
+						googleId: '111470071138275408587',
+						facebookId: '157969574262873',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						rssId: 'http://feeds.feedburner.com/designmodo',
+						twitterId: 'designchemical/9927875',
+						pinterestId: 'designchemical',
+						deliciousId: 'designchemical',
+						youtubeId: 'wired',
+						tumblrId: 'richters',
+						linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+						start: 5,
+			rss: {
+				text: 'content'
+			},
+			twitter: {
+				thumb: true
+			}
+		});
+});
+</script>
+<style>
+.tab-rss .tab-inner ul li img {
+	max-width: 392px;
+	padding: 3px;
+	background: #fff;
+	border: 1px solid #ececec;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 3 - Creating static tabs</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+			<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	
+<style>
+.p-class p {
+	line-height: 1.5em;
+	margin: 0 0 1em 0;
+}
+</style>
+<div class="opacity">
+ <div class="title p-class">
+ <h3>Example 3 - Creating static tabs</h3>
+	<p>If you want to include the social media tabs in the page content you can use the "method" option:</p>
+  </div>
+<div class="col-main float-left clear">
+
+   
+	<div style="width: 450px; float: left; padding: 10px 0 20px 0;">
+				<div id="social-tabs"></div>
+			</div>
+			<div class="clear"></div>
+
+</div>
+<div class="col-side float-right">
+			<h3>Other Demo Options</h3>
+			<h4>Feed Ticker Controls</h4>
+			<p>The demo also shows a good example of the feed ticker controls when hovering over the feed items.</p>
+			<p>Click "pause" to stop the feed rotating and play to resume again. You can navigate through all of the items manually using the up/down icons.</p>
+			<p>To turn off the auto-rotation feature just set the delay value to zero.</p>
+			<h4>Show All Content For Facebook & RSS</h4>
+			<p>Use the facebook & RSS options to switch the feed item text from the default snippet to the complete text.</p>
+			<p>The full text option will also include any images inserted into the original post.</p>
+			
+			<h4>Add Twitter Avatar</h4>
+			<p>set the twitter "thumb" option to "true" to add the profile's avatar image.</p>
+			
+			<h4>Show A Twitter List</h4>
+			<p>If you want to show a twitter list, which then covers many tweeters you can just include the list ID in the twitterId settings prefixed by a "/" symbol. To include your twitter user name, which will be used for the "follow me" button and the header text link just place this before the "/"</p>
+			<p><strong>twitterId: 'designchemical/9927875'</strong></p>
+			<p>The above setting will show the twitter feed from list ID 9927875 and link the follow button to designchemical.</p>
+			</div>
+		<div class="title p-class clear">
+			
+	<h4>jQuery Code</h4>
+	<pre>&lt;script type="text/javascript"&gt;
+	$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+						method: 'static',
+						width: 450,
+						height: 600,
+						rotate: {
+							delay: 8000,
+							direction: 'down'
+						},
+						widgets: 'google,facebook,fblike,fbrec,rss,twitter,pinterest,delicious,tumblr,youtube,linkedin',
+						googleId: '111470071138275408587',
+						facebookId: '157969574262873',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						rssId: 'http://feeds.feedburner.com/designmodo',
+						twitterId: 'designchemical/9927875',
+						pinterestId: 'designchemical',
+						deliciousId: 'designchemical',
+						youtubeId: 'wired',
+						tumblrId: 'richters',
+						linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+						start: 5,
+			rss: {
+				text: 'content'
+			},
+			twitter: {
+				thumb: true
+			}
+		});
+});
+&lt;/script&gt;</pre>
+	<h4>HTML</h4>
+<pre>&lt;div id="social-tabs"&gt;&lt;/div&gt;</pre>
+
+<p>Note:</p>
+<p>Twitter - to set up your Twitter API credentials see <a href="index.html#twitter-api">Social Networks Details -> Twitter API Credentials</a>.</p>
+<p>Google + - to set up your Google API key see <a href="index.html#tag-position">Plugin Options -> Creating Your Own Google API key</a>.</p>
+
+  </div>
+
+</div>
+
+ 
+  
+  <div id="copyright">
+	Social Media Tabs plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

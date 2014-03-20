@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Example 4</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#social-tabs').dcSocialTabs({
+		position: 'absolute',
+		location: 'top',
+		align: 'right',
+		width: 380,
+		offset: 20,
+		widgets: 'twitter,fblike,fbrec,google,rss,pinterest,flickr,delicious,youtube',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+			twitterId: 'designchemical',
+			fblikeId: '157969574262873',
+			fbrecId: 'http://www.designchemical.com',
+			googleId: '111470071138275408587',
+			flickrId: '',
+			deliciousId: 'designchemical',
+			youtubeId: 'wired',
+			pinterestId: 'designchemical',
+			twitter: {
+				thumb: true
+			}
+		});
+});
+</script>
+<style>
+.dcsmt.top .dcsmt-slider {
+	border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.dcsmt.top .tab-inner {
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.dcsmt.top .tab-content {
+	padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 4 - Insert Sliding Tabs In Page Content</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+			<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	
+
+<div class="opacity" style="position: relative; overflow: hidden;">
+
+ <div class="title">
+    <h3>Example 4 - Insert Sliding Tabs In Page Content</h3>
+	<p>If you want to include slide-out social media tabs in the actual page content you can use the "position" option:</p>
+	<div id="social-tabs"></div>
+
+	<h4>jQuery Code</h4>
+	<pre>&lt;script type="text/javascript"&gt;
+	$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		position: 'absolute',
+		location: 'top',
+		align: 'right',
+		width: 380,
+		offset: 20,
+		widgets: 'twitter,fblike,fbrec,google,rss,pinterest,flickr,delicious,youtube',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		flickrId: '',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		pinterestId: 'designchemical',
+		twitter: {
+				thumb: true
+			}
+	});
+});
+&lt;/script&gt;</pre>
+	<h4>HTML</h4>
+	<p>TO create the slider inside the page content the social-tabs div tag must be placed inside a tag that has the following CSS rules:</p>
+	<pre>position: relative; 
+overflow: hidden;</pre>
+	<p>The slide out tabs will position themselves relative to the edge of this tag and the overflow: hidden; will hide the tab content when closed. The social-tabs div tag can then be included anywhere within the parent tag:</p>
+<pre>&lt;div id="social-tabs"&gt;&lt;/div&gt;</pre>
+<h4>CSS</h4>
+<p>This setting requires a slight modification to the standard CSS in order to create the border on all 4 sides. If you dont want to add the extra border you can use the default CSS in file dcsmt.css.</p>
+<pre>.dcsmt.top .dcsmt-slider {
+	border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.dcsmt.top .tab-inner {
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.dcsmt.top .tab-content {
+	padding: 10px;
+}</pre>
+
+<p>Note:</p>
+<p>Twitter - to set up your Twitter API credentials see <a href="index.html#twitter-api">Social Networks Details -> Twitter API Credentials</a>.</p>
+<p>Google + - to set up your Google API key see <a href="index.html#tag-position">Plugin Options -> Creating Your Own Google API key</a>.</p>
+  </div>
+
+</div>
+
+ 
+  
+  <div id="copyright">
+	Social Media Tabs plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

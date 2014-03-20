@@ -1,0 +1,2230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Documentation</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<script type="text/javascript" src="inc/js/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>jQuery Social Media Tabs Plugin Documentation</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+		<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	<div class="opacity pad-btm">
+	<div class="col-side">
+	
+	<div class="info">
+		Plugin: jQuery Social Media Tabs<br />
+		By: <a href="http://codecanyon.net/user/designchemical">designchemical</a><br />
+		Created: 2nd August 2013<br>
+		Version: 1.7.1.
+	</div>
+	</div>
+	<div class="col-main">
+
+    <div class="info ">
+		<p>Thank you for purchasing the jQuery Social Media Tabs plugin.<br />
+		If you have any questions that are beyond the scope of this help file, please feel free to send us an email using the contact form on our <a href="http://codecanyon.net/user/designchemical">codecanyon profile page</a>. We are also <a href="http://www.designchemical.com">available for hire</a> if you require any customisations or assistance with jQuery or Wordpress.
+	</div>
+	
+    </div>
+	<div class="clear"></div>
+  </div>
+
+<div class="opacity">  
+  
+  <ul id="adverts">
+		<li><a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-stream-plugin/" target="_blank"><img src="inc/images/dcsns_125.png" alt="jQuery Social Stream Plugin" /></a></li>
+		<li><a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-share-buttons-plugin/" target="_blank"><img src="inc/images/dcssb_125.png" alt="jQuery Social Share Buttons Plugin" /></a></li>
+		<li><a href="http://www.designchemical.com/blog/index.php/premium-wordpress-plugins/premium-wordpress-plugin-top-social-share-posts/" target="_blank"><img src="inc/images/dctsp_125.jpg" alt="Top Social Share Posts" /></a></li>
+	</ul>
+
+	</div>
+	
+<div class="opacity">
+
+ <div class="title">
+    <h3>Setting Up The Plugin</h3>
+    
+  </div>
+
+  <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Plugin Files</h2>
+	<div class="togglebox">
+	<div>
+		<p>The files that make up the plugin are:</p>
+		<ol>
+			<li>js/jquery.social.media.tabs.1.7.1.js - main jQuery plugin file</li>
+			<li>js/jquery.social.media.tabs.1.7.1.min.js - minified version of plugin file (41.0 kb vs 30.7 kb)</li>
+			<li>twitter.php - PHP file for Twitter authentication - required if using the Twitter tab</li>
+			<li>css/dcsmt - plugin css style sheet for creating the default styles as per demos</li>
+			<li>images - images folder contains images used by CSS</li>
+			<li>images/icons/ - the source for the icons used for the tab navigation</li>
+			<li>inc/ - contains all files required by the documentation & demo pages - not directly related to plugin files</li>
+		</ol>
+		<p>Additional:</p>
+		<ol>
+			<li>psd/ - contains 2 psd source files - social network icons used by the default skin & the icons used to create the control.png sprite</li>
+		</ol>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Installation</h2>
+	<div class="togglebox">
+	<div>
+		<p>The plugin requires the jQuery javascript library. So first thing is to add the jquery library from your preferred source. There are no specific requirements for this plugin so you are free to use any of the latest versions(starting with version 1.5.1):</p>
+		<pre>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"&gt;&lt;/script&gt;</pre>
+		<p>Note: If your web page already has jquery loaded you do not need to include the library a 2nd time.</p>
+		<p>Once you have loaded the jQuery library you need to include the social media tabs plugin file:</p>
+		<pre>&lt;script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"&gt;&lt;/script&gt;</pre>
+		<p>Finally, if you want to use the default styles then either include the dcsmt.css file or copy/paste the CSS code to your site's style sheet:</p>
+		<pre>&lt;link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" /&gt;</pre>
+		<h4>Twitter Tab</h4>
+		<p>If you are wanting to include the Twitter tab you will also need to add the twitter.php file to your website - this can be found in the plugin folder. To set up your Twitter API credentials see <a href="#twitter-api">instructions below</a>.</p>
+		<p>The plugin is now ready to use!</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Quick Start</h2>
+	<div class="togglebox">
+	<div> 
+		<p>The easiest way to get started is to just initialize the plugin with the default settings and your relevant social network IDs.</p>
+		<h4>Important Notes</h4>
+		<p>Twitter - to set up your Twitter API credentials see <a href="#twitter-api">instructions below</a>.</p>
+		<p>Instagram - you will need to setup your own clientId and accessToken - see the <a href="#tag-position-instagram">Creating Your Own Instagram API Client ID & Access Token</a> section for step-by-step instructions on how to do this.</p>
+		<p>1. Insert the following jQuery into the head of your document (before the closing "head" tag) - dont forget to change the settings for your own social network profiles:</p>
+		<pre>&lt;script type="text/javascript"&gt;
+		$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+						twitterId: 'designchemical',
+						facebookId: '157969574262873',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						googleId: '111470071138275408587',
+						flickrId: '',
+						deliciousId: 'designchemical',
+						youtubeId: 'wired',
+						diggId: 'remix4',
+						pinterestId: 'designchemical',
+						lastfmId: 'lastfm',
+						dribbbleId: 'frogandcode',
+						vimeoId: 'vimeo',
+						stumbleuponId: '',
+						tumblrId: '',
+						deviantartId: '',
+						instagramId: '',
+						instagram: {
+							accessToken: '',
+							clientId: '',
+							redirectUrl: ''
+						}
+	});
+});
+&lt;/script&gt;</pre>
+		<p>2. Add the following HTML to your page, just before the closing "body" tag:</p>
+		<pre>&lt;div id="social-tabs"&gt;&lt;/div&gt;</pre>
+		<p>That's all there is to it! The social media tabs will be inserted into the "social-tabs" div tag when the page loads. The social network tabs will appear in the following order:</p>
+		<ol>
+			<li>twitter</li><li>facebook</li><li>facebook like box</li><li>facebook recommendations</li><li>google</li><li>rss</li><li>flickr</li><li>delicious</li><li>youtube</li><li>digg</li><li>pinterest</li><li>lastfm</li><li>dribbble</li><li>vimeo</li><li>stumbleupon</li><li>tumblr</li><li>deviantart</li><li>LinkedIn</li><li>instagram</li>
+		</ol>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+</div>
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Social Networks Details</h3>
+  </div>
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Google +1</h2>
+	<div class="togglebox">
+	<div>
+		<h4>Google +1 API Key</h4>
+		<p>The google +1 feed requires an API key in order to work. The API key provided in the plugin examples is for test purposes only.</p>
+		<p>Make sure you change the API key for your own - google limit the number of API calls per day for each API key. If you use the test value this may result in your google +1 feed not working correctly.</p>
+		<p>For information on how to create your own API key see the <a href="#tag-position">instructions below</a>.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger" id="twitter-api"><span></span>Twitter API Credentials</h2>
+	<div class="togglebox">
+	<div>
+		<h4>Twitter API</h4>
+		<p>Starting with version 1.7 of the plugin the Twitter API now requires authentication.</p>
+		<p>To create your own Twitter API credentials</p>
+		
+		<ol>
+			<li>Browse to <a href="https://dev.twitter.com/">https://dev.twitter.com/</a> &amp; login with your Twitter username</li>
+			<li>Browse to <a href="https://dev.twitter.com/apps/new">https://dev.twitter.com/apps/new</a></li>
+		</ol>
+		
+		<p><image src="inc/images/twitter_1.png" width="850" alt="Create New Twitter App" /></p>
+		
+		<ol>
+			<li>Complete name, description & website fields</li>
+			<li>Check the "Yes I agree" box for the Developer Rules of the Road</li>
+			<li>Enter the captcha & click "Create Your Twitter Application"</li>
+		</ol>
+		
+		<p><image src="inc/images/twitter_2.png" width="850" alt="Create New Twitter App" /></p>
+		
+		<ol>
+			<li>Click "Create My Access Token"</li>
+			<li>A success message will be displayed at the top of the page</li>
+			<li>Click the "Details" tab to refresh the page and display your access token</li>
+		</ol>
+		
+		<p><image src="inc/images/twitter_3.png" width="850" alt="Create New Twitter App" /></p>
+		
+		<ol>
+			<li>Open file twitter.php in your text editor</li>
+			<li>From your twitter application page copy the Consumer Key, Consumer Secret, Access Token and Access Token Secret values and enter into the twitter API details at the top of the twitter.php file, save the file and upload to your server.</li>
+		</ol>
+		
+		<p>Example</p>
+		<pre>// SET YOUR TWITTER API DETAILS HERE
+$consumer_key = "cUfx93n2NBU3J8VCZ1pQ"; 
+$consumer_secret = "FvKP8uzrVhGAJ2ncuofsSTUsLV50H2KdW9CkNrhAENo";
+$oauth_access_token = "261263099-mF9o2SrPe5vno5IcwzGE36a0L4MiGf86Ou6a0CJy"; 
+$oauth_access_token_secret = "eqgxmDB7hsBoph18758dRmkzzb0E8emyZfIm8bD9pWg"; </pre>
+		
+		<p>The plugin should now be able to access your Twitter feed.</p>
+		<p>Note that the above values are for demonstration only and will NOT work with your plugin.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Instagram</h2>
+	<div class="togglebox">
+	<div>
+		<h4>Instagram API</h4>
+		<p>For information on how to create your own Instagram client ID and access token see the <a href="#tag-position-instagram">Creating Your Own Instagram API Client ID & Access Token</a> instructions below.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+  <div class="opacity">
+     <div class="title">
+    <h3>Plugin Options</h3>
+  </div>
+  <!-- Begin Question Block -->
+  <div class="toggle">
+	<h2 class="trigger"><span></span>Plugin Options</h2>
+	<div class="togglebox">
+	<div>
+		<p>The plugin includes extensive options, which make the media tabs highly customisable. Most of the settings do not need to be changed and the plugin will automatically use the default values where applicable.</p>
+		<p>The following list details the options available for customizing the plugin and the default values:</p>
+		<h4>Social Networks</h4>
+		<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr><td>widgets</td><td>twitter, facebook, fblike, fbrec, google, rss, flickr, delicious, youtube, digg, pinterest, lastfm, dribbble, vimeo, stumbleupon, tumblr, deviantart, linkedin, instagram</td><td></td><td>Declare which widget tabs are to show and the order in which they appear</td></tr>
+<tr><td>rssId</td><td>&nbsp;</td><td></td><td>RSS feed URL</td></tr>
+<tr><td>twitterId</td><td>&nbsp;</td><td></td><td>Twitter has 3 different feed options:<br /><br />
+<ol><li><strong>Tweets from a specific user name -</strong><br />Enter the required user name (minus the "@" symbol) -<br />e.g. "designchemical"</li><li><strong>Tweets from a list -</strong><br />To show a list enter "/" followed by the list ID you want to display -<br />e.g. "/9927875"</li><li><strong>Tweets from a search -</strong><br />Enter "#" followed by the search term -<br />e.g. "#designchemical"</li></ol></td></tr>
+<tr><td>facebookId</td><td>&nbsp;</td><td></td><td>Facebook page ID</td></tr>
+<tr><td>fblikeId</td><td>&nbsp;</td><td></td><td>Facebook page ID</td></tr>
+<tr><td>fbrecId</td><td>&nbsp;</td><td></td><td>URL of website</td></tr>
+<tr><td>googleId</td><td>&nbsp;</td><td></td><td>Google +1 profile ID</td></tr>
+<tr><td>			flickrId</td><td>&nbsp;</td><td></td><td>Flickr has 2 different ID options:<br /><br />
+<ol><li><strong>Uploads from a specific user name -</strong><br />Enter the required user name</li><li><strong>Images from a group -</strong><br />Enter "/" followed by the flickr group ID</li></ol>If this value is left blank the widget will automatically return the latest public images added to Flickr</td></tr>
+<tr><td>			deliciousId</td><td>&nbsp;</td><td></td><td>Delicious username</td></tr>
+<tr><td>			youtubeId</td><td>&nbsp;</td><td></td><td>Youtube username</td></tr>
+<tr><td>			diggId</td><td>&nbsp;</td><td></td><td>Digg username</td></tr>
+<tr><td>			pinterestId</td><td>&nbsp;</td><td></td><td>Pinterest has 2 different ID options:<br /><br />
+<ol><li><strong>Posts for a user name -</strong><br />Enter the required user name</li><li><strong>Posts for a specific user board -</strong><br />Enter the user name followed by "/" and then the board name - e.g. designchemical/design-ideas</li></ol></td></tr>
+<tr><td>			lastfmId</td><td>&nbsp;</td><td></td><td>Last.fm username</td></tr>
+<tr><td>			dribbbleId</td><td>&nbsp;</td><td></td><td>Dribbble username</td></tr>
+<tr><td>			vimeoId</td><td>&nbsp;</td><td></td><td>Vimeo username</td></tr>
+<tr><td>			stumbleuponId</td><td>&nbsp;</td><td></td><td>Stumbleupon username</td></tr>
+<tr><td>			tumblrId</td><td>&nbsp;</td><td></td><td>Tumblr username</td></tr>
+<tr><td>			linkedinId</td><td>&nbsp;</td><td></td><td>The LinkedIn tab can contain up to 4 linkedin widgets, each requiring its own ID:<br /><br />
+<ol><li>MemberProfile - LinkedIn user public profile URL - e.g. http://www.linkedin.com/in/leechestnutt</li>
+<li>CompanyProfile - Company ID - e.g. 162479</li>
+<li>CompanyInsider - Company ID - e.g. 162479</li>
+<li>JYMBII - Company ID (if wanting to show company specific jobs) - e.g. 162479</li>
+</ol>
+The ID's should be listed in the same order as the widgets to be shown and separated by a comma - e.g. http://www.linkedin.com/in/leechestnutt,162479,162479,162479
+</td></tr>
+<tr><td>instagramId</td><td>&nbsp;</td><td></td><td>
+			Instagram can hande 4 different types of network feed ID - search, tags, user ID and a location ID:
+			<ol>
+				<li><strong>Search -</strong><br />This will return instagram posts based on a geographical location, which is defined by a latitude & longitude plus a distance. To enter a search ID start with the character "?" followed by the latitude, longitude and distance in meters (up to a maximum of 5000) all separated by a "/"<br />
+				e.g. ?55.5/0/20</li>
+				<li><strong>Tags -</strong><br />To search by tag start with the character "#" followed by the tag<br />
+				e.g. #london</li>
+				<li><strong>User ID -</strong><br />To show latest posts by user start the ID with a "!" followed by the user's profile ID<br />e.g. !12345</li>
+				<li><strong>Location ID -</strong><br />To show latest posts by a location ID start with a "@" followed by the ID<br />e.g. @12345</li>
+			</ol>
+			
+			</td></tr>
+</tbody>
+</table>
+
+<h4>General Settings</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>tweetId</td><td>'',</td><td></td><td>Enter your twitter username to be used when sharing posts via twitter - this will be added to the tweets as "via @username"</td></tr>
+<tr><td>share</td><td>true,</td><td>false</td><td>If set to "true" the feed items will include share links - <br />
+Twitter feeds will include retweet, reply and favourite links<br />
+Other feed items will include facebook and twitter share links</td></tr>
+<tr><td>external</td><td>true,</td><td>false</td><td>Set to true to open all links in new browser window</td></tr>
+<tr><td>method</td><td>'slide',</td><td>static</td><td>Style of tabs to use - static or sliding from edge of browser</td></tr>
+<tr><td>position</td><td>'fixed',</td><td>absolute</td><td>Type of CSS positioning to apply to slide-out tabs - fixed positioning will position slider at the edge of the browser, absolute positioning positions slider within the content</td></tr>
+<tr><td>location</td><td>right',</td><td>right, top or bottom</td><td>Location of sliding widget</td></tr>
+<tr><td>align</td><td>'top',</td><td>bottom, left or right</td><td>Alignment of sliding widget</td></tr>
+<tr><td>offset</td><td>10,</td><td></td><td>Offset (in pixels) from edge of browser for sliding widget</td></tr>
+<tr><td>speed</td><td>600,</td><td></td><td>Speed (in milliseconds) of slide-out animation</td></tr>
+<tr><td>loadOpen</td><td>false,</td><td>true</td><td>If set to true the slide out widget will automatically open when the page has loaded</td></tr>
+<tr><td>autoClose</td><td>false,</td><td>true</td><td>If set to true the slide out widget will automatically close when anywhere in the browser window is clicked</td></tr>
+<tr><td>width</td><td>360,</td><td></td><td>Width (in pixels) of widget<br />Note: a minimum width of 300px is required for the linkedin widgets</td></tr>
+<tr><td>height</td><td>600,</td><td></td><td>Height (in pixels) of widget</td></tr>
+<tr><td>start</td><td>0,</td><td></td><td>Position of starting tab when first loaded</td></tr>
+<tr><td>controls</td><td>true</td><td>false</td><td>Set to true to include rotation controls</td></tr>
+<tr><td>rotate: {</td><td>0</td><td></td><td>Options for feed rotating effect</td></tr>
+<tr><td>direction</td><td>'down',</td><td>up</td><td>Direction for content rotation</td></tr>
+<tr><td>delay</td><td>6000,</td><td></td><td>Delay in milliseconds between rotations - if set to 0 the automatic rotation effect is disabled</td></tr>
+<tr><td>},</td><td>0</td><td></td><td></td></tr>
+<tr><td>zopen</td><td>1000</td><td></td><td>Z-Index of open tabs</td></tr>
+<tr><td>imagePath</td><td>images/icons/'</td><td></td><td>Path for tab icons</td></tr>
+<tr><td>wrapper</td><td>'dcsmt',</td><td></td><td>CSS class of main widget wrapper</td></tr>
+<tr><td>content</td><td>'dcsmt-content',</td><td></td><td>CSS class of main content wrapper</td></tr>
+<tr><td>slider</td><td>'dcsmt-slider',</td><td></td><td>Class name for slider</td></tr>
+<tr><td>slides</td><td>'tab-content',</td><td></td><td>Class name for slides</td></tr>
+<tr><td>tabs</td><td>'social-tabs',</td><td></td><td>Class name for tab navigation</td></tr>
+<tr><td>classOpen</td><td>'dcsmt-open',</td><td></td><td>Class name for external link for opening slide out tabs. Add "rel" attribute with index # of tab if you want to open at a specific tab</td></tr>
+<tr><td>classClose</td><td>'dcsmt-close',</td><td></td><td>Class name for external link for closeing slide out tabs</td></tr>
+<tr><td>classToggle</td><td>'dcsmt-toggle',</td><td></td><td>Class name for external link for toggling slide out tabs. Add "rel" attribute with index # of tab if you want to open at a specific tab</td></tr>
+<tr><td>classSlide</td><td>dcsmt-slide',</td><td></td><td>Class name for external link for changing active slide. Add "rel" attribute with index # of required tab</td></tr>
+
+</tbody>
+	</table>
+
+<h4>Twitter Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>twitter: {</td><td>&nbsp;</td><td></td><td>Options for Twitter</td></tr>
+<tr><td>title</td><td>Latest Tweets</td><td></td><td>Title for Twitter tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>Follow on Twitter</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>followId</td><td>''</td><td></td><td>Enter the twitter user name you wish to use for the follow button when showing either a search or a twitter list. When showing a user list the follow button will automatically use the twitter user ID.</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>retweets</td><td>false</td><td>true, false</td><td>Set to "true" to include retweets</td></tr>
+<tr><td>replies</td><td>false</td><td>true, false</td><td>Set to "true" to include replies</td></tr>
+<tr><td>images:</td><td> '',</td><td>thumb, small, medium, large</td><td>Option to show twitter images. Enter one of the sizes to include the image when available or leave blank to exclude images. Image sizes are:<br />
+<br />
+<ol>
+<li>thumb - w: 150 h: 150px</li>
+<li>small - w: 340 h 150px</li>
+<li>medium - w: 600 h: 264px</li>
+<li>large - w: 786 h: 346px</li>
+</ol>
+</td></tr>
+<tr><td>url</td><td>twitter.php</td><td></td><td>The path &amp; file name for the Twitter Authentication file - default file name is "twitter.php"<br /><strong>IMPORTANT - this is required for all Twitter feeds</strong></td></tr>
+<tr><td>icon</td><td>twitter.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Facebook Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>facebook: {</td><td>&nbsp;</td><td></td><td>Options for Facebook Wall Posts</td></tr>
+<tr><td>title</td><td>Facebook</td><td></td><td>Title for Facebook tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>href</td><td>''</td><td></td><td>Enter the URL of your facebook page for the follow button link</td></tr>
+<tr><td>follow</td><td>Follow on Facebook</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>text</td><td>'contentSnippet'</td>'content', 'contentSnippet'<td></td><td>Select the RSS element to use in the feed output. 'contentSnippet' (default) shows brief introduction. 'content' will output complete wall post text including any images.</td></tr>
+<tr><td>icon</td><td>facebook.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Facebook Like Box Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>fblike: {</td><td>&nbsp;</td><td></td><td>Options for the Facebook Like Box</td></tr>
+<tr><td>title</td><td></td><td></td><td>Title for Facebook Like tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>false</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>limit</td><td>12</td><td>right</td><td>Number of connections</td></tr>
+<tr><td>stream</td><td>false</td><td></td><td>Include facebook stream</td></tr>
+<tr><td>header</td><td>true</td><td></td><td>Include facebook header</td></tr>
+<tr><td>icon</td><td>fblike.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Facebook Recommendations Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>fbrec: {</td><td>&nbsp;</td><td></td><td>Options for Facebook Recommendations</td></tr>
+<tr><td>title</td><td></td><td></td><td>Title for Facebook Recommendations tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>false</td><td>true</td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>header</td><td>true</td><td>false</td><td>Include facebook header</td></tr>
+<tr><td>icon</td><td>fbrec.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Google +1 Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>google: {</td><td>&nbsp;</td><td></td><td>Google +1</td></tr>
+<tr><td>title</td><td>Google +1</td><td></td><td>Title for Google +1 tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>Add to Circles</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>header</td><td>0</td><td>0,1 or 2</td><td>Include google plus profile widget as header - 0 = none, 1 = small & 2 = standard. To use the standard "title" & "follow" button set the "header" value to zero.</td></tr>
+<tr><td>pageId</td><td></td><td></td><td>Enter the google + page ID to use for the "header" option - can be left blank if "header" is set to 0</td></tr>
+<tr><td>api_key</td><td>'AIzaSyB1UZNnscjMDjjH-pi_XbnLRld2wAqi3Ek',</td><td></td><td>Google +1 API key</td></tr>
+<tr><td>image_width</td><td>75</td><td></td><td>Thumbnail image width</td></tr>
+<tr><td>image_height</td><td>75</td><td></td><td>Thumbnail image height</td></tr>
+<tr><td>shares</td><td>true</td><td>false</td><td>Include plusone, share & reply counts</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>google.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Youtube Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>youtube: {</td><td>&nbsp;</td><td></td><td>Youtube</td></tr>
+<tr><td>title</td><td></td><td></td><td>Title for Youtube tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>false</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>&nbsp;</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>feed</td><td>uploads</td><td>favorites</td><td>Set the youtube feed that you wish to show - either uploads or favorites</td></tr>
+<tr><td>subscribe</td><td>true</td><td>false</td><td>Set to 'true' to include youtube subscription widget</td></tr>
+<tr><td>icon</td><td>youtube.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Flickr Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>flickr: {</td><td>&nbsp;</td><td></td><td>Flickr</td></tr>
+<tr><td>title</td><td>Flickr</td><td></td><td>Title for Flickr tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>&nbsp;</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>lang</td><td>en-us</td><td></td><td>Language setting</td></tr>
+<tr><td>limit</td><td>20</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>flickr.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Delicious Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>delicious: {</td><td>&nbsp;</td><td></td><td>Delicious</td></tr>
+<tr><td>title</td><td>Delicious</td><td></td><td>Title for Delicious tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>'Follow on Delicious'</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>delicious.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Digg Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>digg: {</td><td>&nbsp;</td><td></td><td>Digg</td></tr>
+<tr><td>title</td><td></td><td></td><td>Title for Digg tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>false</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>digg.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>hdrBg</td><td>#ececec</td><td></td><td>Header background color</td></tr>
+<tr><td>hdrTxt</td><td>#555</td><td></td><td>Header text color</td></tr>
+<tr><td>tabBg</td><td>#4684be</td><td></td><td>Tab background color</td></tr>
+<tr><td>tabTxt</td><td>#b3daff</td><td></td><td>Tab text color</td></tr>
+<tr><td>tabOnTxt</td><td>#d41717</td><td></td><td></td></tr>
+<tr><td>bdyBg</td><td>#fff</td><td></td><td>Main background color</td></tr>
+<tr><td>stryBrdr</td><td>#ccc</td><td></td><td>Border color</td></tr>
+<tr><td>lnk</td><td>#105cb6</td><td></td><td>Link color</td></tr>
+<tr><td>descTxt</td><td>#999</td><td></td><td>Text color</td></tr>
+<tr><td>subHd</td><td>#999</td><td></td><td>Sub-header text color</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Pinterest Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>pinterest: {</td><td>&nbsp;</td><td></td><td>Pinterest</td></tr>
+<tr><td>title</td><td>Pinterest</td><td></td><td>Title for Pinterest tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>< img src="http://passets-cdn.pinterest.com/images/follow-on-pinterest-button.png" width="156" height="26" alt="Follow Me on Pinterest" /></td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>pinterest.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>RSS Feed Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>rss: {</td><td>&nbsp;</td><td></td><td>RSS Feed</td></tr>
+<tr><td>title</td><td>Subscribe to our RSS</td><td></td><td>Title for RSS tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the RSS feed URL</td></tr>
+<tr><td>follow</td><td>Subscribe</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>rss.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+<h4>Last.fm Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>lastfm: {</td><td>&nbsp;</td><td></td><td>LastFM</td></tr>
+<tr><td>title</td><td>Last.fm</td><td></td><td>Title for LastFM tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>&nbsp;</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>feed</td><td>recenttracks</td><td>lovedtracks, recenttracks, replytracker</td><td>Feed type. Options include lovedtracks: A feed of tracks a user has loved, recenttracks:  10 recently played tracks for this profile, replytracker:  A feed of replies to a user's forum posts and journal comments</td></tr>
+<tr><td>icon</td><td>lastfm.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Dribbble Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>dribbble: {</td><td>&nbsp;</td><td></td><td>Dribbble</td></tr>
+<tr><td>title</td><td>Dribbble</td><td></td><td>Title for Dribbble tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>Follow on Dribbble</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>feed</td><td>shots</td><td>shots, likes</td><td>shots = most recent shots, likes = most recent likes</td></tr>
+<tr><td>icon</td><td>dribbble.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Vimeo Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>vimeo: {</td><td>&nbsp;</td><td></td><td>Vimeo</td></tr>
+<tr><td>title</td><td>Vimeo</td><td></td><td>Title for Vimeo tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the social network profile</td></tr>
+<tr><td>follow</td><td>Follow on Vimeo</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>feed</td><td>likes</td><td>likes, videos, appears_in, all_videos, albums, channels, groups</td><td>likes = Most recent likes, videos = Videos created by user, appears_in = Videos that the user appears in, all_videos = Videos that the user appears in and created, albums = Albums the user has created, channels = Channels the user has created and subscribed to, groups = Groups the user has created and joined</td></tr>
+<tr><td>stats</td><td>true</td><td>false</td><td>If set to true the feed will include statistics - e.g. number of likes, views, comments, etc</td></tr>
+<tr><td>thumb</td><td>small</td><td>small, medium, large</td><td>Size of thumbnail image - small = 100px wide, medium = 200px, large = 640px</td></tr>
+<tr><td>icon</td><td>vimeo.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Stumbleupon Feed Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>stumbleupon: {</td><td>&nbsp;</td><td></td><td>Stumbleupon Feed</td></tr>
+<tr><td>title</td><td>Stumbleupon</td><td></td><td>Title for Stumbleupon tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the Stumbleupon profile</td></tr>
+<tr><td>follow</td><td>Follow</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>feed</td><td>favorites</td><td>favorites, reviews</td><td>favorites = The sites you thumbed up, reviews = Reviews you have written.</td></tr>
+<tr><td>icon</td><td>stumbleupon.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+<h4>Tumblr Feed Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>tumblr: {</td><td>&nbsp;</td><td></td><td>Tumblr Feed</td></tr>
+<tr><td>title</td><td>Tumblr</td><td></td><td>Title for Tumblr tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the Tumblr profile</td></tr>
+<tr><td>follow</td><td>Follow</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>thumb</td><td>250</td><td>75, 100, 250, 400, 500, 1280</td><td>Width of thumbnail image.</td></tr>
+<tr><td>video</td><td>250</td><td>400, 500, 250</td><td>Width of video player for video type posts.</td></tr>
+<tr><td>icon</td><td>tumblr.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>Deviantart Feed Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>deviantart: {</td><td>&nbsp;</td><td></td><td>Deviantart Feed</td></tr>
+<tr><td>title</td><td>Deviantart</td><td></td><td>Title for Deviantart tab (leave blank to not include a title section)</td></tr>
+<tr><td>link</td><td>true</td><td></td><td>If set to true the title will link to the Deviantart profile</td></tr>
+<tr><td>follow</td><td>Follow</td><td></td><td>If empty the follow button will be omitted</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>icon</td><td>deviantart.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h4>LinkedIn Feed Options</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+<tr><td>linkedin: {</td><td>&nbsp;</td><td></td><td>LinkedIn Tab</td></tr>
+<tr><td>plugins</td><td>'MemberProfile,CompanyProfile,CompanyInsider,JYMBII'</td><td></td><td>The plugins to be included in the tab and the order in which they appear:<br /><br />
+<ol><li>MemberProfile - Personal profile widget</li>
+<li>CompanyProfile - Company profile widget</li>
+<li>CompanyInsider - Company Insider Plugin</li>
+<li>JYMBII - Jobs you may be interested in - either company specific or general</li>
+</ol>
+</td></tr>
+<tr><td>CompanyInsider</td><td>'innetwork,newhires,jobchanges'</td><td></td><td>Select what views should appear for the Company Insider plugin:<br /><br />
+<ol><li>innetwork - In Your Network</li>
+<li>newhires - New Hires</li>
+<li>jobchanges - Promotions & Changes</li>
+</ol>
+</td></tr>
+<tr><td>MemberProfile</td><td>true</td><td></td><td>Select true to include list of profile connections for Member Profile widget</td></tr>
+<tr><td>CompanyProfile</td><td>true</td><td></td><td>Select true to include list of profile connections for Company Profile widget</td></tr>
+<tr><td>icon</td><td>linkedin.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+title: 'Instagram',
+					link: true,
+					follow: 'Follow',
+					limit: 10,
+					accessToken: '',
+					redirectUrl: '',
+					clientId: '',
+					thumb: 'low_resolution',
+					comments: 3,
+					likes: 8,
+					icon: 'instagram.png'
+					
+<h4>Instagram - REQUIRES CLIENT ID AND ACCESS TOKEN</h4>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="tbl">
+		<thead><tr>
+			<th class="first">Option</th>
+			<th>Default</th>
+			<th>Alternatives</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr><td>instagram: {</td><td>&nbsp;</td><td></td><td>Instagram Feed</td></tr>
+<tr><td>title</td><td>Instagram</td><td></td><td>Title for instagram tab (leave blank to not include a title section)</td></tr>
+<tr><td>limit</td><td>10</td><td></td><td>Maximum number of results</td></tr>
+<tr><td>thumb</td><td>'low_resolution'</td><td>low_resolution, thumbnail, standard_resolution</td><td>Width & Height of image - low_resolution 306, thumbnail 150, standard_resolution 612</td></tr>
+<tr><td>comments</td><td>0</td><td></td><td>Enter the maximum number of comments to display for each instagram image. Set to zero to disable comments</td></tr>
+<tr><td>likes</td><td>0</td><td></td><td>Enter the maximum number of profile thumbnails to display for users who have liked a post. Set to zero to disable likes</td></tr>
+<tr><td>accessToken</td><td>&nbsp;</td><td>&nbsp;</td><td>(See Section - Creating Your Own Instagram API Client ID) Access token created from the authorisation of your OAuth Client</td></tr>
+<tr><td>redirectUrl</td><td>&nbsp;</td><td>&nbsp;</td><td>(See Section - Creating Your Own Instagram API Client ID)The URL entered as the redirect URL when registering your new OAuth Client in the instagram API setup</td></tr>
+<tr><td>clientId</td><td>&nbsp;</td><td>&nbsp;</td><td>(See Section - Creating Your Own Instagram API Client ID)Client ID for API created after registering your new OAuth Client in the instagram API setup</td></tr>
+<tr><td>icon</td><td>instagram.png</td><td></td><td>Social network icon file name</td></tr>
+<tr><td>},</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+	<h4>Using The Plugin Options</h4>
+	<p>Any of the options can be changed by setting the new values when the plugin is initialized. To change an option, include the parameter and it's new value in the initialisation code - e.g.</p>
+	<pre>$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+				widgets: 'twitter,facebook,fblike,fbrec,google,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart,linkedin,instagram',
+				twitter: {
+					title: 'Latest Tweets',
+					link: true,
+					follow: 'Follow on Twitter',
+					followId: '',
+					limit: 10,
+					retweets: false,
+					replies: false,
+					images: '', // large w: 786 h: 346, thumb w: 150 h: 150, medium w: 600 h: 264, small w: 340 h 150
+					url: 'twitter.php',
+					icon: 'twitter.png'
+				},
+				facebook: {
+					title: 'Facebook',
+					link: true,
+					follow: 'Follow on Facebook',
+					limit: 10,
+					text: 'contentSnippet',
+					icon: 'facebook.png'
+				},
+				fblike: {
+					title: '',
+					link: false,
+					follow: '',
+					limit: 36,
+					stream: false,
+					header: true,
+					icon: 'fblike.png'
+				},
+				fbrec: {
+					title: '',
+					link: false,
+					follow: '',
+					header: true,
+					icon: 'fbrec.png'
+				},
+				google: {
+					title: 'Google +1',
+					link: true,
+					follow: 'Add to Circles',
+					pageId: '',
+					header: 0,
+					image_width: 75,
+					image_height: 75,
+					api_key: 'AIzaSyB1UZNnscjMDjjH-pi_XbnLRld2wAqi3Ek',
+					shares: true,
+					limit: 10,
+					icon: 'google.png'
+				},
+				youtube: {
+					title: '',
+					link: false,
+					follow: '',
+					limit: 10,
+					feed: 'uploads', // favorites
+					subscribe: true,
+					icon: 'youtube.png'
+				},
+				flickr: {
+					title: 'Flickr',
+					link: true,
+					follow: '',
+					lang: 'en-us',
+					limit: 20,
+					icon: 'flickr.png'
+				},
+				delicious: {
+					title: 'Delicious',
+					link: true,
+					follow: 'Follow on Delicious',
+					limit: 10,
+					icon: 'delicious.png'
+				},
+				digg: {
+					title: 'Latest Diggs',
+					link: false,
+					limit: 10,
+					icon: 'digg.png',
+					hdrBg: "#ececec", 
+					hdrTxt: "#555", 
+					tabBg: "#4684be", 
+					tabTxt: "#b3daff", 
+					tabOnTxt: "#d41717", 
+					bdyBg: "#fff", 
+					stryBrdr: "#ccc", 
+					lnk: "#105cb6", 
+					descTxt: "#999", 
+					subHd: "#999"
+				},
+				pinterest: {
+					title: 'Pinterest',
+					link: true,
+					follow: 'Follow on Pinterest',
+					limit: 10,
+					icon: 'pinterest.png'
+				},
+				rss: {
+					title: 'Subscribe to our RSS',
+					link: true,
+					follow: 'Subscribe',
+					limit: 10,
+					text: 'contentSnippet',
+					icon: 'rss.png'
+				},
+				lastfm: {
+					title: 'Last.fm',
+					link: true,
+					follow: '',
+					limit: 20,
+					feed: 'recenttracks',
+					icon: 'lastfm.png'
+				},
+				dribbble: {
+					title: 'Dribbble',
+					link: true,
+					follow: 'Follow on Dribbble',
+					limit: 10,
+					feed: 'shots',
+					icon: 'dribbble.png'
+				},
+				vimeo: {
+					title: 'Vimeo',
+					link: true,
+					follow: 'Follow on Vimeo',
+					limit: 10,
+					feed: 'likes',
+					thumb: 'small',
+					stats: true,
+					icon: 'vimeo.png'
+				},
+				stumbleupon: {
+					title: 'Stumbleupon',
+					link: true,
+					follow: 'Follow',
+					limit: 10,
+					feed: 'favorites',
+					icon: 'stumbleupon.png'
+				},
+				tumblr: {
+					title: 'Tumblr',
+					link: true,
+					follow: 'Follow',
+					limit: 10,
+					thumb: 250,
+					video: 250,
+					icon: 'tumblr.png'
+				},
+				deviantart: {
+					title: 'Deviantart',
+					link: true,
+					follow: 'Follow',
+					limit: 10,
+					icon: 'deviantart.png'
+				},
+				linkedin: {
+					plugins: 'CompanyProfile,MemberProfile,CompanyInsider,JYMBII',
+					CompanyInsider: 'innetwork,newhires,jobchanges',
+					MemberProfile: 'true',
+					CompanyProfile: 'true',
+					icon: 'linkedin.png'
+				},
+				instagram: {
+					title: 'Instagram',
+					limit: 10,
+					accessToken: '',
+					redirectUrl: '',
+					clientId: '',
+					thumb: 'low_resolution',
+					comments: 3,
+					likes: 8,
+					icon: 'instagram.png'
+				},
+				tweetId: '',
+				share: true,
+				external: true,
+				method: 'slide',
+				position: 'fixed',
+				location: 'right',
+				align: 'top',
+				offset: 10,
+				speed: 600,
+				loadOpen: false,
+				autoClose: false,
+				width: 360,
+				height: 630,
+				start: 0,
+				controls: true,
+				rotate: {
+					direction: 'down',
+					delay: 6000
+				},
+				wrapper: 'dcsmt',
+				content: 'dcsmt-content',
+				slider: 'dcsmt-slider',
+				slides: 'tab-content',
+				tabs: 'social-tabs',
+				classOpen: 'dcsmt-open',
+				classClose: 'dcsmt-close',
+				classToggle: 'dcsmt-toggle',
+				classSlide: 'dcsmt-slide',
+				active: 'active',
+				zopen: 1000,
+				imagePath: 'images/icons/'
+	});
+});</pre>
+<p>Options that are not included in the initialisation code will automatically use the default values.</p>
+	</div>
+	</div>
+  </div>
+  <!-- End Question Block -->
+
+  <!-- Begin Question Block -->
+  <div class="toggle">
+	<h2 id="tag-position" class="trigger"><span></span>Positioning The Slide Out Widget</h2>
+	<div class="togglebox">
+	<div>
+		<p>For the slide out version of the media tabs, the positioning is based on 3 settings:</p>
+		<ul>
+			<li>Location: The side of the browser screen that the tabs will slide out from. Options are - top, bottom, left or right</li>
+			<li>Align: The alignment of the widget at the selected location. Options are top/bottom for locations left & right and left/right for locations top/bottom</li>
+			<li>Offset: The offset in pixels from the edge of the browser window</li>
+		</ul>
+		<h4>Example:</h4>
+		<p>To position the slide out tabs at the bottom of the screen in the right-hand corner, 40 pixels from the edge of the window use:</p>
+		<ul>
+			<li>location: 'bottom'</li>
+			<li>align: 'right'</li>
+			<li>offset: 40</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+  <div class="toggle">
+	<h2 id="tag-position" class="trigger"><span></span>Creating Your Own Google API Key</h2>
+	<div class="togglebox">
+	<div>
+		<p>The google +1 feed requires an API key. Fortunately creating your own google API key is fairly quick and easy:</p>
+		<ul>
+			<li>Go to <a href="https://code.google.com/apis/console#access" target="_blank">https://code.google.com/apis/console#access</a></li>
+			<li>Login to your google account</li>
+			<li>Click "Create Project"</li>
+		</ul>
+		<p><img src="inc/images/google_api_key.png" alt="Google API Key" /></p>
+		<ul>
+			<li>Under service list, click the "off" button next to "Google+ API" to turn it on.</li>
+			<li>Accept both agreements.</li>
+			<li>From the left menu, Go to "API Access"</li>
+			<li>Copy your API key and paste into the social media tabs settings</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Instagram Feed Options</h2>
+	<div class="togglebox">
+	<div>
+		
+		<p>There are 4 different types of feed that can be included from Instagram:</p>
+		<h4>1. User Feed</h4>
+		<p>The user feed will show the latest posts from a specific user ID. To create a user feed use "!" followed by the user ID - e.g.</p>
+		<p>id: '!123456'</p>
+		
+		<h4>2. Location Feed</h4>
+		<p>To display the latest posts for a specific location enter a "@" followed by the instagram location ID - e.g.</p>
+		<p>id: '@123456'</p>
+		
+		<h4>3. Search Based On Tags</h4>
+		<p>To display the latest posts for a specific tag enter a "#" followed by the tag text - e.g. to search for images tagged with "london"</p>
+		<p>id: '#london'</p>
+		
+		<h4>4. Search Based On Geographical Location</h4>
+		<p>To display the latest posts for a geographical location you need 3 parameters - latitude, longitude and distance(in meters up to 5000m). Enter these values starting with a "?" followed by the lat, long and distance separated by a "/" e.g.</p>
+		<p>id: '?55.123/-1.345/1000'</p>
+		
+		<h4>Displaying Comments & Likes</h4>
+		<p>The instagram feed also includes the option to display the latest comments for each post plus thumbnails of users who liked the post.</p><p>To add either comments or likes enter the number that you wish to display in the "comments" and "likes" options.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+  <div class="toggle">
+	<h2 id="tag-position-instagram" class="trigger"><span></span>Creating Your Own Instagram API Client ID & Access Token</h2>
+	<div class="togglebox">
+	<div>
+		<p>In order to use the Instagram feed you must first create your own "Client ID"</p>
+		<p><img src="inc/images/instagram_1.png" alt="Instagram API" /></p>
+		<ul>
+			<li>Go to <a href="http://instagr.am/developer/" target="_blank">http://instagr.am/developer/</a>.</li>
+			<li> Click "Register Your Application"</li>
+		</ul>
+		<p><img src="inc/images/instagram_2.png" alt="Instagram API" /></p>
+		<ul>
+			<li>On the Developer signup page complete the form</li>
+			<li>Read and accept the terms & conditions and then click "sign up"</li>
+		</ul>
+		<p><img src="inc/images/instagram_3.png" alt="Instagram API" /></p>
+		<ul>
+			<li>If the signup page is submitted successfully and has been accepted click the "manage clients" tab in the top-right of the header.</li>
+			<li>Click the green button - "Register A New Client.</li>
+		</ul>
+		<p><img src="inc/images/instagram_4.png" alt="Instagram API" /></p>
+		<ul>
+			<li>Complete the "Register new OAuth Client" form - e.g:<br />
+			Application name: social stream<br />
+			Description: create a social stream from multiple networks<br />
+			Website: enter your website URL - e.g. http://www.designchemical.com</br />
+			OAuth redirect_uri: enter the URL of a page where the social stream is installed - this is required to get your access token, which you can then insert into the instagram options. Once you have the access token you can use this on all pages, which use the social media tabs plugin on the website listed above.</li>
+			<li>Click the "Register" button</li>
+		</ul>
+		<p><img src="inc/images/instagram_5.png" alt="Instagram API" /></p>
+		<ul>
+			<li>Copy your CLIENT ID and paste into the "clientId" option for Instagram</li>
+			<li>Enter your redirect_uri into the "redirectUrl" option for Instagram</li>
+		</ul>
+		
+		<h3>How to get your access token</h3>
+		<ul>
+			<li>Browse to the page on your website used for the "redirect_uri" in the Instagram client ID setup (note this page must have the social media tabs installed - using either the network wall or the rotating feed.</li>
+			<li>You will then be redirected to the Instagram login screen (if not already logged in) and then a confirmation screen where you approve your app's access to your Instagram data.</li>
+			<li>Instagram will then automatically redirect you back to your website page given in the "redirect_uri" setting</li>
+			<li>When the page loads check the URL in the browser - you should see the following URL format:<br /><br />
+			http://your-redirect-uri#access_token=186786085.f59def8.1d34b28a52e04d36ba1dc52ca98215dc</li>
+			<li>Copy the token code after the "http://your-redirect-uri#access_token=" - e.g 186786085.f59def8.1d34b28a52e04d36ba1dc52ca98215dc</li>
+			<li>Add the access token to your Instagram options using the "accessToken" option - you should now have your "accessToken", "redirectUrl" & "clientId" options completed - e.g:<br /><br />
+			<pre>instagram: {
+				accessToken: 'YOUR ACCESS TOKEN',
+				redirectUrl: 'http://your-redirect-uri',
+				clientId: 'YOUR CLIENT ID',
+				comments: 3,
+				likes: 10
+			}</pre>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+
+<div class="opacity">
+ <div class="title">
+    <h3>Styling</h3>
+    
+  </div>
+  <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>CSS</h2>
+	<div class="togglebox">
+	<div>
+		<p>dcsmt.css in the plugin directory CSS folder contains the styles to create the default skins shown in the demos.</p>
+		<h4>General Styles</h4>
+		<pre>
+/* Reset */
+.dcsmt ul, .dcsmt li, .dcsmt h3 {
+	padding: 0; 
+	margin: 0; 
+	list-style: none!important;
+}
+
+/* Main widget styles */
+.dcsmt {
+	font-size: 12px;
+	color: #666;
+}
+.active.dcsmt .dcsmt-slider {
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+}
+.dcsmt a {
+	text-decoration:none;
+}
+.dcsmt-content {
+	position: relative;
+}
+		</pre>
+		<h4>Tab Navigation Styles</h4>
+		<p>The following CSS also includes some rules, which are specific to the slide out tabs location and/or alignment. The header comments help identify, which rules to use for which tabs:</p>
+		<pre>
+/* Tabs */
+.social-tabs li {
+	padding: 4px;
+	width: 27px;
+	height: 26px;
+	background: #777;
+	z-index: 10;
+}
+.active .social-tabs li {
+	z-index: 10;
+	-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.6);
+}
+.active .social-tabs li.active {
+	z-index: 11;
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+}
+/** Static **/
+.static .social-tabs {
+	padding-left: 8px;
+}
+.static .social-tabs li {
+	float: left;
+	margin-right: 2px;
+	border-radius: 5px 5px 0 0; 
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+/** Top **/
+.top .social-tabs {
+	padding-left: 8px;
+}
+.top.align-right .social-tabs {
+	padding-left: 0;
+	padding-right: 8px;
+}
+.top .social-tabs li {
+	padding: 3px 4px;
+	margin-right: 2px;
+	float: left;
+	border-radius: 0 0 5px 5px; 
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+}
+/** Right **/
+.right .social-tabs {
+	padding-top: 8px;
+}
+.right .social-tabs li {
+	margin: 0 0 2px 0;
+	border-radius: 5px 0 0 5px; 
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+}
+/** Bottom **/
+.bottom .social-tabs {
+	padding-left: 8px;
+}
+.bottom.align-right .social-tabs {
+	padding-left: 0;
+	padding-right: 8px;
+}
+.bottom .social-tabs li {
+	padding: 4px 4px 2px 4px;
+	margin: 0 2px 0 0;
+	float: left;
+	border-radius: 5px 5px 0 0; 
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+/** Left **/
+.left .social-tabs {
+	padding-top: 8px;
+}
+.left .social-tabs li {
+	margin: 0 0 2px 0;
+	border-radius: 0 5px 5px 0; 
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}</pre>
+<h4>Tab Content</h4>
+<p>For the main tab content we also use CSS rules, which are specific to the network. This helps create the unique styling for the colors and heading icons:</p>
+		<pre>
+/* Tab Content */
+.dcsmt-slider {
+	clear: both;
+	overflow: hidden;
+}
+.tab-content {
+	position: relative;
+	overflow: hidden;
+	z-index: 11;
+	background: url(../images/loader.gif) no-repeat center 200px;
+}
+.tab-content ul {
+	font-size: 11px;
+}
+.tab-content .tab-inner {
+	background: #fff;
+	overflow: hidden;
+}
+.tab-inner ul {
+	padding: 0 10px;
+}
+.tab-inner .profile {
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	background: #ececec;
+}
+.tab-inner .profile h3 {
+	margin: 0;
+	padding: 0 0 0 26px;
+	position: relative;
+	line-height: 20px;
+}
+.tab-inner .profile h3 img {
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.tab-inner .profile h3 a {
+	font-size: 14px; 
+	text-decoration: none;
+}
+.tab-inner .profile h3, .tab-inner .profile h3 a {
+	color: #555; 
+	text-shadow: 0 1px 0 #fff;
+}
+.tab-inner .profile .dcsmt-btn {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	cursor: pointer;
+	font: bold 12px/14px Arial, sans-serif;
+	display:inline-block;
+	text-decoration:none;
+	outline:none;
+	padding: 4px 8px;
+	background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #DEDEDE);
+    border: 1px solid #CCC;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.tab-inner .profile .dcsmt-btn:hover{
+	background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #dedede, #fff);
+    border: 1px solid #CCC;
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.tab-inner .profile a.avatar{
+	display:block;
+	float:left;
+	text-decoration:none;
+	outline:none;
+	margin:0 10px 0 0
+}
+.tab-inner .profile a.avatar img{
+	padding:1px;
+	background: #fff;
+	border: 3px solid #ccc;
+	display:block
+}
+/** Network specific profile header **/
+.tab-rss .profile h3 {
+	background: url(../images/rss.png) no-repeat 0 2px;
+}
+.tab-flickr .profile h3 {
+	background: url(../images/flickr.png) no-repeat 0 1px;
+}
+.tab-delicious .profile h3 {
+	background: url(../images/delicious.png) no-repeat 0 0;
+}
+.tab-twitter .profile h3 {
+	background: url(../images/twitter.png) no-repeat 0 1px;
+}
+.tab-fblike .profile h3 {
+	background: url(../images/fblike.png) no-repeat 0 0;
+}
+.tab-fbrec .profile h3 {
+	background: url(../images/fbrec.png) no-repeat 0 0;
+}
+.tab-google .profile h3 {
+	background: url(../images/google.png) no-repeat 0 2px;
+}
+.tab-youtube .profile h3 {
+	background: url(../images/youtube.png) no-repeat 0 0;
+}
+.tab-pinterest .profile h3 {
+	background: url(../images/pinterest.png) no-repeat 0 0;
+}
+.tab-lastfm .profile h3 {
+	background: url(../images/lastfm.png) no-repeat 0 2px;
+}
+.tab-dribbble .profile h3 {
+	background: url(../images/dribbble.png) no-repeat 0 1px;
+}
+.tab-vimeo .profile h3 {
+	background: url(../images/vimeo.png) no-repeat 0 1px;
+}
+.tab-stumbleupon .profile h3 {
+	background: url(../images/stumbleupon.png) no-repeat 0 1px;
+}
+.tab-tumblr .profile h3 {
+	background: url(../images/tumblr.png) no-repeat 0 1px;
+}
+.tab-deviantart .profile h3 {
+	background: url(../images/deviantart.png) no-repeat 0 1px;
+}
+.tab-linkedin .profile h3 {
+	background: url(../images/linkedin.png) no-repeat 0 1px;
+}
+.tab-instagram .profile h3 {
+	background: url(../images/instagram.png) no-repeat 0 1px;
+}
+
+/** Static **/
+.static .dcsmt-slider {
+	border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+.static .tab-content {
+	padding: 10px;
+}
+.static .tab-inner {
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+/** Top **/
+.top .dcsmt-slider {
+	border-radius: 0 0 10px 10px; 
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+}
+.top .tab-inner {
+	border-radius: 0 0 5px 5px; 
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+}
+.top .tab-content {
+	padding: 0 10px 10px 10px;
+}
+/** Right **/
+.right .dcsmt-slider {
+	border-radius: 10px 0 0 10px; 
+	-webkit-border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+}
+.right .tab-inner {
+	border-radius: 5px 0 0 5px; 
+	-webkit-border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+}
+.right .tab-content {
+	padding: 10px 0 10px 10px;
+}
+/** Bottom **/
+.bottom .dcsmt-slider {
+	border-radius: 10px 10px 0 0; 
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+}
+.bottom .tab-inner {
+	border-radius: 5px 5px 0 0; 
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+}
+.bottom .tab-content {
+	padding: 10px 10px 0 10px;
+}
+/** Left **/
+.left .dcsmt-slider {
+	border-radius: 0 10px 10px 0; 
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+.left .tab-inner {
+	border-radius: 0 5px 5px 0; 
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}
+.left .tab-content {
+	padding: 10px 10px 10px 0;
+}
+/** Network specific colors **/
+.tab-content.tab-rss, .social-tabs li.active.dcsmt-rss, .social-tabs li.dcsmt-rss:hover{
+	background-color: #FF9800;
+}
+.tab-content.tab-flickr, .social-tabs li.active.dcsmt-flickr, .social-tabs li.dcsmt-flickr:hover {
+	background-color: #f90784;
+}
+.tab-content.tab-delicious, .social-tabs li.active.dcsmt-delicious, .social-tabs li.dcsmt-delicious:hover {
+	background-color: #3271CB;
+}
+.tab-content.tab-twitter, .social-tabs li.active.dcsmt-twitter, .social-tabs li.dcsmt-twitter:hover{
+	background-color: #4ec2dc;
+}
+.tab-content.tab-fblike, .social-tabs li.active.dcsmt-fblike, .social-tabs li.dcsmt-fblike:hover {
+	background-color: #3b5998;
+}
+.tab-content.tab-fbrec, .social-tabs li.active.dcsmt-fbrec, .social-tabs li.dcsmt-fbrec:hover {
+	background-color: #3b5998;
+}
+.tab-content.tab-google, .social-tabs li.active.dcsmt-google, .social-tabs li.dcsmt-google:hover {
+	background-color: #2d2d2d;
+}
+.tab-content.tab-youtube, .social-tabs li.active.dcsmt-youtube, .social-tabs li.dcsmt-youtube:hover {
+	background-color: #DF1F1C;
+}
+.tab-content.tab-digg, .social-tabs li.active.dcsmt-digg, .social-tabs li.dcsmt-digg:hover {
+	background-color: #195695;
+}
+.tab-content.tab-pinterest, .social-tabs li.active.dcsmt-pinterest, .social-tabs li.dcsmt-pinterest:hover {
+	background-color: #CB2528;
+}
+.tab-content.tab-lastfm, .social-tabs li.active.dcsmt-lastfm, .social-tabs li.dcsmt-lastfm:hover {
+	background-color: #C90E12;
+}
+.tab-content.tab-dribbble, .social-tabs li.active.dcsmt-dribbble, .social-tabs li.dcsmt-dribbble:hover, .tab-dribbble .dcsmt-btn {
+	background-color: #F175A8;
+}
+.tab-content.tab-vimeo, .social-tabs li.active.dcsmt-vimeo, .social-tabs li.dcsmt-vimeo:hover, .tab-vimeo .dcsmt-btn {
+	background-color: #4EBAFF;
+}
+.tab-content.tab-stumbleupon, .social-tabs li.active.dcsmt-stumbleupon, .social-tabs li.dcsmt-stumbleupon:hover, .tab-stumbleupon .dcsmt-btn {
+	background-color: #EB4924;
+}
+.tab-content.tab-tumblr, .social-tabs li.active.dcsmt-tumblr, .social-tabs li.dcsmt-tumblr:hover, .tab-tumblr .dcsmt-btn {
+	background-color: #365472;
+}
+.tab-content.tab-deviantart, .social-tabs li.active.dcsmt-deviantart, .social-tabs li.dcsmt-deviantart:hover, .tab-deviantart .dcsmt-btn {
+	background-color: #B8C529;
+}
+.tab-content.tab-linkedin, .social-tabs li.active.dcsmt-linkedin, .social-tabs li.dcsmt-linkedin:hover, .tab-linkedin .dcsmt-btn {
+	background-color: #006DA7;
+}
+.tab-content.tab-instagram, .social-tabs li.active.dcsmt-instagram, .social-tabs li.dcsmt-instagram:hover, .tab-instagram .dcsmt-btn {
+	background-color: #413A33;
+}
+		</pre>
+		<h4>Feeds</h4>
+		<pre>/* Feeds */
+.dcsmt .stream {
+	overflow: hidden;
+}
+.stream p {
+	margin: 0;
+	padding: 0;
+}
+.tab-inner ul li {
+	padding: 5px 0;
+	margin: 0;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+}
+.tab-inner ul li .thumb {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.tab-inner ul li .thumb img {
+	border: 3px solid #ececec;
+	padding: 1px;
+	background: #fff;
+}
+.tab-inner ul li .title {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.tab-inner ul li .date {
+	display: block;
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+.tab-inner ul li .meta {
+	display: block;
+	font-size: 90%;
+}
+.tab-inner ul li .meta span {
+	margin-right: 6px;
+}
+.tab-inner ul li.dcsmt-error {
+	color: #990000;
+}</pre>
+<h4>Controls</h4>
+<pre>
+/* Controls */
+.dcsmt .controls {
+	position: absolute;
+	left: 10px;
+	height: 20px;
+	padding: 5px 0;
+	z-index: 12;
+	display: none;
+	background: url(../images/bg_white.png) repeat 0 0;
+}
+.dcsmt .controls ul {
+	padding: 0 10px;
+}
+.dcsmt .controls li {
+	display: inline;
+}
+.dcsmt .controls a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 4px;
+	background: url(../images/controls.png) no-repeat 0 0;
+}
+.dcsmt .controls .prev {
+	background-position: -40px 0;
+}
+.dcsmt .controls .next {
+	background-position: -60px 0;
+}
+.dcsmt .controls .play {
+	background-position: 0 0;
+}
+.dcsmt .controls .pause {
+	background-position: -20px 0;
+}
+.dcsmt .controls .dcsmt-close {
+	background-position: -80px 0;
+}
+.dcsmt .controls .prev:hover {
+	background-position: -40px -20px;
+}
+.dcsmt .controls .next:hover {
+	background-position: -60px -20px;
+}
+.dcsmt .controls .play:hover {
+	background-position: 0 -20px;
+}
+.dcsmt .controls .pause:hover {
+	background-position: -20px -20px;
+}
+.dcsmt .controls .dcsmt-close:hover {
+	background-position: -80px -20px;
+}
+/** Static **/
+.dcsmt.static .controls {
+	bottom: 10px;
+}
+/** Top **/
+.dcsmt.top .controls {
+	bottom: 10px;
+}
+/** Right **/
+.dcsmt.right .controls {
+	bottom: 10px;
+	right: 0;
+}
+/** Bottom **/
+.dcsmt.bottom .controls {
+	bottom: 0;
+}
+/** Left **/
+.dcsmt.left .controls {
+	bottom: 10px;
+	left: 0;
+}
+</pre>
+<h4>Miscellaneous Network Specific CSS</h4>
+<pre>/* google plus */
+.tab-google .tab-inner .profile .dcsmt-btn {
+    background-color: #4A8BF6;
+    background-image: -moz-linear-gradient(center top , #73a7fd, #3b84fb);
+    border: 1px solid #2a79fb;
+    color: #fff;
+	text-shadow: none;
+}
+.tab-google .tab-inner .profile .dcsmt-btn:hover{
+	background-color: #4A8BF6;
+    background-image: -moz-linear-gradient(center top , #3b84fb, #73a7fd);
+    border: 1px solid #2a79fb;
+    color: #fff;
+	text-shadow: none;
+}
+/* rss */
+.tab-rss .tab-inner .profile .dcsmt-btn {
+    background-color: #FCAB3A;
+    background-image: -moz-linear-gradient(center top , #FCAB3A, #FF9502);
+    border: 1px solid #EF8B00;
+    color: #fff;
+	text-shadow: none;
+}
+.tab-rss .tab-inner .profile .dcsmt-btn:hover{
+	background-color: #FCAB3A;
+    background-image: -moz-linear-gradient(center top , #FF9502, #FCAB3A);
+    border: 1px solid #EF8B00;
+    color: #fff;
+	text-shadow: none;
+}
+/** Flickr **/
+.tab-flickr .tab-inner ul {
+	padding-top: 5px;
+}
+.tab-flickr .tab-inner li {
+	float: left;
+	padding: 0;
+	margin: 0 5px 5px 0;
+	border: none;
+}
+.tab-flickr .tab-inner li .thumb {
+	margin: 0;
+}
+.tab-flickr .tab-inner li img{
+	height: 70px;
+}
+/** Youtube **/
+.youtube-subscribe {
+	overflow: hidden; 
+	height: 105px; 
+	width: 100%; 
+	border: 0;
+}
+/* Pinterest */
+.tab-pinterest ul li img {
+	border: 3px solid #ececec;
+	padding: 1px;
+	background: #fff;
+}
+.tab-pinterest .tab-inner .profile .dcsmt-btn {
+	padding: 0;
+	top: 7px;
+	border: none;
+}
+/* Digg */
+.tab-digg .digg-widget .digg-widget-head.premium, .tab-digg .digg-widget .digg-widget-head {
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    white-space: nowrap;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.tab-digg .digg-widget .digg-widget-head h2 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 0 26px;
+    white-space: nowrap;
+	text-shadow: 0 1px 0 #fff;
+	background: url(../images/digg.png) no-repeat 0 0;
+}
+.tab-digg .digg-widget .digg-widget-head a {
+	top: 12px;
+}
+.tab-digg .digg-widget-content {
+	border-top: 1px solid #ccc;
+}</pre>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Default Images</h2>
+	<div class="togglebox">
+	<div>
+		<p>The plugin uses several key images, including the icons to create the tab navigation & the image sprite used for the feed control icons. If moving the files to a new location with a different directory structure make sure that you update the image path in the CSS rules.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+  </div>
+  
+  <div class="opacity">
+  
+   <div class="title">
+    <h3>Demos</h3>
+    
+  </div>
+  
+  
+    <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Default Settings</h2>
+	<div class="togglebox">
+	<div> 
+	<p>Quick start - no customized options! Only minimum settings for the social network user ID's are required - <a href="example_1.html">View Example 1</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		widgets: 'twitter,facebook,fblike,fbrec,google,linkedin,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		facebookId: '157969574262873',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+		flickrId: '/63277308@N00',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		diggId: 'remix4',
+		pinterestId: 'designchemical/designchemical-premium-plugins',
+		lastfmId: 'lastfm',
+		dribbbleId: 'frogandcode',
+		vimeoId: 'brad',
+		stumbleuponId: 'remix4',
+		deviantartId: 'wyv1',
+		tumblrId: 'richters',
+		instagramId: '',
+		tweetId: 'designchemical'
+	});
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+   <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Create Your Own Demo</h2>
+	<div class="togglebox">
+	<div> 
+	<p>Allows you to set location, align, offset, width, loadOpen, autoClose & start values to dynamically create your own slide out tabs demos. Just change the form values and press "View Demo" to see it in action: - <a href="example_2.html">View Example 2</a></p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+
+   <!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Creating Static Tabs</h2>
+	<div class="togglebox">
+	<div> 
+	<p>If you want to include the social media tabs in the page content you can use the "method" option to switch from slide-out tabs to inline static tabs - <a href="example_3.html">View Example 3 - Creating Static Tabs</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+			method: 'static',
+						width: 400,
+						widgets: 'google,fblike,fbrec,rss,twitter,pinterest',
+						googleId: '111470071138275408587',
+						googleApi: 'AIzaSyCsugGErGFtT5mGKH51DLqvZJTQx2ggypQ',
+						rssId: 'http://feeds.feedburner.com/DesignChemical',
+						twitterId: 'designchemical',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						pinterestId: 'designchemical'
+		});
+});</pre>
+	
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Insert Slide Out Tabs In Page Content</h2>
+	<div class="togglebox">
+	<div> 
+	<p>If you want to include slide-out social media tabs in the actual page content you can use the "position" option - <a href="example_4.html">View Example 4</a></p>
+	<pre>$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		position: 'absolute',
+		location: 'top',
+		align: 'right',
+		width: 380,
+		offset: 20,
+		widgets: 'twitter,fblike,fbrec,google,rss,pinterest,flickr,delicious,youtube',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		googleApi: 'AIzaSyCsugGErGFtT5mGKH51DLqvZJTQx2ggypQ',
+		flickrId: '',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		pinterestId: 'designchemical'
+	});
+});</pre>
+
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Interacting Using External Links</h2>
+	<div class="togglebox">
+	<div> 
+	<p>The plugin has several built-in features, which allow you to interact with the social media tabs using external links in your web page content - <a href="example_5.html">View Example 5</a></p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+  <div class="opacity">
+  <div class="title">
+    <h3>FAQ / Errors</h3>
+    
+  </div>
+  
+<!-- Begin Question Block -->
+<div class="toggle">
+
+	<h2 class="trigger"><span></span>Tabs not rendering</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If the tabs are not appearing on the screen check the following:</p>
+		<ul>
+			<li>Is the jQuery library included in the page and positioned BEFORE the social share plugin?</li>
+			<li>Is the jquery social media tabs plugin file included in the page?</li>
+			<li>Is the div tag with the correct ID included in the page between the "body" tags?</li>
+			<li>Check the page using firebug for any other jquery/javascript errors that may be stopping the plugin from initialising</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>The Social Network Feed Shows An Error</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If the feed returns an error the plugin will insert the error text into the tab. If the feed cannot be found first check your user ID/username to make sure that this matches your profile.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Twitter Feed Not Showing</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If your twitter feed is showing "Error. [object Object]" make sure that you have set up your <a href="#twitter-api">Twitter API Credentials</a>. If these have been set up correctly then check that the correct path and filename are inserted into the twitter: url option. The default value is "twitter.php", which will be valid if the location of the twitter.php file is in the same directory as the page containing the tabs. If you are unsure then enter the absolute path & filename for this file - e.g</p>
+		<pre>twitter: {
+    url: 'http://www.yourdomain.com/tabs-folder-name/twitter.php'
+		}</pre>
+		<p>If the twitter feeds are not showing and there are no errors this may be due to the limits imposed by Twitter on their API:</p>
+		<p>Searches - 180 calls per 15 mins.</p>
+		<p>Lists - 180 calls per 15 mins.</p>
+		<p>Users - 180 calls per 15 mins.</p>
+		<p>During this time other users will still be able to view your twitter feeds as limits are on a per user and per application basis.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Facebook Feed Not Showing</h2>
+	<div class="togglebox">
+	<div> 
+		<p>There are 2 main reasons your facebook feed may not work:</p>
+		<p>1. You are trying to use a facebook profile instead of a page.</p>
+		<p>For more information on how to create a facebook page see - <a href="http://blog.hubspot.com/blog/tabid/6307/bid/5492/How-to-Create-a-Facebook-Business-Page-in-5-Simple-Steps-With-Video.aspx" target="_blank">http://blog.hubspot.com/blog/tabid/6307/bid/5492/How-to-Create-a-Facebook-Business-Page-in-5-Simple-Steps-With-Video.aspx</a></p>
+		<p>2. Your facebook settings restrict the age of the user that may view your page - in order for the facebook feed to work you must remove any age restriction from your fan page.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>How To Get Your Facebook ID</h2>
+	<div class="togglebox">
+	<div> 
+		<p>For the facebook like box the ID of your facebook page must be used - this should be a numerical value, not the actual name of your facebook page - e.g. 157969574262873</p>
+		<p>To get the ID from your username you can use the following tool from facebook - replace "username" with the name of your facebook page profile:</p>
+		<p><a href="https://graph.facebook.com/username" target="_blank">https://graph.facebook.com/username</a></p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Facebook Tab Shows An Error</h2>
+	<div class="togglebox">
+	<div> 
+		<p>If you facebook tab shows the following error message your Facebook ID is incorrect:</p>
+<p style="background-color: #FFEBE8; border: 1px solid #DD3C10; padding: 10px; width: 280px; margin: 0 auto 15px auto;">Could not retrieve id for the specified page. Please verify correct href was passed in.</p>
+<p>Check that you are using <strong>a facebook page ID</strong> and not your facebook profile ID &#8211; the like box is specifically for facebook pages.</p>
+<p>To get the page ID see FAQ above.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>How To Get Your Google +1 ID</h2>
+	<div class="togglebox">
+	<div> 
+		<p>To get your google profile ID for the google +1 tab go to your google accounts page and click on the &#8220;edit profile&#8221; link.</p>
+<p>Check the URL in the browser address bar &#8211; your profile ID is the number in the middle of the URL:</p>
+<p>https://profiles.google.com/<strong style="color: #990000;">100058553707375301897</strong>/about/</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>How To Get Your Instagram User ID</h2>
+	<div class="togglebox">
+	<div> 
+		<p>To get your instagram user ID first get your access token - see section above "Plugin Options -> Creating Your Own Instagram API Client ID & Access Token".</p>
+<p>Browse to the following URL - changing YOUR USER NAME & YOUR ACCESS TOKEN for your values:</p>
+<p>https://api.instagram.com/v1/users/search?q=<strong style="color: #990000;">YOUR USER NAME</strong>&access_token=<strong style="color: #990000;">YOUR ACCESS TOKEN</strong></p>
+<p>The Instagram API should then load a page containing text with your profile details similar to the format shown below:</p>
+
+<p>{"meta":{"code":200},"data":[{"username":"YOUR USER NAME","bio":"","website":"","profile_picture":"","full_name":"","id":"<strong style="color: #990000;">YOUR USER ID</strong>"}]}</p>
+<p>Search for the "id" parameter usually located at the end of the text.</p>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>How To Show Tweet Searches From Specific Usernames</h2>
+	<div class="togglebox">
+	<div> 
+		<p>You can use the twitter search function to show searches from specific usernames using the following format -</p>
+		<p>e.g. to search tweets containing "jquery" from user "designchemical"</p>
+		<pre>#jquery+from:designchemical</pre>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>How To Remove Share Links</h2>
+	<div class="togglebox">
+	<div> 
+		<p>To disable specific share links from the feeds add the following css:</p>
+		<p>Facebook:</p>
+		<pre>.share-facebook {display: none;}</pre>
+		<p>Twitter: </p>
+		<pre>.share-twitter {display: none;}</pre>
+		<p>Google +: </p>
+		<pre>.share-google {display: none;}</pre>
+		<p>LinkedIn: </p>
+		<pre>.share-linkedin {display: none;}</pre>
+		<p>To disable all share links from the feeds add the following css:</p>
+		<pre>.section-share {display: none;}</pre>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+
+
+<!-- Start sources -->
+<div class="opacity">
+  
+   <div class="title">
+    <h3>Sources</h3>
+    
+  </div>
+  
+  
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>jQuery Plugins</h2>
+	<div class="togglebox">
+	<div> 
+		<ul>
+			<li>jQuery Social Media Tabs: <a href="http://www.designchemical.com/blog/">Design Chemical</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+<!-- Begin Question Block -->
+<div class="toggle">
+	<h2 class="trigger"><span></span>Twitter Authentication</h2>
+	<div class="togglebox">
+	<div> 
+		<ul>
+			<li>PHP Library to support OAuth for Twitter's REST API: <a href="http://abrah.am">Abraham Williams</a></li>
+			<li>PHP OAuthToken Class</li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!-- End Question Block -->
+
+</div>
+<!-- End sources -->
+
+<!-- Start sources -->
+<div class="opacity">
+  
+   <div class="title">
+    <h3>Changelog</h3>
+    
+  </div>
+  
+	<div> 
+	
+<h4>1.7.1  - 02/08/2013</h4>
+<ul style="margin-bottom: 2em;"><li>Updated: facebook text</li><li>
+Updated: Tumblr follow link</li><li>
+Updated: Tumblr link text</li><li>
+Updated: Remove https support for delicious</li><li>
+Updated: Remove $.browser function for jQuery 1.9+ support</li></ul>
+	
+<h4>1.7 - 23/02/2013</h4>
+
+<ul style="margin-bottom: 2em;"><li>Added: Share feed items via facebook</li><li>
+Added: Google + share link</li><li>
+Added: LinkedIn share link</li><li>
+Updated: Twitter API v 1.1</li><li>
+Updated: remove : characters from Tumblr links</li><li>
+Updated: nicetime function to ease translation</li></ul>
+
+<h4>1.6.1 - 16/12/2012</h4>
+
+<ul style="margin-bottom: 2em;"><li>Added: Share feed items via facebook</li><li>
+Added: Share feed items via twitter</li><li>
+Added: Retweet link on twitter posts</li><li>
+Added: Reply link on twitter posts</li><li>
+Added: Favorite link on twitter posts</li><li>
+Added: Show feed from pinterest boards</li><li>
+Added: Option to show twitter images</li><li>
+Added: Show feed from flickr groups</li></ul>
+
+<h4>1.6 - 6/09/2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: Instagram network</li><li>
+Added: Option to change twitter retweets & replies</li><li>
+Added: Twitter feed option - get tweets based on search</li><li>
+Updated: Change Vimeo time to secs</li><li>
+Updated: Facebook text links</li></ul>
+	
+<h4>1.5 - 17/06/2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: LinkedIn Network plugins</li><li>
+Added: Options for open/closed z-index values</li>
+<li>Added: hashtag and username links in tweet text</li>
+</ul>
+
+<h4>1.4 - 26/05/2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: Tumblr social network</li><li>
+Added: Deviantart social network</li><li>
+Added: Twitter feed option - get tweets from list</li><li>
+Added: Twitter option - add profile avatar image</li><li>
+Updated: Facebook follow button URL</li><li>
+Updated: Facebook feed output - now includes option to show complete post text + images</li><li>
+Updated: RSS feed output - now includes option to show complete post text + images</li><li>
+Updated: Feed URL for last.fm loved tracks</li><li>
+Fixed: Pinterest image link</li></ul>
+	
+<h4>v1.3 - 4th April 2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: Stumbleupon social network</li>
+<li>Added: Facebook wall posts feed</li>
+<li>Fixed: Vimeo user link</li></ul>
+
+<h4>v1.2 - 28th March 2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: Vimeo social network</li></ul>
+
+		<h4>v1.1 - 24th March 2012</h4>
+<ul style="margin-bottom: 2em;"><li>Added: Google plus pages header widget</li>
+<li>Fix: Icon file option</li></ul>
+		<h4>v1.0 - 18th March 2012</h4>
+		<ul style="margin-bottom: 2em;"><li>First release</li></ul>
+		<p></p>
+	</div>
+	
+
+</div>
+<!-- End sources -->
+
+  <div class="opacity">
+  <div class="title">
+    <h3>Thank You</h3>
+    
+  </div>
+  
+  <!-- Begin Question Block -->
+  
+    <div class="info">
+		<p class="margin-bottom">Once again, thank you for purchasing the jQuery Social Media Tabs plugin!</p>
+		<p class="margin-bottom">If you have any questions relating to this plugin or suggestions for future improvements please contact us via our <a href="http://codecanyon.net/user/designchemical">Code Canyon profile</a> or via our website - <a href="http://www.designchemical.com/blog/">http://www.designchemical.com/blog/</a></div>
+ 
+  <!-- End Question Block --> 
+  <div id="copyright">
+	<p>jQuery Social Media Tabs Plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.</p>
+  </div>
+  </div>
+  
+  
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

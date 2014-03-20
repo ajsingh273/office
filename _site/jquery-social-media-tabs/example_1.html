@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Example 1</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		widgets: 'twitter,facebook,fblike,fbrec,google,linkedin,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		facebookId: '157969574262873',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+		flickrId: '/63277308@N00',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		diggId: 'remix4',
+		pinterestId: 'designchemical/designchemical-premium-plugins',
+		lastfmId: 'lastfm',
+		dribbbleId: 'frogandcode',
+		vimeoId: 'brad',
+		stumbleuponId: 'remix4',
+		deviantartId: 'wyv1',
+		tumblrId: 'richters',
+		instagramId: '',
+		tweetId: 'designchemical'
+	});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 1 - Default Settings</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+			<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Example 1 - Default Settings</h3>
+	<h4>Quick start - no customized options!</h4>
+	<p>Minimum required settings are the relevant ID's, usernames or URLs for the individual social network tabs:</p>
+	<h4>jQuery Code</h4>
+	<pre>&lt;script type="text/javascript"&gt;
+	$(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+		widgets: 'twitter,facebook,fblike,fbrec,google,linkedin,rss,flickr,delicious,youtube,digg,pinterest,lastfm,dribbble,vimeo,stumbleupon,tumblr,deviantart',
+		rssId: 'http://feeds.feedburner.com/DesignChemical',
+		twitterId: 'designchemical',
+		facebookId: '157969574262873',
+		fblikeId: '157969574262873',
+		fbrecId: 'http://www.designchemical.com',
+		googleId: '111470071138275408587',
+		google: {
+			api_key: ''
+		},
+		linkedinId: '589883,http://www.linkedin.com/in/leechestnutt',
+		flickrId: '/63277308@N00',
+		deliciousId: 'designchemical',
+		youtubeId: 'wired',
+		diggId: 'remix4',
+		pinterestId: 'designchemical/designchemical-premium-plugins',
+		lastfmId: 'lastfm',
+		dribbbleId: 'frogandcode',
+		vimeoId: 'brad',
+		stumbleuponId: 'remix4',
+		deviantartId: 'wyv1',
+		tumblrId: 'richters',
+		instagramId: '',
+		tweetId: 'designchemical'
+	});
+});
+&lt;/script&gt;</pre>
+<p>Note:</p>
+<p>Twitter - to set up your Twitter API credentials see <a href="index.html#twitter-api">Social Networks Details -> Twitter API Credentials</a>.</p>
+<p>Google + - to set up your Google API key see <a href="index.html#tag-position">Plugin Options -> Creating Your Own Google API key</a>.</p>
+<p>Instagram is not included in the demo as this requires you to set up your own client ID in order to access the API - see <a href="index.html#tag-position-instagram">Creating Your Own Instagram API Client ID & Access Token</a> for more information and step-by-step instructions.</p>
+	<h4>HTML</h4>
+<pre>&lt;div id="social-tabs"&gt;&lt;/div&gt;</pre>
+	<p>The social media tabs is inserted into the "social-tabs" div tag when the page loads. The social network tabs will appear in the following default order:</p>
+		<ol>
+			<li>twitter</li><li>facebook</li><li>facebook like box</li><li>facebook recommendations</li><li>google</li><li>rss</li><li>flickr</li><li>delicious</li><li>youtube</li><li>digg</li><li>pinterest</li><li>lastfm</li><li>dribbble</li><li>vimeo</li><li>stumbleupon</li><li>tumblr</li><li>deviantart</li><li>instagram</li>
+		</ol>
+  
+  </div>
+
+<div id="social-tabs"></div>
+
+</div>
+
+ 
+  
+  <div id="copyright">
+	Social Media Tabs plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Example 5</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('#social-tabs').dcSocialTabs({
+						rssId: 'http://feeds.feedburner.com/DesignChemical',
+						twitterId: 'designchemical',
+						facebookId: '157969574262873',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						googleId: '111470071138275408587',
+						flickrId: '',
+						deliciousId: 'designchemical',
+						youtubeId: 'wired',
+						diggId: 'remix4',
+						pinterestId: 'designchemical',
+						lastfmId: 'lastfm',
+						dribbbleId: 'frogandcode',
+						vimeoId: 'brad',
+						stumbleuponId: 'remix4',
+						tumblrId: 'richters',
+						deviantartId: 'bon-appeteats',
+						autoClose: false,
+			facebook: {
+				text: 'content'
+			}
+					});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 5 - Interacting Using External Links</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+			<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Example 5 - Interacting Using External Links</h3>
+	<p>The plugin has several built-in features, which allow you to interact with the social media tabs using external links in your web page content.</p>
+	<h4>Toggle Slide-Out Tabs</h4>
+	<p>To create a link, which toggles the slide-out tabs open/closed you can either use the default CSS class "dcsmt-toggle" or declare your own via the "classOpen" option in the plugin settings.</p>
+	<p><a href="#" class="dcsmt-toggle">Click To Toggle Tabs</a></p>
+	<pre>&lt;a href="#" class="dcsmt-toggle">Click To Toggle Tabs&lt;/a></pre>
+	<p>To control which social feed is showing when the tabs open add a "rel" attribute to the link with the index value of the relevant tab - dont forget that index values start at 0 - i.e. 1st tab = 0, 2nd tab = 1, etc:</p>
+	<p><a href="#" class="dcsmt-toggle" rel="1">Toggle &amp; Open Tab 2</a></p>
+	<pre>&lt;a href="#" class="dcsmt-toggle" rel="1">Toggle &amp; Open Tab 2&lt;/a></pre>
+	<p><a href="#" class="dcsmt-toggle" rel="3">Toggle &amp; Open Tab 4</a></p>
+	<pre>&lt;a href="#" class="dcsmt-toggle" rel="3">Toggle &amp; Open Tab 4&lt;/a></pre>
+	<p>If no rel attribute is used the plugin will use the "start" value from the settings.</p>
+	<h4>Close Slide-Out Tabs</h4>
+	<p>To close the slide-out tabs use either the default CSS class "dcsmt-close" or declare your own via the "classClose" option in the plugin settings.</p>
+	<p><a href="#" class="dcsmt-close">Click To Close Tabs</a></p>
+	<pre>&lt;a href="#" class="dcsmt-close">Click To Close Tabs&lt;/a></pre>
+	<h4>Open Slide-Out Tabs</h4>
+	<p>To open the slide-out tabs use either class "dcsmt-open" or declare your own via the "classOpen" option.</p>
+	<p><a href="#" class="dcsmt-open">Click To Open Tabs</a></p>
+	<pre>&lt;a href="#" class="dcsmt-open">Click To Open Tabs&lt;/a></pre>
+	<p>As with the toggle class you can use the "rel" attribute to specify which tab should be active:</p>
+	<p><a href="#" class="dcsmt-open" rel="3">Open Tab 4</a></p>
+	<pre>&lt;a href="#" class="dcsmt-open" rel="3">Open Tab 3&lt;/a></pre>
+	<h4>Change Active Tab</h4>
+	<p>To change the active tab use class "dcsmt-slide" or declare your own via the "classSlide" option.</p>
+	<p>This option uses the "rel" attribute to specify which tab should be active. The tabs will automatically open if closed with the dcsmt-slide link is clicked.</p>
+	<p>Navigate between tabs via the links below:</p>
+	<p><a href="#" class="dcsmt-slide" rel="0">Go To Tab 1</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="0">Open Tab 1&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="1">Go To Tab 2</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="1">Open Tab 2&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="2">Go To Tab 3</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="2">Open Tab 3&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="3">Go To Tab 4</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="3">Open Tab 4&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="4">Go To Tab 5</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="4">Open Tab 5&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="5">Go To Tab 6</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="5">Open Tab 6&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="6">Go To Tab 7</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="6">Open Tab 7&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="7">Go To Tab 8</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="7">Open Tab 8&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="8">Go To Tab 9</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="8">Open Tab 9&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="9">Go To Tab 10</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="9">Open Tab 10&lt;/a></pre>
+	<p><a href="#" class="dcsmt-slide" rel="10">Go To Tab 11</a></p>
+	<pre>&lt;a href="#" class="dcsmt-slide" rel="10">Open Tab 11&lt;/a></pre>
+	
+	<p>Note:</p>
+<p>Twitter - to set up your Twitter API credentials see <a href="index.html#twitter-api">Social Networks Details -> Twitter API Credentials</a>.</p>
+<p>Google + - to set up your Google API key see <a href="index.html#tag-position">Plugin Options -> Creating Your Own Google API key</a>.</p>
+  </div>
+<div id="social-tabs"></div>
+</div>
+  <div id="copyright">
+	Social Media Tabs plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

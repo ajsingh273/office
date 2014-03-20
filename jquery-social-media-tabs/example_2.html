@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Plugin - Social Media Tabs Example 2</title>
+<link rel="stylesheet" type="text/css" href="inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/dcsmt.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="js/jquery.social.media.tabs.1.7.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+var main = '<pre>$(document).ready(function($){</br>';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;$("#social-tabs").dcSocialTabs({<br />';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;widgets: "fblike,fbrec,rss,twitter",<br />';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rssId: "http://feeds.feedburner.com/DesignChemical",<br />';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;twitterId: "designchemical",<br />';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fblikeId: "157969574262873",<br />';
+main += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fbrecId: "http://www.designchemical.com",<br />';
+
+	var vars = [], hash;
+	var q = document.URL.split('?')[1];
+	if(q != undefined){
+		q = q.split('&');
+		for(var i = 0; i < q.length; i++){
+			hash = q[i].split('=');
+			vars.push(hash[1]);
+			vars[hash[0]] = hash[1];
+		}
+}
+var location, align, offset, loc_s = vars['location'];
+switch(loc_s)
+{
+	case '1':
+	location = 'top';
+	align = 'right';
+	break;
+	case '2':
+	location = 'top';
+	align = 'left';
+	break;
+	case '3':
+	location = 'bottom';
+	align = 'right';
+	break;
+	case '4':
+	location = 'bottom';
+	align = 'left';
+	break;
+	case '5':
+	location = 'right';
+	align = 'top';
+	break;
+	case '6':
+	location = 'left';
+	align = 'top';
+	break;
+	default:
+	location = 'right';
+	align = 'top';
+	loc_s = 1;
+	break;
+}
+var offset = !vars['offset'] ? 30 : vars['offset'] ;
+var width = !vars['width'] ? 360 : vars['width'] ;
+var open = vars['open'] == undefined ? false : true ;
+var auto = vars['auto'] == undefined ? false : true ;
+var start = !vars['start'] ? 0 : vars['start'] ;
+$('#dcsmt-location').val(loc_s);
+$('#dcsmt-offset').val(offset);
+$('#dcsmt-width').val(width);
+$('#dcsmt-start').val(start);
+if(auto == true){
+$('#dcsmt-auto').attr('checked', true);
+}
+if(open == true){
+$('#dcsmt-open').attr('checked', true);
+}
+var h = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location: '"+location+"',<br />";
+h += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;align: '"+align+"',<br />";
+h += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset: "+offset+",<br />";
+h += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: "+width+",<br />";
+h += open != '' ? "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadOpen: "+open+",<br />": '' ;
+h += auto != '' ? "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoClose: "+auto+",<br />" : '' ;
+h += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start: "+start;
+
+$('#dcsmt-pre').html('<h4>Plugin options</h4><pre>'+h+'</pre>');
+
+main = main+h+'});<br />';
+main += '});</pre>';
+$('#all-pre').html(main);
+
+	$('#social-tabs').dcSocialTabs({
+		widgets: 'google,fblike,fbrec,rss,twitter,pinterest',
+						googleId: '111470071138275408587',
+						rssId: 'http://feeds.feedburner.com/DesignChemical',
+						twitterId: 'designchemical',
+						fblikeId: '157969574262873',
+						fbrecId: 'http://www.designchemical.com',
+						pinterestId: 'designchemical',
+						location: location,
+						align: align,
+						offset: offset,
+						width: width,
+						loadOpen: open,
+						start: start,
+						autoClose: auto
+					});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Begin Second Wrapper -->
+
+<div id="wrapper">
+ 
+  <div id="container"> 
+  <!-- Begin Question Block -->
+
+  <div class="opacity pad-btm">
+	<div id="banner">
+		<a href="http://www.designchemical.com/blog/index.php/premium-jquery-plugins/jquery-social-media-tabs-plugin/"><img src="inc/images/banner.png" alt="" /></a>
+		<h1>Example 2 - Create Your Own Demo</h1>
+	</div>
+	<div id="nav-container">
+		<ul id="dctsp-nav">
+			<li><a href="index.html">Documentation</a></li>
+			<li><a href="example_1.html">Demo 1</a></li>
+			<li><a href="example_2.html">Demo 2</a></li>
+			<li><a href="example_3.html">Demo 3</a></li>
+			<li><a href="example_4.html">Demo 4</a></li>
+			<li><a href="example_5.html">Demo 5</a></li>
+		</ul>
+		</div>
+	</div>
+	
+
+<div class="opacity">
+
+ <div class="title">
+    <h3>Example 2 - Create Your Own Demo</h3>
+		<p>The following example shows some of the more common settings for the slide out tabs, including positioning using location, align and offset. To create your own demo change the form values and press "View Demo" to see it in action:</p>
+	
+		<form action="" method="get" id="dcsmt-form">
+			<h4>Configure the tabs</h4>
+			<p class="border-top"><label>Location:</label><select name="location" id="dcsmt-location" class="select">
+				<option value="1">Top Right</option>
+				<option value="2">Top Left</option>
+				<option value="3">Bottom Right</option>
+				<option value="4">Bottom Left</option>
+				<option value="5">Right</option>
+				<option value="6">Left</option>
+				</select>
+			</p>
+			<p><label>Offset (pixels):</label><input type="text" id="dcsmt-offset" class="text-input" value="30" name="offset" /></p>
+			<p><label>Width (pixels):</label><input type="text" id="dcsmt-width" class="text-input" value="360" name="width" /></p>
+			<p><label>Load Open: <input type="checkbox" id="dcsmt-open" class="checkbox" value="true" name="open" /></label> <label>Auto-Close: <input type="checkbox" id="dcsmt-auto" class="checkbox" value="true" name="auto" /></label></p>
+			<p><label>Start Tab:</label><select name="start" id="dcsmt-start" class="select">
+				<option value="0">Tab 1</option>
+				<option value="1">Tab 2</option>
+				<option value="2">Tab 3</option>
+				<option value="3">Tab 4</option>
+				<option value="4">Tab 5</option>
+				</select>
+			</p>
+			<p><a href="#" id="link-go">View Demo</a></p>
+		
+		</form>
+		
+		<div id="dcsmt-pre"></div>
+		<div class="clear"></div>
+	<h4>jQuery Code</h4>
+	<p>Below is the complete jQuery code for this demo:</p>
+	<div id="all-pre"></div>
+	<h4>HTML</h4>
+<pre>&lt;div id="social-tabs"&gt;&lt;/div&gt;</pre>
+
+<p>Note:</p>
+<p>Twitter - to set up your Twitter API credentials see <a href="index.html#twitter-api">Social Networks Details -> Twitter API Credentials</a>.</p>
+<p>Google + - to set up your Google API key see <a href="index.html#tag-position">Plugin Options -> Creating Your Own Google API key</a>.</p>
+
+  </div>
+
+<div id="social-tabs"></div>
+
+</div>
+
+ 
+  
+  <div id="copyright">
+	Social Media Tabs plugin was created by <a href="http://www.designchemical.com">Design Chemical</a>.
+  </div>
+</div>
+<!-- End Wrapper -->
+</body>
+</html>

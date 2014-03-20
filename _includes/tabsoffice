@@ -22,6 +22,7 @@
     border: 0;
     vertical-align: baseline;
     background: transparent;
+    
 }
 .wrapper h1 {
     vertical-align:middle;
