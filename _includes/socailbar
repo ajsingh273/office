@@ -1,6 +1,9 @@
 <style>
 .container {
-
+padding: 0 20px;
+border: 0 none;
+margin: 0 auto;
+vertical-align: baseline;
 }
 .cf {
 zoom: 1;
@@ -18,7 +21,7 @@ display: table;
 width: 980px;
 margin: 0 auto;
 position: relative;
-padding: 0 10px;
+padding: 10px 0;
 }
 
 .social-media-block {
@@ -150,16 +153,16 @@ cursor: pointer;
 }
 
 .icon-d::before {
-
+content:"+";
 }
 .icon-e::before {
-
+content:"+";
 }
 .icon-m::before {
-
+content:"+";
 }
 .icon-l::before {
-
+content:"+";
 }
 .lt-ie8 .supersized [class^="icon-"],
 .supersized [class^="icon-"]::before{
@@ -187,7 +190,7 @@ right: 0;
 }
 
 </style>
-
+ <div class="row wrap">
       <div class="social-media-block cf">
         <div class="row cf">
           <div class="three columns first-child">
@@ -222,5 +225,5 @@ right: 0;
         
       </div>
 
-
+</div>
  

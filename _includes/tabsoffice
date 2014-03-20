@@ -78,9 +78,9 @@
     font-weight:bold;
     border-right: none;
     z-index: 10;
-    background: #0B5394;
-    border-top-right-radius:3em;
-    border-bottom-right-radius:3em;
+	background: url('http://www.opm.gov/img/Home/audience_selected.png') no-repeat;
+	background-size:200px 45px;
+	color: #FFF;
     position: relative;
 
 }
