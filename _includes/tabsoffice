@@ -9,7 +9,7 @@
     padding-top: 50px;
     padding-bottom: 25px;
     background-color:#CEDAFF;
-    background-image:url('images/uscomservice.png';
+    background-image:url('images/uscomservice.png');
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
