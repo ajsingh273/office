@@ -13,6 +13,7 @@
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
+    
 }
 
 .wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
