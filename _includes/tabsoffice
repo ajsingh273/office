@@ -102,7 +102,7 @@
     min-height: 200px;
     position: relative;
     display: none;
-    background-image:url('../images/uscomservice.png'); 
+    background-image:url('http://www.opm.gov/img/Home/audience_selected.png'); 
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
