@@ -6,6 +6,16 @@ title: homepage
     
 {% include header.html %}
 {% include heroboxhome %}
-{% include heroboxwide %}
-{% include webinar %}
+<div class="clearfix">
+<ul id="main4" style="width:600px;margin-right: 50px;">
+{% include eventshome %}
+</ul>
+<ul id="main4" style="width:400px;">
+{% include social %}
+</ul>
+</div>
+<div class="clearfix" style="margin-bottom:25px;">
+<ul id="main2" style="width:500px;margin-right: 150px;">{% include success %}</ul>
+<ul id="main2">{% include faqshome %}</ul>
+</div>
 {% include footer.html %}

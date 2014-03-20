@@ -515,119 +515,201 @@ $(document).ready(function(){
 
 <div class="clearfix">
 <ul id="main" style="width:750px"><style>
-#container {
-  margin: 20px;
+
+.wrapper
+{
+
+    width: 100%;
+    margin: 0px auto;
+    min-height: 200px;
+    padding-top: 75px;
+    border-bottom: 1px solid #C0C0C0;
 }
-#container input, .content {
-  display: none;
+
+.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
 }
-label {
-  font-weight: bold;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #EEE;
+.wrapper h1 {
+    vertical-align:middle;
+    
 }
-label:hover {
-  cursor: pointer;
+
+
+.wrapper li
+{
+    outline: 0;
+    text-decoration: none;
 }
-#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 {
-  display: block;
+
+#v-nav
+{
+    height: 100%;
+    margin: auto;
+    color: #333;
+    
 }
-#tab1:checked ~ label[for=tab1], #tab2:checked ~ label[for=tab2], #tab3:checked ~ label[for=tab3], #tab4:checked ~ label[for=tab4] {
-  background-color: #DDD;
+
+#v-nav >ul
+{
+    float: left;
+    width: 210px;
+    display: block;
+    position: relative;
+    top: 0;
+    border: 1px solid #DDD;
+    border-right-width: 0;
+    margin: auto 0 !important;
+    padding:0;
 }
-input:checked + .section label {
-  background-color: #DDD;
+
+#v-nav >ul >li
+{
+    width: 180px;
+    list-style-type: none;
+    display: block;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    font-size: 14px;
+    position: relative;
+    border-right-width: 0;
+    border-bottom: 1px solid #DDD;
+    margin: auto;
+    padding: 15px 15px !important;  
+    background: whiteSmoke; /* Old browsers */      
+}
+
+#v-nav >ul >li.current
+{
+    color: #C0C0C0;
+    border-right: none;
+    z-index: 10;
+    background: #212121;
+    background-image:url('../images/Arrow-Right.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    position: relative;
+
+}
+
+#v-nav >ul >li.first.current
+{
+    border-bottom: 1px solid #DDD;
+}
+
+#v-nav >ul >li.last
+{
+    border-bottom: none;
+}
+
+#v-nav >div.tab-content
+{
+    margin-left: 210px;
+    background-color: #FFF;
+    min-height: 200px;
+    position: relative;
+    z-index: 9;
+    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+    box-shadow: inset 0 0 35px 5px #fafbfd;
+    display: none;
+    
+    
+}
+
+#v-nav >div.tab-content >h4
+{
+    font-size: 1.2em;
+    color: Black;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    border-bottom: 1px dotted #EEEDED;
+    padding-bottom: 5px;
+}
+
+#expand a{
+  color:#212121;
+  font-size: 14px;
+}
+
+#expand a:hover {
+text-decoration: underline;
+}
+
 }
 </style>
 
-
-<div id="container">
-  <input id="tab1" type="radio" name="tabs" checked>
-  <input id="tab2" type="radio" name="tabs">
-  <input id="tab3" type="radio" name="tabs">
-  <input id="tab4" type="radio" name="tabs">
-  <label for="tab1">Articles</label>
-  <label for="tab2">Important</label>
-  <label for="tab3">Recent</label>
-  <div id="content1" class="content">
-<!--articles-->
-
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<section id="wrapper" class="wrapper" >
     
-  </head>
-  <body>
-    <div class="wrapper">
-     <h3 >Latest Export Articles</h3>
-<div class="articles4">
-<dl class="article4" id="link">
-    <a href="/office/article.html"><dd class="title" ></dd>
-    <dd class="pub_date"></dd></a>        
-</dl>
+  <div id="v-nav">
+
+  <ul>
+    <li tab="tab1" class="first current">LEARN ABOUT EXPORTING</li>
+    <li tab="tab2">READY TO EXPORT</li>
+    <li tab="tab3">EXPAND MY EXPORTS</li>
+ </ul>
+
+ <div class="tab-content">
+   <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:125px; top:25px;"></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style="top:25px;"></a>
+ </div>
+
+ <div class="tab-content">
+    <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:125px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:125px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:125px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+ </div>
+
+ <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:30px; margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+ </div>
+
 </div>
 
+</section>
+
+
 <script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles4, article4, i, _i, _len, _results;
-    articles4 = data.results;
-    directive = {
-      '.article4': {
-        'article4 <- articles4': {
-          '.title': 'article4.title',
-          '.pub_date': 'article4.pub_date',
+$(function() {
+        
+ $('.close').click(function () {
+        console.log( 'close' );
+        $('.tab-content').hide();
+    });
+    
+    var items = $('#v-nav>ul>li').each(function() {
+        $(this).click(function() {
+            //remove previous class and add it to clicked tab
+            items.removeClass('current');
+            $(this).addClass('current');
 
-          
-        }
-      }
-    };
-    rfn = $p('.articles4').compile(directive);
-    return $p('.articles4').render({ articles4: articles4 }, directive);
-  };
+            //hide all content divs and show current one
+            $('#v-nav>div.tab-content').hide().eq(items.index($(this))).show('fast');
 
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
-    return $.getJSON(url, renderData);
-  };
+            window.location.hash = $(this).attr('tab');
+        });
+    });
 
-  $(document).ready(ready);
+    if (location.hash) {
+        showTab(location.hash);
+    }
+    else {
+        showTab("tab1");
+    }
 
-  }).call(this);
-</script>
+    function showTab(tab) {
+        $("#v-nav ul li:[tab*=" + tab + "]").click();
+    }
 
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
- 
-</br><a href="/office/articlelist.html">View Articles A-Z</a> 
-  </div>
-  <div id="content2" class="content">
+    // Bind the event hashchange, using jquery-hashchange-plugin
+    $(window).hashchange(function() {
+        showTab(location.hash.replace("#", ""));
+    })
 
-  </div>
-  <div id="content3" class="content">
+    // Trigger the event hashchange on page load, using jquery-hashchange-plugin
+    $(window).hashchange();
 
-  </div>
-  <div id="content4" class="content">
-    <h3>Tab 4 Content</h3>
-    <p>But it's easier than copying and pasting lorem ipsum right now.</p>
-  </div>
-</div> <h3>Frequently Asked Questions (FAQs)</h3>
+});
+</script> <h3>Frequently Asked Questions (FAQs)</h3>
 <a href="#">·  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></br>
 <a href="#">·    How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></br>
 <a href="#">·    How can I find export financing?</a></br>

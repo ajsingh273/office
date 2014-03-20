@@ -1,69 +1,83 @@
+<style>
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+#ind {
+font-style: italic;
+}
 
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper" >
-   
-<div class="articles9" >
-<h3>Attend Upcoming Trade Events</h3>
-<table class="partialTable"><tr>
-<th style="width:250px">Event</th>
-<th style="width:100px">Date</th>
-<th style="width:600px">Industry</th>
-</tr>
-</table>
-<div ><dl class="article9">
-    <table ><tr><td class="event_name" style="width:250px"></dd>
-    <td class="start_date" style="width:100px"></dd>  
-    <td class="industries"></dd> 
-</dl></tr></table>
+</style>
+
+<h4>Attend a Trade Event</h4>
+
+<div class="clearfix">
+<ul id="main3">
+<p id="title"><a href="#">2014-03-17 MODEX 2014 - IBP Select</a></p>
+
+<p>Atlanta, GA</p>
+
+<p>MODEX is the largest supply chain exhibition to take place in North or South America in 2014. MODEX 2014 is the industry's newest expo for the manufacturing, distribution and supply chain industries.</p>
+
+<p id="ind">Materials Handling Machinery</p>
+</ul>
+
+
+<ul id="main3">
+
+<p id="title"><a href="#">2014-03-18 MCE 2014</a></p>
+
+<p>Milan, IT</p>
+
+<p>MCE 2014 ---Human comfort solutions Mostra Convegno Expocomfort, from March 18-21, 2014 at Fiera Milano Exhibition Centre, will be the international showcase of the technological excellences conceived to improve the quality of life.</p>
+
+<p id="ind">Architectural/Constr./Engineering SVC</p>
+
+</ul>
+
+<ul id="main3">
+
+<p id="title"><a href="#">2014-03-19 Cippe 2013</a></p>
+
+<p>Beijing, CN</p>
+
+<p>China International Petroleum \u0026 Petrochemical Technology and Equipment Exhibition (CIPPE) 2014 will occur from March 22-24, at the new China International Exhibition Center.</p>
+
+<p id="ind">Oil/Gas Field Machinery</p>
+
+</ul>
+
+<ul id="main3">
+
+<p id="title"><a href="#">2014-03-19 Secutech Taiwan 2014</a></p>
+
+<p>Taipei, TW</p>
+
+<p>Secutech, the world's security business center, gathers distributors, dealers and end users from around the world.</p>
+
+<p id="ind">Security/Safety Eq.</p>
+
+</ul>
+
+<!--<ul id="main3">
+
+<p id="title"><a href="#">2014-03-19 U.S. Pavilion at MITT 2014</a></p>
+
+<p>Moscow, RU</p>
+
+<p>MITT is one of the world's most influential exhibitions serving the travel \u0026 tourism (T\u0026T) industry and the largest event of its kind in Russia.</p>
+
+<p id="ind">Travel and Tourism Industries</p>
+
+</ul>-->
+
 </div>
-<a href="/office/events.html"><strong>View All Events</strong></a>
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles9, article9, i, _i, _len, _results;
-    articles9 = data.results;
-    directive = {
-      '.article9': {
-        'article9 <- articles9': {
-          '.event_name': 'article9.event_name',
-          '.start_date': 'article9.start_date',
-          '.industries': 'article9.industries',
-          
-        }
-      }
-    };
-    rfn = $p('.articles9').compile(directive);
-    return $p('.articles9').render({ articles9: articles9 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_events/search?callback=?&industry=Iron/Steel';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
+<a href="#">View all Events</a>
