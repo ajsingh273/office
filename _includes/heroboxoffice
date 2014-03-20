@@ -40,8 +40,40 @@
   
 }
 
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid #0B5394;
+  border-top: 2px solid #0B5394;
+  top: 0;
+  width: 200px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 </style>
-
+</br>
+<p class="subtitle fancy"><span>U.S. Commercial Service in Minnesota</span></p>
+</br>
+  <div class="copy">
 <section id="news-demo">
   <article>
     <div class="text-content">
@@ -141,3 +173,5 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
+
+<script>jQuery("h1").fitText(1.2);</script>

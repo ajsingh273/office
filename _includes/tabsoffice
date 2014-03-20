@@ -6,8 +6,13 @@
     width: 100%;
     margin: 0px auto;
     min-height: 200px;
-    padding-top: 75px;
-    border-bottom: 1px solid #C0C0C0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color:#CEDAFF;
+     background-image:url('../images/US-CommercialService.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:200px;
 }
 
 .wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
@@ -45,7 +50,7 @@
     display: block;
     position: relative;
     top: 0;
-    border: 1px solid #DDD;
+    
     border-right-width: 0;
     margin: auto 0 !important;
     padding:0;
@@ -53,35 +58,34 @@
 
 #v-nav >ul >li
 {
+	color: #212121;
+	font-weight:bold;
     width: 180px;
     list-style-type: none;
     display: block;
-    text-shadow: 0px 1px 1px #F2F1F0;
     font-size: 14px;
     position: relative;
-    border-right-width: 0;
-    border-bottom: 1px solid #DDD;
     margin: auto;
     padding: 15px 15px !important;  
-    background: whiteSmoke; /* Old browsers */      
+    background: transparent;     
 }
 
 #v-nav >ul >li.current
 {
     color: #C0C0C0;
+    font-weight:bold;
     border-right: none;
     z-index: 10;
-    background: #212121;
-    background-image:url('../images/Arrow-Right.png');
-    background-repeat:no-repeat;
-    background-position:right center;
+    background: #0B5394;
+    border-top-right-radius:3em;
+    border-bottom-right-radius:3em;
     position: relative;
 
 }
 
 #v-nav >ul >li.first.current
 {
-    border-bottom: 1px solid #DDD;
+    
 }
 
 #v-nav >ul >li.last
@@ -92,14 +96,14 @@
 #v-nav >div.tab-content
 {
     margin-left: 210px;
-    background-color: #FFF;
+    background-color:#CEDAFF;
     min-height: 200px;
     position: relative;
-    z-index: 9;
-    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
-    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
-    box-shadow: inset 0 0 35px 5px #fafbfd;
     display: none;
+     background-image:url('../images/US-CommercialService.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:200px;
     
     
 }
@@ -108,8 +112,6 @@
 {
     font-size: 1.2em;
     color: Black;
-    text-shadow: 0px 1px 1px #F2F1F0;
-    border-bottom: 1px dotted #EEEDED;
     padding-bottom: 5px;
 }
 
@@ -119,9 +121,37 @@
 }
 
 #expand a:hover {
-text-decoration: underline;
+
 }
 
+.fanci {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fanci span {
+  display: inline-block;
+  position: relative;  
+}
+.fanci span:before,
+.fanci span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #C0C0C0;
+  top: 0;
+  width: 50px;
+}
+.fanci span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fanci span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 }
 </style>
 
@@ -130,22 +160,35 @@ text-decoration: underline;
   <div id="v-nav">
 
   <ul>
-    <li tab="tab1" class="first current">LEARN ABOUT EXPORTING</li>
-    <li tab="tab2">READY TO EXPORT</li>
-    <li tab="tab3">EXPAND MY EXPORTS</li>
+    <li tab="about" class="first current">ABOUT US</li>
+    <li tab="contact">CONTACT US</li>
+    <li tab="intern">INTERNSHIPS</li>
+    <li tab="service">BUSINESS SERVICE PROVIDERS</li>
  </ul>
 
- <div class="tab-content">
-   <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:125px; top:25px;"></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style="top:25px;"></a>
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i1.png"></span></p></center></br><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i2.png"></span></p>
+   </center></br><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/i3.png"></span></p></center></br><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div>
+  
  </div>
 
- <div class="tab-content">
-    <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:125px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:125px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:125px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/talk.png"></span></p></center></br><center><strong>Tell Us About You</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/megafone2.png"></span></p>
+   </center></br><center><strong>Share Your Success</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/business_contact.png"></span></p></center></br><center><strong>Office Contacts</strong></center>Lorem ipsum dolor sit amet</a></div>
+  
  </div>
 
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/intern.png"></span></p></center></br><center><strong>Internship Opportunities</strong></center>Internships at the U.S. Commercial Service provide students with an opportunity to gain real world, </br>professional experience by working with professionals in the field of international trade and business.</a></div>
+ </div>
+ 
  <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:30px; margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/shop.png"></span></p></center></br><center><strong>Business Service Providers</strong></center>The Austin USEAC Business Service Provider directory is intended to provide an additional resource to</br>the U.S. exporting client-base in the Austin USEAC region. This directory contains information on various services</br>that many small- and medium-sized exporters require, both here in the United States and internationally.
+
+Find Out More
+</a></div>
  </div>
+ 
 
 </div>
 

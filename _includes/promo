@@ -1,0 +1,33 @@
+<style>
+
+#promo {
+width:100%
+height:100%;
+background-color:#CEDAFF;
+padding: 30px;
+}
+
+</style>
+
+<div id="promo">
+
+<div class="clearfix">
+<ul id="main" >
+<img  src="images/thumb.png">
+</ul>
+
+<ul id="main" style="width:600px; font-size: 14px;">
+<h3>Here’s What Minnesota is Saying About the 
+U.S. Commercial Service</h3>
+</br>
+
+“The Commercial Service has been a great partner as we’ve worked to expand internationally over the past year. We have used a number of the services and have found them to be valuable and supportive of our goals. The people we have worked with here and overseas have been both knowledgeable and responsive. I look forward to working with the Commercial Service in Minnesota, and worldwide on global projects to help us achieve our 2012 revenue and strategic objectives.”
+</br></br>
+Michel Locquegnies</br>
+Director, International Sales & Business Development</br>
+Horton, Inc. St. Paul, MN
+</br></br>
+<a href="#">Read More Testimonials</a>
+</ul>
+</div>
+</div>

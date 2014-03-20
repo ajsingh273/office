@@ -307,13 +307,8 @@ nav {
 
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" style="margin-top:0px;"class="outer">
+    <div id="main_content_wrap" style="margin-top:-10px;"class="outer">
       
-
-<!--title, Pure rendered-->
-
-<center><h1>U.S. Commercial Service in Minnesota</h1></center>
-</br>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="javascripts/slippry.min.js"></script>
 <link rel="stylesheet" href="stylesheets/slippry.css" />
@@ -356,8 +351,40 @@ nav {
   
 }
 
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid #0B5394;
+  border-top: 2px solid #0B5394;
+  top: 0;
+  width: 200px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 </style>
-
+</br>
+<p class="subtitle fancy"><span>U.S. Commercial Service in Minnesota</span></p>
+</br>
+  <div class="copy">
 <section id="news-demo">
   <article>
     <div class="text-content">
@@ -431,8 +458,13 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
     width: 100%;
     margin: 0px auto;
     min-height: 200px;
-    padding-top: 75px;
-    border-bottom: 1px solid #C0C0C0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color:#CEDAFF;
+     background-image:url('../images/US-CommercialService.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:200px;
 }
 
 .wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
@@ -470,7 +502,7 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
     display: block;
     position: relative;
     top: 0;
-    border: 1px solid #DDD;
+    
     border-right-width: 0;
     margin: auto 0 !important;
     padding:0;
@@ -478,35 +510,34 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
 
 #v-nav >ul >li
 {
+	color: #212121;
+	font-weight:bold;
     width: 180px;
     list-style-type: none;
     display: block;
-    text-shadow: 0px 1px 1px #F2F1F0;
     font-size: 14px;
     position: relative;
-    border-right-width: 0;
-    border-bottom: 1px solid #DDD;
     margin: auto;
     padding: 15px 15px !important;  
-    background: whiteSmoke; /* Old browsers */      
+    background: transparent;     
 }
 
 #v-nav >ul >li.current
 {
     color: #C0C0C0;
+    font-weight:bold;
     border-right: none;
     z-index: 10;
-    background: #212121;
-    background-image:url('../images/Arrow-Right.png');
-    background-repeat:no-repeat;
-    background-position:right center;
+    background: #0B5394;
+    border-top-right-radius:3em;
+    border-bottom-right-radius:3em;
     position: relative;
 
 }
 
 #v-nav >ul >li.first.current
 {
-    border-bottom: 1px solid #DDD;
+    
 }
 
 #v-nav >ul >li.last
@@ -517,14 +548,14 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
 #v-nav >div.tab-content
 {
     margin-left: 210px;
-    background-color: #FFF;
+    background-color:#CEDAFF;
     min-height: 200px;
     position: relative;
-    z-index: 9;
-    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
-    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
-    box-shadow: inset 0 0 35px 5px #fafbfd;
     display: none;
+     background-image:url('../images/US-CommercialService.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:200px;
     
     
 }
@@ -533,8 +564,6 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
 {
     font-size: 1.2em;
     color: Black;
-    text-shadow: 0px 1px 1px #F2F1F0;
-    border-bottom: 1px dotted #EEEDED;
     padding-bottom: 5px;
 }
 
@@ -544,9 +573,37 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
 }
 
 #expand a:hover {
-text-decoration: underline;
+
 }
 
+.fanci {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fanci span {
+  display: inline-block;
+  position: relative;  
+}
+.fanci span:before,
+.fanci span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #C0C0C0;
+  top: 0;
+  width: 50px;
+}
+.fanci span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fanci span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 }
 </style>
 
@@ -555,22 +612,35 @@ text-decoration: underline;
   <div id="v-nav">
 
   <ul>
-    <li tab="tab1" class="first current">LEARN ABOUT EXPORTING</li>
-    <li tab="tab2">READY TO EXPORT</li>
-    <li tab="tab3">EXPAND MY EXPORTS</li>
+    <li tab="about" class="first current">ABOUT US</li>
+    <li tab="contact">CONTACT US</li>
+    <li tab="intern">INTERNSHIPS</li>
+    <li tab="service">BUSINESS SERVICE PROVIDERS</li>
  </ul>
 
- <div class="tab-content">
-   <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:125px; top:25px;"></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style="top:25px;"></a>
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i1.png"></span></p></center></br><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i2.png"></span></p>
+   </center></br><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/i3.png"></span></p></center></br><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div>
+  
  </div>
 
- <div class="tab-content">
-    <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:125px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:125px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:125px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/talk.png"></span></p></center></br><center><strong>Tell Us About You</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/megafone2.png"></span></p>
+   </center></br><center><strong>Share Your Success</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/business_contact.png"></span></p></center></br><center><strong>Office Contacts</strong></center>Lorem ipsum dolor sit amet</a></div>
+  
  </div>
 
+  <div class="tab-content" id="expand">
+   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/intern.png"></span></p></center></br><center><strong>Internship Opportunities</strong></center>Internships at the U.S. Commercial Service provide students with an opportunity to gain real world, </br>professional experience by working with professionals in the field of international trade and business.</a></div>
+ </div>
+ 
  <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:30px; margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/shop.png"></span></p></center></br><center><strong>Business Service Providers</strong></center>The Austin USEAC Business Service Provider directory is intended to provide an additional resource to</br>the U.S. exporting client-base in the Austin USEAC region. This directory contains information on various services</br>that many small- and medium-sized exporters require, both here in the United States and internationally.
+
+Find Out More
+</a></div>
  </div>
+ 
 
 </div>
 
@@ -652,10 +722,12 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
+
+<script>jQuery("h1").fitText(1.2);</script>
 <div class="clearfix" >
-<ul id="main" style="width:200px;margin-right:75px;"><h4>Export Resources</h4>
+<ul id="main" style="width:200px;margin-right:300px;"><h4>Export Resources</h4>
  
-<ul> 
+<ul style="font-size: 18px;"> 
 <li><a href="#">Exporters Resource Database</a></li>
 <li><a href="#">International Finance</a></li>
 <li><a href="#">Certificate of Origin</a></li>
@@ -664,7 +736,7 @@ jQuery('#news-demo').slippry({
 </ul>
 </ul>
 
-<ul id="main" style="width:600px;">
+<ul id="main" ">
 <style>
 
 #title a {
@@ -687,7 +759,7 @@ font-style: italic;
 <h4>Attend a Trade Event</h4>
 
 <div class="clearfix">
-<ul id="main3">
+
 <p id="title"><a href="#">2014-03-17 MODEX 2014 - IBP Select</a></p>
 
 <p>Atlanta, GA</p>
@@ -695,10 +767,10 @@ font-style: italic;
 <p>MODEX is the largest supply chain exhibition to take place in North or South America in 2014. MODEX 2014 is the industry's newest expo for the manufacturing, distribution and supply chain industries.</p>
 
 <p id="ind">Materials Handling Machinery</p>
-</ul>
 
 
-<ul id="main3">
+</br>
+
 
 <p id="title"><a href="#">2014-03-18 MCE 2014</a></p>
 
@@ -708,9 +780,9 @@ font-style: italic;
 
 <p id="ind">Architectural/Constr./Engineering SVC</p>
 
-</ul>
 
-<ul id="main3">
+
+<!--<ul id="main3">
 
 <p id="title"><a href="#">2014-03-19 Cippe 2013</a></p>
 
@@ -734,7 +806,7 @@ font-style: italic;
 
 </ul>
 
-<!--<ul id="main3">
+<ul id="main3">
 
 <p id="title"><a href="#">2014-03-19 U.S. Pavilion at MITT 2014</a></p>
 
@@ -751,8 +823,242 @@ font-style: italic;
 </ul>
 </div>
 
+<div class="clearfix" >
+<ul id="main" style="margin-right:100px;"><style>
+.list {
+
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  padding:1px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 1px;
+  border-color:#c0c0c0;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:4px 10px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #C0C0C0;
+  height:26px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#000;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.nav {margin-bottom:30px;}
+
+.name a{  color:#212121;
+  font-size: 12px;text-decoration: none; font-weight:normal;}
+  
+.name a:hover { text-decoration: underline;}
+
+.container {min-height:400px; }
+</style>
+
+<div class="container">
+  
+
+  
+<h4>Frequently Asked Questions</h4>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  
+  <!-- Tab 1 -->
+  <div class="tab-pane active" id="home">
+    <div id="hacker-list">  <!-- List ID -->
+        <!-- Search / Sort buttons -->
+<input class="search"  />
+<button class="sort" data-sort="name">Search</button>
+    <ul class="list">
+    <li><h5 class="name"><a href="#">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="#">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="#">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="#">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="#">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    </ul> 
+    </div>
+  </div> <!-- /!Tab 1 -->
+  
+  
+ </div> <!-- /!Tabs -->
+    
+   <ul>
+  </br>
+  <a href="#">See All Questions</a>
+  </div> <!-- /container -->
+  
+  
+  <script src="http://listjs.com/no-cdn/list.js"></script>
+  
+  <script>
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list', options);
+
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list-2', options);
+  
+  
+})
+  </script></ul>
+<ul id="main" >
+<style>
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+</style>
+
+<h4>Latest Export Articles</h4>
+
+<p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+
+
+</br>
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+
+
+</br>
+<p>
+<a id="title" href="#">Export Loan Programs</a></br>
+The U.S. Government offers four different types of financing programs.</p>
+
+</br>
+<a id="title" href="#">Read More Articles</a>
+
+
+</br></br>
+<h4>Our Global Network at Work</h4>
+
+<ul> 
+<li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
+<li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
+<li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
+</ul></ul>
+</div>
 
 </section>
+</div>
+<style>
+
+#promo {
+width:100%
+height:100%;
+background-color:#CEDAFF;
+padding: 30px;
+}
+
+</style>
+
+<div id="promo">
+
+<div class="clearfix">
+<ul id="main" >
+<img  src="images/thumb.png">
+</ul>
+
+<ul id="main" style="width:600px; font-size: 14px;">
+<h3>Here’s What Minnesota is Saying About the 
+U.S. Commercial Service</h3>
+</br>
+
+“The Commercial Service has been a great partner as we’ve worked to expand internationally over the past year. We have used a number of the services and have found them to be valuable and supportive of our goals. The people we have worked with here and overseas have been both knowledgeable and responsive. I look forward to working with the Commercial Service in Minnesota, and worldwide on global projects to help us achieve our 2012 revenue and strategic objectives.”
+</br></br>
+Michel Locquegnies</br>
+Director, International Sales & Business Development</br>
+Horton, Inc. St. Paul, MN
+</br></br>
+<a href="#">Read More Testimonials</a>
+</ul>
+</div>
 </div>
 
 </section>

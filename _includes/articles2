@@ -1,61 +1,32 @@
-<!--articles-->
+<style>
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+</style>
+
+<h4>Latest Export Articles</h4>
+
+<p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
 
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper" style="padding:10px;">
-     <h3>Evergreen Articles</h3>
-<div class="articles12">
-<dl class="article12" >
-    <a href="/office/articlelist.html"><dd class="title" ></dd></a>        
-</dl>
-</div>
+</br>
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
 
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles12, article12, i, _i, _len, _results;
-    articles12 = data.results;
-    directive = {
-      '.article12': {
-        'article12 <- articles12': {
-          '.title': 'article12.title',
 
-          
-        }
-      }
-    };
-    rfn = $p('.articles12').compile(directive);
-    return $p('.articles12').render({ articles12: articles12 }, directive);
-  };
+</br>
+<p>
+<a id="title" href="#">Export Loan Programs</a></br>
+The U.S. Government offers four different types of financing programs.</p>
 
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&evergreen=true';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
+</br>
+<a id="title" href="#">Read More Articles</a>
