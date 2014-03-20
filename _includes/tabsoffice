@@ -9,7 +9,7 @@
     padding-top: 50px;
     padding-bottom: 25px;
     background-color:#CEDAFF;
-     background-image:url('../images/USCommercialService.png');
+     background-image:url('../images/US-CommercialService.png');
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
@@ -102,7 +102,7 @@
     min-height: 200px;
     position: relative;
     display: none;
-     background-image:url('../images/USCommercialService.png');
+     background-image:url('../images/US-CommercialService.png');
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
@@ -167,6 +167,7 @@
     <li tab="intern">INTERNSHIPS</li>
     <li tab="service">BUSINESS SERVICE PROVIDERS</li>
  </ul>
+ 
 
   <div class="tab-content" id="expand">
    <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i1.png"></span></p></center></br><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i2.png"></span></p>
