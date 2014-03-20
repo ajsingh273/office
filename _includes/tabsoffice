@@ -9,7 +9,7 @@
     padding-top: 50px;
     padding-bottom: 25px;
     background-color:#CEDAFF;
-     background-image:url('../images/US-CommercialService.png');
+    background-image:url('images/uscomservice.png');
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
@@ -78,9 +78,9 @@
     font-weight:bold;
     border-right: none;
     z-index: 10;
-    background: #0B5394;
-    border-top-right-radius:3em;
-    border-bottom-right-radius:3em;
+	background: url('http://www.opm.gov/img/Home/audience_selected.png') no-repeat;
+	background-size:200px 45px;
+	color: #FFF;
     position: relative;
 
 }
@@ -102,7 +102,7 @@
     min-height: 200px;
     position: relative;
     display: none;
-     background-image:url('../images/US-CommercialService.png');
+    background-image:url('images/uscomservice.png'); 
     background-repeat:no-repeat;
     background-position:right center;
     background-size:200px;
@@ -167,7 +167,6 @@
     <li tab="intern">INTERNSHIPS</li>
     <li tab="service">BUSINESS SERVICE PROVIDERS</li>
  </ul>
-
   <div class="tab-content" id="expand">
    <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i1.png"></span></p></center></br><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i2.png"></span></p>
    </center></br><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/i3.png"></span></p></center></br><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div>
