@@ -25,6 +25,7 @@ padding: 0 10px;
 position: relative;
 overflow: hidden;
 }
+
 .social-media-block .module-header {
 font-size: 6em;
 position: absolute;
