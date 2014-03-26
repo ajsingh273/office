@@ -480,11 +480,13 @@ color:#c1c1c1;
 
 	.btn-primary {
 		background-color: #0B5394;
+		color:#fff;
 		border: 1px solid rgb( 44, 37, 59 );
 	}
 
 		.btn-primary:hover {
-			color: #c1c1c1;	
+			color: #fff;	
+			text-decoration:none;
 		}
 
 		.btn-primary:active {
