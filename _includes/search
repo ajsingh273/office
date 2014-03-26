@@ -8,7 +8,7 @@ padding: 0px 0px 0px 0px;
 #search input[type="text"] {
     border: 1px solid #d1d1d1;
     color: #bebebe;
-    width: 150px;
+    width: 120px;
     padding: 6px 15px 6px 35px;
 
 

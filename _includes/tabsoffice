@@ -1,240 +1,92 @@
+
 <style>
-
-.wrapper
-{
-
-    width: 100%;
-    margin: 0px auto;
-    min-height: 200px;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    background-color:#CEDAFF;
-    background-image:url('images/uscomservice.png');
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-size:200px;
-    
-}
-
-.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
-{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-    
-}
-.wrapper h1 {
-    vertical-align:middle;
-    
-}
-
-
-.wrapper li
-{
-    outline: 0;
-    text-decoration: none;
-}
-
-#v-nav
-{
-    height: 100%;
-    margin: auto;
-    color: #333;
-    
-}
-
-#v-nav >ul
-{
-    float: left;
-    width: 210px;
-    display: block;
-    position: relative;
-    top: 0;
-    
-    border-right-width: 0;
-    margin: auto 0 !important;
-    padding:0;
-}
-
-#v-nav >ul >li
-{
-	color: #212121;
-	font-weight:bold;
-    width: 180px;
-    list-style-type: none;
-    display: block;
-    font-size: 14px;
-    position: relative;
-    margin: auto;
-    padding: 15px 15px !important;  
-    background: transparent;     
-}
-
-#v-nav >ul >li.current
-{
-    color: #C0C0C0;
-    font-weight:bold;
-    border-right: none;
-    z-index: 10;
-	background: url('http://www.opm.gov/img/Home/audience_selected.png') no-repeat;
-	background-size:200px 45px;
-	color: #FFF;
-    position: relative;
-
-}
-
-#v-nav >ul >li.first.current
-{
-    
-}
-
-#v-nav >ul >li.last
-{
-    border-bottom: none;
-}
-
-#v-nav >div.tab-content
-{
-    margin-left: 210px;
-    background-color:#CEDAFF;
-    min-height: 200px;
-    position: relative;
-    display: none;
-    background-image:url('images/uscomservice.png'); 
-    background-repeat:no-repeat;
-    background-position:right center;
-    background-size:200px;
-    
-    
-}
-
-#v-nav >div.tab-content >h4
-{
-    font-size: 1.2em;
-    color: Black;
-    padding-bottom: 5px;
-}
-
 #expand a{
   color:#212121;
-  font-size: 14px;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 #expand a:hover {
-
+text-decoration: none;
 }
 
-.fanci {
-  line-height: 0.5;
-  text-align: center;
-   font-size: 30px;
-  font-weight: 700;
-  font-style:italic;
-}
-.fanci span {
-  display: inline-block;
-  position: relative;  
-}
-.fanci span:before,
-.fanci span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #C0C0C0;
-  top: 0;
-  width: 50px;
-}
-.fanci span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.fanci span:after {
-  left: 100%;
-  margin-left: 15px;
-}
-}
+
 </style>
 
-<section id="wrapper" class="wrapper" >
-    
-  <div id="v-nav">
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">		
 
-  <ul>
-    <li tab="about" class="first current">ABOUT US</li>
-    <li tab="contact">CONTACT US</li>
-    <li tab="intern">INTERNSHIPS</li>
-    <li tab="service" class="last">BUSINESS SERVICE PROVIDERS</li>
- </ul>
-  <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i1.png"></span></p></center></br><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/i2.png"></span></p>
-   </center></br><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/i3.png"></span></p></center></br><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="stylesheets/demo.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.css">
+		<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/sky-tabs-ie8.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body class="bg-cyan">
+		<div class="body">
+		
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>ABOUT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>CONTACT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>INTERNSHIPS</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+				<label for="sky-tab4"><span><span><i class="fa fa-cogs"></i>BUSINESS SERVICE PROVIDERS</span></span></label>
+				
+				<ul>
+					<li class="sky-tab-content-1">					
+						<div class="typography" id="expand">
+	
+   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i1.png"></center></span></p></center><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i2.png"></center></span></p>
+   </center><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/i3.png"></center></span></p></center><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div>
+  
+  </div>
+					</li>
+					
+					<li class="sky-tab-content-2">
+						<div class="typography" id="expand">
+<div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
+   </center><center><strong>Share Your Success</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center>Lorem ipsum dolor sit amet</a></div>
   
  </div>
-
-  <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:100px;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/talk.png"></span></p></center></br><center><strong>Tell Us About You</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:100px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/megafone2.png"></span></p>
-   </center></br><center><strong>Share Your Success</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><img  src="images/business_contact.png"></span></p></center></br><center><strong>Office Contacts</strong></center>Lorem ipsum dolor sit amet</a></div>
-  
- </div>
-
-  <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/intern.png"></span></p></center></br><center><strong>Internship Opportunities</strong></center>Internships at the U.S. Commercial Service provide students with an opportunity to gain real world, </br>professional experience by working with professionals in the field of international trade and business.</a></div>
- </div>
- 
- <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><img  src="images/shop.png"></span></p></center></br><center><strong>Business Service Providers</strong></center>The Austin USEAC Business Service Provider directory is intended to provide an additional resource to</br>the U.S. exporting client-base in the Austin USEAC region. This directory contains information on various services</br>that many small- and medium-sized exporters require, both here in the United States and internationally.
-
+					</li>
+					
+					<li class="sky-tab-content-3">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/intern.png"></center></span></p></center><center><strong>Internship Opportunities</strong></center>Internships at the U.S. Commercial Service provide students with an opportunity to gain real world, </br>professional experience by working with professionals in the field of international trade and business.</a></div>
+</div>
+					</li>
+					
+					<li class="sky-tab-content-4">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:100px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/shop.png"></center></span></p></center><center><strong>Business Service Providers</strong></center>The Austin USEAC Business Service Provider directory is intended to provide an additional resource to</br>the U.S. exporting client-base in the Austin USEAC region. This directory contains information on various services</br>that many small- and medium-sized exporters require, both here in the United States and internationally.
+</br>
 Find Out More
 </a></div>
- </div>
- 
-
 </div>
-
-</section>
-
-
-<script>
-$(function() {
-        
- $('.close').click(function () {
-        console.log( 'close' );
-        $('.tab-content').hide();
-    });
-    
-    var items = $('#v-nav>ul>li').each(function() {
-        $(this).click(function() {
-            //remove previous class and add it to clicked tab
-            items.removeClass('current');
-            $(this).addClass('current');
-
-            //hide all content divs and show current one
-            $('#v-nav>div.tab-content').hide().eq(items.index($(this))).show('fast');
-
-            window.location.hash = $(this).attr('tab');
-        });
-    });
-
-    if (location.hash) {
-        showTab(location.hash);
-    }
-    else {
-        showTab("tab1");
-    }
-
-    function showTab(tab) {
-        $("#v-nav ul li:[tab*=" + tab + "]").click();
-    }
-
-    // Bind the event hashchange, using jquery-hashchange-plugin
-    $(window).hashchange(function() {
-        showTab(location.hash.replace("#", ""));
-    })
-
-    // Trigger the event hashchange on page load, using jquery-hashchange-plugin
-    $(window).hashchange();
-
-});
-</script>
+					</li>
+					
+									
+				</ul>
+			</div>
+			<!--/ tabs -->
+			
+		</div>
+	</body>
+</html>

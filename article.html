@@ -3,75 +3,25 @@ Title: Article
 permalink: 
 ---
 
+<style>
+#content {
+float: left;
+width: 200px;
+margin-right:10px;
+}
+</style>
+
 {% include header.html %}
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 <div class="clearfix">
-<ul id="main" style="width:600px">
+<ul id="main" style="width:600px; margin-right:100px;">
+ <h2>U.S. – Israel Free Trade Agreement: Documenting Origin</h2>
  
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <script src="javascripts/scale.fix.js"></script>
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="http://pure.github.io/pure/libs/pure.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-    <div class="wrapper">
-   
-<div class="articles4">
-<dl class="article4">
-    <h3><dd class="title"></dd></h3>
-   <dd class="content"></dd></br>
-	<strong><dd class="update_date"></dd></strong></br></br>        
-</dl>
-</div>
-
-<script>
-(function() {
-  var ready, renderData;
-  renderData = function(data) {
-    var articles4, article4, i, _i, _len, _results;
-    articles4 = data.results;
-    directive = {
-      '.article4': {
-        'article4 <- articles4': {
-          '.title': 'article4.title',
-          '.content': 'article4.content',
-          '.update_date': 'article4.pub_date',
-
-          
-        }
-      }
-    };
-    rfn = $p('.articles4').compile(directive);
-    return $p('.articles4').render({ articles4: articles4 }, directive);
-  };
-
-  ready = function() {
-    var url;
-    url = 'http://api.trade.gov/trade_articles/search?callback=?&pub_date_start=2013-01-04&q=NY';
-    return $.getJSON(url, renderData);
-  };
-
-  $(document).ready(ready);
-
-  }).call(this);
-</script>
-     </div>
-     
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-  </body>
-</html>
+<img  id="content" src="images/us-israel.jpg"><p>All U.S. goods exported to Israel must be accompanied by a U.S. – Israel Certificate of Origin signed by the exporter. In order to benefit from the provisions of the U.S. – Israel FTA, a special "US Certificate of Origin for Exporting to Israel" must be presented to Israel Customs.</br></br> This Certificate must be official i.e. green in color and purchased from one of the US-Israel Chambers or a printing house. Photocopies will not be accepted.</br></br> The certificate will need to be notarized and stamped by a local American-Israel Chamber of Commerce in the event that the exporter is not the manufacturer. The certificate does not need to be notarized or stamped by an American-Israel Chamber of Commerce if the exporter is also the manufacturer. </br></br>
+When the exporter is also the manufacturer, the Certification (box 11) and the Notarization (box 12) sections of the Certificate may be eliminated if the exporter/manufacturer signs this declaration (box 12). If the exporter is not the producer, but the goods qualify under the rules of the FTA, Notarization and Certification may also be avoided by attaching to the certificate the following declarations, prepared on the letterhead of the producing company, signed by an authorized employee of the same, and referring specifically to the shipment described: "The undersigned hereby declares that the goods in the invoice were produced in the United States of America and that they comply with the origin requirements specified for those goods in the U.S.-Israel Free Trade Area Agreement for Goods Exported to Israel."</p>
 </ul>
-<ul id="main" style="width:250px"><h3>Related Articles</h3> <a href="#">ATA Carnet and Temporary Imports</a><a href="#">Consultants/Ordering Standards</a></br><h3>Related Markets</h3><a href="#">NATO Procurement process</a> <a href="#">U.S. Food Processing and Packaging Equipment 2011</a></br></br><a href="/office/articlelist.html">View All Articles</a></ul>
+<ul id="main" style="width:250px"><h3>Related Articles</h3> <p><a href="#">ATA Carnet and Temporary Imports</a></p><p><a href="#">Consultants/Ordering Standards</p></br><h3>Related Markets</h3><p><a href="#">NATO Procurement process</a></p><p><a href="#">U.S. Food Processing and Packaging Equipment 2011</a></p></br><a href="/office/articlelist.html">View All Articles</a></ul>
  </div>
  {% include footer.html %}
  

@@ -1,98 +1,3 @@
-<!doctype html>  
-<html lang="en">
-
-<head>
-	
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-	<!--CSS-->
-	<style type="text/css">
-	/* CORE STYLES */
-	* { 
-		margin: 0px;
-		padding: 0px;
-		}
-	html {
-		
-		}
-	body {
-			
-		font-size: 18px;
-		line-height: 22px;
-		color: #333;
-		}
-		
-	/* SIDEBAR */
-	#sidebar { 
-		background: #eee;
-		float: left;
-		left: 300px;
-		margin-left: -300px;
-		position: relative;
-		width: 300px;
-		overflow-y: auto;
-		position: relative;
-		}
-	#sidebar h1 {
-		padding: 30px;
-		}
-	#sidebar ul {
-		margin: 0px 30px 0px 50px;
-		list-style: disc;
-		}
-	#sidebar li {
-		margin: 0px 0px 5px;
-		float: left;
-    clear: left;
-		}
-		
-	/* MAIN CONTENT AREA */
-	#contentWrapper { 
-		float: left;
-		width: 100%;
-		}
-	#content {
-		background: #ccc;
-		margin-left: 300px;
-		overflow-y: auto;
-		padding-left: 50px;
-		}
-	#content h1 {
-		padding: 30px;
-		font-size: 26px;
-		}
-	#content p {
-		padding: 0px 30px 20px;
-		}
-	</style>
-	
-	<!--JS-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script>
-	$(document).ready(function() {
-		
-		//GET BROWSER WINDOW HEIGHT
-		var currHeight = $(window).height();
-		$('#sidebar, #content').css('height', currHeight);
-		
-		//ON RESIZE OF WINDOW
-		$(window).resize(function() {
-			
-			//GET NEW HEIGHT
-			var currHeight = $(window).height();	
-			//RESIZE BOTH ELEMENTS TO NEW HEIGHT
-			$('#sidebar, #content').css('height', currHeight);
-			
-		});
-		
-	});
-	</script>
-
-</head>
-
-<body>
-
 <!DOCTYPE html>
 <html>
 <!--[if IE]><![endif]-->
@@ -118,8 +23,8 @@
         <header class="inner">
           
 
-                    <a id="project_title" href="/office"><img  src="images/ita.jpg" width="250px"></a>
-          <!--<h2 id="project_tagline">Trade office template for new Trade.gov</h2>-->
+                    <a id="project_title" href="/office"><img  src="images/whiteita.png" ></a>
+          <p id="project_tagline">A bureau within the <a href="http://www.commerce.gov">U.S. Department of Commerce</a></p>
           
                             <ul id="forkme_banner">
         <li><a href="/office/signin.html">Sign in</a> |</li>
@@ -135,7 +40,7 @@ padding: 0px 0px 0px 0px;
 #search input[type="text"] {
     border: 1px solid #d1d1d1;
     color: #bebebe;
-    width: 150px;
+    width: 120px;
     padding: 6px 15px 6px 35px;
 
 
@@ -157,10 +62,8 @@ padding: 0px 0px 0px 0px;
         </ul>
 
 
-            <!--<section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ajsingh273/office/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ajsingh273/office/tarball/master">Download this project as a tar.gz file</a>
-            </section>-->
+            <section id="downloads">
+              <img  src="images/CS_logo color.png" ></section>
         </header>
     </div>
 <style>
@@ -180,6 +83,7 @@ nav {
 
 
   nav ul {
+  
     margin: 0;
     padding: 0;
     text-align: center;
@@ -213,10 +117,10 @@ nav {
       }
 
       nav > ul > li > a {
-      
+      	
         color: #fff;
         display: block;
-        line-height: 56px;
+        line-height: 50px;
         padding: 0 15px;
         text-decoration: none;
       }
@@ -234,7 +138,7 @@ nav {
         }
       
       nav > ul > li > div {
-      font-size:14px;
+      font-size:16px;
         background-color: rgb( 40, 44, 47 );
         border-top: 0;
         
@@ -278,14 +182,9 @@ nav {
 
 <nav>
 	<ul>
+		
 		<li>
-			<a href="/office">Home<span class="caret"></span></a>
-			<div>
-
-			</div>
-		</li>
-		<li>
-			<a href="#">Export Process<span class="caret"></span></a>
+			<a href="#">EXPORT PROCESS<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
@@ -296,7 +195,7 @@ nav {
 			</div>
 		</li>
 				<li>
-			<a href="#">Opportunities<span class="caret"></span></a>
+			<a href="#">OPPORTUNITIES<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>Conduct Research</li>
@@ -325,7 +224,7 @@ nav {
 
 
 					<li>
-			<a href="#">Financing<span class="caret"></span></a>
+			<a href="#">FINANCING<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
@@ -337,7 +236,7 @@ nav {
 		</li>
 		
 					<li>
-			<a href="#">Regulations<span class="caret"></span></a>
+			<a href="#">REGULATIONS<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>US Export Regulations</li>
@@ -352,7 +251,7 @@ nav {
 		</li>
 		
 					<li>
-			<a href="#">Trade Problems<span class="caret"></span></a>
+			<a href="#">TRADE PROBLEMS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -363,7 +262,7 @@ nav {
 		</li>
 		
 							<li>
-			<a href="#">Trade Events<span class="caret"></span></a>
+			<a href="#">TRADE EVENTS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -374,7 +273,7 @@ nav {
 			</div>
 		</li>
 							<li>
-			<a href="#">Get Answers<span class="caret"></span></a>
+			<a href="#">GET ANSWERS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -387,7 +286,7 @@ nav {
 			</div>
 		</li>
 									<li>
-			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
+			<a href="#">FIND ANSWERS & CONTACTS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -403,106 +302,266 @@ nav {
 </nav>
 
 
-     	
-
-
-
-	<div id="page">
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      
+    <center><h1>CE Marking Guide</h1></center></br>
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">		
 		
-		<header id="sidebar">
-		</br></br>
 		
-			
-			<nav role="navigation">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		
+		<link rel="stylesheet" href="stylesheets/font-awesome.css">
+		<link rel="stylesheet" href="stylesheets/sky-tabs.css">
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/sky-tabs-ie8.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body class="bg-cyan">
+		<div class="body" style="min-height:400px;">
+		
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-right sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>About Us</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>Testing Laboratories</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>Renewable Energy</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+				<label for="sky-tab4"><span><span><i class="fa fa-globe"></i>Domestic and International Events</span></span></label>
+				
 				<ul>
-					<li><a href="#1">About Us</a></li>
-					<li><a href="#2">Articles</a></li>
-					<li><a href="#3">FAQs</a></li>
-					<li><a href="#4">Useful Links</a></li>
-					<li><a href="#5">Join My Export</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<article id="contentWrapper" role="main">
-			<section id="content">
-				
-				<h3><center>CE Marking Guide</center></h3></br></br>
-				
-				<p id="1"><strong>Minnesota District Export Council</strong></br></br>
- 
-The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</br></br>
- 
-The Minnesota District Export Council encourages and supports:</br>
+					<li class="sky-tab-content-1">					
+						<div class="typography">
+					
+
+							<h1>Minnesota District Export Council</h1>
+							<p>The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</p>
+							<p>The Minnesota District Export Council encourages and supports:</br>
 •	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
 •	Export expansion activities by working with the US & FCS domestic offices; and</br>
-•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.</p>
-				
-				<p id="2"><style>
+•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.</p></div>
+					</li>
+					
+					<li class="sky-tab-content-2">
+						<div class="typography">
+							<h1>Testing Laboratories</h1>
+							<p>2013-04-30</p>
+							<p>Information for those seeking to comply with EU directives such as RoHS, WEEE, Medical Devices, EMC and R\u0026amp;TTE \r\n The following list of laboratories is intended as an initial resource for U.S. businesses seeking assistance in complying with European Union (EU) \"CE marking\" requirements. It is not intended to be a comprehensive compilation of U.S. companies that provide CE marking testing and related services nor an endorsement of any company.</p>
+							<p>The names of the companies on this list have been collected over several years, through research by the staff of the Office of European Union and Regional Affairs, U.S. Department of Commerce, by referral, and through direct requests for inclusion. \r\n Any company that wishes to be included in this list may send its information to the Global Knowledge Center (GKC). </p></div>
+					</li>
+					
+					<li class="sky-tab-content-3">
+						<div class="typography">
+							<h1>Renewable Energy and Energy Efficiency Export Initiative</h1>
+							<p>2013-04-30</p>
+							<p>The Renewable Energy and Energy Efficiency Export Initiative includes 23 commitments from 8 different federal agencies (Department of Commerce, Department of Energy, U.S. Trade Representative, State Department, U.S. Trade and Development Agency, Export-Import Bank of the United States, Overseas Private Investment Corporation, and U.S. Department of Agriculture) for new programs, actions, or deliverables that will help address the major export barriers facing U.S. renewable energy and energy efficiency (RE\u0026amp;EE) companies.</p>
+							<p> Developed to both meet the goals of the National Export Initiative and President Obama’s goal of becoming the leading exporter of clean energy technologies, the Initiative will provide new and more innovative financing mechanisms for U.S. RE\u0026amp;EE exporters, will \r\n \r\n recommit the U.S. Government to addressing trade barriers in the sector, \r\n increase the amount of trade promotion activities for RE\u0026amp;EE companies, and \r\n improve the delivery of U.S. Government export promotion services for U.S. RE\u0026amp;EE companies.</p></div>
+					</li>
+					
+					<li class="sky-tab-content-4">
+						<div class="typography">
+							<h1>Domestic and International Events</h1>
+							<p>2013-04-30</p>
+							<p>Domestic Events \r\n Reverse Trade Mission: US-ASEAN Smart Grid \r\n April 25 – May 1, 2013, Washington, DC and San Francisco, CA \r\n The U.S. Trade and Development Agency (USTDA) will bring a group of senior ASEAN policymakers, utility representatives, and energy regulatory authorities to the United States to build on the key points from the U.S.-ASEAN Smart Grid Workshop held in Hanoi in November 2012.</p>
+							<p>The delegates will meet with leading U.S. technology and service suppliers as well power utilities and U.S. energy and regulatory agencies for assistance in identifying the appropriate technical and regulatory solutions to promote reliable, efficient, and cost-effective transmission and smart grid investments.</p></li>					
+				</ul>
+			</div>
+			<!--/ tabs -->
+			
+		</div>
+	</body>
+</html>
 
-#title a {
-font-weight: bold;
-font-size: 16px;
-  color: #212121;
+
+<div class="clearfix" >
+<ul id="main" style="margin-right:400px;">
+<style>
+.list {
+
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  padding:1px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 1px;
+  border-color:#c0c0c0;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
 }
 
-#title a: hover {
-  text-decoration:underline;
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:4px 10px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #C0C0C0;
+  height:26px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#000;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
 }
 
+.nav {margin-bottom:30px;}
+
+.name a{  color:#212121;
+  font-size: 12px;text-decoration: none; font-weight:normal;}
+  
+.name a:hover { text-decoration: underline;}
+
+.container {min-height:400px; }
 </style>
 
-<h4>Latest Export Articles</h4>
+<div class="container">
+  
 
-<p><a id="title" href="#">Factoring and Forfaiting</a></br>
-A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+  
+<h4>Frequently Asked Questions</h4>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  
+  <!-- Tab 1 -->
+  <div class="tab-pane active" id="home">
+    <div id="hacker-list">  <!-- List ID -->
+        <!-- Search / Sort buttons -->
+<input class="search"  />
+<button class="sort" data-sort="name">Search</button>
+    <ul class="list">
+    <li><h5 class="name"><a href="#">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="#">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="#">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="#">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="#">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    </ul> 
+    </div>
+  </div> <!-- /!Tab 1 -->
+  
+  
+ </div> <!-- /!Tabs -->
+    
+   <ul>
+  </br>
+  <a href="#">See All Questions</a>
+  </div> <!-- /container -->
+  
+  
+  <script src="http://listjs.com/no-cdn/list.js"></script>
+  
+  <script>
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list', options);
 
 
-</br>
-<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
-The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
 
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
-</br>
-<p>
-<a id="title" href="#">Export Loan Programs</a></br>
-The U.S. Government offers four different types of financing programs.</p>
+  var options = {
+    valueNames: [ 'name' ]
+};
 
-</br>
-<a id="title" href="#">Read More Articles</a></p>
-				
-				<p id="3"><ul><h3>FAQs</h3>
-<p><a href="#">1. What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></p>
-<p><a href="#">2. How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></p>
-<p><a href="#">3. How can I find export financing?</a></p>
-<p><a href="#">4. What do all of these Free Trade Agreements do for me?</a></p>
-<p><a href="#">5. How can I determine the tariff rate for my product?</a></p><a href="/office/faqs.html">View All FAQs</a>
-</ul><a href="/office/articlelist.html">View All Articles</a></p>
-				
-				<p id="4"><ul><h3>Useful Links</h3>
- 
-<ul> 
+var hackerList = new List('hacker-list-2', options);
+  
+  
+})
+  </script></ul>
+
+<ul id="main"> 
+<h4>Export Resources</h4>
+<ul style="font-size: 18px;"> 
 <li><a href="#">Exporters Resource Database</a></li>
 <li><a href="#">International Finance</a></li>
 <li><a href="#">Certificate of Origin</a></li>
 <li><a href="#">NAFTA</a></li>
 <li><a href="#">MN Tourism Destination</a></li>
 </ul>
-</ul>
-
-
-<ul> 
-<li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
-<li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
-<li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
-</ul></ul></p>
-				
-				<p id="5"><style>
+</br>	
+<style>
 
 #join {
 background-color: #C0C0C0;
-width:300px;
+width:200px;
 padding: 20px;
+
 }
 
 </style>
@@ -511,20 +570,133 @@ padding: 20px;
 <div id="join">
   <h3>JOIN MY EXPORT</h3>
 
-Get the latest info about events, market research and opportunities tailored to your industry and interests</br>
-
+<p style="font-size:12px;">Get the latest info about events, market research and opportunities tailored to your industry and interests</p>
+</br>
 <a href="#" class="btn-blue">Sign Up Now!</a>
 
-</div></p>
+</div>
+</ul>
+</div>
 
-			</section>
-		</article>
-		
-	</div>
+</section>
+</div>
 
-</body>
+</section>
+
+    <div id="footer_wrap2" class="outer">
+      <footer class="inner">
+
+<div class="clearfix">
+
+		<ul id="foot">
+		<p><strong>Export Process</strong></p>
+		<li><a href="/community/users/export-basics">Export Basics</a></li>
+		<li><a href="/basic-guide/">Basic Guide to Exporting</a></li>
+		<li><a href="/export-readiness-assessment/login">Export Readiness Assessment</a></li>
+		<li><a href="/community/users/international-logistics">International Logistics</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Opportunities</strong></p>
+		<li >Conduct Research</li>
+		<li><a href="/community/users/expand-your-exports">Expand Into New Markets</a></li>
+		<li><a href="/community/users/market-research">Market Research</a></li>
+		<li><a href="/community/users/export-success-stories">Success Stories</a></li>
+		<li >Learn Marketing Tactics</li>
+		<li><a href="/community/users/international-sales-and-marketing">International Sales & Marketing</a></li>
+		<li><a href="/community/users/selling-online">Selling Online</a></li>
+		</ul>
+				
+		<ul id="foot">
+		<p></p>
+		<li >Explore Markets</li>
+		<li><a href="/community/users/trade-leads">Find Trade Leads</a></li>
+		<li><a href="/community/users/trade-missions">Trade Missions</a></li>
+		<li><a href="/community/users/free-trade-agreements">Free Trade Agreements</a></li>
+		<li><a href="/doing-business-in-africa">Doing Business in Africa</a></li>
+		<li >Explore Programs</li>
+		<li><a href="/community/users/civil-nuclear-guide-to-exporting">Civil Nuclear Guide to Exporting</a></li>
+		<li><a href="/community/users/environmental-solutions-exporters-portal">Environmental Solutions Exporters</a></li>
+		<li><a href="/community/users/renewable-energy-energy-efficiency-exporter-portal">Renewable Energy & Energy Efficiency Exporters</a></li>
+		<li><a href="/community/users/league-of-green-embassies">League of Green Embassies</a></li>
+		<li><a href="/community/users/minority-exporters-seminar">Minority Exporters Seminar</a></li>
+		<li><a href="/community/users/seaport-partnerships">Seaport Partnerships</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Financing</strong></p>
+		<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
+		<li><a href="/international-finance-questionnaire/">Assess Your Finance Options</a></li>
+		<li><a href="/trade-finance-guide">Trade Finance Guide</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Regulations</strong></p>
+		<li>US Export Regulations</li>
+		<li><a href="/community/users/export-licenses-regulations">Export Licenses & Regulations</a></li>
+		<li><a href="/consolidated-screening-list">Consolidated Screening List</a></li>
+		<li >European Regulations<li>
+		<li><a href="/community/users/ce-marking">CE Marking</a></li>
+		<li><a href="/safe-harbor">Safe Harbor</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Trade Problems</strong></p>
+		<li><a href="/community/users/trade-problems">Help with Trade Problems</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Trade Events</strong></p>
+		<li><a href="/trade-events/">Trade Events</a></li>
+		<li><a href="/community/users/training-programs">Training & Webinars</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Get Answers</strong></p>
+		<li><a href="https://help.export.gov/">Browse FAQs</a></li>
+		<li><a href="https://help.export.gov/ics/support/ticketnewwizard.asp?style=classic">Market Research</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Find Answers & Contacts</strong></p>
+		<li><a href="https://help.export.gov/ics/support/contactUs.asp">Contact a Trade Specialist</a></li>
+		<li><a href="/centers">Domestic Offices</a></li>
+		<li><a href="/international-offices">International Offices</a></li>
+		<li><a href="/community/users/district-export-councils">District Export Councils</a></li>
+		</ul>
+
+  </div>
+      </footer>
+    </div>  
+    
+    
+    
+    
+    
+    
+    
+   
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+
+        <p class="copyright">
+<center><div class="footerdivideotitle">www.TRADE.gov</div><br />
+<div><p><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia/">FOIA</a> | <a href="http://trade.gov/privacy.asp">Privacy Policy</a> | <a href="http://trade.gov/endorse.asp">Disclaimer</a> |
+<a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></p>
+</div>
+</center>
+
+<p>The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+sites should not be construed as an endorsement of the views or privacy policies contained therein. This site contains PDF documents.
+A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe Systems Incorporated.</p>
+
+
+        </p>
+   
+      </footer>
+    </div>
+
+  </body>
 </html>
-
-
-
-

@@ -15,6 +15,7 @@ nav {
 
 
   nav ul {
+  
     margin: 0;
     padding: 0;
     text-align: center;
@@ -48,10 +49,10 @@ nav {
       }
 
       nav > ul > li > a {
-      
+      	
         color: #fff;
         display: block;
-        line-height: 56px;
+        line-height: 50px;
         padding: 0 15px;
         text-decoration: none;
       }
@@ -69,7 +70,7 @@ nav {
         }
       
       nav > ul > li > div {
-      font-size:14px;
+      font-size:16px;
         background-color: rgb( 40, 44, 47 );
         border-top: 0;
         
@@ -113,14 +114,9 @@ nav {
 
 <nav>
 	<ul>
+		
 		<li>
-			<a href="/office">Home<span class="caret"></span></a>
-			<div>
-
-			</div>
-		</li>
-		<li>
-			<a href="#">Export Process<span class="caret"></span></a>
+			<a href="#">EXPORT PROCESS<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
@@ -131,7 +127,7 @@ nav {
 			</div>
 		</li>
 				<li>
-			<a href="#">Opportunities<span class="caret"></span></a>
+			<a href="#">OPPORTUNITIES<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>Conduct Research</li>
@@ -160,7 +156,7 @@ nav {
 
 
 					<li>
-			<a href="#">Financing<span class="caret"></span></a>
+			<a href="#">FINANCING<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
@@ -172,7 +168,7 @@ nav {
 		</li>
 		
 					<li>
-			<a href="#">Regulations<span class="caret"></span></a>
+			<a href="#">REGULATIONS<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>US Export Regulations</li>
@@ -187,7 +183,7 @@ nav {
 		</li>
 		
 					<li>
-			<a href="#">Trade Problems<span class="caret"></span></a>
+			<a href="#">TRADE PROBLEMS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -198,7 +194,7 @@ nav {
 		</li>
 		
 							<li>
-			<a href="#">Trade Events<span class="caret"></span></a>
+			<a href="#">TRADE EVENTS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -209,7 +205,7 @@ nav {
 			</div>
 		</li>
 							<li>
-			<a href="#">Get Answers<span class="caret"></span></a>
+			<a href="#">GET ANSWERS<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -222,7 +218,7 @@ nav {
 			</div>
 		</li>
 									<li>
-			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
+			<a href="#">FIND ANSWERS & CONTACTS<span class="caret"></span></a>
 			<div>
 				<ul>
 					

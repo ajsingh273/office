@@ -265,7 +265,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 1100px;
+  max-width: 2000px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -291,8 +291,8 @@ Full-Width Styles
   right: 10px;
   z-index: 10;
   padding: 10px 10px 10px 10px;
-  color: #fff;
-  background: #0B5394 no-repeat 95% 50%;
+  color: #c1c1c1;
+  
   font-weight: 700;
 
 
@@ -300,7 +300,8 @@ Full-Width Styles
 }
 
 #forkme_banner a{
-  color: #f2f2f2;
+  color: #212121;
+  font-weight:none;
 }
 
 #forkme_banner li{
@@ -308,15 +309,16 @@ Full-Width Styles
 }
 
 #forkme_banner a:hover{
-  color: #c1c1c1;
+  color: #2da5da;
 }
 
+
 #header_wrap {
-  background: #fff
+  background: #E8F5FB;
 }
 
 #header_wrap .inner {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 #project_title {
@@ -328,11 +330,21 @@ Full-Width Styles
 }
 
 #project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
+  color: #4D4D4D;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  top:0;
+  right: 250px;
+  z-index: 10;
+  padding: 0px 10px 10px 10px;
+}
+#project_tagline a{
+  color: #4D4D4D;
+}
+
+#project_tagline a:hover{
+text-decoration:underline;
 }
 
 #art{
@@ -361,7 +373,7 @@ float:left;
 }
 
 #main4 {
-	
+
 display: inline-block;
 float:left;
 margin-bottom: 50px;
@@ -402,10 +414,9 @@ color:#c1c1c1;
   position: absolute;
   width: 210px;
   z-index: 10;
-  bottom: -40px;
+  bottom: -500px;
   right: 0;
   height: 70px;
-  background: url('../images/icon_download.png') no-repeat 0% 90%;
 }
 
 .zip_download_link {
@@ -441,7 +452,7 @@ color:#c1c1c1;
 	padding: 8px 16px;
 	text-decoration: none;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-	
+
 	-webkit-transition: background-color 0.1s linear;
 	-moz-transition: background-color 0.1s linear;
 	-o-transition: background-color 0.1s linear;
@@ -453,53 +464,55 @@ color:#c1c1c1;
 	}
 
 	.btn-blue {
-		background-color: rgb( 51, 102, 204 );
-		border: 1px solid rgb( 44, 91, 104 );	
+	color:#212121;
+		background-color: transparent;
+		border: 1px solid #c1c1c1;	
 	}
-	
+
 		.btn-blue:hover {
-			background-color: rgb( 58, 131, 213 );	
+		color:#fff;
+			background-color: #2da5da;	
 		}
-		
+
 		.btn-blue:active {
 			background-color: rgb( 42, 91, 191 );	
 		}
-		
+
 	.btn-primary {
 		background-color: #0B5394;
 		border: 1px solid rgb( 44, 37, 59 );
 	}
-	
+
 		.btn-primary:hover {
 			color: #c1c1c1;	
 		}
-		
+
 		.btn-primary:active {
 			background-color: rgb( 54, 44, 87 );	
 		}
-	
+
 	.btn-red {
 		background-color: rgb( 207, 56, 91 );
 		border: 1px solid rgb( 187, 40, 74 );
 	}
-	
+
 		.btn-red:hover {
 			background-color: rgb( 227, 77, 130 );
 		}
-		
+
 		.btn-red:active {
 			background-color: rgb( 187, 40, 74 );
 		}
-	
+
 	.btn-green {
 		background-color: rgb( 43, 153, 91 );
 		border: 1px solid rgb( 33, 126, 74 );
 	}
-	
+
 		.btn-green:hover {
 			background-color: rgb( 75, 183, 141 );
 		}
-		
+
 		.btn-green:active {
 			background-color: rgb( 33, 126, 74 );
 		}
@@ -547,7 +560,7 @@ background-color:#E6F0FF;
 
 
 #footer_wrap2 {
-  background-color: #C0C0C0;
+  background-color: #d9d9d9;
 font-size:12px;
 
   
@@ -555,7 +568,8 @@ font-size:12px;
 
 #footer_wrap2 li{
   padding: 0;
-  margin: 0;
+    margin-left:auto;
+margin-right:auto;
   color:#212121;
 }
 
@@ -638,6 +652,14 @@ table {
   #forkme_banner {
   float: none;
   position: relative;
+  margin-left:auto;
+margin-right:auto;
+  }
+  
+  #project_tagline {
+   float: none;
+  position: relative;
+right:0px;
   }
 
 
@@ -672,5 +694,4 @@ table {
   }
 
 }
-
 
