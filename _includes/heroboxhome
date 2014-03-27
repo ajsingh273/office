@@ -7,7 +7,7 @@
 .news-slider {
   background-color:#E7EEF4;
   height: 310px;
-
+width: 900px;
 
 }
 .news-slider .text-content {
@@ -17,7 +17,7 @@
   right: 0;
   background-color: transparent;
   padding: 1em;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 .news-slider .text-content h2 {
@@ -34,16 +34,17 @@
 }
 .news-slider .image-content {
   line-height: 0;
+  
 }
 .news-slider .image-content img {
   max-width: 100%;
-  
+  left:-165px;
 }
 
 </style>
 <div id="header_wrap" class="outer">
         <header class="inner">
-<section id="news-demo">
+<center><section id="news-demo">
   <article>
     <div class="text-content">
       <h3>Secretary Pritzker Announces Look South Initiative</h3>
@@ -106,7 +107,7 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
   </article>
   
   
-</section>
+</section></center>
 
         </header>
         
