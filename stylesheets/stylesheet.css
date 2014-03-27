@@ -416,7 +416,7 @@ color:#c1c1c1;
   position: absolute;
   width: 210px;
   z-index: 10;
-  bottom: -500px;
+  bottom: 15px;
   right: 0;
   height: 70px;
 }
