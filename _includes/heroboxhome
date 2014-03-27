@@ -5,10 +5,10 @@
 <style>
 /* News */
 .news-slider {
-  background-color:#fff;
+  background-color:#E7EEF4;
   height: 310px;
-  padding: 10px;
-  box-shadow: 0 0 10px #C0C0C0;
+
+
 }
 .news-slider .text-content {
   position: absolute;

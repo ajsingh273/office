@@ -1,16 +1,23 @@
+<style>
+#re li {
+color:#212121;
+}
+</style>
+
 <!DOCTYPE html>
 <html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Office : Trade office template for new Trade.gov" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
 <!--[if IE]><![endif]-->
 <!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Office : Trade office template for new Trade.gov" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Office</title>
@@ -78,7 +85,7 @@ body {
   display: block;
   overflow: hidden;
   width: 100%; 
-  
+  border-bottom:8px solid #6D98BF;
 }
 
 
@@ -126,7 +133,7 @@ body {
       }
 
         #nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
+          background-color: #6D98BF;
         }
 
         #nav > ul > li:hover > a {
@@ -139,7 +146,7 @@ body {
       
       #nav > ul > li > div {
       font-size:16px;
-        background-color: rgb( 40, 44, 47 );
+        background-color: #6D98BF;
         border-top: 0;
         
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -176,15 +183,27 @@ body {
             }
 
               #nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
+                background-color: #0B5394;
               }
+              
+            li {
+            color:#fff;
+            }
 </style>
 
 <div id="nav">
 	<ul>
+		<li>
+			<a href="#">Home<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+				</ul>
+			</div>
+		</li>
 		
 		<li>
-			<a href="#">EXPORT PROCESS<span class="caret"></span></a>
+			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
@@ -195,7 +214,7 @@ body {
 			</div>
 		</li>
 				<li>
-			<a href="#">OPPORTUNITIES<span class="caret"></span></a>
+			<a href="#">Opportunities<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>Conduct Research</li>
@@ -224,7 +243,7 @@ body {
 
 
 					<li>
-			<a href="#">FINANCING<span class="caret"></span></a>
+			<a href="#">Financing<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
@@ -236,7 +255,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">REGULATIONS<span class="caret"></span></a>
+			<a href="#">Regulations<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>US Export Regulations</li>
@@ -251,7 +270,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">TRADE PROBLEMS<span class="caret"></span></a>
+			<a href="#">Trade Problems<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -262,7 +281,7 @@ body {
 		</li>
 		
 							<li>
-			<a href="#">TRADE EVENTS<span class="caret"></span></a>
+			<a href="#">Trade Events<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -273,7 +292,7 @@ body {
 			</div>
 		</li>
 							<li>
-			<a href="#">GET ANSWERS<span class="caret"></span></a>
+			<a href="#">Get Answers<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -286,7 +305,7 @@ body {
 			</div>
 		</li>
 									<li>
-			<a href="#">FIND ANSWERS & CONTACTS<span class="caret"></span></a>
+			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -486,7 +505,7 @@ jQuery('#news-demo').slippry({
 <style>
 #expand a{
   color:#212121;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -577,7 +596,7 @@ Find Out More
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 <div class="clearfix" >
-<ul id="main" style="width:200px;margin-left:50px;margin-right:375px;"><h4>Export Resources</h4>
+<ul id="main" style="margin-left:50px;margin-right:175px;"><h4>Export Resources</h4>
 
  
 <ul style="font-size: 18px;"> 
@@ -871,7 +890,7 @@ The U.S. Government offers four different types of financing programs.</p>
 </br></br>
 <h4>Our Global Network at Work</h4>
 
-<ul> 
+<ul id="re"> 
 <li>Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
 <li>Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
 <li>See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
@@ -885,8 +904,9 @@ The U.S. Government offers four different types of financing programs.</p>
 #promo {
 width:100%
 height:100%;
-background-color:#CEDAFF;
 padding: 10px;
+border-top:thin solid #c1c1c1;
+border-bottom:thin solid #c1c1c1;
 }
 
 </style>

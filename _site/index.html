@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Office : Trade office template for new Trade.gov" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
 <!--[if IE]><![endif]-->
 <!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Office : Trade office template for new Trade.gov" />
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Office</title>
@@ -78,7 +79,7 @@ body {
   display: block;
   overflow: hidden;
   width: 100%; 
-  
+  border-bottom:8px solid #6D98BF;
 }
 
 
@@ -126,7 +127,7 @@ body {
       }
 
         #nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
+          background-color: #6D98BF;
         }
 
         #nav > ul > li:hover > a {
@@ -139,7 +140,7 @@ body {
       
       #nav > ul > li > div {
       font-size:16px;
-        background-color: rgb( 40, 44, 47 );
+        background-color: #6D98BF;
         border-top: 0;
         
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -176,15 +177,27 @@ body {
             }
 
               #nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
+                background-color: #0B5394;
               }
+              
+            li {
+            color:#fff;
+            }
 </style>
 
 <div id="nav">
 	<ul>
+		<li>
+			<a href="#">Home<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+				</ul>
+			</div>
+		</li>
 		
 		<li>
-			<a href="#">EXPORT PROCESS<span class="caret"></span></a>
+			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
@@ -195,7 +208,7 @@ body {
 			</div>
 		</li>
 				<li>
-			<a href="#">OPPORTUNITIES<span class="caret"></span></a>
+			<a href="#">Opportunities<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>Conduct Research</li>
@@ -224,7 +237,7 @@ body {
 
 
 					<li>
-			<a href="#">FINANCING<span class="caret"></span></a>
+			<a href="#">Financing<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
@@ -236,7 +249,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">REGULATIONS<span class="caret"></span></a>
+			<a href="#">Regulations<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>US Export Regulations</li>
@@ -251,7 +264,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">TRADE PROBLEMS<span class="caret"></span></a>
+			<a href="#">Trade Problems<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -262,7 +275,7 @@ body {
 		</li>
 		
 							<li>
-			<a href="#">TRADE EVENTS<span class="caret"></span></a>
+			<a href="#">Trade Events<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -273,7 +286,7 @@ body {
 			</div>
 		</li>
 							<li>
-			<a href="#">GET ANSWERS<span class="caret"></span></a>
+			<a href="#">Get Answers<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -286,7 +299,7 @@ body {
 			</div>
 		</li>
 									<li>
-			<a href="#">FIND ANSWERS & CONTACTS<span class="caret"></span></a>
+			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -309,10 +322,10 @@ body {
 <style>
 /* News */
 .news-slider {
-  background-color:#fff;
+  background-color:#E7EEF4;
   height: 310px;
-  padding: 10px;
-  box-shadow: 0 0 10px #C0C0C0;
+
+
 }
 .news-slider .text-content {
   position: absolute;

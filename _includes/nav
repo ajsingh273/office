@@ -10,7 +10,7 @@ body {
   display: block;
   overflow: hidden;
   width: 100%; 
-  
+  border-bottom:8px solid #6D98BF;
 }
 
 
@@ -58,7 +58,7 @@ body {
       }
 
         #nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
+          background-color: #6D98BF;
         }
 
         #nav > ul > li:hover > a {
@@ -71,7 +71,7 @@ body {
       
       #nav > ul > li > div {
       font-size:16px;
-        background-color: rgb( 40, 44, 47 );
+        background-color: #6D98BF;
         border-top: 0;
         
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -108,15 +108,27 @@ body {
             }
 
               #nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
+                background-color: #0B5394;
               }
+              
+            li {
+            color:#fff;
+            }
 </style>
 
 <div id="nav">
 	<ul>
+		<li>
+			<a href="#">Home<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+				</ul>
+			</div>
+		</li>
 		
 		<li>
-			<a href="#">EXPORT PROCESS<span class="caret"></span></a>
+			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/export-basics">Export Basics</a></li>
@@ -127,7 +139,7 @@ body {
 			</div>
 		</li>
 				<li>
-			<a href="#">OPPORTUNITIES<span class="caret"></span></a>
+			<a href="#">Opportunities<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>Conduct Research</li>
@@ -156,7 +168,7 @@ body {
 
 
 					<li>
-			<a href="#">FINANCING<span class="caret"></span></a>
+			<a href="#">Financing<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
@@ -168,7 +180,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">REGULATIONS<span class="caret"></span></a>
+			<a href="#">Regulations<span class="caret"></span></a>
 			<div>
 				<ul>
 					<li>US Export Regulations</li>
@@ -183,7 +195,7 @@ body {
 		</li>
 		
 					<li>
-			<a href="#">TRADE PROBLEMS<span class="caret"></span></a>
+			<a href="#">Trade Problems<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -194,7 +206,7 @@ body {
 		</li>
 		
 							<li>
-			<a href="#">TRADE EVENTS<span class="caret"></span></a>
+			<a href="#">Trade Events<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -205,7 +217,7 @@ body {
 			</div>
 		</li>
 							<li>
-			<a href="#">GET ANSWERS<span class="caret"></span></a>
+			<a href="#">Get Answers<span class="caret"></span></a>
 			<div>
 				<ul>
 					
@@ -218,7 +230,7 @@ body {
 			</div>
 		</li>
 									<li>
-			<a href="#">FIND ANSWERS & CONTACTS<span class="caret"></span></a>
+			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
 			<div>
 				<ul>
 					
