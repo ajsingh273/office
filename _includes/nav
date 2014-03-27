@@ -4,7 +4,7 @@ body {
 
 }
 
-nav {
+#nav {
   background-color: #0B5394;
   color: #888;
   display: block;
@@ -14,14 +14,14 @@ nav {
 }
 
 
-  nav ul {
+  #nav ul {
   
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-    nav ul li {
+    #nav ul li {
       display: inline-block;
       list-style-type: none;
       text-align: left;
@@ -33,7 +33,7 @@ nav {
         transition: all 0.2s; 
     }
       
-      nav > ul > li > a > .caret {
+      #nav > ul > li > a > .caret {
 
         content: "";
         display: inline-block;
@@ -48,7 +48,7 @@ nav {
           transition: color 0.1s linear; 
       }
 
-      nav > ul > li > a {
+      #nav > ul > li > a {
       	
         color: #fff;
         display: block;
@@ -57,19 +57,19 @@ nav {
         text-decoration: none;
       }
 
-        nav > ul > li:hover {
+        #nav > ul > li:hover {
           background-color: rgb( 40, 44, 47 );
         }
 
-        nav > ul > li:hover > a {
+        #nav > ul > li:hover > a {
           color: rgb( 255, 255, 255 );
         }
 
-        nav > ul > li:hover > a > .caret {
+        #nav > ul > li:hover > a > .caret {
           border-top-color: rgb( 255, 255, 255 );
         }
       
-      nav > ul > li > div {
+      #nav > ul > li > div {
       font-size:16px;
         background-color: rgb( 40, 44, 47 );
         border-top: 0;
@@ -90,29 +90,29 @@ nav {
         -transition: opacity 0.2s;
       }
 
-        nav > ul > li:hover > div {
+        #nav > ul > li:hover > div {
           display: block;
           opacity: 1;
           visibility: visible;
         }
 
-          nav > ul > li > div ul > li {
+          #nav > ul > li > div ul > li {
             display: block;
           }
 
-            nav > ul > li > div ul > li > a {
+            #nav > ul > li > div ul > li > a {
               color: #fff;
               display: block;
               padding: 10px 10px;
               text-decoration: none;
             }
 
-              nav > ul > li > div ul > li:hover > a {
+              #nav > ul > li > div ul > li:hover > a {
                 background-color: rgba( 255, 255, 255, 0.1);
               }
 </style>
 
-<nav>
+<div id="nav">
 	<ul>
 		
 		<li>
@@ -231,4 +231,4 @@ nav {
 			</div>
 		</li>
 	</ul>
-</nav>
+</div>
