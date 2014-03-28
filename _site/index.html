@@ -5,7 +5,13 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Office : Trade office template for new Trade.gov" />
-
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Office</title>
@@ -18,8 +24,8 @@
         <header class="inner">
           
 
-                    <a id="project_title" href="/office"><img  src="images/ita.jpg" width="250px"></a>
-          <!--<h2 id="project_tagline">Trade office template for new Trade.gov</h2>-->
+                    <a id="project_title" href="/office"><img  src="images/ita2.jpg" ></a>
+          <p id="project_tagline">A bureau within the <a href="http://www.commerce.gov">U.S. Department of Commerce</a></p>
           
                             <ul id="forkme_banner">
         <li><a href="/office/signin.html">Sign in</a> |</li>
@@ -35,7 +41,7 @@ padding: 0px 0px 0px 0px;
 #search input[type="text"] {
     border: 1px solid #d1d1d1;
     color: #bebebe;
-    width: 150px;
+    width: 120px;
     padding: 6px 15px 6px 35px;
 
 
@@ -57,10 +63,7 @@ padding: 0px 0px 0px 0px;
         </ul>
 
 
-            <!--<section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ajsingh273/office/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ajsingh273/office/tarball/master">Download this project as a tar.gz file</a>
-            </section>-->
+            
         </header>
     </div>
 <style>
@@ -69,23 +72,24 @@ body {
 
 }
 
-nav {
+#nav {
   background-color: #0B5394;
   color: #888;
   display: block;
   overflow: hidden;
   width: 100%; 
-  
+  border-bottom:8px solid #6D98BF;
 }
 
 
-  nav ul {
+  #nav ul {
+  
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-    nav ul li {
+    #nav ul li {
       display: inline-block;
       list-style-type: none;
       text-align: left;
@@ -97,7 +101,7 @@ nav {
         transition: all 0.2s; 
     }
       
-      nav > ul > li > a > .caret {
+      #nav > ul > li > a > .caret {
 
         content: "";
         display: inline-block;
@@ -112,30 +116,30 @@ nav {
           transition: color 0.1s linear; 
       }
 
-      nav > ul > li > a {
-      
+      #nav > ul > li > a {
+      	
         color: #fff;
         display: block;
-        line-height: 56px;
+        line-height: 50px;
         padding: 0 15px;
         text-decoration: none;
       }
 
-        nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
+        #nav > ul > li:hover {
+          background-color: #6D98BF;
         }
 
-        nav > ul > li:hover > a {
+        #nav > ul > li:hover > a {
           color: rgb( 255, 255, 255 );
         }
 
-        nav > ul > li:hover > a > .caret {
+        #nav > ul > li:hover > a > .caret {
           border-top-color: rgb( 255, 255, 255 );
         }
       
-      nav > ul > li > div {
-      font-size:14px;
-        background-color: rgb( 40, 44, 47 );
+      #nav > ul > li > div {
+      font-size:16px;
+        background-color: #6D98BF;
         border-top: 0;
         
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -154,36 +158,43 @@ nav {
         -transition: opacity 0.2s;
       }
 
-        nav > ul > li:hover > div {
+        #nav > ul > li:hover > div {
           display: block;
           opacity: 1;
           visibility: visible;
         }
 
-          nav > ul > li > div ul > li {
+          #nav > ul > li > div ul > li {
             display: block;
           }
 
-            nav > ul > li > div ul > li > a {
+            #nav > ul > li > div ul > li > a {
               color: #fff;
               display: block;
               padding: 10px 10px;
               text-decoration: none;
             }
 
-              nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
+              #nav > ul > li > div ul > li:hover > a {
+                background-color: #0B5394;
               }
+              
+            li {
+            color:#fff;
+            }
 </style>
 
-<nav>
+<div id="nav">
 	<ul>
 		<li>
-			<a href="/office">Home<span class="caret"></span></a>
+			<a href="#">Home<span class="caret"></span></a>
 			<div>
-
+				<ul>
+					
+				</ul>
 			</div>
 		</li>
+		
 		<li>
 			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
@@ -300,10 +311,7 @@ nav {
 			</div>
 		</li>
 	</ul>
-</nav>
-
-
-     	
+</div>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -313,10 +321,10 @@ nav {
 <style>
 /* News */
 .news-slider {
-  background-color:#fff;
+  background-color:#E7EEF4;
   height: 310px;
-  padding: 10px;
-  box-shadow: 0 0 10px #C0C0C0;
+width: 900px;
+
 }
 .news-slider .text-content {
   position: absolute;
@@ -325,7 +333,7 @@ nav {
   right: 0;
   background-color: transparent;
   padding: 1em;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 .news-slider .text-content h2 {
@@ -342,16 +350,17 @@ nav {
 }
 .news-slider .image-content {
   line-height: 0;
+  
 }
 .news-slider .image-content img {
   max-width: 100%;
-  
+  left:-165px;
 }
 
 </style>
 <div id="header_wrap" class="outer">
         <header class="inner">
-<section id="news-demo">
+<center><section id="news-demo">
   <article>
     <div class="text-content">
       <h3>Secretary Pritzker Announces Look South Initiative</h3>
@@ -414,204 +423,8 @@ U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Developme
   </article>
   
   
-</section>
+</section></center>
 
-<style>
-
-.wrapper
-{
-
-    width: 100%;
-    margin: 0px auto;
-    min-height: 200px;
-    padding-top: 75px;
-    border-bottom: 1px solid #C0C0C0;
-}
-
-.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
-{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    background: transparent;
-}
-.wrapper h1 {
-    vertical-align:middle;
-    
-}
-
-
-.wrapper li
-{
-    outline: 0;
-    text-decoration: none;
-}
-
-#v-nav
-{
-    height: 100%;
-    margin: auto;
-    color: #333;
-    
-}
-
-#v-nav >ul
-{
-    float: left;
-    width: 210px;
-    display: block;
-    position: relative;
-    top: 0;
-    border: 1px solid #DDD;
-    border-right-width: 0;
-    margin: auto 0 !important;
-    padding:0;
-}
-
-#v-nav >ul >li
-{
-    width: 180px;
-    list-style-type: none;
-    display: block;
-    text-shadow: 0px 1px 1px #F2F1F0;
-    font-size: 14px;
-    position: relative;
-    border-right-width: 0;
-    border-bottom: 1px solid #DDD;
-    margin: auto;
-    padding: 15px 15px !important;  
-    background: whiteSmoke; /* Old browsers */      
-}
-
-#v-nav >ul >li.current
-{
-    color: #C0C0C0;
-    border-right: none;
-    z-index: 10;
-    background: #212121;
-    background-image:url('../images/Arrow-Right.png');
-    background-repeat:no-repeat;
-    background-position:right center;
-    position: relative;
-
-}
-
-#v-nav >ul >li.first.current
-{
-    border-bottom: 1px solid #DDD;
-}
-
-#v-nav >ul >li.last
-{
-    border-bottom: none;
-}
-
-#v-nav >div.tab-content
-{
-    margin-left: 210px;
-    background-color: #FFF;
-    min-height: 200px;
-    position: relative;
-    z-index: 9;
-    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
-    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
-    box-shadow: inset 0 0 35px 5px #fafbfd;
-    display: none;
-    
-    
-}
-
-#v-nav >div.tab-content >h4
-{
-    font-size: 1.2em;
-    color: Black;
-    text-shadow: 0px 1px 1px #F2F1F0;
-    border-bottom: 1px dotted #EEEDED;
-    padding-bottom: 5px;
-}
-
-#expand a{
-  color:#212121;
-  font-size: 14px;
-}
-
-#expand a:hover {
-text-decoration: underline;
-}
-
-}
-</style>
-
-<section id="wrapper" class="wrapper" >
-    
-  <div id="v-nav">
-
-  <ul>
-    <li tab="tab1" class="first current">LEARN ABOUT EXPORTING</li>
-    <li tab="tab2">READY TO EXPORT</li>
-    <li tab="tab3">EXPAND MY EXPORTS</li>
- </ul>
-
- <div class="tab-content">
-   <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:125px; top:25px;"></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:125px;top:25px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style="top:25px;"></a>
- </div>
-
- <div class="tab-content">
-    <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:125px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:125px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:125px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
- </div>
-
- <div class="tab-content" id="expand">
-   <div style="float:left; margin-left:30px; margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:30px;margin-top:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
- </div>
-
-</div>
-
-</section>
-
-
-<script>
-$(function() {
-        
- $('.close').click(function () {
-        console.log( 'close' );
-        $('.tab-content').hide();
-    });
-    
-    var items = $('#v-nav>ul>li').each(function() {
-        $(this).click(function() {
-            //remove previous class and add it to clicked tab
-            items.removeClass('current');
-            $(this).addClass('current');
-
-            //hide all content divs and show current one
-            $('#v-nav>div.tab-content').hide().eq(items.index($(this))).show('fast');
-
-            window.location.hash = $(this).attr('tab');
-        });
-    });
-
-    if (location.hash) {
-        showTab(location.hash);
-    }
-    else {
-        showTab("tab1");
-    }
-
-    function showTab(tab) {
-        $("#v-nav ul li:[tab*=" + tab + "]").click();
-    }
-
-    // Bind the event hashchange, using jquery-hashchange-plugin
-    $(window).hashchange(function() {
-        showTab(location.hash.replace("#", ""));
-    })
-
-    // Trigger the event hashchange on page load, using jquery-hashchange-plugin
-    $(window).hashchange();
-
-});
-</script>
         </header>
         
     </div>
@@ -645,9 +458,87 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
-<div class="clearfix">
-<ul id="main4" style="width:600px;margin-right: 50px;">
+
 <style>
+#expand a{
+  color:#212121;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#expand a:hover {
+text-decoration: none;
+}
+</style>
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">		
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="stylesheets/demo.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.css">
+		<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/sky-tabs-ie8.js"></script>
+		<![endif]-->
+	</head>
+	
+              
+	<body class="bg-cyan">
+		<div class="body" >
+		
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>LEARN ABOUT EXPORTING <img  src="images/whiteglobe.png" width="25px" style="margin-left:30px; padding-top:10px;"></span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>READY TO EXPORT<img  src="images/whitebox.png" width="25px" style="margin-left:80px; padding-top:10px;"></span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>EXPAND MY EXPORTS<img  src="images/whiteboxes.png" width="25px" style="margin-left:60px; padding-top:10px;"></span></span></label>
+				
+				<ul>
+					<li class="sky-tab-content-1" >					
+						<div class="typography">
+							  <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:75px; "></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style=""></a>
+ </div>
+					</li>
+					
+					<li class="sky-tab-content-2">
+						<div class="typography">
+						   <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:75px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:75px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+</div>
+					</li>
+					
+					<li class="sky-tab-content-3">
+						<div class="typography" id="expand">
+					 <div style="float:left; margin-left:25px; margin-right:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+</div>
+					</li>
+					
+										
+				</ul>
+			</div>
+			<!--/ tabs -->
+			
+		</div>
+	</body>
+</html>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+<div class="clearfix">
+<ul id="main4" style="width:725px;margin-right: 50px;">
+<style>
+
+
 
 #title a {
 font-weight: bold;
@@ -663,14 +554,25 @@ font-size: 16px;
 font-style: italic;
 }
 
+#circle {
+text-align:center;
+width:50px;
+height:50px;
+background: #d9d9d9;
+-moz-broder-radius:50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+float:left;
+}
 
 </style>
 
 <h4>Attend a Trade Event</h4>
 
 <div class="clearfix">
+<div id="circle">MAR</br><strong>17</strong></div>
 <ul id="main3">
-<p id="title"><a href="#">2014-03-17 MODEX 2014 - IBP Select</a></p>
+<p id="title"><a href="#"> MODEX 2014 - IBP Select</a></p>
 
 <p>Atlanta, GA</p>
 
@@ -679,10 +581,10 @@ font-style: italic;
 <p id="ind">Materials Handling Machinery</p>
 </ul>
 
-
+<div id="circle">MAR</br><strong>18</strong></div>
 <ul id="main3">
 
-<p id="title"><a href="#">2014-03-18 MCE 2014</a></p>
+<p id="title"><a href="#">MCE 2014</a></p>
 
 <p>Milan, IT</p>
 
@@ -691,10 +593,10 @@ font-style: italic;
 <p id="ind">Architectural/Constr./Engineering SVC</p>
 
 </ul>
-
+<div id="circle">MAR</br><strong>19</strong></div>
 <ul id="main3">
 
-<p id="title"><a href="#">2014-03-19 Cippe 2013</a></p>
+<p id="title"><a href="#">Cippe 2013</a></p>
 
 <p>Beijing, CN</p>
 
@@ -703,10 +605,10 @@ font-style: italic;
 <p id="ind">Oil/Gas Field Machinery</p>
 
 </ul>
-
+<div id="circle">MAR</br><strong>19</strong></div>
 <ul id="main3">
 
-<p id="title"><a href="#">2014-03-19 Secutech Taiwan 2014</a></p>
+<p id="title"><a href="#">Secutech Taiwan 2014</a></p>
 
 <p>Taipei, TW</p>
 
@@ -731,13 +633,13 @@ font-style: italic;
 </div>
 <a href="#">View all Events</a>
 </ul>
-<ul id="main4" style="width:400px;">
+<ul id="main4" style="width:300px;">
 <h4>Social & Video Stream</h4>
 <div ><script type="text/javascript" src="http://q4socialstream.q4web.com/SocialBuilder/js/jqueryQ4.min.js"></script><div id="SocialStream"></div><script type="text/javascript" src="http://q4socialstream.q4web.com/SocialBuilder/js/q4SocialStream.js"></script><script type="text/javascript">var Q4$ = jQuery.noConflict();Q4$("#SocialStream").SocialWidget({"SocialStreams":{"twitter":{"label":"Twitter","url":"TradeGov"},"youtube":{"label":"Youtube","url":"TradeGov"}},"selector":"#SocialStream","theme":{"name":"SocialLight","shell":{"background":"#ffffff","color":"#000000","links":"#333333","height":"300"},"tweets":{"background":"none","color":"#333","links":"#333"}},"widgetTitle":"Social Stream"});</script></div>
 </ul>
 </div>
 <div class="clearfix" style="margin-bottom:25px;">
-<ul id="main2" style="width:500px;margin-right: 150px;"><style>
+<ul id="main2" style="width:500px;margin-right: 200px;"><style>
 #success{
 	font-style:italic;
 }
@@ -913,6 +815,8 @@ var hackerList = new List('hacker-list-2', options);
   
 })
   </script></ul>
+</div>
+</section>
 </div>
 
 </section>

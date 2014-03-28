@@ -5,7 +5,13 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Office : Trade office template for new Trade.gov" />
-
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Office</title>
@@ -18,8 +24,8 @@
         <header class="inner">
           
 
-                    <a id="project_title" href="/office"><img  src="images/ita.jpg" width="250px"></a>
-          <!--<h2 id="project_tagline">Trade office template for new Trade.gov</h2>-->
+                    <a id="project_title" href="/office"><img  src="images/ita2.jpg" ></a>
+          <p id="project_tagline">A bureau within the <a href="http://www.commerce.gov">U.S. Department of Commerce</a></p>
           
                             <ul id="forkme_banner">
         <li><a href="/office/signin.html">Sign in</a> |</li>
@@ -35,7 +41,7 @@ padding: 0px 0px 0px 0px;
 #search input[type="text"] {
     border: 1px solid #d1d1d1;
     color: #bebebe;
-    width: 150px;
+    width: 120px;
     padding: 6px 15px 6px 35px;
 
 
@@ -57,10 +63,7 @@ padding: 0px 0px 0px 0px;
         </ul>
 
 
-            <!--<section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ajsingh273/office/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ajsingh273/office/tarball/master">Download this project as a tar.gz file</a>
-            </section>-->
+            
         </header>
     </div>
 <style>
@@ -69,23 +72,24 @@ body {
 
 }
 
-nav {
+#nav {
   background-color: #0B5394;
   color: #888;
   display: block;
   overflow: hidden;
   width: 100%; 
-  
+  border-bottom:8px solid #6D98BF;
 }
 
 
-  nav ul {
+  #nav ul {
+  
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-    nav ul li {
+    #nav ul li {
       display: inline-block;
       list-style-type: none;
       text-align: left;
@@ -97,7 +101,7 @@ nav {
         transition: all 0.2s; 
     }
       
-      nav > ul > li > a > .caret {
+      #nav > ul > li > a > .caret {
 
         content: "";
         display: inline-block;
@@ -112,30 +116,30 @@ nav {
           transition: color 0.1s linear; 
       }
 
-      nav > ul > li > a {
-      
+      #nav > ul > li > a {
+      	
         color: #fff;
         display: block;
-        line-height: 56px;
+        line-height: 50px;
         padding: 0 15px;
         text-decoration: none;
       }
 
-        nav > ul > li:hover {
-          background-color: rgb( 40, 44, 47 );
+        #nav > ul > li:hover {
+          background-color: #6D98BF;
         }
 
-        nav > ul > li:hover > a {
+        #nav > ul > li:hover > a {
           color: rgb( 255, 255, 255 );
         }
 
-        nav > ul > li:hover > a > .caret {
+        #nav > ul > li:hover > a > .caret {
           border-top-color: rgb( 255, 255, 255 );
         }
       
-      nav > ul > li > div {
-      font-size:14px;
-        background-color: rgb( 40, 44, 47 );
+      #nav > ul > li > div {
+      font-size:16px;
+        background-color: #6D98BF;
         border-top: 0;
         
         box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -154,36 +158,43 @@ nav {
         -transition: opacity 0.2s;
       }
 
-        nav > ul > li:hover > div {
+        #nav > ul > li:hover > div {
           display: block;
           opacity: 1;
           visibility: visible;
         }
 
-          nav > ul > li > div ul > li {
+          #nav > ul > li > div ul > li {
             display: block;
           }
 
-            nav > ul > li > div ul > li > a {
+            #nav > ul > li > div ul > li > a {
               color: #fff;
               display: block;
               padding: 10px 10px;
               text-decoration: none;
             }
 
-              nav > ul > li > div ul > li:hover > a {
-                background-color: rgba( 255, 255, 255, 0.1);
+              #nav > ul > li > div ul > li:hover > a {
+                background-color: #0B5394;
               }
+              
+            li {
+            color:#fff;
+            }
 </style>
 
-<nav>
+<div id="nav">
 	<ul>
 		<li>
-			<a href="/office">Home<span class="caret"></span></a>
+			<a href="#">Home<span class="caret"></span></a>
 			<div>
-
+				<ul>
+					
+				</ul>
 			</div>
 		</li>
+		
 		<li>
 			<a href="#">Export Process<span class="caret"></span></a>
 			<div>
@@ -300,10 +311,7 @@ nav {
 			</div>
 		</li>
 	</ul>
-</nav>
-
-
-     	
+</div>
 
 
 <style>
