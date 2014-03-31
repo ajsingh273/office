@@ -1,8 +1,6 @@
 <style>
 
-#event{
-font-size: 12px;
-}
+
 
 #title a {
 font-weight: bold;
@@ -30,7 +28,7 @@ float:left;
 }
 
 </style>
-<div id="event">
+
 <h4>Attend a Trade Event</h4>
 
 <div class="clearfix">
@@ -95,6 +93,4 @@ float:left;
 </ul>-->
 
 </div>
-<a href="#">View all Events</a>
-
-</div>
+<a style="display:inline-block; padding:5px;background-color:#d9d9d9"href="events.html" >View all Events</a>
