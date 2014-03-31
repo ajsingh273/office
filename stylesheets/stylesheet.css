@@ -89,7 +89,7 @@ h3 {
 h4 {
   font-size: 21px;
     color:#6D98BF;
-    border-bottom:thin solid #c1c1c1;
+    text-decoration:underline
 }
 
 h5 {
@@ -267,7 +267,7 @@ Full-Width Styles
 
 .inner {
  position: relative;
-  min-width: 640px;
+  max-width:1100px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -289,7 +289,7 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top:20px;
   right: 10px;
   z-index: 10;
   padding: 10px 10px 10px 10px;
@@ -300,6 +300,21 @@ Full-Width Styles
 
   font-size:12px;
 }
+
+#forkme_banner2 {
+  display: block;
+  position: absolute;
+  top:225px;
+  right: 100px;
+  z-index: 10;
+  padding: 10px 10px 10px 10px;
+
+}
+
+#forkme_banner2 li{
+  display: inline;
+}
+
 
 #forkme_banner a{
   color: #4D4D4D;
@@ -387,8 +402,8 @@ width:250px;
 display: inline-block;
 float:left;
 padding-left: 10px;
-padding-right: 50px;
-margin-bottom: 50px;
+padding-right: 30px;
+margin-bottom: 30px;
 }
 
 #soc {	
@@ -467,8 +482,8 @@ color:#c1c1c1;
 	}
 
 	.btn-blue {
-	color:#212121;
-		background-color: transparent;
+	color:#fff;
+		background-color: #6D98BF;
 		border: 1px solid #c1c1c1;	
 	}
 

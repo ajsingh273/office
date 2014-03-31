@@ -28,22 +28,22 @@ float:left;
 }
 
 </style>
-
+<div id="event">
 <h4>Attend a Trade Event</h4>
 
 <div class="clearfix">
-<div id="circle">MAR</br><strong>17</strong></div>
+<div id="circle">APR</br><strong>1</strong></div>
 <ul id="main3">
-<p id="title"><a href="#"> MODEX 2014 - IBP Select</a></p>
+<p id="title"><a href="#"> Analytica 2014</a></p>
 
-<p>Atlanta, GA</p>
+<p>Munich, DE</p>
 
-<p>MODEX is the largest supply chain exhibition to take place in North or South America in 2014. MODEX 2014 is the industry's newest expo for the manufacturing, distribution and supply chain industries.</p>
+<p>Analytica ist Europe's largest event for instrumental analysis, laboratory technology and biotechnology, that takes place every other year in Munich, Germany.</p>
 
-<p id="ind">Materials Handling Machinery</p>
+<p id="ind">Laboratory Scientific Instruments</p>
 </ul>
 
-<div id="circle">MAR</br><strong>18</strong></div>
+<!--<div id="circle">MAR</br><strong>18</strong></div>
 <ul id="main3">
 
 <p id="title"><a href="#">MCE 2014</a></p>
@@ -55,7 +55,7 @@ float:left;
 <p id="ind">Architectural/Constr./Engineering SVC</p>
 
 </ul>
-<!--<div id="circle">MAR</br><strong>19</strong></div>
+<div id="circle">MAR</br><strong>19</strong></div>
 <ul id="main3">
 
 <p id="title"><a href="#">Cippe 2013</a></p>
@@ -93,4 +93,6 @@ float:left;
 </ul>-->
 
 </div>
-<a href="#">View all Events</a>
+<a style="display:inline-block; padding:5px;background-color:#d9d9d9"href="#">View all Events</a>
+
+</div>
