@@ -36,7 +36,8 @@ a:hover {
 	background-image: url(../img/bg-black.jpg);
 }
 .body {
-	max-width: 2000px;
+	
+	padding-top:30px;
 	min-height: 225px;
 	margin: 0 auto;
 	border-bottom:thin solid #c1c1c1;
