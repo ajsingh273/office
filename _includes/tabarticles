@@ -1,0 +1,81 @@
+<style>
+
+#container{
+min-height:350px;
+width:700px;
+border-style:solid;
+border-width:2px;
+border-color: #6D98BF;
+}
+
+#container2{
+background:#fff;
+}
+
+#container input, .content {
+    display: none;
+    background: #fff;
+    line-height: 25px;
+    padding: 5px 25px;
+    min-width: 200px;
+}
+
+#one:checked ~ .one,
+#two:checked ~ .two,
+#three:checked ~ .three {display: block;}
+
+label {
+    cursor: pointer;
+    background: #fff;
+    height: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+    
+    margin-right: -3px;
+    transition: background .25s linear;  
+}
+
+label:hover, input:checked + label {color: #6D98BF;background:#d9d9d9;}
+
+h3, p {
+    
+    text-align: justify;
+}
+</style>
+
+<h6>Articles</h6>
+<div id="container">
+<input type="radio" name="nav" id="one" checked="checked"/>
+<label for="one">Articles</label>
+
+<input type="radio" name="nav" id="two"/>
+<label for="two">Most Important</label>
+
+<input type="radio" name="nav" id="three"/>
+<label for="three">Most Recent</label>
+
+<article id="container2" class="content one">
+ <p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+
+
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+
+<p>
+<a id="title" href="#">Export Loan Programs</a></br>
+The U.S. Government offers four different types of financing programs.</p>
+
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;float:right;"href="#"id="title" href="#">View Articles A-Z</a>
+</article>
+
+<article id="container2" class="content two">
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+</article>
+
+<article id="container2" class="content three">
+ <p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+</article>
+</div>

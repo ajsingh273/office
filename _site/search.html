@@ -1,76 +1,899 @@
+<!DOCTYPE html>
+<html>
 
-<style>
-#expand a{
-  color:#212121;
-  font-size: 12px;
-  text-decoration: none;
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Office : Trade office template for new Trade.gov" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Office</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          
+
+                    <a id="project_title" href="/office"><img  src="images/ita2.jpg" ></a>
+          <p id="project_tagline">A bureau within the <a href="http://www.commerce.gov">U.S. Department of Commerce</a></p>
+          
+                            <ul id="forkme_banner">
+        <li><a href="/office/signin.html">Sign in</a> |</li>
+        <li><a href="/office/signin.html">Register</a> |</li>
+        <li><a href="http://developer.trade.gov">Developer API</a> </li>
+           <style>
+
+#search {
+background-color: transparent;
+padding: 0px 0px 0px 0px;
 }
 
-#expand a:hover {
-text-decoration: none;
+#search input[type="text"] {
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 120px;
+    padding: 6px 15px 6px 35px;
+
+
+    }
+
+
+</style>
+
+<form method="get" action="http://trade.gov" id="search">
+  <input id="search" name="q" type="text" size="30" placeholder="Search Trade.gov" />
+</form>
+
+
+    
+        </ul>
+
+
+            
+        </header>
+    </div>
+<style>
+body {
+
+
+}
+
+#nav {
+  background-color: #0B5394;
+  color: #888;
+  display: block;
+  overflow: hidden;
+  width: 100%; 
+  border-bottom:8px solid #6D98BF;
+}
+
+
+  #nav ul {
+  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+    #nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      text-align: left;
+      
+      -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s; 
+    }
+      
+      #nav > ul > li > a > .caret {
+
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+        
+  
+        -webkit-transition: color 0.1s linear;
+     	  -moz-transition: color 0.1s linear;
+       	-o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+      #nav > ul > li > a {
+      	
+        color: #fff;
+        display: block;
+        line-height: 50px;
+        padding: 0 15px;
+        text-decoration: none;
+      }
+
+        #nav > ul > li:hover {
+          background-color: #6D98BF;
+        }
+
+        #nav > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+
+        #nav > ul > li:hover > a > .caret {
+          border-top-color: rgb( 255, 255, 255 );
+        }
+      
+      #nav > ul > li > div {
+      font-size:16px;
+        background-color: #6D98BF;
+        border-top: 0;
+        
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+        display: none;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        width: auto;
+	visibility: hidden;
+	z-index: 100;
+  
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+      }
+
+        #nav > ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+          #nav > ul > li > div ul > li {
+            display: block;
+          }
+
+            #nav > ul > li > div ul > li > a {
+              color: #fff;
+              display: block;
+              padding: 10px 10px;
+              text-decoration: none;
+            }
+
+              #nav > ul > li > div ul > li:hover > a {
+                background-color: #0B5394;
+              }
+              
+            li {
+            color:#fff;
+            }
+</style>
+
+<div id="nav">
+	<ul>
+		<li>
+			<a href="/office">Home<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+				</ul>
+			</div>
+		</li>
+		
+		<li>
+			<a href="#">Export Process<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="/community/users/export-basics">Export Basics</a></li>
+					<li><a href="/office/guide.html">Basic Guide to Exporting</a></li>
+					<li><a href="/export-readiness-assessment/login">Export Readiness Assessment</a></li>
+					<li><a href="/community/users/international-logistics">International Logistics</a></li>
+				</ul>
+			</div>
+		</li>
+				<li>
+			<a href="#">Opportunities<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li>Conduct Research</li>
+					<li><a href="/community/users/expand-your-exports">Expand Into New Markets</a></li>
+					<li><a href="/community/users/market-research">Market Research</a></li>
+					<li><a href="/community/users/export-success-stories">Success Stories</a></li>
+					<li>Learn Marketing Tactics</li>
+					<li><a href="/community/users/international-sales-and-marketing">International Sales & Marketing</a></li>
+					<li><a href="/community/users/selling-online">Selling Online</a></li>
+					<li>Explore Markets</li>
+					<li><a href="/community/users/trade-leads">Find Trade Leads</a></li>
+					<li><a href="/community/users/trade-missions">Trade Missions</a></li>
+					<li><a href="/community/users/free-trade-agreements">Free Trade Agreements</a></li>
+					<li><a href="/doing-business-in-africa">Doing Business in Africa</a></li>
+					<li>Explore Programs</li>
+					<li><a href="/community/users/civil-nuclear-guide-to-exporting">Civil Nuclear Guide to Exporting</a></li>
+					<li><a href="/community/users/environmental-solutions-exporters-portal">Environmental Solutions Exporters</a></li>
+					<li><a href="/community/users/renewable-energy-energy-efficiency-exporter-portal">Renewable Energy & Energy Efficiency Exporters</a></li>
+					<li><a href="/community/users/league-of-green-embassies">League of Green Embassies</a></li>
+					<li><a href="/community/users/minority-exporters-seminar">Minority Exporters Seminar</a></li>
+					<li><a href="/community/users/seaport-partnerships">Seaport Partnerships</a></li>
+		
+				</ul>
+			</div>
+		</li>
+
+
+					<li>
+			<a href="#">Financing<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
+					<li><a href="/international-finance-questionnaire/">Assess Your Finance Options</a></li>
+					<li><a href="/trade-finance-guide">Trade Finance Guide</a></li>
+		
+				</ul>
+			</div>
+		</li>
+		
+					<li>
+			<a href="#">Regulations<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li>US Export Regulations</li>
+					<li><a href="/community/users/export-licenses-regulations">Export Licenses & Regulations</a></li>
+					<li><a href="/consolidated-screening-list">Consolidated Screening List</a></li>
+					<li>European Regulations</li>
+					<li><a href="/community/users/ce-marking">CE Marking</a></li>
+					<li><a href="/safe-harbor">Safe Harbor</a></li>
+		
+				</ul>
+			</div>
+		</li>
+		
+					<li>
+			<a href="#">Trade Problems<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+					<li><a href="/community/users/trade-problems">Help with Trade Problems</a></li>
+		
+				</ul>
+			</div>
+		</li>
+		
+							<li>
+			<a href="#">Trade Events<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+					<li><a href="/office/events.html">Trade Events</a></li>
+					<li><a href="/office/video.html">Training & Webinars</a></li>
+		
+				</ul>
+			</div>
+		</li>
+							<li>
+			<a href="#">Get Answers<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+					<li><a href="/office/faqs.html">Browse FAQs</a></li>
+					<li><a href="/office/toolkit.html">Market Research</a></li>
+					
+					
+		
+				</ul>
+			</div>
+		</li>
+									<li>
+			<a href="#">Find Answers & Contacts<span class="caret"></span></a>
+			<div>
+				<ul>
+					
+					<li><a href="https://help.export.gov/ics/support/contactUs.asp">Contact a Trade Specialist</a></li>
+					<li><a href="/office/office.html">Domestic Offices</a></li>
+					<li><a href="/international-offices">International Offices</a></li>
+					<li><a href="/community/users/district-export-councils">District Export Councils</a></li>
+		
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/slippry.min.js"></script>
+<link rel="stylesheet" href="stylesheets/slippry.css" />
+
+<style>
+/* News */
+.news-slider {
+  background-color:#0B5394;
+  height: 310px;
+width: 900px;
+
+}
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 590px;
+  right: 0;
+  background-color: transparent;
+  padding: 1em;
+  width: 30%;
+  height: 100%;
+}
+.news-slider .text-content h7 {
+  margin: 0;
+  color:#fff;
+  font-size:21px;	
+}
+.news-slider .text-content p {
+  margin: 1em 0;
+  color:#fff;
+}
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.news-slider .image-content {
+  line-height: 0;
+  
+}
+.news-slider .image-content img {
+  width:500px;
+  height:150px;
+  left:-150px;
+  top: 50px;
+}
+
+</style>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+<center><section id="news-demo">
+  <article>
+    <div class="text-content">
+      <h7>Plan Your Market Entry</h7>
+      <p style="font-size:12px;">
+                     
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/herobox1.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+        <div class="text-content">
+      <h7>Plan Your Market Entry</h7>
+      <p style="font-size:12px;">
+                     
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/herobox2.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+        <div class="text-content">
+      <h7>Plan Your Market Entry</h7>
+      <p style="font-size:12px;">
+                     
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/herobox3.jpg" alt="demo1_1"></div>
+  </article>
+  
+  
+  
+  
+</section></center>
+
+        </header>
+        
+    </div>
+
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+<script>
+$(document).ready()
+jQuery(document).ready(function(){
+  jQuery('selector').slippry()
+});
+
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
+
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
+
+
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
+
+  // slideshow
+  autoDirection: 'next'
+});
+</script>
+
+
+<div class="clearfix">
+<ul id="main4" style="width:725px;margin-right: 25px;">
+
+<style>
+.list {
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  background-color: #eee;
+  padding:10px;
+  box-shadow: inset 0 1px 0 #fff;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
 }
 </style>
 
-<!DOCTYPE html> 
-<html>
-	<head>
-		<meta charset="utf-8">		
 
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		
-		<link rel="stylesheet" href="stylesheets/demo.css">
-		<link rel="stylesheet" href="stylesheets/font-awesome.css">
-		<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
-		
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-			<script src="js/sky-tabs-ie8.js"></script>
-		<![endif]-->
-	</head>
-	
-              
-	<body class="bg-cyan">
-		<div class="body" >
-		
-			<!-- tabs -->
-			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
-				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
-				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>LEARN ABOUT EXPORTING </span></span></label>
-				
-				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
-				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>READY TO EXPORT</span></span></label>
-				
-				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
-				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>EXPAND MY EXPORTS</span></span></label>
-				
-				<ul>
-					<li class="sky-tab-content-1" >					
-						<div class="typography">
-							  <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:75px; "></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style=""></a>
- </div>
-					</li>
-					
-					<li class="sky-tab-content-2">
-						<div class="typography">
-						   <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:75px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:75px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+<div id="users">
+  <input class="search" placeholder="Search" />
+  <select class="date_s" multiple style="width:120px;" data-placeholder="Choose a date">
+  </select>
+  <select class="name_s" multiple style="width:150px;" data-placeholder="Choose a name">
+  </select>
+  
+  
+  <ul class="list">
+    <li>
+      <h3 class="name">Jonny Wayne</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>    
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>
+    <li>
+      <h3 class="name">Martina</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Gustaf</h3>
+      <p class="born">1983</p>
+    </li>
+  </ul>
+
 </div>
-					</li>
-					
-					<li class="sky-tab-content-3">
-						<div class="typography" id="expand">
-					 <div style="float:left; margin-left:25px; margin-right:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src='http://wenzhixin.net.cn/p/multiple-select/assets/multiple-select/jquery.multiple.select.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.0/list.min.js"></script>
+
+
+
+
+<script>
+var options = { valueNames: [ 'name', 'born' ] };
+var userList = new List('users', options);
+  
+var updateList = function(){
+  var values_date = $(".date_s").val()
+  var values_name = $(".name_s").val()
+  
+  userList.filter(function(item) {
+    return (_(values_date).contains(item.values().born) || !values_date) 
+           && (_(values_name).contains(item.values().name) || !values_name)
+  });
+}
+                               
+$(function(){
+  updateList();
+  $(".date_s").change(updateList);
+  $(".name_s").change(updateList);
+  
+  var all_born = [];
+  var all_name = [];
+
+  _(userList.items).each(function(item){
+    all_born.push(item.values().born)
+    all_name.push(item.values().name)  
+  });
+  
+  _(all_born).uniq().each(function(item){
+    $(".date_s").append('<option value="'+item+'">'+ item +'</option>')
+  });
+  _(all_name).uniq().each(function(item){
+    $(".name_s").append('<option value="'+item+'">'+ item +'</option>')
+  }); 
+  
+  $('select').each(function(){
+    $(this).multipleSelect({
+      onClick: updateList,
+      selectAll: false,
+      placeholder: $(this).data('placeholder')
+    });
+  });
+  
+});
+</script>
+ 
+<style>
+
+#container{
+min-height:350px;
+width:700px;
+border-style:solid;
+border-width:2px;
+border-color: #6D98BF;
+}
+
+#container2{
+background:#fff;
+}
+
+#container input, .content {
+    display: none;
+    background: #fff;
+    line-height: 25px;
+    padding: 5px 25px;
+    min-width: 200px;
+}
+
+#one:checked ~ .one,
+#two:checked ~ .two,
+#three:checked ~ .three {display: block;}
+
+label {
+    cursor: pointer;
+    background: #fff;
+    height: 25px;
+    padding: 5px 10px;
+    display: inline-block;
+    
+    margin-right: -3px;
+    transition: background .25s linear;  
+}
+
+label:hover, input:checked + label {color: #6D98BF;background:#d9d9d9;}
+
+h3, p {
+    
+    text-align: justify;
+}
+</style>
+
+<h6>Articles</h6>
+<div id="container">
+<input type="radio" name="nav" id="one" checked="checked"/>
+<label for="one">Articles</label>
+
+<input type="radio" name="nav" id="two"/>
+<label for="two">Most Important</label>
+
+<input type="radio" name="nav" id="three"/>
+<label for="three">Most Recent</label>
+
+<article id="container2" class="content one">
+ <p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+
+
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+
+<p>
+<a id="title" href="#">Export Loan Programs</a></br>
+The U.S. Government offers four different types of financing programs.</p>
+
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;float:right;"href="#"id="title" href="#">View Articles A-Z</a>
+</article>
+
+<article id="container2" class="content two">
+<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
+The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+</article>
+
+<article id="container2" class="content three">
+ <p><a id="title" href="#">Factoring and Forfaiting</a></br>
+A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+</article>
+</div></br>
+<h6>FAQs</h6>
+
+<div style="min-height:275px;
+width:650px;
+border-style:solid;
+border-width:2px;
+border-color: #6D98BF;
+    background: #fff;
+    line-height: 25px;
+    padding: 5px 25px;">
+
+<p>What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</p>
+<p>How can I locate importers, distributors, sales reps, etc. in an overseas market?</p>
+<p>How can I find export financing?</p>
+<p>What do all of these Free Trade Agreements do for me?</p>
+<p>How can I determine the tariff rate for my product?</p>
+
+
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;float:right;"href="#"id="title" href="#">View All FAQs</a>
+</div></br>
+<div style="float:left"><h6>Useful Links</h6>
+
+<div style="min-height:100px;
+width:300px;
+border-style:solid;
+border-width:2px;
+border-color: #6D98BF;
+    background: #fff;
+    line-height: 25px;
+    padding: 5px 25px;">
+
+<li><a href="#">Exporters Resource Database</a></li>
+<li><a href="#">International Finance</a></li>
+<li><a href="#">Certificate of Origin</a></li>
+<li><a href="#">NAFTA</a></li>
+<li><a href="#">MN Tourism Destination</a></li>
+</div></div><div style="float:right"><style>
+
+#join {
+background-color: #C0C0C0;
+width:200px;
+padding: 20px;
+
+}
+
+</style>
+
+
+<div id="join">
+  <h3>JOIN MY EXPORT</h3>
+
+<p style="font-size:12px;">Get the latest info about events, market research and opportunities tailored to your industry and interests</p>
+
+<a href="#" class="btn-blue">Sign Up Now!</a>
+
+</div></div>
+</ul>
+<ul id="main4" style="width:300px;">
+<h6>Browse Articles</h6>
+
+<!--tag collage-->
+</ul>
 </div>
-					</li>
-					
-										
-				</ul>
-			</div>
-			<!--/ tabs -->
-			
-		</div>
-	</body>
+
+</section>
+
+    <div id="footer_wrap2" class="outer">
+      <footer class="inner">
+
+<div class="clearfix">
+
+		<ul id="foot">
+		<p><strong>Export Process</strong></p>
+		<li><a href="/community/users/export-basics">Export Basics</a></li>
+		<li><a href="/basic-guide/">Basic Guide to Exporting</a></li>
+		<li><a href="/export-readiness-assessment/login">Export Readiness Assessment</a></li>
+		<li><a href="/community/users/international-logistics">International Logistics</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Opportunities</strong></p>
+		<li >Conduct Research</li>
+		<li><a href="/community/users/expand-your-exports">Expand Into New Markets</a></li>
+		<li><a href="/community/users/market-research">Market Research</a></li>
+		<li><a href="/community/users/export-success-stories">Success Stories</a></li>
+		<li >Learn Marketing Tactics</li>
+		<li><a href="/community/users/international-sales-and-marketing">International Sales & Marketing</a></li>
+		<li><a href="/community/users/selling-online">Selling Online</a></li>
+		</ul>
+				
+		<ul id="foot">
+		<p></p>
+		<li >Explore Markets</li>
+		<li><a href="/community/users/trade-leads">Find Trade Leads</a></li>
+		<li><a href="/community/users/trade-missions">Trade Missions</a></li>
+		<li><a href="/community/users/free-trade-agreements">Free Trade Agreements</a></li>
+		<li><a href="/doing-business-in-africa">Doing Business in Africa</a></li>
+		<li >Explore Programs</li>
+		<li><a href="/community/users/civil-nuclear-guide-to-exporting">Civil Nuclear Guide to Exporting</a></li>
+		<li><a href="/community/users/environmental-solutions-exporters-portal">Environmental Solutions Exporters</a></li>
+		<li><a href="/community/users/renewable-energy-energy-efficiency-exporter-portal">Renewable Energy & Energy Efficiency Exporters</a></li>
+		<li><a href="/community/users/league-of-green-embassies">League of Green Embassies</a></li>
+		<li><a href="/community/users/minority-exporters-seminar">Minority Exporters Seminar</a></li>
+		<li><a href="/community/users/seaport-partnerships">Seaport Partnerships</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Financing</strong></p>
+		<li><a href="/community/users/financing-your-exports">Finance Your Exports</a></li>
+		<li><a href="/international-finance-questionnaire/">Assess Your Finance Options</a></li>
+		<li><a href="/trade-finance-guide">Trade Finance Guide</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Regulations</strong></p>
+		<li>US Export Regulations</li>
+		<li><a href="/community/users/export-licenses-regulations">Export Licenses & Regulations</a></li>
+		<li><a href="/consolidated-screening-list">Consolidated Screening List</a></li>
+		<li >European Regulations<li>
+		<li><a href="/community/users/ce-marking">CE Marking</a></li>
+		<li><a href="/safe-harbor">Safe Harbor</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Trade Problems</strong></p>
+		<li><a href="/community/users/trade-problems">Help with Trade Problems</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Trade Events</strong></p>
+		<li><a href="/trade-events/">Trade Events</a></li>
+		<li><a href="/community/users/training-programs">Training & Webinars</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Get Answers</strong></p>
+		<li><a href="https://help.export.gov/">Browse FAQs</a></li>
+		<li><a href="https://help.export.gov/ics/support/ticketnewwizard.asp?style=classic">Market Research</a></li>
+		</ul>
+
+		<ul id="foot">
+		<p><strong>Find Answers & Contacts</strong></p>
+		<li><a href="https://help.export.gov/ics/support/contactUs.asp">Contact a Trade Specialist</a></li>
+		<li><a href="/centers">Domestic Offices</a></li>
+		<li><a href="/international-offices">International Offices</a></li>
+		<li><a href="/community/users/district-export-councils">District Export Councils</a></li>
+		</ul>
+<ul id="forkme_banner2">
+        <li><a href="https://www.facebook.com/TradeGov"><img  src="images/fb.png" width="50px"></a> </li>
+        <li><a href="https://twitter.com/TradeGov"><img  src="images/twit.png" width="50px"></a> </li>
+        <li><a href="http://blog.trade.gov/"><img  src="images/tradeology.png" width="50px"></a> </li>
+        <li><a href="http://trade.gov/connect.asp"><img  src="images/mail.png" width="50px"></a> </li>
+        </ul>
+  </div>
+      </footer>
+    </div>  
+    
+    
+    
+    
+    
+    
+    
+   
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+
+        <p class="copyright">
+<center><div class="footerdivideotitle">www.TRADE.gov</div><br />
+<div><p><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia/">FOIA</a> | <a href="http://trade.gov/privacy.asp">Privacy Policy</a> | <a href="http://trade.gov/endorse.asp">Disclaimer</a> |
+<a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></p>
+</div>
+</center>
+
+<p>The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+sites should not be construed as an endorsement of the views or privacy policies contained therein. This site contains PDF documents.
+A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe Systems Incorporated.</p>
+
+
+        </p>
+   
+      </footer>
+    </div>
+
+  </body>
 </html>
+
 
 

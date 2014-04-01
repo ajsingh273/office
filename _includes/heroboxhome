@@ -13,7 +13,7 @@ width: 900px;
 .news-slider .text-content {
   position: absolute;
   top: 0;
-  left: 600px;
+  left: 590px;
   right: 0;
   background-color: transparent;
   padding: 1em;
