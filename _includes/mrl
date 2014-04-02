@@ -1,6 +1,9 @@
 
-<style>
-.list {
+<!DOCTYPE html><html class="">
+<head><meta charset="UTF-8">
+
+<link rel="stylesheet prefetch" href="http://wenzhixin.net.cn/p/multiple-select/assets/multiple-select/multiple-select.css">
+<style>.list {
   margin:0;
   padding:20px 0 0;
 }
@@ -85,10 +88,7 @@ input:focus {
   position: relative;
   top:-10px;
   right:-5px;
-}
-</style>
-
-
+}</style></head><body>
 <div id="users">
   <input class="search" placeholder="Search" />
   <select class="date_s" multiple style="width:120px;" data-placeholder="Choose a date">
@@ -127,15 +127,12 @@ input:focus {
 </div>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src='http://wenzhixin.net.cn/p/multiple-select/assets/multiple-select/jquery.multiple.select.js'></script>
+<script src="http://wenzhixin.net.cn/p/multiple-select/assets/multiple-select/jquery.multiple.select.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.0/list.min.js"></script>
+<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
 
-
-
-
-<script>
-var options = { valueNames: [ 'name', 'born' ] };
+<script>var options = { valueNames: [ 'name', 'born' ] };
 var userList = new List('users', options);
   
 var updateList = function(){
@@ -176,5 +173,6 @@ $(function(){
     });
   });
   
-});
+});//@ sourceURL=pen.js
 </script>
+</body></html>
