@@ -98,7 +98,12 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 21px;
+  display:inline-block;
+  background:#6D98BF; 
+  color:#fff;
+  padding: 5px 30px;
+  margin:0;
 }
 
 p {

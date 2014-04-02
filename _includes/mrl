@@ -1,0 +1,180 @@
+
+<style>
+.list {
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  background-color: #eee;
+  padding:10px;
+  box-shadow: inset 0 1px 0 #fff;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:8px 30px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  
+  text-decoration: none;
+  background-color: #28a8e0;
+  height:30px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#1b8aba;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+</style>
+
+
+<div id="users">
+  <input class="search" placeholder="Search" />
+  <select class="date_s" multiple style="width:120px;" data-placeholder="Choose a date">
+  </select>
+  <select class="name_s" multiple style="width:150px;" data-placeholder="Choose a name">
+  </select>
+  
+  
+  <ul class="list">
+    <li>
+      <h3 class="name">Jonny Wayne</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>    
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="born">1985</p>
+    </li>
+    <li>
+      <h3 class="name">Martina</h3>
+      <p class="born">1986</p>
+    </li>
+    <li>
+      <h3 class="name">Gustaf</h3>
+      <p class="born">1983</p>
+    </li>
+  </ul>
+
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src='http://wenzhixin.net.cn/p/multiple-select/assets/multiple-select/jquery.multiple.select.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.0/list.min.js"></script>
+
+
+
+
+<script>
+var options = { valueNames: [ 'name', 'born' ] };
+var userList = new List('users', options);
+  
+var updateList = function(){
+  var values_date = $(".date_s").val()
+  var values_name = $(".name_s").val()
+  
+  userList.filter(function(item) {
+    return (_(values_date).contains(item.values().born) || !values_date) 
+           && (_(values_name).contains(item.values().name) || !values_name)
+  });
+}
+                               
+$(function(){
+  updateList();
+  $(".date_s").change(updateList);
+  $(".name_s").change(updateList);
+  
+  var all_born = [];
+  var all_name = [];
+
+  _(userList.items).each(function(item){
+    all_born.push(item.values().born)
+    all_name.push(item.values().name)  
+  });
+  
+  _(all_born).uniq().each(function(item){
+    $(".date_s").append('<option value="'+item+'">'+ item +'</option>')
+  });
+  _(all_name).uniq().each(function(item){
+    $(".name_s").append('<option value="'+item+'">'+ item +'</option>')
+  }); 
+  
+  $('select').each(function(){
+    $(this).multipleSelect({
+      onClick: updateList,
+      selectAll: false,
+      placeholder: $(this).data('placeholder')
+    });
+  });
+  
+});
+</script>
