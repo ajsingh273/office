@@ -1,0 +1,130 @@
+.widget-container {
+	background-color: #ffffff;
+ 	width: 500px;
+	border: 1px solid #bbbbbb;
+	padding:10px;
+}
+
+.widget-title {
+	font-size: 16pt;
+	font-family: calibri;
+	color: #252525;
+}
+
+.results-container {
+	background-color: #e5e5e5;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.results-title {
+	font-size: 16pt;
+
+	color: #252525;
+}
+
+.results-legend {
+	font-size: 12pt;
+
+	color: #959595;
+}
+
+.results-link {
+	font-size: 12pt;
+
+	color: #1f53ac;
+	text-decoration: underline;
+}
+
+.search-input{
+	height: 19px;
+	font-size: 12pt;
+
+	color: #959595;
+	margin: 0;
+}
+.search-button{
+	vertical-align:top;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: #6D98BF;
+  background-image: url('searchIcon.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 0;
+}
+
+.search-button-clear{
+	background: darkgrey;
+}
+
+.view-calendar-button{
+	margin-left: 183px;
+	border: 1px solid #959595;
+	background: lightgrey;
+	font-size: 10pt;
+	
+}
+.widget-container {
+    margin: 20px; border: 1px solid #999;
+    background:none;
+    border-radius: 2px;
+    padding:0;
+    width:auto;
+}
+.results-container {
+    padding: 0 20px;
+    overflow:scroll;
+    background: #F8F9FA;
+}
+.form-container {
+    background: #d9d9d9;
+    padding: 0 20px 20px;
+    margin:0;
+    border-bottom: 2px solid #ddd;
+    overflow: hidden;
+    position: relative;
+}
+.search-input, select {
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #bbb;
+    border-right: none;
+    padding: 6px;
+    background: #F5F7F8;
+    display: inline-block;
+    width: 80%;
+	max-width: 300px;
+	-webkit-appearance:none;
+	font-size: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	height: 33px;
+}
+.search-combo, .select-input {
+    white-space: nowrap;
+}
+.search-button {
+    background-position: center;
+    white-space: nowrap;
+    top: 4px;
+    width: 40px;
+    height: 33px;
+    padding: 6px;
+    border: 1px solid #bbb;
+    border-radius: 0 3px 3px 0;
+}
+.input-with-button {
+    display: inline-block;
+}
+.input-with-button .search-input {
+    border-radius: 3px 0 0 3px;
+    border-right:none;
+    padding-right:1px;
+}
+#trade-events-calendar{
+	padding: 10px 20px;
+}

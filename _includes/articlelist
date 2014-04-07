@@ -26,49 +26,165 @@
 				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>About Us</span></span></label>
 				
 				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
-				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>Testing Laboratories</span></span></label>
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>Program Overview</span></span></label>
 				
 				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
-				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>Renewable Energy</span></span></label>
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>Countries</span></span></label>
 				
 				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
-				<label for="sky-tab4"><span><span><i class="fa fa-globe"></i>Domestic and International Events</span></span></label>
+				<label for="sky-tab4"><span><span><i class="fa fa-globe"></i>Technical File Procedures</span></span></label>
 				
 				<ul>
 					<li class="sky-tab-content-1">					
 						<div class="typography">
-					
+					<h1 class="Header-1"><b>CE MARKING - Home</b></h1>
 
-							<h1>Minnesota District Export Council</h1>
-							<p>The Minnesota District Export Council is a private, non-profit organization that brings together experienced international business people who provide guidance and assistance in international markets.</p>
-							<p>The Minnesota District Export Council encourages and supports:</br>
-•	Exports that strengthen individual companies, stimulate U.S. economic growth, and create jobs;</br>
-•	Export expansion activities by working with the US & FCS domestic offices; and</br>
-•	Opportunities to promote greater export activity at the local level by developing a trade assistance network.</p></div>
+							
+							<p class="DefaultParagraph-1">The CE marking (an acronym for the French &quot;Conformite Europeenne&quot;) certifies that a product has met EU health, safety, and environmental requirements, which ensure consumer safety.  Manufacturers in the European Union (EU) and abroad must meet CE marking requirements where applicable in order to market their products in Europe. For a list of countries that require the CE marking, see: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017269. --><a href="../cemark/eg_main_017269.asp" target="_top">CE Marking Countries</a><a name="P2_425"></a>.  A manufacturer who has gone through the conformity assessment process, may affix the CE marking to the product.  With the CE marking, the product may be marketed throughout the EU.   CE marking now provides product access to 27 countries with a population of nearly 500 million.</p>
+
+<p class="DefaultParagraph-1">Unfortunately, there is no comprehensive list of the products that require a CE marking. Therefore, it is the manufacturer&#39;s responsibility to determine if a product requires a CE marking. The &quot;New Approach Directives&quot; are documents that contain the legislation issued by the European Commission on the requirements that need to be met and procedures that must be followed in order for a particular product to be CE marked for sales in the EU.</p>
+
+<p class="DefaultParagraph-1">If you are unfamiliar with the CE Marking process, we suggest that you read through the <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017268. --><a href="../cemark/eg_main_017268.asp" target="_top">Program Overview</a> and call or email the <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017271. --><a href="../cemark/eg_main_017271.asp" target="_top">U.S. Government contacts</a> if you have any questions.</p>
+</div>
 					</li>
 					
 					<li class="sky-tab-content-2">
 						<div class="typography">
-							<h1>Testing Laboratories</h1>
-							<p>2013-04-30</p>
-							<p>Information for those seeking to comply with EU directives such as RoHS, WEEE, Medical Devices, EMC and R\u0026amp;TTE \r\n The following list of laboratories is intended as an initial resource for U.S. businesses seeking assistance in complying with European Union (EU) \"CE marking\" requirements. It is not intended to be a comprehensive compilation of U.S. companies that provide CE marking testing and related services nor an endorsement of any company.</p>
-							<p>The names of the companies on this list have been collected over several years, through research by the staff of the Office of European Union and Regional Affairs, U.S. Department of Commerce, by referral, and through direct requests for inclusion. \r\n Any company that wishes to be included in this list may send its information to the Global Knowledge Center (GKC). </p></div>
+						
+<h1 class="Header-1"><b>CE Marking &#8211; Program Overview</b></h1>
+
+							<p class="DefaultParagraph-1">The CE marking (an acronym for the French &quot;Conformite Europeenne&quot;) certifies that a product has met EU health, safety, and environmental requirements, which ensure consumer safety.  Manufacturers in the European Union (EU) and abroad must meet CE marking requirements where applicable in order to market their products in Europe. For a list of countries that require the CE marking, see: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017269. --><a href="../cemark/eg_main_017269.asp" target="_top">CE Marking Countries</a><a name="P2_439"></a>.  A manufacturer who has gone through the conformity assessment process, may affix the CE marking to the product.  With the CE marking, the product may be marketed throughout the EU.   CE marking now provides product access to 32 countries with a population of nearly 500 million.</p>
+
+<p class="DefaultParagraph-1">Unfortunately, there is no comprehensive list of the products that require a CE marking. Therefore, it is the manufacturer&#39;s responsibility to determine if a product requires a CE marking. The &quot;New Approach Directives&quot; are documents that contain the legislation issued by the European Commission on the requirements that need to be met and procedures that must be followed in order for a particular product to be CE marked for sales in the EU. </p>
+
+<p class="DefaultParagraph-1">In order to determine if your product needs a CE marking, you should look in each directive that you judge as related to your product. Our Guide to navigating the CE marking process is organized by directives: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017277. --><a href="../cemark/eg_main_017277.asp" target="_top">CE Marking Guide</a><a name="P6_1390"></a>. Under each directive, we explain the route to CE marking certification step-by-step and in one place. </p>
+
+<p class="DefaultParagraph-1">Some products require conformance to more than one directive. For example, the Safety of Machinery directive, the Electromagnetic Compatibility (EMC) directive, and the Low Voltage Equipment directive may all apply to one product.</p>
+
+<p class="DefaultParagraph-1">Many of the CE marking directives allow manufacturers to self-certify their products. </p>
+
+<p class="DefaultParagraph-1"><b>Some examples for which manufacturers can self-certify include:</b><br />
+&#183; Safety of Machinery Directive<br />
+&#183; Electromagnetic Compatibility (EMC) Directive<br />
+&#183; Low Voltage Directive<br />
+&#183; Class I products of the Medical Device Directive<br />
+&#183; Most products covered by the Radio and Telecommunications Terminal Equipment (R&amp;TTE) Directive</p>
+
+<p class="DefaultParagraph-1"><b>Some examples of the directives that do not allow manufacturers to self-certify include:</b><br />
+&#183; Simple Pressure Vessels Directive<br />
+&#183; Appliances Burning Gaseous Fuels Directive<br />
+&#183; Most products covered by the Pressure Equipment Directive<br />
+&#183; Most products covered by the Equipment and Protective Systems in Potentially Explosive Atmospheres Directive </p>
+
+<p class="DefaultParagraph-1">If you are not permitted to self-certify your product, you will need to employ the services of a testing laboratory that is affiliated with a &quot;European Notified Body&quot; to test and certify your product for the CE marking. There are labs in the U.S. that subcontract for European notified bodies and are qualified to do the testing and certifying. We have provided a list of labs, including labs affiliated with notified bodies as well as labs that are not authorized with a notified body, but which are independent labs and can test that a product covered by a non-regulated directive (such as the EMC or Low Voltage Directives), has met a European standard: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017274. --><a href="../cemark/eg_main_017274.asp" target="_top">Testing/Certifying Labs</a>. </p>
+
+<p class="DefaultParagraph-1">If you are permitted to self-certify your product, you may need to order the standards that apply to your product, particularly in the case of the Low Voltage and EMC Directives. We have provided sources for ordering standards and for locating CE Marking consultancy services: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017270. --><a href="../cemark/eg_main_017270.asp" target="_top">Consultants/Ordering Standards</a>. </p>
+
+<p class="DefaultParagraph-1">Once the manufacturer has conformed to the requirements laid out in the applicable directive(s), whether through self-certification or approval by a notified body, and has obtained a certificate/report from a lab to prove conformance, the manufacturer needs to affix the CE marking to its product. The manufacturer must also include a &quot;declaration of conformity&quot; with each shipment stating which CE marking directive(s) has been met and include a signature of a company official indicating the company&#39;s responsibility for its CE marking compliance claim. We have provided an example of a declaration of conformity: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017272. --><a href="../cemark/eg_main_017272.asp" target="_top">Declaration of Conformity</a>. </p>
+
+<p class="DefaultParagraph-1">The exporter must maintain a file called a &quot;technical file&quot; containing the paperwork that proves conformity to the CE marking directive(s) covering its product. The exporter or authorized representative must be able to provide the supporting paperwork to prove CE marking conformity at any time, if requested by the appropriate member state authorities. See: <!-- TRANSIT - HYPERLINK --><!-- ./main/cemark/eg_main_017275. --><a href="../cemark/eg_main_017275.asp" target="_top">Technical File Procedures </a>for a framework for compiling a technical file. </p>
+
+<p class="DefaultParagraph-1">Finally, it is the manufacturer/exporter&#39;s responsibility to regularly check for and comply with any standards changes that might affect its product. Therefore, it is important to periodically visit the EU website <!-- TRANSIT - HYPERLINK --><!-- .http://www.newapproach.org. --><a href="http://www.newapproach.org" target="_top">http://www.newapproach.org</a><a name="P24_4773"></a> that lists the CE marking directives and their standards.</p>
+
+<p class="DefaultParagraph-1"><b>For additional information on the CE marking process, see the National Institute of Standards and Technology (NIST) publication <!-- TRANSIT - HYPERLINK --><!-- .http://build.export.gov/build/idcplg?IdcService=DOWNLOAD_PUBLIC_FILE&RevisionSelectionMethod=Latest&dDocName=eg_main_017276. --><a href="../static/CEAlertBrochure3_Latest_eg_main_017276.pdf" target="_top">&quot;TO U.S. MANUFACTURERS: ALERT PRODUCT &quot;MARK&quot; REQUIRED FOR U.S. EXPORTS TO EUROPE!&quot;</a></b></p>
+</div>
 					</li>
 					
 					<li class="sky-tab-content-3">
 						<div class="typography">
-							<h1>Renewable Energy and Energy Efficiency Export Initiative</h1>
-							<p>2013-04-30</p>
-							<p>The Renewable Energy and Energy Efficiency Export Initiative includes 23 commitments from 8 different federal agencies (Department of Commerce, Department of Energy, U.S. Trade Representative, State Department, U.S. Trade and Development Agency, Export-Import Bank of the United States, Overseas Private Investment Corporation, and U.S. Department of Agriculture) for new programs, actions, or deliverables that will help address the major export barriers facing U.S. renewable energy and energy efficiency (RE\u0026amp;EE) companies.</p>
-							<p> Developed to both meet the goals of the National Export Initiative and President Obama’s goal of becoming the leading exporter of clean energy technologies, the Initiative will provide new and more innovative financing mechanisms for U.S. RE\u0026amp;EE exporters, will \r\n \r\n recommit the U.S. Government to addressing trade barriers in the sector, \r\n increase the amount of trade promotion activities for RE\u0026amp;EE companies, and \r\n improve the delivery of U.S. Government export promotion services for U.S. RE\u0026amp;EE companies.</p></div>
+							<table cellspacing="0" cellpadding="3" width="95%">
+<tr>
+<td width="154"></td>
+<td width="132"></td>
+<td width="129"></td></tr>
+<tr>
+<td colspan="3" bgcolor="#ffffff" valign="top" width="416"><h2 class="SubHeader-1-InTable"><b>Countries That Require CE Marking</b></h2>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Austria</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Hungary</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="129"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Poland</p>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Belgium</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Iceland</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="129"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Portugal</p>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Bulgaria</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Ireland</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="129"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Romania</p>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Cyprus</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Italy</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="129"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Slovakia</p>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Czech Republic</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Latvia</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="129"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Slovenia</p>
+</td></tr>
+<tr>
+<td bgcolor="#ffffff" valign="top" width="154"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Denmark</p>
+</td>
+<td bgcolor="#ffffff" valign="top" width="132"><p class="DefaultParagraph-1-InTable" style="text-indent: 0pt; margin-top: 0in">Liechtenstein</p>
+</td>
+
+</td></tr></table>
+</div>
 					</li>
 					
 					<li class="sky-tab-content-4">
 						<div class="typography">
-							<h1>Domestic and International Events</h1>
-							<p>2013-04-30</p>
-							<p>Domestic Events \r\n Reverse Trade Mission: US-ASEAN Smart Grid \r\n April 25 – May 1, 2013, Washington, DC and San Francisco, CA \r\n The U.S. Trade and Development Agency (USTDA) will bring a group of senior ASEAN policymakers, utility representatives, and energy regulatory authorities to the United States to build on the key points from the U.S.-ASEAN Smart Grid Workshop held in Hanoi in November 2012.</p>
-							<p>The delegates will meet with leading U.S. technology and service suppliers as well power utilities and U.S. energy and regulatory agencies for assistance in identifying the appropriate technical and regulatory solutions to promote reliable, efficient, and cost-effective transmission and smart grid investments.</p></li>					
+							<h1 class="Header-1"><b>Technical File Procedures</b></h1>
+
+<h2 class="SubHeader-1"><b>The following technical file procedures refer only to procedures set forth in the directives that do not require intervention by notified bodies.</b></h2>
+
+<p class="DefaultParagraph-1">Most of the new approach directives impose an obligation for the manufacturer to draw up and to provide technical documentation (or a technical file) containing certain information to demonstrate the conformity of the product to the requirements of the directive.</p>
+
+<p class="DefaultParagraph-1">Although each directive specifies the content of the technical file, further details concerning the extent, content and form of the information supplied are needed to ensure better exploitation of the technical file by the national inspection authorities and to facilitate the manufacturer&#39;s task at the drafting stage.</p>
+
+<p class="DefaultParagraph-1"><b>Format and Contents of the Technical File</b></p>
+
+<p class="DefaultParagraph-1">In Decision 90/683/EEC of 13 December 1990 the Council established that &quot;the essential objective of a conformity assessment procedure is to enable the public authorities to ensure that products placed on the market conform to the requirements as expressed in the provisions of the directives, in particular with regard to the health and safety of users and consumers&quot;.</p>
+
+<p class="DefaultParagraph-1">This guideline from the Council is, therefore, the essential criterion to be taken into account when considering the content and extent of the information to be supplied in the technical file provided for in the directives, i.e. the content and extent of the obligation to provide information.</p>
+
+<p class="DefaultParagraph-1">Consequently, the details included in the technical file always depend on the nature of the product and on what is necessary, from the technical point of view, to demonstrate the conformity of the product either to the harmonized standards, if the manufacturer has followed them, or to the essential requirements of the relevant directive if the manufacturer has followed none or only some of the harmonized standards. This must, therefore, be determined case by case depending on the product.</p>
+
+<p class="DefaultParagraph-1">To allow effective exploitation of this file for market surveillance purposes, excessive paperwork should be avoided. To achieve this and to facilitate the manufacturers&#39; task, it is proposed that the inspection authorities should accept subdivision of the file into two parts.</p>
+
+<p class="DefaultParagraph-1">1. The first part (A) would consist of a summary of the essential technical data relevant to the conformity assessment procedures, including in particular:</p>
+
+<div style="margin-left: 10pt"><ul><li class="List-1" style="margin-top: 0in; margin-bottom: 0in"><span style="font-family: 'Verdana'; font-size: 12px; color: Black"> the name and the address of the manufacturer and the identification of the product;<br />
+- the list of harmonized standards followed by the manufacturer and/or the solutions adopted to satisfy the essential requirements;<br />
+- a description of the product;<br />
+- the operating instructions, if any;<br />
+- the overall plan of the product, if any.</span></li></ul></div>
+
+<p class="DefaultParagraph-1">2. The second part (B) would consist of a full file containing all the test reports, information concerning the quality manual, plans, descriptions of the products and processes, standards applied, etc.</p>
+
+<p class="DefaultParagraph-1">If the manufacturer fails to follow this two-part breakdown of the technical file, the inspection authorities could demand the full technical file or part thereof according to the requirements for inspection purposes, unless the details given in the declaration of conformity or in the certificate of conformity appear sufficient for the purposes of conducting a preliminary inspection.</p>
+
+<p class="DefaultParagraph-1"><b>Availability of the Technical File </b></p>
+
+<p class="DefaultParagraph-1">The technical file must be kept at the disposal of the national authorities for inspection and control purposes. With certain exceptions, this obligation to keep at least one technical file inside the territory of the Community starts at the time of the placing the product on the Community market whatever the geographical origin of the product.</p>
+
+<p class="DefaultParagraph-1">This obligation is incumbent upon the manufacturer or his representative established in the Community.</p>
+
+
+</li>					
 				</ul>
 			</div>
 			<!--/ tabs -->

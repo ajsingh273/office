@@ -1,0 +1,47 @@
+<style>
+
+
+
+#applicationStatus {
+  position: relative;
+  width: 630px;
+  height: 140px;
+  top: 20px;
+  left: 40px; }
+
+ul.applicationStatus {
+  list-style: none; }
+
+li.applicationStatus, li.applicationStatusGood, li.applicationStatusNoGood {
+  height: 40px;
+  background-color: #000;
+  display: inline-block;
+  /* Dirty IE Hack */
+  zoom: 1;
+  *display: inline;
+  margin-right: 30px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 150px;
+  /* 		vertical-align: middle; */ }
+  li.applicationStatus:after, li.applicationStatusGood:after, li.applicationStatusNoGood:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 30px solid #000;
+    border-bottom: 30px solid transparent;
+    margin: -10px 90px 0 10px; }
+</style>
+
+
+<div id="applicationStatus">
+					<ul>
+						<li class="applicationStatus">Basvuru Alindi</li>
+						
+					</ul>
+				</div>
+
