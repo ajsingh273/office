@@ -1,0 +1,263 @@
+#SocialStream *{
+	margin: 0px;
+	text-decoration: none;
+	padding:0px;
+	line-height:normal;
+}
+
+#SocialStream {
+	font:12px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	padding: 20px 0px 55px 0px;
+	margin: 10px 0 0 0;
+	-moz-box-shadow: 0px 3px 2px #d6d6d6;
+	-webkit-box-shadow: 0px 3px 2px #d6d6d6;
+	box-shadow: 0px 3px 2px #d6d6d6;
+	color: #666;
+	position:relative;
+}
+
+#SocialStream .dataContainer{
+		border-bottom:1px solid #E9E9E9;
+		padding-bottom:15px;
+}
+
+#SocialStream .HeaderContainer{
+	padding: 0px 20px 10px 7px;
+	border-bottom:1px solid #E9E9E9;
+	margin-bottom:10px;
+}
+
+#SocialStream .tabHeader{
+	position:absolute;
+	bottom:7px;
+	left:50%;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	height:40px;
+	width:260px;
+	margin-left:-130px;
+}
+
+#SocialStream .tabHeader li{
+	display:block;
+	float:left;
+	width:37px;
+}
+
+#SocialStream .tabHeader li a{
+	width:37px;
+	height:36px;
+	display:block;
+}
+
+#SocialStream .tabHeader li span{
+	display:none;
+}
+
+#SocialStream .tabHeader li.All a{
+	background:url(../images/icons/all.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.Facebook a{
+	background:url(../images/icons/facebook.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.Twitter a{
+	background:url(../images/icons/twitter.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.Slideshare a{
+	background:url(../images/icons/slideshare.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.StockTwits a{
+	background:url(../images/icons/stocktwits.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.Youtube a{
+	background:url(../images/icons/youtube.png) left center no-repeat;
+}
+
+#SocialStream .tabHeader li.Blog a{
+	background:url(../images/icons/blog.png) left center no-repeat;
+}
+
+
+#SocialStream .WidgetTitle .ClientLogo {
+    background: url("../../images/clinetLogo.png") no-repeat scroll center center transparent;
+    display: block;
+    height: 40px;
+    margin-right: 5px;
+    width: 50px;
+	position:absolute;
+	top:10px;
+	left:10px;
+	padding:0px;
+}
+
+
+#SocialStream h1{
+	color: #6D89AD;
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    top: -1px;
+	padding-left:60px;
+	line-height:25px;
+}
+
+#SocialStream .Q4Logo {
+    background: url("../../images/q4Logo.png") no-repeat scroll left center transparent;
+    display: block;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 25px;
+}
+
+#SocialStream .SocialItem{
+	padding: 30px 20px 25px 35px;
+	border-bottom: 1px solid #E9E9E9;
+	position: relative;
+}
+
+#SocialStream .SocialItem.Facebook a, 
+#SocialStream .SocialItem.Twitter a, 
+#SocialStream .SocialItem.StockTwits a, 
+#SocialStream .SocialItem div.ItemContent a{
+	color: #6D84B4;
+}
+
+#SocialStream .SocialItem .SocialIcon{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top:10px;
+	left: 10px;
+}
+
+#SocialStream .SocialItem{
+	color:#666;
+	font-size:11px;
+}
+
+
+/* For modern browsers */
+#SocialStream .SocialItem:before,
+#SocialStream .SocialItem:after {
+    content:"";
+    display:table;
+}
+#SocialStream .SocialItem:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+#SocialStream .SocialItem {
+    zoom:1;
+}
+
+
+#SocialStream .SocialItem .ItemHeader{
+	padding-bottom:4px;
+}
+
+#SocialStream .SocialItem .ItemDate{
+	position: absolute;
+	color: #666;
+	font-style: italic;
+	font-size: 11px;
+	top:10px;
+	left: 35px;
+}
+
+#SocialStream .SocialItem.Facebook img,
+#SocialStream .SocialItem .ItemContent img{
+	display:block;
+	float:left;
+	margin:0px 10px 5px 0;
+}
+
+
+#SocialStream .SocialItem.Youtube .SocialIcon{
+	background: url('http://www.youtube.com/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem.Twitter .SocialIcon{
+	background: url('http://www.twitter.com/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem.Slideshare .SocialIcon{
+	background: url('http://www.slideshare.com/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem.Blog .SocialIcon{
+	background: url('http://www.q4blog.com/wp-content/themes/arthemia/images/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem.Facebook .SocialIcon{
+	background: url('http://www.facebook.com/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem.StockTwits .SocialIcon{
+	background: url('http://www.stocktwits.com/favicon.ico') left center  no-repeat;
+}
+
+#SocialStream .SocialItem .readMore{
+	display: none;
+}
+
+#SocialStream .SocialItem .TwitterLinks{
+	left: 35px;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+	font-style:italic;
+}
+
+#SocialStream .SocialItem .via
+{
+	font-style:italic;
+	margin-top:5px;
+}
+
+#SocialStream .SocialItem .TwitterLinks span.ItemDate{
+	position:relative;
+	left:0px;
+	top:0px;
+}
+
+
+#SocialStream .SocialItem .TwitterLinks span.MidDot ,
+#SocialStream .SocialItem .TwitterLinks  a{
+	display:none;
+}
+
+#SocialStream .SocialItem:hover .TwitterLinks span.MidDot ,
+#SocialStream .SocialItem:hover .TwitterLinks  a{
+	display:inline;
+}
+
+
+#SocialStream  .Q4Footer{
+	bottom: -25px;
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    left: 5px;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+}
+
+#SocialStream  .Q4Footer a{
+	color:#666;
+	text-decoration:underline;
+}
+
+.jspHorizontalBar{
+	display:none !important;
+}

@@ -1,17 +1,11 @@
-<h6>Useful Links</h6>
+<h4>Export Resources</h4>
 
-<div style="min-height:100px;
-width:300px;
-border-style:solid;
-border-width:2px;
-border-color: #6D98BF;
-    background: #fff;
-    line-height: 25px;
-    padding: 5px 25px;">
-
+ 
+<ul > 
 <li><a href="#">Exporters Resource Database</a></li>
 <li><a href="#">International Finance</a></li>
 <li><a href="#">Certificate of Origin</a></li>
 <li><a href="#">NAFTA</a></li>
 <li><a href="#">MN Tourism Destination</a></li>
-</div>
+</ul>
+</ul>
