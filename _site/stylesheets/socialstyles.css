@@ -6,7 +6,7 @@
 }
 
 #SocialStream {
-	font:12px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	
 	background: #fff;
 	border: 1px solid #e6e6e6;
 	padding: 20px 0px 55px 0px;
@@ -87,7 +87,7 @@
 
 
 #SocialStream .WidgetTitle .ClientLogo {
-    background: url("../../images/clinetLogo.png") no-repeat scroll center center transparent;
+    background: url) no-repeat scroll center center transparent;
     display: block;
     height: 40px;
     margin-right: 5px;
@@ -110,7 +110,7 @@
 }
 
 #SocialStream .Q4Logo {
-    background: url("../../images/q4Logo.png") no-repeat scroll left center transparent;
+    background: url() no-repeat scroll left center transparent;
     display: block;
     height: 17px;
     position: absolute;
