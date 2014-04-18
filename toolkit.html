@@ -5,8 +5,21 @@ permalink:
 
 {% include header.html %}
 {% include herobox %}
+<div class="clearfix">
+<div id="main" style="margin-right:200px;">
 {% include articles2 %}
-{% include eventshome %}
+</div>
+<div id="main">
+{% include eventsoffice %}
+</div>
+</div>
 {% include faqshome %}
-{% include linklist %}{% include join %}
+<div class="clearfix">
+<div id="main">
+{% include linklist %}
+</div>
+<div id="main">
+{% include join %}
+</div>
+</div>
 {% include footer.html %}

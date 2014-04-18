@@ -310,44 +310,165 @@ body {
 </div>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/slippry.min.js"></script>
+<link rel="stylesheet" href="stylesheets/slippry.css" />
+
+<style>
+/* News */
+.news-slider {
+  background-color:#E7EEF4;
+  height: 310px;
+width: 900px;
+
+}
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 590px;
+  right: 0;
+  background-color: transparent;
+  padding: 1em;
+  width: 30%;
+  height: 100%;
+}
+.news-slider .text-content h2 {
+  margin: 0;
+}
+.news-slider .text-content p {
+  margin: 1em 0;
+}
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.news-slider .image-content {
+  line-height: 0;
+  
+}
+.news-slider .image-content img {
+  max-width: 100%;
+  left:-165px;
+}
+
+</style>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+<center><section id="news-demo">
+  <article>
+    <div class="text-content">
+      <h3>Secretary Pritzker Announces Look South Initiative</h3>
+      <p style="font-size:14px;">
+                     
+
+The Look South initiative will help businesses across the country explore eleven countries that all have a rapidly growing base of middle-class consumers and diversifying industries. Read more about these exciting markets and the Look South initiative.</p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/eg1.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>Discover Global Markets</h3>
+<p style="font-size:14px;">
+
+
+Join us for this unprecedented national series of conferences to help U.S. business compete, win, and grow in the international marketplace.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/eg2.jpg" alt="demo1_1"></div>
+  </article>
+  <article>
+    <div class="text-content">
+      <h3>Market Research Library</h3>
+                    <p style="font-size:14px;">
+
+
+Plan your market entry the right way – use our market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you export.
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="images/eg3.jpg" alt="demo1_1"></div>
+  </article>
+  
+  <article>
+    <div class="text-content">
+      <h3>Secretary's West Africa Energy Mission</h3>
+                    <p style="font-size:14px;">
+
+
+
+
+U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Development Mission to West Africa with stops in Ghana and Nigeria from May 18-23, 2014. Register now to join this mission!
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="images/eg4.jpg" alt="demo1_1"></div>
+  </article>
+  
+  
+</section></center>
+
+        </header>
+        
+    </div>
+
     <div id="main_content_wrap" class="outer">
-       <section id="main_content" class="inner">
-      
-    <center><h1>CE Marking Guide</h1></center></br>
+      <section id="main_content" class="inner">
 
-<div class="clearfix">
-			<div id="main" style="width:200px; display:inline-block;background:#d9d9d9; padding:20px;">
-						<ul id="leftnav_wrapper">
+<script>
+$(document).ready()
+jQuery(document).ready(function(){
+  jQuery('selector').slippry()
+});
 
-							<li>
-								<ul>
-								<li><a href="cemarking-home.html">CE Marking - Home</a></li>
-								<li><a href="cemarking-program.html">Program Overview</a></li>
-								<li><a href="cemarking-countries.html">CE Marking Countries</a></li>
-								<li><a href="cemarking-guide.html">CE Marking Guide</a></li>									
-								<li><a href="cemarking-labs.html">Testing/Certifying Labs</a></li> 
-								<li><a href="cemarking-procedures.html">Technical File Procedures</a></li>  
-								 <li><a href="cemarking-declaration.html">Declaration of Conformity</a></li> 
-								 <li><a href="cemarking-standards.html">Consultants/Ordering Standards</a></li> 
-								 <li><a href="cemarking-faq.html">FAQs</a></li> 
-								 <li><a href="cemarking-contacts.html">U.S. Gov't Contacts</a></li>   
-								</ul>
-							</li>
-						</ul>
-						</div>
-<div id="main" style="width:600px;">
-					
-The CE marking (an acronym for the French "Conformite Europeenne") certifies that a product has met EU health, safety, and environmental requirements, which ensure consumer safety. Manufacturers in the European Union (EU) and abroad must meet CE marking requirements where applicable in order to market their products in Europe. For a list of countries that require the CE marking, see: CE Marking Countries. A manufacturer who has gone through the conformity assessment process, may affix the CE marking to the product. With the CE marking, the product may be marketed throughout the EU. CE marking now provides product access to 27 countries with a population of nearly 500 million.</br></br>
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
 
-Unfortunately, there is no comprehensive list of the products that require a CE marking. Therefore, it is the manufacturer's responsibility to determine if a product requires a CE marking. The "New Approach Directives" are documents that contain the legislation issued by the European Commission on the requirements that need to be met and procedures that must be followed in order for a particular product to be CE marked for sales in the EU.</br></br>
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
 
-If you are unfamiliar with the CE Marking process, we suggest that you read through the Program Overview and call or email the U.S. Government contacts if you have any questions.
-      
-     </div>
-          </div>
 
-</section>
-</div>
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
+
+  // slideshow
+  autoDirection: 'next'
+});
+</script>
+<p><html>
+<head></p>
+
+<p></head>
+<body></p>
+
+<script src="javascripts/articles-script.js" type="text/javascript"></script>
+
+
+<div id="articles-container"></div>
+
+
+<p></body>
+</html></p>
+
 
 </section>
 
