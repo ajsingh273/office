@@ -50,7 +50,7 @@
   height: 25px;
   border: none;
   background: #6D98BF;
-  background-image: url('searchIcon.png');
+  background-image: url('../images/searchIcon.png');
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;

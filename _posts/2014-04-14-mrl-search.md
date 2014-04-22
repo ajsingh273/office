@@ -7,7 +7,7 @@ published: true
 
 
 
-
+<title>MRL Search</title>
 <html>
 <head>
 
