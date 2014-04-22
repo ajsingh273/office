@@ -1,7 +1,7 @@
 ---
 permalink: "office-search.html"
 layout: searchtoolkit
-title: Office Search 
+title: Search for ITA Offices 
 published: true
 ---
 

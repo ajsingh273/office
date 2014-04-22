@@ -1,7 +1,7 @@
 ---
 permalink: "mrl-search.html"
 layout: searchtoolkit
-title: MRL Search 
+title: Search for Market Research 
 published: true
 ---
 
