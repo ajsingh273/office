@@ -8,15 +8,210 @@ published: true
 
 
 
-<html>
-<head>
-
-</head>
-<body>
-
-<script src="javascripts/reports-script.js" type="text/javascript"></script>
-<div id="reports-container"></div>
 
 
-</body>
-</html>
+		
+  
+						
+<div class="MRL-options">
+	<div class="shadow-box" style="margin-top:0;">
+		<a href="#MRL-filter-box" class="title"  data-toggle="collapse" data-target="#MRL-filter">Filter and Find<b class="caret"></b></a>
+		<div id="MRL-filter" class="collapse">
+			<form accept-charset="UTF-8" action="/market-researches" id="filter_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+				<div class="filter-column">
+					<label class="screen-reader" for="industries">Select Industry</label>
+					<select class="chzn-select" data-placeholder="Search by Industry" id="industries" multiple="multiple" name="industries[]"><option value="Aerospace &amp; Defense">Aerospace &amp; Defense</option>
+<option value="Agribusiness">Agribusiness</option>
+<option value="Agricultural, Construction, Building &amp; Heavy Equipment">Agricultural, Construction, Building &amp; Heavy Equipment</option>
+<option value="Architecture &amp; Engineering">Architecture &amp; Engineering</option>
+<option value="Automotive &amp; Ground Transportation">Automotive &amp; Ground Transportation</option>
+<option value="Chemicals, Petrochemicals, Plastics &amp; Composites">Chemicals, Petrochemicals, Plastics &amp; Composites</option>
+<option value="Consumer Goods &amp; Home Furnishings">Consumer Goods &amp; Home Furnishings</option>
+<option value="Education">Education</option>
+<option value="Energy &amp; Mining">Energy &amp; Mining</option>
+<option value="Environmental Technologies">Environmental Technologies</option>
+<option value="Finance">Finance</option>
+<option value="Food Processing &amp; Packaging">Food Processing &amp; Packaging</option>
+<option value="Franchising">Franchising</option>
+<option value="Health Technologies">Health Technologies</option>
+<option value="Industrial Equipment &amp; Supplies">Industrial Equipment &amp; Supplies</option>
+<option value="Information &amp; Communication">Information &amp; Communication</option>
+<option value="Marine Technology">Marine Technology</option>
+<option value="Media &amp; Entertainment">Media &amp; Entertainment</option>
+<option value="Metal Manufacturing &amp; Products">Metal Manufacturing &amp; Products</option>
+<option value="Publishing">Publishing</option>
+<option value="Security &amp; Safety">Security &amp; Safety</option>
+<option value="Services">Services</option>
+<option value="Textiles, Apparel &amp; Sporting Goods">Textiles, Apparel &amp; Sporting Goods</option>
+<option value="Travel">Travel</option>
+<option value="Used &amp; Reconditioned Equipments">Used &amp; Reconditioned Equipments</option></select>
+					<label class="screen-reader" for="countries">Select Country</label>
+					<select class="chzn-select" data-placeholder="Search by Country" id="countries" multiple="multiple" name="countries[]"><option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="Angola">Angola</option>
+<option value="Argentina">Argentina</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Congo (Democratic Republic)">Congo (Democratic Republic)</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote d&#x27;Ivoire">Cote d&#x27;Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="European Union">European Union</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Greece">Greece</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Haiti">Haiti</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Korea (South)">Korea (South)</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mexico">Mexico</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Namibia">Namibia</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Panama">Panama</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovak Republic">Slovak Republic</option>
+<option value="Slovenia">Slovenia</option>
+<option value="South Africa">South Africa</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vietnam">Vietnam</option>
+<option value="West Bank/Gaza">West Bank/Gaza</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option></select>
+					<label class="screen-reader" for="report_types">Select Report Type</label>
+					<select class="chzn-select" data-placeholder="Report Type" id="report_types" multiple="multiple" name="report_types[]"><option value="Market Research Reports">Market Research Reports</option>
+<option value="Country Commercial Guides">Country Commercial Guides</option>
+<option value="Best Market Reports">Best Market Reports</option></select>
+				</div>
+				<div class="filter-column right">
+					<div class="start-end-date">
+						<div class="start-date">
+							<label class="screen-reader" for="start_date">Select Start Date</label>
+							<input id="start_date" name="start_date" placeholder="Start Date" type="text" />
+						</div>
+						<div class="end-date">
+							<label class="screen-reader" for="end_date">Select End Date</label>
+							<input id="end_date" name="end_date" placeholder="End Date" type="text" />
+						</div>
+					</div>
+					<label class="screen-reader" for="search_term">Enter Keyword Search Term</label>
+					<input id="search_term" name="search_term" placeholder="Keyword Search" type="text" />
+					<br>
+					<label class="screen-reader" for="include_archived">Include Archived Records</label>
+					<p><input id="include_archived" name="include_archived" type="checkbox" /> Include Archived Records</p>
+					<label class="screen-reader" for="include_id">Include the ID number</label>
+					<p><input id="include_id" name="include_id" type="checkbox" /> Include the ID Number</p>
+				</div>
+				<br>
+				<input id="filter" name="filter" type="hidden" value="true" />
+				<input id="items_per_page" name="items_per_page" type="hidden" value="10" />
+				<div class="submit-clear group">
+					<a href="/market-researches" class="btn btn-primary q_submit"> Clear </a>
+					<input name="commit" type="submit" value=" Find Data " />
+				</div>
+</form>		</div>
+	</div>
+</div>
+
+
