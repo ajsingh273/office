@@ -1,7 +1,7 @@
 ---
 permalink: "trade-events-search.html"
 layout: searchtoolkit
-title: Trade Events Search 
+title: Search for Trade Events 
 published: true
 ---
 
@@ -10,7 +10,7 @@ published: true
 
 <html>
 <head>
-<title>Trade Events Search</title>
+
 </head>
 <body>
 

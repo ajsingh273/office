@@ -1,7 +1,7 @@
 ---
 permalink: "article-search.html"
 layout: searchtoolkit
-title: Article Search 
+title: Search for News and Articles 
 published: true
 ---
 
