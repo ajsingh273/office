@@ -5,20 +5,19 @@
 <style>
 /* News */
 .news-slider {
-  background-color:#d9d9d9;
-  width: 100%;
+  background-color:#E7EEF4;
   height: 310px;
-  margin-bottom: 35px;
-  
+width: 900px;
+
 }
 .news-slider .text-content {
   position: absolute;
   top: 0;
-  left: 600px;
+  left: 590px;
   right: 0;
   background-color: transparent;
   padding: 1em;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 .news-slider .text-content h2 {
@@ -35,116 +34,75 @@
 }
 .news-slider .image-content {
   line-height: 0;
+  
 }
 .news-slider .image-content img {
-  max-width: 100%;
-  
+  width: 570px;
+  height: 310px;
+  left:-165px;
 }
 
-.fancy {
-  line-height: 0.5;
-  text-align: center;
-   font-size: 30px;
-  font-weight: 700;
-  font-style:italic;
-}
-.fancy span {
-  display: inline-block;
-  position: relative;  
-}
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 2px solid #0B5394;
-  border-top: 2px solid #0B5394;
-  top: 0;
-  width: 200px;
-}
-.fancy span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.fancy span:after {
-  left: 100%;
-  margin-left: 15px;
-}
 </style>
-</br>
-<p class="subtitle fancy"><span>U.S. Commercial Service in Minnesota</span></p>
-</br>
-  <div class="copy">
-<section id="news-demo">
-  <article>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+<center><section id="news-demo">
+
+    <article>
     <div class="text-content">
-      <h3>Secretary Pritzker Announces Look South Initiative</h3>
-      <p style="font-size:14px;">
+      <h3>Welcome to the U.S. Commercial Service in Minnesota</h3>
+      <p style="font-size:14px;text-align:left;font-style:italic;">
                      
 
-The Look South initiative will help businesses across the country explore eleven countries that all have a rapidly growing base of middle-class consumers and diversifying industries. Read more about these exciting markets and the Look South initiative.</p>
+The U.S. Commercial Service in Minnesota is your local federal government office with a global network that provides customized solutions enabling Minnesota companies to sell U.S. made products and services internationally.</p>
+                   
+    </div>
+    <div class="image-content"><img src="images/minneapolishome.jpg" alt="demo1_1"></div>
+  </article>
+
+  <article>
+    <div class="text-content" >
+      <h3>Help with going global
+</h3>
+<p style="font-size:14px;text-align:left;">
+<strong>For many midsize companies in Minnesota, successful foreign trade starts with consulting the U.S. Commercial Service</strong>
+Companies in Minnesota exported more than $20 billion worth of merchandise internationally last year, but they didn’t always do it alone. 
+                    </p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                      <a href="http://minnesotabusiness.com/help-going-global" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
     </div>
-    <div class="image-content"><img src="images/eg1.jpg" alt="demo1_1"></div>
+    <div class="image-content"><img src="images/minnesotastaff.jpg" alt="demo1_1"></div>
   </article>
+  
+	
+  
   <article>
     <div class="text-content">
-      <h3>Discover Global Markets</h3>
-<p style="font-size:14px;">
+      <h3>Discover Global Markets: Healthcare and Life Sciences</h3>
+                    <p style="font-size:14px;text-align:left;">
 
 
-Join us for this unprecedented national series of conferences to help U.S. business compete, win, and grow in the international marketplace.
-                    </p>
-                    <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
-                    </p>
-    </div>
-    <div class="image-content"><img src="images/eg2.jpg" alt="demo1_1"></div>
-  </article>
-  <article>
-    <div class="text-content">
-      <h3>Market Research Library</h3>
-                    <p style="font-size:14px;">
-
-
-Plan your market entry the right way – use our market research to learn your product’s potential in a given market, the best prospects for success, and the market’s business practices before you export.
+At DISCOVER GLOBAL MARKETS: Healthcare & Life Sciences you will have the opportunity to learn about global healthcare opportunities and industry atmosphere from U.S. Commercial Service Senior Commercial Officers specializing in healthcare
                     </p>
                     <p>
                       <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
                     
     </div>
-    <div class="image-content"><img src="images/eg3.jpg" alt="demo1_1"></div>
-  </article>
-  
-  <article>
-    <div class="text-content">
-      <h3>Secretary's West Africa Energy Mission</h3>
-                    <p style="font-size:14px;">
-
-
-
-
-U.S. Secretary of Commerce Penny Pritzker will lead an Energy Business Development Mission to West Africa with stops in Ghana and Nigeria from May 18-23, 2014. Register now to join this mission!
-                    </p>
-                    <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
-                    </p>
-                    
-    </div>
-    <div class="image-content"><img src="images/eg4.jpg" alt="demo1_1"></div>
+    <div class="image-content"><img src="images/globalmarkets.jpg" alt="demo1_1"></div>
   </article>
   
   
-</section>
-
+  
+  
+</section></center>
 
         </header>
         
     </div>
 
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
 
 <script>
 $(document).ready()
@@ -172,5 +130,3 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
-
-<script>jQuery("h1").fitText(1.2);</script>
