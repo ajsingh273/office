@@ -89,7 +89,7 @@ h3 {
 h4 {
   font-size: 21px;
     color:#6D98BF;
-    text-decoration:underline
+    font-weight:bold;
 }
 
 h5 {
@@ -405,7 +405,7 @@ margin-bottom: 50px;
 
 #main3 {
 
-width:250px;	
+width:175px;	
 display: inline-block;
 float:left;
 padding-left: 10px;

@@ -1,6 +1,6 @@
 <style>
 #success{
-	font-style:italic;
+	
 }
 </style>
 
@@ -8,13 +8,9 @@
 <h4>Success Stories</h4></br>
 
 <p id="success">
+<strong>Success Story: Acrow Corporation of New Jersey</strong></br>2013-04-30</br></br> 
+ The Company \r\n Acrow Corporation based in Parsippany, New Jersey, designs, manufactures and supplies prefabricated modular steel bridges for infrastructure projects across the globe.</br></br>
+ Acrow’s modular steel bridges, also known as “Bailey Bridges,” were first developed during World War II with several criteria in mind: that they could be mass produced (utilizing modular steel components); transported easily and rapidly to the site in theatre; constructed quickly (within 24 hours in most cases) using little or no heavy machinery; and erected by soldiers with little or no engineering expertise.</br></br>
+ As soldiers liberated the European theatre, they built thousands of these Bailey Bridges, shortening World War II by up to two years by some historical estimates. \r\n These bridges have evolved since then in both quality of design and flexibility of application.
 
-<strong>Pneumatic Vacuum Elevator</strong> – The Department of Commerce’s International Trade Administration’s (ITA) Trade Agreements Compliance Program helped PVE overcome a trade barrier that threatened to exclude it from the Japanese market.</br></br>
-
-
-<strong>Navistar</strong> - The Department of Commerce’s International Trade Administration’s (ITA) helped Navistar secure market access so they can sell trucks in Chile.</br></br>
-
-
-<strong>Motorola Inc.</strong> - The Department of Commerce’s International Trade Administration’s (ITA) helped Illinois- based Motorola Inc. in 2009-10 ensure that China’s bidding process for the rollout of its 3G network would not discriminate against foreign participants, enabling Motorola to win a $310 million contract in China.</p>
-
-</br><a style="display:inline-block; padding:5px;background-color:#d9d9d9" href="#">View More Stories</a>
+</p>

@@ -53,16 +53,16 @@ text-decoration: none;
 					<li class="sky-tab-content-1">					
 						<div class="typography" id="expand">
 	
-   <div style="float:left; margin-left:10px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i1.png"></center></span></p></center><center><strong>Who We Are</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i2.png"></center></span></p>
-   </center><center><strong>Our Services</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/newspaper.png"></center></span></p></center><center><strong>Press Room</strong></center>Lorem ipsum dolor sit amet</a></div><img  src="images/CS_logo color.png" style="float:right">
+   <div style="float:left; margin-left:10px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i1.png"></center></span></p></center><center><strong>Who We Are</strong></center></br><center>Trade promotion arm of ITA</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i2.png"></center></span></p>
+   </center><center><strong>Our Services</strong></center></br><center>Export and Expand Markets</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/newspaper.png"></center></span></p></center><center><strong>Press Room</strong></center></br><center>International Trade environment</center></a></div><img  src="images/CS_logo color.png" style="float:right">
   
   </div>
 					</li>
 					
 					<li class="sky-tab-content-2">
 						<div class="typography" id="expand">
-<div style="float:left; margin-left:10px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
-   </center><center><strong>Share Your Success</strong></center>Lorem ipsum dolor sit amet</a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center>Lorem ipsum dolor sit amet</a></div><img  src="images/CS_logo color.png" style="float:right">
+<div style="float:left; margin-left:35px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center></br><center>Assist Export Ready</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
+   </center><center><strong>Share Your Success</strong></center></br><center>Reporting International Success</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center></br><center>Ryan Kanne, Office Director</center></a></div><img  src="images/CS_logo color.png" style="float:right">
   
  </div>
 					</li>
