@@ -551,6 +551,9 @@ color:#c1c1c1;
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
+#tablue a{
+display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px
+}
 
 #tags {
   list-style: none;
