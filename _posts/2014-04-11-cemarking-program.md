@@ -5,7 +5,7 @@ title: CE MARKING - Prorgam Overview
 published: true
 ---
 
-CE Marking – Program Overview
+<h4>CE Marking – Program Overview</h4>
 
 The CE marking (an acronym for the French "Conformite Europeenne") certifies that a product has met EU health, safety, and environmental requirements, which ensure consumer safety. Manufacturers in the European Union (EU) and abroad must meet CE marking requirements where applicable in order to market their products in Europe. For a list of countries that require the CE marking, see: CE Marking Countries. A manufacturer who has gone through the conformity assessment process, may affix the CE marking to the product. With the CE marking, the product may be marketed throughout the EU. CE marking now provides product access to 32 countries with a population of nearly 500 million.
 

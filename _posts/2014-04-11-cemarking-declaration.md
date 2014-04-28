@@ -5,7 +5,7 @@ title: CE Marking - Declaration of Conformity
 published: true
 ---
 
-Declaration of Conformity
+<h4>Declaration of Conformity</h4>
 
 Below is an example of a European Declaration of Conformity and an example form for a Declaration of Conformity:
 

@@ -14,7 +14,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>ITA Office Locations API</title>
+    <title></title>
   </head>
 
   <body>
@@ -312,146 +312,99 @@ body {
 
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-      
-<div class="clearfix">
-<div id="main" style="width:700px;">
-					
-<h1>ITA Office Locations API</h1>
-
-<p>This API provides contact and address information for all of ITA’s domestic and international export assistance centers. Incorporating these listings into directories of business counseling services is one example of how developers can use this API to assist exporters.</p>
-
-<h2>Resource URL</h2>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search
-</code></pre>
-
-<h2>Search Parameters</h2>
-
-<h3>keyword</h3>
-
-<p>Returns office locations for a match within the post or office name fields.</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?q={keyword}
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo
-</code></pre>
-
-<h3>country</h3>
-
-<p>Returns office locations based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country={country name}
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country=BR
-</code></pre>
-
-<h3>state</h3>
-
-<p>Returns locations for export assistance centers located in a specific  <a href="https://www.usps.com/send/official-abbreviations.htm">U.S. State or Dependent Area</a>.</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?state
-={state postal code abbreviation&gt;}
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?state=TN
-</code></pre>
-
-<h3>size + offset</h3>
-
-<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country=BR&amp;size=1&amp;offset=1
-</code></pre>
-
-<h2>Data Elements</h2>
-
-<table>
-<thead>
-<tr>
-<th> Field             </th>
-<th> Description                                                     </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> id                </td>
-<td> Unique identifier for post                                      </td>
-</tr>
-<tr>
-<td> post              </td>
-<td> Name of the post (Default sort)                                 </td>
-</tr>
-<tr>
-<td> office_name       </td>
-<td> Office Name                                                     </td>
-</tr>
-<tr>
-<td> state             </td>
-<td> State abbreviation, for domestic offices                        </td>
-</tr>
-<tr>
-<td> email             </td>
-<td> Office email address                                            </td>
-</tr>
-<tr>
-<td> fax               </td>
-<td> Fax number                                                      </td>
-</tr>
-<tr>
-<td> mail_instructions </td>
-<td> Snail mail instructions                                         </td>
-</tr>
-<tr>
-<td> phone             </td>
-<td> Office phone number                                             </td>
-</tr>
-<tr>
-<td> post_type         </td>
-<td> Type of post (domestic or international)                        </td>
-</tr>
-</tbody>
-</table>
+<div>
+<!--articles-->
 
 
-      
-     </div>
-			<div id="main" style="width:200px; display:inline-block; padding:20px;">
-						<ul id="leftnav_wrapper">
-
-							<li>
-								<ul>
-								<li><h5>Guide</h5></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-home.html" style="color:#fff;">CE Marking - Home</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-program.html" style="color:#fff;">Program Overview</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-countries.html" style="color:#fff;">CE Marking Countries</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-guide.html" style="color:#fff;">CE Marking Guide</a></li>									
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-labs.html" style="color:#fff;">Testing/Certifying Labs</a></li> 
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-procedures.html" style="color:#fff;">Technical File Procedures</a></li>  
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-declaration.html" style="color:#fff;">Declaration of Conformity</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-standards.html"style="color:#fff;">Consultants/Ordering Standards</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-faq.html" style="color:#fff;">FAQs</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-contacts.html" style="color:#fff;">U.S. Gov't Contacts</a></li>   
-								</ul>
-							</li>
-						</ul>
-						</div>
-
-          </div>
-
-</section>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script src="javascripts/scale.fix.js"></script>
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+  
+    <div class="wrapper">
+<div class="articles20">
+<dl class="article20" >
+    <h4><dd class="title"></dd></h4>
+    <dd class="update_date" style="font-style:italic; font-size:16px;"></dd>
+    
+   <div class=clearfix>
+   <dd class="content" style="font-size:16px;width:800px" id="main3"></dd></br>
+   <div id="main3" style="width:200px;"><h5>Related Articles</h5>
+   <ul >
+   <li href="#" style="color:#212121">Export Basics - Getting Started</li>
+   <li href="#" style="color:#212121">Success Story:   Acrow Corporation of New Jersey</li>
+   <li href="#" style="color:#212121">Success Story: Alemite Corporation</li>
+   <li href="#" style="color:#212121">Success Stories: Analytical Graphics, Inc.</li>
+   <li href="#" style="color:#212121">Success Story: Candy Bouquet International</li>
+   <li href="#" style="color:#212121">Success Story: Certified Worldwide LLC</li>
+   <li href="#" style="color:#212121">Success Story: Coffee More, LLC</li>
+   <li href="#" style="color:#212121">Success Story: Combustion Associates, Inc.</li>
+   <li href="#" style="color:#212121">eBay and the Commercial Service Join Forces to Grow U.S. Exports</li>
+   </ul>
+   </div>
+   </div>
+	  </br>
+	<div class="tags">
+	<dd class="industry" id="tag"></dd>   
+	<dd class="topic" id="tag"></dd>   
+	</div> 
+</dl>
 </div>
 
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles20, article20, i, _i, _len, _results;
+    articles20 = data.results;
+    directive = {
+      '.article20': {
+        'article20 <- articles20': {
+          '.title': 'article20.title',
+           '.content': 'article20.content',
+          '.update_date': 'article20.update_date',
+		'.industry': 'article20.industry',
+		'.topic': 'article20.topic',
+		
+        }
+      }
+    };
+    rfn = $p('.articles20').compile(directive);
+    return $p('.articles20').render({ articles20: articles20 }, directive);
+  };
 
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+
+ </div>
+ 
+
+ 
 </section>
 
     <div id="footer_wrap2" class="outer">
@@ -576,3 +529,6 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
 
   </body>
 </html>
+ 
+ 
+ 

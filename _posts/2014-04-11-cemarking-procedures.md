@@ -5,7 +5,7 @@ title: CE Marking - Technical File Procedures
 published: true
 ---
 
-Technical File Procedures
+<h4>Technical File Procedures</h4>
 
 The following technical file procedures refer only to procedures set forth in the directives that do not require intervention by notified bodies.
 
