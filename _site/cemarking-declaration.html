@@ -388,26 +388,199 @@ The machinery, product, assembly or sub-assembly covered by this Declaration of 
 (Typed name of authorized person)</p>
 
       
+      <style>
+.list {
+
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  padding:1px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 1px;
+  border-color:#c0c0c0;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:4px 10px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #C0C0C0;
+  height:26px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#000;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.nav {margin-bottom:30px;}
+
+.name a{  color:#212121;
+  font-size: 13px;text-decoration: none; font-weight:normal;}
+  
+.name a:hover { text-decoration: underline;}
+
+.container {min-height:450px; }
+</style>
+
+<div class="container">
+  
+
+  
+<h4>Frequently Asked Questions</h4>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  
+  <!-- Tab 1 -->
+  <div class="tab-pane active" id="home">
+    <div id="hacker-list">  <!-- List ID -->
+        <!-- Search / Sort buttons -->
+<input class="search"  />
+<button class="sort" data-sort="name">Search</button>
+    <ul class="list">
+    <li><h5 class="name"><a href="faqs.html">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="faqs.html">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="faqs.html">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="faqs.html">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="faqs.html">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    </ul> 
+    </div>
+  </div> <!-- /!Tab 1 -->
+  
+  
+ </div> <!-- /!Tabs -->
+    
+   <ul>
+  </br>
+  <a style="display:inline-block; padding:5px;background-color:#d9d9d9;" href="faqs.html">See All Questions</a>
+  </div> <!-- /container -->
+  
+  
+  <script src="http://listjs.com/no-cdn/list.js"></script>
+  
+  <script>
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list', options);
+
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list-2', options);
+  
+  
+})
+  </script>
      </div>
+     
 			<div id="main" style="width:200px; display:inline-block; padding:20px;">
 						<ul id="leftnav_wrapper">
 
 							<li>
-								<ul>
+									<ul>
 								<li><h5>Guide</h5></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-home.html" style="color:#fff;">CE Marking - Home</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-program.html" style="color:#fff;">Program Overview</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-countries.html" style="color:#fff;">CE Marking Countries</a></li>
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-guide.html" style="color:#fff;">CE Marking Guide</a></li>									
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-labs.html" style="color:#fff;">Testing/Certifying Labs</a></li> 
-								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-procedures.html" style="color:#fff;">Technical File Procedures</a></li>  
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-declaration.html" style="color:#fff;">Declaration of Conformity</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-standards.html"style="color:#fff;">Consultants/Ordering Standards</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-faq.html" style="color:#fff;">FAQs</a></li> 
-								 <li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:150px"><a href="cemarking-contacts.html" style="color:#fff;">U.S. Gov't Contacts</a></li>   
+								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px"><a href="cemarking-home.html" style="color:#fff;">CE Marking Guide</a></li>
+								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px"><a href="safety-of-machinery.html" style="color:#fff;">Safety of Machinery</a></li>
+								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px"><a href="cemarking-process.html" style="color:#fff;">Overview of the CE Marking Process for the Low Voltage Directive</a></li>
+								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px"><a href="cemarking-emc.html" style="color:#fff;">CE Marking Process for the Electromagnetic Compatibility (EMC) Directive</a></li>									
+								<li style="display:inline-block;padding:10px;background:#6D98BF;margin-bottom:5px;width:200px"><a href="cemarking-standards.html" style="color:#fff;">Consultants/Ordering Standards</a></li>   
 								</ul>
 							</li>
 						</ul>
+						</br></br></br>
+						<style>
+
+#join {
+background-color: #C0C0C0;
+width:200px;
+padding: 20px;
+
+}
+
+</style>
+
+
+<div id="join">
+  <h3>JOIN MY EXPORT</h3>
+
+<p style="font-size:12px;">Get the latest info about events, market research and opportunities tailored to your industry and interests</p>
+
+<a href="#" class="btn-blue">Sign Up Now!</a>
+
+</div>
 						</div>
 
           </div>

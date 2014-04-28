@@ -1,0 +1,92 @@
+
+<style>
+#expand a{
+  color:#212121;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#expand a:hover {
+text-decoration: none;
+}
+
+
+</style>
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">		
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="stylesheets/demo.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.css">
+		<link rel="stylesheet" href="stylesheets/sky-tabs.css">
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/sky-tabs-ie8.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body class="bg-cyan">
+		<div class="body">
+		
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>ABOUT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>CONTACT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>INTERNSHIPS</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+				<label for="sky-tab4"><span><span><i class="fa fa-cogs"></i>BUSINESS SERVICE PROVIDERS</span></span></label>
+				
+				<ul>
+					<li class="sky-tab-content-1">					
+						<div class="typography" id="expand">
+	
+   <div style="float:left; margin-left:10px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i1.png"></center></span></p></center><center><strong>Who We Are</strong></center></br><center>Trade promotion arm of ITA</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i2.png"></center></span></p>
+   </center><center><strong>Our Services</strong></center></br><center>Export and Expand Markets</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/newspaper.png"></center></span></p></center><center><strong>Press Room</strong></center></br><center>International Trade environment</center></a></div><img  src="images/CS_logo color.png" style="float:right">
+  
+  </div>
+					</li>
+					
+					<li class="sky-tab-content-2">
+						<div class="typography" id="expand">
+<div style="float:left; margin-left:35px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center></br><center>Assist Export Ready</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
+   </center><center><strong>Share Your Success</strong></center></br><center>Reporting International Success</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center></br><center>Ryan Kanne, Office Director</center></a></div><img  src="images/CS_logo color.png" style="float:right">
+  
+ </div>
+					</li>
+					
+					<li class="sky-tab-content-3">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:10px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/intern.png"></center></span></p></center><center><strong>Internship Opportunities</strong></center><p style="width:500px;">Internships at the U.S. Commercial Service provide students with an opportunity to gain real world professional experience by working with professionals in the field of international trade and business.</p></a></div>
+<img  src="images/CS_logo color.png" style="float:right"></div>
+					</li>
+					
+					<li class="sky-tab-content-4">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:10px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/shop.png"></center></span></p></center><center><strong>Business Service Providers</strong></center><p style="width:500px;">The Austin USEAC Business Service Provider directory is intended to provide an additional resource to the U.S. exporting client-base in the Austin USEAC region.</p>
+</br>
+Find Out More
+</a></div><img  src="images/CS_logo color.png" style="float:right">
+</div>
+					</li>
+					
+									
+				</ul>
+			</div>
+			<!--/ tabs -->
+			
+		</div>
+	</body>
+</html>
