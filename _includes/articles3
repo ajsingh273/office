@@ -1,0 +1,35 @@
+<style>
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+</style>
+
+<h4>Latest Articles</h4>
+
+<p><a id="title" href="http://export.gov/minnesota/discoverglobalmarketshealthcareandlifesciences/index.asp">Discover Global Markets:  Healthcare and Life Sciences</a></br>
+Join the U.S. Commercial Service, the Minnesota District Export Council & LifeScience Alley at the premier health-focused export event of the year</p>
+
+<p><a id="title" href="http://export.gov/minnesota/certificateoforigin/index.asp">Certificate of Origin</a></br>
+Find nearest chamber of commerce where you can obtain a certificate of origin.</p>
+
+
+</br>
+<p><a id="title" href="http://export.gov/minnesota/mntourismdestination/index.asp">Promoting of Minnesota as an International Tourism Destination</a></br>
+Learn how the U.S. Commercial Service supports international tourism</p> 
+
+
+</br>
+<p>
+<a id="title" href="http://export.gov/minnesota/eg_us_mn_046019.asp">Testimonials</a></br>
+Here is what Minnesota businesses are saying about the U.S. Commercial Service</p>
+
+</br>
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="#"id="title" href="#">View Full List of Articles</a>

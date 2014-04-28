@@ -5,7 +5,7 @@ title: CE Marking - Testing/Certifying Labs
 published: true
 ---
 
-CE Marking – Testing Laboratories
+<h4>CE Marking – Testing Laboratories</h4>
 
 Information for those seeking to comply with EU directives such as RoHS, WEEE, Medical Devices, EMC and R&TTE
 
