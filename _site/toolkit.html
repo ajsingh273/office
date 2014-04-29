@@ -1,4 +1,3 @@
-<title>Toolkit</title>
 <!DOCTYPE html>
 <html>
 
@@ -318,7 +317,7 @@ body {
 <style>
 /* News */
 .news-slider {
-  background-color:#0B5394;
+  background-color:#d9d9d9;
   height: 310px;
 width: 900px;
 
@@ -335,12 +334,12 @@ width: 900px;
 }
 .news-slider .text-content h7 {
   margin: 0;
-  color:#fff;
+  color:#212121;
   font-size:21px;	
 }
 .news-slider .text-content p {
   margin: 1em 0;
-  color:#fff;
+  color:#212121;
 }
 .news-slider .text-content a.button-link {
   padding: 0.25em 0.5em;
@@ -359,9 +358,42 @@ width: 900px;
   top: 50px;
 }
 
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid #0B5394;
+  border-top: 2px solid #0B5394;
+  top: 0;
+  width: 200px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 </style>
 <div id="header_wrap" class="outer">
         <header class="inner">
+        
+        </br>
+<p class="subtitle fancy"><span>Export Toolkit</span></p>
+</br>
 <center><section id="news-demo">
   <article>
     <div class="text-content">
@@ -441,8 +473,9 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
+
 <div class="clearfix">
-<div id="main" style="margin-right:200px;">
+<ul id="main4" style="width:400px;margin-right:125px;">
 <style>
 
 #title a {
@@ -457,29 +490,39 @@ font-size: 16px;
 
 </style>
 
-<h4>Latest Export Articles</h4>
+<h4>Latest Articles</h4>
 
-<p><a id="title" href="#">Factoring and Forfaiting</a></br>
-A factor, i.e. a commercial bank or a specialized financial firm, can assist an exporter with financing through the purchase of invoices or accounts receivable.</p>
+<p><a id="title" href="http://export.gov/minnesota/discoverglobalmarketshealthcareandlifesciences/index.asp">Discover Global Markets:  Healthcare and Life Sciences</a></br>
+Join the U.S. Commercial Service, the Minnesota District Export Council & LifeScience Alley at the premier health-focused export event of the year</p>
+
+<p><a id="title" href="http://export.gov/minnesota/certificateoforigin/index.asp">Certificate of Origin</a></br>
+Find nearest chamber of commerce where you can obtain a certificate of origin.</p>
 
 
 </br>
-<p><a id="title" href="#">Federal Grant Programs for Exporters</a></br>
-The federal government offers a number of grant programs to help your company test foreign markets, orient itself in a new market, train U.S. or foreign representatives, and overcome in-country obstacles to trade.</p> 
+<p><a id="title" href="http://export.gov/minnesota/mntourismdestination/index.asp">Promoting of Minnesota as an International Tourism Destination</a></br>
+Learn how the U.S. Commercial Service supports international tourism</p> 
 
 
 </br>
 <p>
-<a id="title" href="#">Export Loan Programs</a></br>
-The U.S. Government offers four different types of financing programs.</p>
+<a id="title" href="http://export.gov/minnesota/eg_us_mn_046019.asp">Testimonials</a></br>
+Here is what Minnesota businesses are saying about the U.S. Commercial Service</p>
 
 </br>
-<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="#"id="title" href="#">Read More Articles</a>
-</div>
-<div id="main">
+<p>
+<a id="title" href="dual-use-export-licenses.html">Dual Use Export Licenses</a></br>
+The Bureau of Industry and Security (BIS) of the U.S. Department of Commerce is responsible for regulating the export of most commercial items</p>
+
+</br>
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="#"id="title" href="#">View Full List of Articles</a>
+</ul>
+<ul id="main4" style="width:550px; ">
 <style>
 
-
+#event{
+font-size: 12px;
+}
 
 #title a {
 font-weight: bold;
@@ -511,55 +554,61 @@ float:left;
 <h4>Attend a Trade Event</h4>
 
 <div class="clearfix">
-<div id="circle">APR</br><strong>1</strong></div>
+<div id="circle">APR</br><strong>29</strong></div>
 <ul id="main3">
-<p id="title"><a href="#"> Analytica 2014</a></p>
+<p id="title"><a href="#">Defense Research Opportunities in Canada</a></p>
 
-<p>Munich, DE</p>
+<p>Ottawa, CA</p>
 
-<p>Analytica ist Europe's largest event for instrumental analysis, laboratory technology and biotechnology, that takes place every other year in Munich, Germany.</p>
+<p>The National Research Council (NRC) is a Federal agency of the Canadian Government engaged in intense Research and Development projects with applicability in on key Canadian industry sectors.</p>
 
-<p id="ind">Laboratory Scientific Instruments</p>
+<p id="ind">Defense Industry Eq.</p>
 </ul>
 
-<!--<div id="circle">MAR</br><strong>18</strong></div>
+
+<div id="circle">APR</br><strong>29</strong></div>
 <ul id="main3">
 
-<p id="title"><a href="#">MCE 2014</a></p>
+<p id="title"><a href="#">Infosecurity Europe 2014</a></p>
 
-<p>Milan, IT</p>
+<p>London, GB</p>
 
-<p>MCE 2014 ---Human comfort solutions Mostra Convegno Expocomfort, from March 18-21, 2014 at Fiera Milano Exhibition Centre, will be the international showcase of the technological excellences conceived to improve the quality of life.</p>
+<p>InfoSecurity Europe is Europe's number one Information Security event. It is the leading European event enabling industry professionals</p>
 
-<p id="ind">Architectural/Constr./Engineering SVC</p>
+<p id="ind">Electronic Commerce</p>
 
 </ul>
-<div id="circle">MAR</br><strong>19</strong></div>
+</div>
+<div class="clearfix">
+<div id="circle">MAY</br><strong>1</strong></div>
 <ul id="main3">
 
-<p id="title"><a href="#">Cippe 2013</a></p>
+<p id="title"><a href="#">Medical Technologies Trade Mission to Turkey</a></p>
 
-<p>Beijing, CN</p>
+<p>turkey, DC, US</p>
 
-<p>China International Petroleum \u0026 Petrochemical Technology and Equipment Exhibition (CIPPE) 2014 will occur from March 22-24, at the new China International Exhibition Center.</p>
+<p>The U.S. Department of Commerce's , U.S. Commercial Service is organizing an Executive-Led Healthcare Trade Mission to Turkey on May 4-8, 2014.</p>
 
-<p id="ind">Oil/Gas Field Machinery</p>
+<p id="ind">Health Care Services</p>
 
-</ul>
-<div id="circle">MAR</br><strong>19</strong></div>
-<ul id="main3">
-
-<p id="title"><a href="#">Secutech Taiwan 2014</a></p>
-
-<p>Taipei, TW</p>
-
-<p>Secutech, the world's security business center, gathers distributors, dealers and end users from around the world.</p>
-
-<p id="ind">Security/Safety Eq.</p>
 
 </ul>
 
+
+<div id="circle">MAY</br><strong>1</strong></div>
 <ul id="main3">
+
+<p id="title"><a href="#">StopFakes Road Show</a></p>
+
+<p>Philadelphia, PA, US</p>
+
+<p>STOPfakes features trade experts and attorneys from the Department of Commerce, International Trade Administration (ITA) and the U.S. Patent and Trademark Office (USPTO)</p>
+
+<p id="ind">Apparel</p>
+
+</ul>
+
+<!--<ul id="main3">
 
 <p id="title"><a href="#">2014-03-19 U.S. Pavilion at MITT 2014</a></p>
 
@@ -574,10 +623,36 @@ float:left;
 </div>
 <a style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="events.html">View all Events</a>
 
+
+</ul>
+
 </div>
-</div>
-</div>
-<style>
+<div class="clearfix" style="margin-bottom:25px;">
+<ul id="main2" style="width:500px;margin-right: 100px;"><h4>Export Resources</h4>
+
+ 
+<ul > 
+<li><a href="#">Export Basics</a></li>
+<li><a href="#">Financing and Insuring Export Transactions</a></li>
+<li><a href="#">Export Compliance and Regulations</a></li>
+<li><a href="#">International Market Research</a></li>
+<li><a href="#">Find and Engage Trading Partners</a></li>
+<li><a href="#">Export Forms and Tools</a></li>
+</ul>
+</br>
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="#"id="title" href="#">View All Export Resources</a>
+</br></br>
+<h4>Our Global Network at Work</h4>
+
+<ul > 
+<li style="color:#212121;">Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
+<li style="color:#212121;">Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
+<li style="color:#212121;">See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
+</ul>
+
+
+</ul>
+<ul id="main2"><style>
 .list {
 
   margin:0;
@@ -732,45 +807,10 @@ var hackerList = new List('hacker-list-2', options);
   
   
 })
-  </script>
-<div class="clearfix">
-<div id="main">
-<h4>Export Resources</h4>
-
- 
-<ul > 
-<li><a href="#">Exporters Resource Database</a></li>
-<li><a href="#">International Finance</a></li>
-<li><a href="#">Certificate of Origin</a></li>
-<li><a href="#">NAFTA</a></li>
-<li><a href="#">MN Tourism Destination</a></li>
-</ul>
-</ul>
-
+  </script></ul>
 </div>
-<div id="main">
-<style>
-
-#join {
-background-color: #C0C0C0;
-width:200px;
-padding: 20px;
-
-}
-
-</style>
 
 
-<div id="join">
-  <h3>JOIN MY EXPORT</h3>
-
-<p style="font-size:12px;">Get the latest info about events, market research and opportunities tailored to your industry and interests</p>
-
-<a href="#" class="btn-blue">Sign Up Now!</a>
-
-</div>
-</div>
-</div>
 
 </section>
 
@@ -896,3 +936,4 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
 
   </body>
 </html>
+
