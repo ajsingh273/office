@@ -1,156 +1,105 @@
 <style>
-.list {
 
-  margin:0;
-  padding:20px 0 0;
-}
-.list > li {
-  display:block;
-  padding:1px;
-  box-shadow: inset 0 1px 0 #fff;
-  border: 1px;
-  border-color:#c0c0c0;
-}
-.avatar {
-  max-width: 150px;
-}
-img {
-  max-width: 100%;
-}
-h3 {
-  font-size: 16px;
-  margin:0 0 0.3rem;
-  font-weight: normal;
-  font-weight:bold;
-}
-p {
-  margin:0;
+#event{
+font-size: 12px;
 }
 
-input {
-  border:solid 1px #ccc;
-  border-radius: 5px;
-  padding:7px 14px;
-  margin-bottom:10px
-}
-input:focus {
-  outline:none;
-  border-color:#aaa;
-}
-.sort {
-  padding:4px 10px;
-  border-radius: 6px;
-  border:none;
-  display:inline-block;
-  color:#fff;
-  text-decoration: none;
-  background-color: #C0C0C0;
-  height:26px;
-}
-.sort:hover {
-  text-decoration: none;
-  background-color:#000;
-}
-.sort:focus {
-  outline:none;
-}
-.sort:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
-}
-.sort.asc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:13px;
-  right:-5px;
-}
-.sort.desc:after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
-  content:"";
-  position: relative;
-  top:-10px;
-  right:-5px;
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
 }
 
-.nav {margin-bottom:30px;}
+#title a: hover {
+  text-decoration:underline;
+}
 
-.name a{  color:#212121;
-  font-size: 13px;text-decoration: none; font-weight:normal;}
-  
-.name a:hover { text-decoration: underline;}
+#ind {
+font-style: italic;
+}
 
-.container {min-height:450px; }
+#circle {
+text-align:center;
+width:50px;
+height:50px;
+background: #d9d9d9;
+-moz-broder-radius:50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+float:left;
+}
+
 </style>
+<div id="event">
+<h4>Attend a Trade Event</h4>
 
-<div class="container">
-  
+<div class="clearfix">
+<div id="circle">MAY</br><strong>1</strong></div>
+<ul id="main3">
+<p id="title"><a href="#">Medical Technologies Trade Mission to Turkey</a></p>
 
-  
-<h4>Frequently Asked Questions</h4>
+<p>DC, US</p>
 
-<!-- Tab panes -->
-<div class="tab-content">
-  
-  <!-- Tab 1 -->
-  <div class="tab-pane active" id="home">
-    <div id="hacker-list">  <!-- List ID -->
-        <!-- Search / Sort buttons -->
-<input class="search"  />
-<button class="sort" data-sort="name">Search</button>
-    <ul class="list">
-    <li><h5 class="name"><a href="faqs.html">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">3.  How can I find export financing?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">5.  How can I determine the tariff rate for my product?</a></h5></li>
-    </ul> 
-    </div>
-  </div> <!-- /!Tab 1 -->
-  
-  
- </div> <!-- /!Tabs -->
-    
-   <ul>
-  </br>
-  <a style="display:inline-block; padding:5px;background-color:#d9d9d9;" href="faqs.html">See All Questions</a>
-  </div> <!-- /container -->
-  
-  
-  <script src="http://listjs.com/no-cdn/list.js"></script>
-  
-  <script>
-  var options = {
-    valueNames: [ 'name' ]
-};
+<p>The U.S. Department of Commerce's , U.S. Commercial Service is organizing an Executive-Led Healthcare Trade Mission to Turkey on May 4-8, 2014. Turkey has a compelling economic success</p>
 
-var hackerList = new List('hacker-list', options);
+<p id="ind">Dental Eq.,Health Care Services,Medical Eq.</p>
+</ul>
 
 
+<div id="circle">MAY</br><strong>1</strong></div>
+<ul id="main3">
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+<p id="title"><a href="#">StopFakes Road Show</a></p>
 
-  var options = {
-    valueNames: [ 'name' ]
-};
+<p>PA, US</p>
 
-var hackerList = new List('hacker-list-2', options);
-  
-  
-})
-  </script>
+<p>STOPfakes features trade experts and attorneys from the Department of Commerce, International Trade Administration (ITA) and the U.S. Patent and Trademark Office (USPTO) </p>
+
+<p id="ind">Eq.,Sporting Goods/Recreational Eq.</p>
+
+</ul>
+</div>
+<div class="clearfix">
+<div id="circle">MAY</br><strong>5</strong></div>
+<ul id="main3">
+
+<p id="title"><a href="#">Kazakhstan IBP Delegation for Offshore Technology Conference (OTC) 2014</a></p>
+
+<p>KZ</p>
+
+<p>Offshore Technology Conference (OTC) 2014 -- the largest American trade show and conference for the oil and gas industry.</p>
+
+<p id="ind">Environmental Technologies,Oil/Gas Field Machinery,Oil/Gas/Mineral Prod/Explor Serv.</p>
+
+
+</ul>
+
+
+<div id="circle">MAY</br><strong>5</strong></div>
+<ul id="main3">
+
+<p id="title"><a href="#">Offshore Technology Conference 2014</a></p>
+
+<p>TX, US</p>
+
+<p>Founded in 1969, the Offshore Technology Conference is the world's foremost event for the development of offshore resources in the fields of</p>
+
+<p id="ind">Oil/Gas Field Machinery,Oil/Gas/Mineral Prod/Explor Serv.</p>
+
+</ul>
+
+<!--<ul id="main3">
+
+<p id="title"><a href="#">2014-03-19 U.S. Pavilion at MITT 2014</a></p>
+
+<p>Moscow, RU</p>
+
+<p>MITT is one of the world's most influential exhibitions serving the travel \u0026 tourism (T\u0026T) industry and the largest event of its kind in Russia.</p>
+
+<p id="ind">Travel and Tourism Industries</p>
+
+</ul>-->
+
+</div>
+<a style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="events.html">View all Events</a>
+
