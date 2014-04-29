@@ -708,7 +708,11 @@ font-weight:lighter;
 
 }
 
-
+#guide a:hover{
+color:#6D98BF;
+text-decoration:none;
+display:inline-block;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
