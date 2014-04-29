@@ -24,6 +24,7 @@
     <dd class="state"></dd>
     <dd class="country"></dd> 
     <dd class="description"></dd>
+    <dd class="industries"></dd>
     <a><dd class="registration_link"></dd></a>
 </dl>
 </div>
@@ -42,6 +43,7 @@
           '.state': 'article10.state',
           '.country': 'article10.country',
           '.description': 'article10.description',
+          '.industries': 'article10.industries',
           '.registration_link': 'article10.registration_link',
           
         }
