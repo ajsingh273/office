@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-labs.html"
-layout: guide
+layout: info
 title: CE Marking - Testing/Certifying Labs
 published: true
 ---

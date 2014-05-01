@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-home.html"
-layout: guide
+layout: info
 title: CE Marking Guide
 published: true
 ---

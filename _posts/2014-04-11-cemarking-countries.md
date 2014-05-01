@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-countries.html"
-layout: guide
+layout: info
 title: CE Marking - Countries
 published: true
 ---

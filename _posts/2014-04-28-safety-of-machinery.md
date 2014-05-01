@@ -1,6 +1,6 @@
 ---
 permalink: "safety-of-machinery.html"
-layout: guide
+layout: info
 title: Safety of Machinery
 published: true
 ---

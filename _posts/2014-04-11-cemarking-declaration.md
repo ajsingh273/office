@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-declaration.html"
-layout: guide
+layout: info
 title: CE Marking - Declaration of Conformity
 published: true
 ---

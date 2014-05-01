@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-procedures.html"
-layout: guide
+layout: info
 title: CE Marking - Technical File Procedures
 published: true
 ---
