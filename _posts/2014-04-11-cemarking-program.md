@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-program.html"
-layout: guide
+layout: info
 title: CE MARKING - Prorgam Overview
 published: true
 ---

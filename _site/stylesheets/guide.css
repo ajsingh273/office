@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-size: .8em;
+	background-color: #E6EAEF;
+/*	overflow: scroll;*/
+}
+h1, h2, h3, h4, h5, h6 {
+	
+	color: #2B528B;
+}
+
+/*-[ SITE ]------------------------------------------------*/
+
+div#site {
+	margin: 0 auto;
+	width: 997px;
+}
+
+/*-[ HEADER ]------------------------------------------------*/
+
+div#header {
+	height: 90px;
+	width: 997px;
+	color: white;
+	text-indent:600px;
+	background:  #0B5394 url(images/header.jpg) top right no-repeat;
+	border: 1px solid black;
+}
+
+div#header h1 {
+	margin: 30px 0;
+	color: white;
+}
+
+/*-[ BRAND ]------------------------------------------------*/
+
+div#brand {
+	height: 90px;
+	width: 198px;
+	float: left;
+	background:  #0B5394 url(../images/logo.png) no-repeat top left;
+	background-size:175px;
+	background-position:center center;
+	color: #990000;
+}
+
+/*-[ CAREA ]------------------------------------------------*/
+
+div#carea {
+	display: table;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+	background:  #6D98BF
+}
+
+/*-[ CPANEL ]------------------------------------------------*/
+
+div#cpanel {
+	display: table-row;
+}
+
+/*-[ NAV ]------------------------------------------------*/
+
+div#nav {
+	display: table-cell;
+	vertical-align: top;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 9px;
+	<!--[if lt IE 8]> 
+		float: left;
+	<![endif]-->
+}
+div#nav ul.accordion {
+	margin: 0 ;
+	background: #666;
+	color: white;
+	width: 190px;
+	border: 1px solid black;
+	border-right: 1px solid #369;
+	
+}
+div#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+div#nav ul.accordion>li {
+	font-variant:small-caps;
+	font-size: 14px;
+	border-bottom: 1px solid #333;
+}
+div#nav ul.accordion>li.last {
+	border-bottom-width: 0;
+}
+div#nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 2px 3px 2px 18px;
+	color: white;
+	<!--[if lt IE 8]>padding: 0;<![endif]-->
+}
+div#nav li.expand {
+	position: relative;
+}
+div#nav li.expand.select {
+	background: #999;
+}
+div#nav li.expand:first-child {
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+}
+div#nav ul.groups {
+	position: absolute;
+	left: 3px;
+	top: 50px;
+}
+div#nav ul.groups>li { /* mod tabs */
+	background: #369;
+	border: 1px solid #036;
+	border-right-width: 0;
+	margin: 5px 0 5px 5px;
+	width: 23px;
+	padding:5px;
+	z-index: 400;
+}
+div#nav ul.groups>li.select>a { /* lit tab */
+	background: #69c;
+	z-index: 500;
+	width: 20px;
+	
+}
+
+div#nav ul.groups li a{
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 3px;
+	<!--[if lt IE 8]>padding: 0;<![endif]-->
+}
+
+div#nav ul.menu {
+	background: #69c;
+	border-left: 1px solid #036;
+	border-bottom: 1px solid #036;	
+	margin: 0 0 5px 32px;
+	padding: 3px 0 0 3px;
+	min-height: 320px;
+	
+	z-index: 100;
+}
+
+div#nav ul.menu.ap {
+	min-height: 140px;
+}
+
+div#nav ul.menu.sub {
+	margin: 0 0 5px 9px;
+	padding: 3px 0 0 3px;
+	border-top: 1px solid #036;	
+	
+	z-index: 100;
+}
+
+div#nav ul.menu li a{
+	font-size: 10px;
+	font-variant: normal;
+	font-weight: normal;
+	padding: 0;
+	padding-left: 4px;
+}
+div#nav li.expand div.title {
+	font-size: 12px;
+	padding: 5px;
+	font-weight: normal;
+	background: #69c;
+	margin: 5px 0 0 32px;
+	border-left: 1px solid #036;
+	border-top: 1px solid #036;
+	border-bottom: 1px dotted #369;
+
+}
+
+div#nav ul.menu li li{
+	padding-left: 14px;
+}
+div#nav ul.menu li a {
+	padding-left: 18px;
+	background: url(images/l1disc.png) no-repeat 4px 3px;
+}
+div#nav ul.menu li:hover>a {
+	background: #69c url(images/l1dot.png) no-repeat 4px 3px;
+}
+div#nav ul.menu li.sub:hover>a {
+	background-color: white;
+}
+div#nav ul.menu li.select>a, div#nav ul.menu li.select.sub>a {
+	background: #fff url(images/l1select.png) no-repeat 3px 2px;
+	border: 1px solid #369;
+	border-right-width: 0;
+	margin-right: -1px;
+	
+}
+div#nav ul.menu li.select.sub>a {
+	background: #fff url(images/arrows.png) no-repeat 3px 3px;
+}
+div#nav ul.menu li.sub>a {
+	background: url(images/arrow.png) no-repeat 4px 4px;	
+}
+div#nav ul.menu li.sub:hover>a {
+	background: url(images/arroww.png) no-repeat 4px 4px;	
+}
+div#nav ul.menu li.sub.select>a:hover {
+	background: #fff url(images/arrows.png) no-repeat 3px 3px;	
+}
+div#nav ul.menu li.select>a {
+	color: #369;
+}
+div#nav ul.maingroups {
+	margin: 0;
+	padding: 0;
+}
+div#nav ul.maingroups li {
+	display: table;
+	width: 174px;
+	background: #369;
+	margin: 9px;
+	padding: 5px;
+	border: 1px solid #036;
+	
+}
+div#nav ul.maingroups li a {
+	display: table-row;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+div#nav ul.maingroups li:hover {
+	background: #69c;
+}
+div#nav ul.maingroups li div {
+	display: table-cell;
+	width: 26px;
+	padding: 2px 3px;
+
+}
+div#nav ul.maingroups li span {
+	font-size: 12px;
+	font-variant: normal;
+	font-weight: normal;	
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	width: 170px;
+	line-height: 14px;
+	margin: 0;
+	padding:0;
+}
+
+/*-[ BODY ]------------------------------------------------*/
+
+div#body {
+	display: table-cell;
+	width: 716px;
+	background: white;
+	padding: 40px;
+	<!--[if lt IE 8]>float: left;<![endif]-->
+}
+
+/*-[ COPY ]------------------------------------------------*/
+
+div#copy {
+	clear: both;
+	width: 958px;
+	padding: 1em 2em;
+	background: #E6EAEF;
+	text-align: center;
+	font-size: .8em;
+	color: #666;
+}
+
+/*-[ OBJECTIVES ]--------------------------------------------*/
+
+div.objectives {
+	border: solid 2px #ccc;
+	background: #ede1be url(images/target.png) 8px 8px no-repeat;
+	padding-left: 100px;
+}
+/*-[ VIDEO ]--------------------------------------------*/
+
+div.video {
+	border: solid 2px #ccc;
+	float: right;
+	margin: 1em;
+	width: 200px;
+	padding: 5px 5px 0;
+	background: #ede1be;
+}
+div.video ul {
+	list-style: none;
+	/*list-style-image:  url(images/movie.png);*/
+	margin: 0;
+	padding-left: 0.2em;
+	
+}
+div.video ul li {
+	background: url(images/movie.png) 0 0 no-repeat;
+	padding-left: 35px;
+	list-style: none;
+	margin-bottom: 5px;
+	/*background: url(images/movie.png);*/
+}
+div.video li a {
+	display: block;
+	border: 2px solid #ccc;
+	background: white;
+	padding: 5px;
+	color: #666;
+	text-decoration: none;
+}
+
+/*-[ CONTENT ]--------------------------------------------*/
+
+table {
+	border: 2px solid #369;
+	border-collapse:collapse;
+}
+
+table td {
+	border: 1px solid #369;;
+	text-align: left;
+	padding: 8px;
+}
+table th {
+	border: 1px solid #369;;
+	border-bottom: 2px solid #369;
+	background: #ddf;
+	padding: 8px;
+}
+div.figure {
+	text-align: center;
+	margin: 1em auto;
+}

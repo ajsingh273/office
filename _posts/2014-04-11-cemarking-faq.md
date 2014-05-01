@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-faq.html"
-layout: guide
+layout: info
 title: CE Marking - FAQs
 published: true
 ---

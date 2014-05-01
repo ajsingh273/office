@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-emc.html"
-layout: guide
+layout: info
 title: CE Marking Process for the Electromagnetic Compatibility (EMC) Directive
 published: true
 ---

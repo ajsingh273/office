@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-process.html"
-layout: guide
+layout: info
 title: Overview of the CE Marking Process for the Low Voltage Directive
 published: true
 ---

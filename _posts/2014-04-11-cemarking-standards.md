@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-standards.html"
-layout: guide
+layout: info
 title: CE Marking - Consultants/Ordering Standards
 published: true
 ---

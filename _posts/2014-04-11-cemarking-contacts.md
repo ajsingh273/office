@@ -1,6 +1,6 @@
 ---
 permalink: "cemarking-contacts.html"
-layout: guide
+layout: info
 title: CE Marking - U.S. Gov't Contacts
 published: true
 ---
