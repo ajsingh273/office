@@ -8,9 +8,16 @@ body {
 	background-color: #E6EAEF;
 /*	overflow: scroll;*/
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
 	
 	color: #2B528B;
+}
+
+h4 {
+font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+    color:#6D98BF;
+    font-weight:bold;
 }
 
 /*-[ SITE ]------------------------------------------------*/
@@ -26,7 +33,7 @@ div#header {
 	height: 90px;
 	width: 997px;
 	color: white;
-	text-indent:600px;
+	text-indent:500px;
 	background:  #0B5394 url(images/header.jpg) top right no-repeat;
 	border: 1px solid black;
 }
