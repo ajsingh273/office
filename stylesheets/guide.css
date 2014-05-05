@@ -1,13 +1,6 @@
 @charset "utf-8";
 
-body {
-	margin: 0;
-	padding: 0;
-	
-	font-size: .8em;
-	background-color: #E6EAEF;
-/*	overflow: scroll;*/
-}
+
 h1, h2, h3, h5, h6 {
 	
 	color: #2B528B;
@@ -74,7 +67,7 @@ div#cpanel {
 
 /*-[ NAV ]------------------------------------------------*/
 
-div#nav {
+div#nav2 {
 	display: table-cell;
 	vertical-align: top;
 	padding-top: 9px;
@@ -84,7 +77,7 @@ div#nav {
 		float: left;
 	<![endif]-->
 }
-div#nav ul.accordion {
+div#nav2 ul.accordion {
 	margin: 0 ;
 	background: #666;
 	color: white;
@@ -93,42 +86,42 @@ div#nav ul.accordion {
 	border-right: 1px solid #369;
 	
 }
-div#nav ul {
+div#nav2 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-div#nav ul.accordion>li {
+div#nav2 ul.accordion>li {
 	font-variant:small-caps;
 	font-size: 14px;
 	border-bottom: 1px solid #333;
 }
-div#nav ul.accordion>li.last {
+div#nav2 ul.accordion>li.last {
 	border-bottom-width: 0;
 }
-div#nav li a {
+div#nav2 li a {
 	display: block;
 	text-decoration: none;
 	padding: 2px 3px 2px 18px;
 	color: white;
 	<!--[if lt IE 8]>padding: 0;<![endif]-->
 }
-div#nav li.expand {
+div#nav2 li.expand {
 	position: relative;
 }
-div#nav li.expand.select {
+div#nav2 li.expand.select {
 	background: #999;
 }
-div#nav li.expand:first-child {
+div#nav2 li.expand:first-child {
 	-moz-border-radius-topleft: 6px;
 	-webkit-border-top-left-radius: 6px;
 }
-div#nav ul.groups {
+div#nav2 ul.groups {
 	position: absolute;
 	left: 3px;
 	top: 50px;
 }
-div#nav ul.groups>li { /* mod tabs */
+div#nav2 ul.groups>li { /* mod tabs */
 	background: #369;
 	border: 1px solid #036;
 	border-right-width: 0;
@@ -137,21 +130,21 @@ div#nav ul.groups>li { /* mod tabs */
 	padding:5px;
 	z-index: 400;
 }
-div#nav ul.groups>li.select>a { /* lit tab */
+div#nav2 ul.groups>li.select>a { /* lit tab */
 	background: #69c;
 	z-index: 500;
 	width: 20px;
 	
 }
 
-div#nav ul.groups li a{
+div#nav2 ul.groups li a{
 	font-size: 24px;
 	font-weight: bold;
 	padding-left: 3px;
 	<!--[if lt IE 8]>padding: 0;<![endif]-->
 }
 
-div#nav ul.menu {
+div#nav2 ul.menu {
 	background: #69c;
 	border-left: 1px solid #036;
 	border-bottom: 1px solid #036;	
@@ -162,11 +155,11 @@ div#nav ul.menu {
 	z-index: 100;
 }
 
-div#nav ul.menu.ap {
+div#nav2 ul.menu.ap {
 	min-height: 140px;
 }
 
-div#nav ul.menu.sub {
+div#nav2 ul.menu.sub {
 	margin: 0 0 5px 9px;
 	padding: 3px 0 0 3px;
 	border-top: 1px solid #036;	
@@ -174,14 +167,14 @@ div#nav ul.menu.sub {
 	z-index: 100;
 }
 
-div#nav ul.menu li a{
+div#nav2 ul.menu li a{
 	font-size: 10px;
 	font-variant: normal;
 	font-weight: normal;
 	padding: 0;
 	padding-left: 4px;
 }
-div#nav li.expand div.title {
+div#nav2 li.expand div.title {
 	font-size: 12px;
 	padding: 5px;
 	font-weight: normal;
@@ -193,46 +186,46 @@ div#nav li.expand div.title {
 
 }
 
-div#nav ul.menu li li{
+div#nav2 ul.menu li li{
 	padding-left: 14px;
 }
-div#nav ul.menu li a {
+div#nav2 ul.menu li a {
 	padding-left: 18px;
 	background: url(images/l1disc.png) no-repeat 4px 3px;
 }
-div#nav ul.menu li:hover>a {
+div#nav2 ul.menu li:hover>a {
 	background: #69c url(images/l1dot.png) no-repeat 4px 3px;
 }
-div#nav ul.menu li.sub:hover>a {
+div#nav2 ul.menu li.sub:hover>a {
 	background-color: white;
 }
-div#nav ul.menu li.select>a, div#nav ul.menu li.select.sub>a {
+div#nav2 ul.menu li.select>a, div#nav ul.menu li.select.sub>a {
 	background: #fff url(images/l1select.png) no-repeat 3px 2px;
 	border: 1px solid #369;
 	border-right-width: 0;
 	margin-right: -1px;
 	
 }
-div#nav ul.menu li.select.sub>a {
+div#nav2 ul.menu li.select.sub>a {
 	background: #fff url(images/arrows.png) no-repeat 3px 3px;
 }
-div#nav ul.menu li.sub>a {
+div#nav2 ul.menu li.sub>a {
 	background: url(images/arrow.png) no-repeat 4px 4px;	
 }
-div#nav ul.menu li.sub:hover>a {
+div#nav2 ul.menu li.sub:hover>a {
 	background: url(images/arroww.png) no-repeat 4px 4px;	
 }
-div#nav ul.menu li.sub.select>a:hover {
+div#nav2 ul.menu li.sub.select>a:hover {
 	background: #fff url(images/arrows.png) no-repeat 3px 3px;	
 }
-div#nav ul.menu li.select>a {
+div#nav2 ul.menu li.select>a {
 	color: #369;
 }
-div#nav ul.maingroups {
+div#nav2 ul.maingroups {
 	margin: 0;
 	padding: 0;
 }
-div#nav ul.maingroups li {
+div#nav2 ul.maingroups li {
 	display: table;
 	width: 174px;
 	background: #369;
@@ -241,23 +234,23 @@ div#nav ul.maingroups li {
 	border: 1px solid #036;
 	
 }
-div#nav ul.maingroups li a {
+div#nav2 ul.maingroups li a {
 	display: table-row;
 	font-size: 24px;
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
 }
-div#nav ul.maingroups li:hover {
+div#nav2 ul.maingroups li:hover {
 	background: #69c;
 }
-div#nav ul.maingroups li div {
+div#nav2 ul.maingroups li div {
 	display: table-cell;
 	width: 26px;
 	padding: 2px 3px;
 
 }
-div#nav ul.maingroups li span {
+div#nav2 ul.maingroups li span {
 	font-size: 12px;
 	font-variant: normal;
 	font-weight: normal;	
@@ -274,7 +267,7 @@ div#nav ul.maingroups li span {
 
 div#body {
 	display: table-cell;
-	width: 716px;
+	min-width: 716px;
 	background: white;
 	padding: 40px;
 	<!--[if lt IE 8]>float: left;<![endif]-->
