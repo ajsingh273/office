@@ -114,11 +114,21 @@ input:focus {
 <input class="search"  />
 <button class="sort" data-sort="name">Search</button>
     <ul class="list">
-    <li><h5 class="name"><a href="faqs.html">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">3.  How can I find export financing?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
-    <li><h5 class="name"><a href="faqs.html">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121; font-weight:normal;text-decoartion:none;">5.  How can I determine the tariff rate for my product?</a></h5></li>
     </ul> 
     </div>
   </div> <!-- /!Tab 1 -->
