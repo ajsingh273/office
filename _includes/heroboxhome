@@ -45,6 +45,21 @@ width: 900px;
 <div id="header_wrap" class="outer">
         <header class="inner">
 <center><section id="news-demo">
+
+  <article>
+    <div class="text-content">
+      <h3>International Trade Administration</h3>
+      <p style="font-size:14px;">
+                     
+
+Building on the success of the National Export Initiative, find out what's NEXT!</p>
+                    <p>
+                      <a href="http://blog.trade.gov/2014/05/07/partnering-to-continue-u-s-export-growth-in-china/" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="images/trade4.png" alt="demo1_1" height="310" width="570"></div>
+  </article>
+
   <article>
     <div class="text-content">
       <h3>Partnering Up to Support Exports!</h3>
@@ -53,7 +68,7 @@ width: 900px;
 
 ITA signed a Memorandum of Understanding with the American Chamber of Commerce in Shanghai to support U.S. businesses in East China.</p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                      <a href="http://blog.trade.gov/2014/05/07/partnering-to-continue-u-s-export-growth-in-china/" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
     </div>
     <div class="image-content"><img src="images/trade1.jpg" alt="demo1_1" height="310" width="570"></div>
@@ -67,7 +82,7 @@ ITA signed a Memorandum of Understanding with the American Chamber of Commerce i
 Travel and tourism is the United State's largest services export industry, supporting American jobs and quality of life. 
                     </p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                      <a href="http://trade.gov/publications/ita-newsletter/" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
     </div>
     <div class="image-content"><img src="images/trade2.jpg" alt="demo1_1" height="310" width="570"></div>
@@ -81,7 +96,7 @@ Travel and tourism is the United State's largest services export industry, suppo
 You worked hard to build your business, now make sure to protect your innovative products and services in the global marketplace.
                     </p>
                     <p>
-                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                      <a href="http://blog.trade.gov/2014/04/23/five-tips-for-protecting-your-intellectual-property-in-global-business/" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
                     </p>
                     
     </div>
