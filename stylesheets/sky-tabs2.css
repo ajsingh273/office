@@ -64,7 +64,7 @@
 	-webkit-transition: background 0.4s, color 0.4s;	
 }
 .sky-tabs > label:hover span span {
-	background-image:url('/images/tabselect.png');
+	background-image:url('../images/tabselect.png');
 	background-repeat:no-repeat;
 	color:#212121;	
 }
