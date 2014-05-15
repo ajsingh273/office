@@ -453,80 +453,80 @@ jQuery('#news-demo').slippry({
   autoDirection: 'next'
 });
 </script>
-
 <style>
+
+#expand {
+color:#212121;
+  font-size: 14px;
+  text-decoration: none;
+
+}
 #expand a{
-  color:#212121;
-  font-size: 12px;
+  
+  font-size: 14px;
   text-decoration: none;
 }
 
 #expand a:hover {
 text-decoration: none;
 }
+
+
 </style>
+
 
 <!DOCTYPE html> 
 <html>
-	<head>
-		<meta charset="utf-8">		
+<head>
+<meta charset="utf-8">
 
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		
-		<link rel="stylesheet" href="stylesheets/demo.css">
-		<link rel="stylesheet" href="stylesheets/font-awesome.css">
-		<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
-		
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-			<script src="js/sky-tabs-ie8.js"></script>
-		<![endif]-->
-	</head>
-	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="stylesheets/demo.css">
+<link rel="stylesheet" href="stylesheets/font-awesome.css">
+<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/sky-tabs-ie8.js"></script>
+<![endif]-->
+</head>
               
-	<body class="bg-cyan">
-		<div class="body" >
-		
-			<!-- tabs -->
-			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
-				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
-				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>LEARN ABOUT EXPORTING </span></span></label>
-				
-				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
-				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>READY TO EXPORT</span></span></label>
-				
-				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
-				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>EXPAND MY EXPORTS</span></span></label>
-				
-				<ul>
-					<li class="sky-tab-content-1" >					
-						<div class="typography">
-							  <a href="#"><img  src="images/learn1.png" width="100px" style="margin-left:50px;margin-right:75px; "></a><a href="#"><img  src="images/learn2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn3.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/learn4.png" width="100px" style=""></a>
- </div>
-					</li>
-					
-					<li class="sky-tab-content-2">
-						<div class="typography">
-						   <a href="#"><img  src="images/step1.png" width="100px" style="margin-left:50px;margin-right:75px;"></a><a href="#"><img  src="images/step2.png" width="100px" style="margin-right:75px;"></a><a href="#"><img  src="images/step3.png" width="100px" style="margin-right:75px;></a><a href="#"><img  src="images/step4.png" width="100px" ></a>
+<body class="bg-cyan">
+<div class="body" >
+<!-- tabs -->
+<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
+<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>LEARN ABOUT EXPORTING </span></span></label>
+<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>READY TO EXPORT</span></span></label>
+<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>EXPAND MY EXPORTS</span></span></label>
+<ul>
+<li class="sky-tab-content-1" >
+<div class="typography" id="expand">
+<div style="float:left; width:175px; margin:5px;"><a href="#"><center><img  src="images/booktab.png" width="35px" ></a></br></br>EXPORT BASICS BOOK</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/monitortab.png" width="35px" ></a></br></br>EXPORT WEBINARS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/onlinetab.png" width="35px" ></a></br></br>ONLINE COURSE</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/filmtab.png" width="35px"  ></a></br></br>MARKET RESEARCH WEBCASTS</center></div>
 </div>
-					</li>
-					
-					<li class="sky-tab-content-3">
-						<div class="typography" id="expand">
-					 <div style="float:left; margin-left:25px; margin-right:25px;"><a href="#"><center><img  src="images/graph.png" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/presentation.jpg" width="50px" height="50px" ></center></br>Research Markets & Best Prospects</a></div><div style="float:left;margin-right:25px;"><a href="#"><center><img  src="images/industry.jpg" width="50px" height="50px" ></center></br>Utilize Trade Data Tools To Find Opportunities</a></div>
+</li>
+
+
+
+<li class="sky-tab-content-2">
+<div class="typography" id="expand">
+<div style="float:left; width:175px; margin:5px;"><a href="#"><center><img  src="images/globetab.png" width="35px" ></a></br></br>FIND POTENTIAL MARKETS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/shoptab.png" width="35px"  ></a></br></br>ASSESS TARGETED MARKETS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/polltab.png" width="35px"></a></br></br>DRAW CONCLUSIONS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/pietab.png" width="35px" ></a></br></br>TEST DEMAND</center></div>
 </div>
-					</li>
-					
-										
-				</ul>
-			</div>
-			<!--/ tabs -->
-			
-		</div>
-	</body>
+</li>
+<li class="sky-tab-content-3">
+<div class="typography" id="expand">
+<div style="float:left; width:175px; margin:5px;"><a href="#"><center><img  src="images/bartab.png" width="35px"  ></a></br></br>UTILZE TRADE DATA TOOLS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/statisticstab.png" width="35px" ></a></br></br>RESEARCH MARKETS & BEST PROSPECTS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/industry.jpg" width="35px"  ></a></br></br>RESEARCH INDUSTRY TRENDS</center></div><div style="float:left;width:175px; margin:5px;"><a href="#"><center><img  src="images/financetab.png" width="35px"  ></a></br></br>TRADE FINANCE OPTIONS</center></div>
+</div>
+</li>
+</ul>
+</div>
+<!--/ tabs -->
+</div>
+</body>
 </html>
+
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 <div class="clearfix">

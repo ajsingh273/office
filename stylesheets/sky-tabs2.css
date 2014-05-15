@@ -64,7 +64,8 @@
 	-webkit-transition: background 0.4s, color 0.4s;	
 }
 .sky-tabs > label:hover span span {
-	background: #d9d9d9;
+	background-image:url('../images/tabselect.png');
+	background-repeat:no-repeat;
 	color:#212121;	
 }
 .sky-tabs > label.disabled span span {
@@ -75,7 +76,9 @@
 	cursor: default;
 }
 .sky-tabs > input:checked + label span span {
-	background: #d9d9d9;
+	background-image:url('../images/tabselect.png');
+	background-repeat:no-repeat;
+	
 	color:#6D98BF;
 }
 .sky-tabs > .switcher {
