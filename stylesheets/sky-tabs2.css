@@ -76,7 +76,7 @@
 	cursor: default;
 }
 .sky-tabs > input:checked + label span span {
-	background-image:url('/images/tabselect.png');
+	background-image:url('../images/tabselect.png');
 	background-repeat:no-repeat;
 	
 	color:#6D98BF;
