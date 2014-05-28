@@ -26,7 +26,7 @@
 			url += keyword;
 		}
 		else {
-			alert("No MRL search term entered");
+			alert("No search term entered");
 			document.getElementById("leads-results").innerHTML = "";
 			stopSpinner(spinner);
 			return;
@@ -82,7 +82,7 @@
 				$('#leads-container').addClass('widget-container');
 				var form = "";				
 	      form += ('<p class="widget-title">Trade Leads</p>');
-				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="search trade leads" size="50">');
+				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="search Trade Leads" size="50">');
 				form += ('<button class="search-button" id="leads-button"> Search</button></div>');
 				document.getElementById('leads-form').innerHTML = form;
 				$('#leads-button').on('click', function(){
