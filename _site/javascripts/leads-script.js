@@ -26,7 +26,7 @@
 			url += keyword;
 		}
 		else {
-			alert("No MRL search term entered");
+			alert("No search term entered");
 			document.getElementById("leads-results").innerHTML = "";
 			stopSpinner(spinner);
 			return;
@@ -50,10 +50,10 @@
 						var description = lead.description;
 						var topic = lead.topic;
 						var url = lead.url;
-						list += "<p class='results-legend'>" + "<p>Agency:</p>" + agency + "<br>";
-						list += "<p class='results-legend'>" + "<p>Topic:</p>" + topic + "<br>";
-						list += "<p class='results-legend'>" + "<p>Contract Value:</p>" + contract_value + "<br>";
-						list += "<p class='results-legend'>" + description + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Agency:</strong>" + "</br>" + agency + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Topic:</strong>" + "</br>" + topic + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Contract Value:</strong>" + "</br>" + contract_value + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Description:</strong>" + "</br>" + description + "<br>";
 						list += "<a class='results-link' href=" + url + " target='_blank'>" + url + "</a></p>" + "<br>";
 					}
 				}
@@ -82,7 +82,7 @@
 				$('#leads-container').addClass('widget-container');
 				var form = "";				
 	      form += ('<p class="widget-title">Trade Leads</p>');
-				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="search trade leads" size="50">');
+				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="search Trade Leads" size="50">');
 				form += ('<button class="search-button" id="leads-button"> Search</button></div>');
 				document.getElementById('leads-form').innerHTML = form;
 				$('#leads-button').on('click', function(){
