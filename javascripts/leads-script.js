@@ -50,10 +50,10 @@
 						var description = lead.description;
 						var topic = lead.topic;
 						var url = lead.url;
-						list += "<p class='results-legend'>" + "<strong>Agency:</strong>" + "</br>" + agency + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Topic:</strong>" + "</br>" + topic + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Contract Value:</strong>" + "</br>" + contract_value + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Description:</strong>" + "</br>" + description + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Agency: </strong>" +  agency + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Topic: </strong>" +  topic + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Contract Value: $</strong>" + contract_value + " UAD" + "<br>";
+						list += "<p class='results-legend'>" + "<strong>Description: </strong>" +  description + "<br>";
 						list += "<a class='results-link' href=" + url + " target='_blank'>" + url + "</a></p>" + "<br>";
 					}
 				}
