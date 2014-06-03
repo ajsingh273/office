@@ -1,21 +1,21 @@
 .widget-container {
 	background-color: #ffffff;
  	width: 500px;
-	border: 1px solid #bbbbbb;
+	border: 1px solid #c1c1c1;
 	padding:10px;
 }
 
 .widget-title {
 	font-size: 16pt;
-	font-family: calibri;
+	font-weight:bold;
+	font-family: Garamond;
 	color: #252525;
 }
 
-.results-container {
-	background-color: #e5e5e5;
-	padding-left: 10px;
-	padding-top: 1px;
-	padding-bottom: 1px;
+.leads-container {
+	background: #F5F5F5;
+	padding: 25px;
+	
 }
 
 .results-title {
@@ -25,9 +25,11 @@
 }
 
 .results-legend {
-	font-size: 12pt;
 
-	color: #959595;
+	
+	font-size: 12pt;
+	font-family: Garamond;
+	
 }
 
 .results-link {
@@ -39,8 +41,8 @@
 
 .search-input{
 	height: 19px;
-	font-size: 12pt;
-
+	font-size: 10pt;
+	
 	color: #959595;
 	margin: 0;
 }
@@ -49,7 +51,7 @@
   width: 25px;
   height: 25px;
   border: none;
-  background: #6D98BF;
+  background: #000;
   background-image: url('../images/searchIcon.png');
   background-size: contain;
   background-position: left;
@@ -69,7 +71,7 @@
 	
 }
 .widget-container {
-    margin: 20px; border: 1px solid #999;
+    margin: 20px; 
     background:none;
     border-radius: 2px;
     padding:0;
@@ -81,7 +83,8 @@
     background: #F8F9FA;
 }
 .form-container {
-    background: #d9d9d9;
+    
+    background: none;
     padding: 0 20px 20px;
     margin:0;
     border-bottom: 2px solid #ddd;
