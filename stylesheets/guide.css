@@ -52,11 +52,15 @@ div#brand {
 
 div#carea {
 	display: table;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	  border: 1px solid;
+border-color: #e5e5e5 #dbdbdb #d2d2d2;
+-webkit-box-shadow: rgba(0,0,0,0.3) 0 2px 3px;
+-moz-box-shadow: rgba(0,0,0,0.3) 0 2px 3px;
+box-shadow: rgba(0,0,0,0.3) 0 2px 3px;
+border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; -khtml-border-radius:4px;
+
 	width: 100%;
-	background:  #6D98BF
+	background:  #DDDDDD;
 }
 
 /*-[ CPANEL ]------------------------------------------------*/
@@ -79,11 +83,10 @@ div#nav2 {
 }
 div#nav2 ul.accordion {
 	margin: 0 ;
-	background: #666;
+	background: transparent;
 	color: white;
 	width: 190px;
-	border: 1px solid black;
-	border-right: 1px solid #369;
+	
 	
 }
 div#nav2 ul {
@@ -123,7 +126,7 @@ div#nav2 ul.groups {
 }
 div#nav2 ul.groups>li { /* mod tabs */
 	background: #369;
-	border: 1px solid #036;
+	
 	border-right-width: 0;
 	margin: 5px 0 5px 5px;
 	width: 23px;
@@ -134,6 +137,7 @@ div#nav2 ul.groups>li.select>a { /* lit tab */
 	background: #69c;
 	z-index: 500;
 	width: 20px;
+	
 	
 }
 
@@ -146,8 +150,7 @@ div#nav2 ul.groups li a{
 
 div#nav2 ul.menu {
 	background: #69c;
-	border-left: 1px solid #036;
-	border-bottom: 1px solid #036;	
+	
 	margin: 0 0 5px 32px;
 	padding: 3px 0 0 3px;
 	min-height: 320px;
@@ -162,7 +165,7 @@ div#nav2 ul.menu.ap {
 div#nav2 ul.menu.sub {
 	margin: 0 0 5px 9px;
 	padding: 3px 0 0 3px;
-	border-top: 1px solid #036;	
+		
 	
 	z-index: 100;
 }
@@ -174,15 +177,14 @@ div#nav2 ul.menu li a{
 	padding: 0;
 	padding-left: 4px;
 }
+
 div#nav2 li.expand div.title {
 	font-size: 12px;
 	padding: 5px;
 	font-weight: normal;
 	background: #69c;
 	margin: 5px 0 0 32px;
-	border-left: 1px solid #036;
-	border-top: 1px solid #036;
-	border-bottom: 1px dotted #369;
+	
 
 }
 
@@ -195,14 +197,14 @@ div#nav2 ul.menu li a {
 }
 div#nav2 ul.menu li:hover>a {
 	background: #69c url(images/l1dot.png) no-repeat 4px 3px;
+	
 }
 div#nav2 ul.menu li.sub:hover>a {
 	background-color: white;
 }
 div#nav2 ul.menu li.select>a, div#nav ul.menu li.select.sub>a {
 	background: #fff url(images/l1select.png) no-repeat 3px 2px;
-	border: 1px solid #369;
-	border-right-width: 0;
+	
 	margin-right: -1px;
 	
 }
@@ -228,10 +230,10 @@ div#nav2 ul.maingroups {
 div#nav2 ul.maingroups li {
 	display: table;
 	width: 174px;
-	background: #369;
+	background: #C0C0C0;
 	margin: 9px;
 	padding: 5px;
-	border: 1px solid #036;
+	
 	
 }
 div#nav2 ul.maingroups li a {
@@ -243,6 +245,14 @@ div#nav2 ul.maingroups li a {
 }
 div#nav2 ul.maingroups li:hover {
 	background: #69c;
+}
+
+div#nav2 ul.maingroups li a {
+	color:#000;
+}
+div#nav2 ul.maingroups li a:hover {
+	color:#fff;
+	text-decoration:none;
 }
 div#nav2 ul.maingroups li div {
 	display: table-cell;
@@ -270,6 +280,7 @@ div#body {
 	min-width: 716px;
 	background: white;
 	padding: 40px;
+	padding-top: 0px;
 	<!--[if lt IE 8]>float: left;<![endif]-->
 }
 
