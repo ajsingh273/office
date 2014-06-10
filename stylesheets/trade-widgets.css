@@ -1,8 +1,8 @@
 .widget-container {
 	background-color: #ffffff;
  	width: 500px;
-	border: 1px solid #c1c1c1;
-	padding:10px;
+	
+	
 	
 }
 
@@ -18,8 +18,8 @@
 }
 
 .leads-container {
-	background: #F5F5F5;
-	padding: 25px;
+	
+	
 	
 }
 
@@ -68,13 +68,7 @@
 	background: darkgrey;
 }
 
-.view-calendar-button{
-	margin-left: 183px;
-	border: 1px solid #959595;
-	background: lightgrey;
-	font-size: 10pt;
-	
-}
+
 .widget-container {
     margin: 0 auto; 
     background:none;
@@ -92,7 +86,7 @@
     background: none;
     padding: 0 20px 20px;
     margin:0;
-    border-bottom: 2px solid #ddd;
+   
     overflow: hidden;
     position: relative;
 }
@@ -132,7 +126,4 @@
     border-radius: 3px 0 0 3px;
     border-right:none;
     padding-right:1px;
-}
-#trade-events-calendar{
-	padding: 10px 20px;
 }
