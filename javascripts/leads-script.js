@@ -78,6 +78,7 @@
 						var topic = lead.topic;
 						var status = lead.status;
 						var url = lead.url;
+						
 						list += "<p class='results-legend'>" + "<strong>Lead Source: </strong>" +  lead_source + "<br>";
 						list += "<p class='results-legend'>" + "<strong>ID: </strong>" +  id + "<br>";
 						list += "<p class='results-legend'>" + "<strong>Source: </strong>" +  source + "<br>";
@@ -123,10 +124,10 @@
 
 	function main() { 
 	    $(document).ready(function($) {
-				if (!$("link[href='stylesheets/']").length){
+				if (!$("link[href='stylesheets/trade-widgets.css']").length){
 					$('<script src="javascripts/spin.js" type="text/javascript"></script>').appendTo("head");
 					$('<script src="javascripts/trade-widget-vars.js" type="text/javascript"></script>').appendTo("head");
-					$('<link href="stylesheets/" rel="stylesheet">').appendTo("head");
+					$('<link href="stylesheets/trade-widgets.css" rel="stylesheet">').appendTo("head");
 				}
 				var container = "";
 				container += ('<div id="leads-form" class="form-container"></div>');
@@ -135,8 +136,8 @@
 				$('#leads-container').addClass('widget-container');
 				var form = "";				
 	      form += ('<p class="widget-title">TRADE LEADS</p>');
-				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="" size="40">');
-				form += ('<button class="search-button" id="leads-button">Search</button></div>');
+				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="" size="40" style="margin-left: 35%;">');
+				form += ('<button class="search-button" id="leads-button"></button></div>');
 				document.getElementById('leads-form').innerHTML = form;
 				$('#leads-button').on('click', function(){
 					$(this).addClass('search-button-clear');
