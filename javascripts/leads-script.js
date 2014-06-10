@@ -135,7 +135,7 @@
 				document.getElementById('leads-container').innerHTML = container;
 				$('#leads-container').addClass('widget-container');
 				var form = "";				
-	      form += ('<p class="widget-title">TRADE LEADS</p>');
+	      form += ('<p class="widget-title">Search Trade Leads from Around the World</p>');
 				form += ('<div><input class="search-input" type="text" id="leads-keyword" placeholder="" size="40" style="margin-left: 35%;">');
 				form += ('<button class="search-button" id="leads-button"></button></div>');
 				document.getElementById('leads-form').innerHTML = form;
