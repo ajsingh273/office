@@ -79,36 +79,9 @@
 						var status = lead.status;
 						var url = lead.url;
 						
-						list += "<p class='results-legend'>" + "<strong>Lead Source: </strong>" +  lead_source + "<br>";
-						list += "<p class='results-legend'>" + "<strong>ID: </strong>" +  id + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Source: </strong>" +  source + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Last Updated: </strong>" +  last_updated + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Country: </strong>" +  country + "<br>";
-						list += "<p class='results-legend'>" + "<strong>City: </strong>" +  city + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Title: </strong>" +  title + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Project Number: </strong>" +  project_number + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Agency: </strong>" +  agency + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Industry: </strong>" +  industry + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Keywords: </strong>" +  keywords + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Project Size: </strong>" +  project_size + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Contract Value: $</strong>" + contract_value + " AUD" + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Description: </strong>" +  description + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Parent ID: </strong>" +  parent_id + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Procurement Method: </strong>" +  procurement_method + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Publish Date: </strong>" +  publish_date + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Tender Date: </strong>" +  tender_date + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Funding Source: </strong>" +  funding_source + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Borrowing Entity: </strong>" +  borrowing_entity + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Implementing Entity: </strong>" +  implementing_entity + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Project Pocs: </strong>" +  project_pocs + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Comments: </strong>" +  comments + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Submitting Officer: </strong>" +  submitting_officer;
-						list += "<p class='results-legend'>" +  submitting_officer_contact + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Publish Date Amended: </strong>" +  publish_date_amended + "<br>";
-						list += "<p class='results-legend'>" + "<strong>Status: </strong>" +  status + "<br>" ;
-						list += "<p class='results-legend'>" + "<strong>Topic: </strong>" +  topic + "<br>" ;
-						list += "<p class='results-legend'>" + "<strong>Status: </strong>" +  status + "<br>" ;
-						list += "<a class='results-link' href=" + url + " target='_blank'>" + url + "</a></p>" + "<br>" + "<br>" ;
+						 
+						list += "<p class='results-legend'>" + "<table> <tr><td>Lead Source</td><td>" + lead_source + "</td></tr> <tr><td>ID</td><td>" +  id + "</td></tr> <tr><td>Source</td><td>" +  source + "</td></tr> <tr><td>Last Updated</td><td>" +  last_updated + "</td></tr> <tr><td>Country</td><td>" +  country + "</td></tr> <tr><td>City</td><td>" +  city + "</td></tr> <tr><td>Title</td><td>" +  title + "</td></tr> <tr><td>Project Number</td><td>" +  project_number + "</td></tr> <tr><td>Agency</td><td>" +  agency + "</td></tr> <tr><td>Keywords</td><td>" +  keywords + "</td></tr> <tr><td>Project Size</td><td>" +  project_size + "</td></tr> <tr><td>Contract Value</td><td>" +  contract_value + "</td></tr> <tr><td>Description</td><td>" +  description + "</td></tr> <tr><td>Parent ID</td><td>" +  parent_id + "</td></tr> <tr><td>Procurement Method</td><td>" +  procurement_method + "</td></tr> <tr><td>Publish Date</td><td>" +  publish_date + "</td></tr> <tr><td>Tender Date</td><td>" +  tender_date + "</td></tr> <tr><td>Funding Source</td><td>" +  funding_source + "</td></tr> <tr><td>Borrowing Entity</td><td>" +  borrowing_entity + "</td></tr> <tr><td>Implementing Entity</td><td>" +  implementing_entity + "</td></tr> <tr><td>Project Pocs</td><td>" +  project_pocs + "</td></tr> <tr><td>Comments</td><td>" +  comments + "</td></tr> <tr><td>Submitting Officer</td><td>" +  submitting_officer +  submitting_officer_contact + "</td></tr> <tr><td>Publish Date Amended</td><td>" +  publish_date_amended + "</td></tr> <tr><td>Status</td><td>" +  status + "</td></tr> <tr><td>Topic</td><td>" +  topic + "</td></tr> <tr><td>URL</td><td>" +  url + "</td></tr>  </table> </br></br></br></br></br></br>"
+						
 					}
 				}
 				document.getElementById("leads-results").innerHTML = list;
