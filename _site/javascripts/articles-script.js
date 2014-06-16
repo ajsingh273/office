@@ -40,7 +40,7 @@
 					list = "<p>No articles were found, please try another search term.<p>"
 				}
 				else {
-					var list = "<p class='results-title'>Articles</p>";
+					var list = "<p class='results-title'>List of Articles</p>";
 					articleArray = [];
 					$('#articles-results').addClass('results-container');
 					for (var i=0; i<=results.length-1; i++){
@@ -78,7 +78,7 @@
 			document.getElementById('articles-container').innerHTML = container;
 			$('#articles-container').addClass('widget-container');
 			var form = "";				
-      form += ('<p class="widget-title">Trade News and Articles</p>');
+      form += ('<p class="widget-title">Trade Articles</p>');
 			form += ('<div class="search-combo"><input class="search-input" type="text" id="articles-keyword" placeholder="Enter a search term" size="40">');
 			form += ('<button class="search-button" id="articles-button"></button></div>');
 			document.getElementById('articles-form').innerHTML = form;
