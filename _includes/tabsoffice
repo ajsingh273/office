@@ -2,7 +2,7 @@
 <style>
 #expand a{
   color:#212121;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
 }
 
@@ -61,23 +61,22 @@ text-decoration: none;
 					
 					<li class="sky-tab-content-2">
 						<div class="typography" id="expand">
-<div style="float:left; margin-left:35px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center></br><center>Assist Export Ready</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
-   </center><center><strong>Share Your Success</strong></center></br><center>Reporting International Success</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center></br><center>Ryan Kanne, Office Director</center></a></div><img  src="images/CS_logo color.png" style="float:right">
+<div style="float:left; margin-left:50px;margin-right:40px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center></br><center>Assist Export Ready</center></a></div><div style="float:left;margin-right:40px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
+   </center><center><strong>Share Your Success</strong></center></br><center>Reporting International Success</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center></br><center>Office Director</center></a></div><img  src="images/CS_logo color.png" style="float:right">
   
  </div>
 					</li>
 					
 					<li class="sky-tab-content-3">
 						<div class="typography" id="expand">
-	  <div style="float:left; margin-left:10px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/intern.png"></center></span></p></center><center><strong>Internship Opportunities</strong></center><p style="width:500px;">Internships at the U.S. Commercial Service provide students with an opportunity to gain real world professional experience by working with professionals in the field of international trade and business.</p></a></div>
+	  <div style="float:left; margin-left:30px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/intern.png"></center></span></p></center><center><strong>Internship Opportunities</strong></center><p style="width:500px;">Internships at the U.S. Commercial Service provide students with an opportunity to gain real world professional experience by working with professionals in the field of international trade and business.</p></a></div>
 <img  src="images/CS_logo color.png" style="float:right"></div>
 					</li>
 					
 					<li class="sky-tab-content-4">
 						<div class="typography" id="expand">
-	  <div style="float:left; margin-left:10px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/shop.png"></center></span></p></center><center><strong>Business Service Providers</strong></center><p style="width:500px;">The Business Service Provider directory is intended to provide an additional resource to the U.S. exporting client-base in the Minneapolis USEAC region.</p>
-</br>
-Find Out More
+	  <div style="float:left; margin-left:30px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/shop.png"></center></span></p></center><center><strong>Business Service Providers</strong></center><p style="width:500px;">The Business Service Provider directory is intended to provide an additional resource to the U.S. exporting client-base in the Minneapolis USEAC region.</p>
+
 </a></div><img  src="images/CS_logo color.png" style="float:right">
 </div>
 					</li>
