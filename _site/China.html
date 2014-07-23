@@ -347,27 +347,661 @@ body {
 </div>
 
 
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+    
+<style>
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+   font-size: 30px;
+  font-weight: 700;
+  font-style:italic;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 2px solid #0B5394;
+  border-top: 2px solid #0B5394;
+  top: 0;
+  width: 200px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+</style>
+</br>
+<p class="subtitle fancy"><span>U.S. Commercial Service China</span></p>
+</br>      
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="javascripts/slippry.min.js"></script>
+<link rel="stylesheet" href="stylesheets/slippry.css" />
+
+<style>
+/* News */
+.news-slider {
+  background-color:#E7EEF4;
+  height: 310px;
+width: 900px;
+
+}
+.news-slider .text-content {
+  position: absolute;
+  top: 0;
+  left: 590px;
+  right: 0;
+  background-color: transparent;
+  padding: 1em;
+  width: 30%;
+  height: 100%;
+}
+.news-slider .text-content h2 {
+  margin: 0;
+}
+.news-slider .text-content p {
+  margin: 1em 0;
+}
+.news-slider .text-content a.button-link {
+  padding: 0.25em 0.5em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.news-slider .image-content {
+  line-height: 0;
+  
+}
+.news-slider .image-content img {
+  width: 570px;
+  height: 310px;
+  left:-165px;
+}
+
+</style>
+<div id="header_wrap" class="outer">
+        <header class="inner">
+<center><section id="news-demo">
+
+    <article>
+    <div class="text-content">
+      <h3>U.S. Commercial Service Expands to China’s Second-Tier Cities</h3>
+      <p style="font-size:14px;text-align:left;">
+                     
+
+Fourteen of China’s second-tier cities account for 8 percent of China’s population but 53 percent of its total imports, which is why the untapped markets of China’s emerging cities provide some of the most exciting and lucrative opportunities for U.S. exporters.</p>
+                   
+    </div>
+    <div class="image-content"><img src="http://trade.gov/press/publications/asset/image/china_0507.jpg" alt="demo1_1"></div>
+  </article>
+
+  <article>
+    <div class="text-content" >
+      <h3>Chengdu International Trade Fair for Automotive Parts and Aftermarket Services
+</h3>
+<p style="font-size:14px;text-align:left;">
+Date: July 21-23, 2014
+
+Venue: Chengdu Century City New International Exhibition & Convention Center, Chengdu
+
+Industry: Transportation</p>
+                    <p>
+                      <a href="http://minnesotabusiness.com/help-going-global" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+    </div>
+    <div class="image-content"><img src="http://response.jp/imgs/feed_l/708004.jpg" alt="demo1_1"></div>
+  </article>
+  
+	
+  
+  <article>
+    <div class="text-content">
+      <h3>A Unique Opportunity to Expand Your Business in Greater China</h3>
+                    <p style="font-size:14px;text-align:left;">
+
+
+The DISCOVER GLOBAL MARKETS: Greater China Business Forum is a two-day conference that will provide numerous opportunities for your company to learn from experts with real-world experience in Greater China markets. 
+                    </p>
+                    <p>
+                      <a href="#" class="btn btn-blue btn-large hero-box-button">View Full Story</a>
+                    </p>
+                    
+    </div>
+    <div class="image-content"><img src="http://www.export.gov/newyork/build/groups/public/@eg_us_ny/documents/webcontent/~export/eg_us_ny_072044~31~DCT_Center_Content/223589-1.jpg" alt="demo1_1"></div>
+  </article>
+  
+  
+  
+  
+</section></center>
+
+        </header>
+        
+    </div>
+
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-<div>
- <h2>AUTOMATED EXPORT SYSTEM (AES) SEMINAR AND WORKSHOP</h2>
 
-JUNE 17-18, 2014</br></br>
+<script>
+$(document).ready()
+jQuery(document).ready(function(){
+  jQuery('selector').slippry()
+});
 
-PHILADELPHIA, PA</br></br>
+jQuery('#news-demo').slippry({
+  // general elements & wrapper
+  slippryWrapper: '<div class="sy-box news-slider" />', // wrapper to wrap everything, including pager
+  elements: 'article', // elments cointaining slide content
 
-As of April 5, 2014, new export requirements will be implemented that amend the regulations published in 2008. This export compliance seminar is a one day program, followed by half-day training, bringing together experts from the Department of Commerce to provide training on export filing requirements. All those involved in the export process such as U.S. Principal Parties in Interest including Manufactures and Suppliers, Freight Forwarders, Exporting Carriers, Consolidators, and U.S. Customs Brokers should plan to attend this valuable event.</br></br>
+  // options
+  adaptiveHeight: false, // height of the sliders adapts to current 
+  captions: false,
 
-For more information, please click here. <a style="color:#2da5da"href="http://www.export.gov/pennsylvania/philadelphia/upcominglocalevents/aes/index.asp">http://www.export.gov/pennsylvania/philadelphia/upcominglocalevents/aes/index.asp</a></p>
 
+
+  // transitions
+  transition: 'horizontal', // fade, horizontal, kenburns, false
+  speed: 1200,
+  pause: 8000,
+
+  // slideshow
+  autoDirection: 'next'
+});
+</script>
+
+<style>
+#expand a{
+  color:#212121;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#expand a:hover {
+text-decoration: none;
+}
+
+
+</style>
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">		
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		
+		<link rel="stylesheet" href="stylesheets/demo.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.css">
+		<link rel="stylesheet" href="stylesheets/sky-tabs2.css">
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-tabs-ie8.css">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/sky-tabs-ie8.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body class="bg-cyan">
+		<div class="body">
+		
+			<!-- tabs -->
+			<div class="sky-tabs sky-tabs-pos-left sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><i class="fa fa-bolt"></i>ABOUT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-picture-o"></i>CONTACT US</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab3" class="sky-tab-content-3">
+				<label for="sky-tab3"><span><span><i class="fa fa-cogs"></i>INTERNSHIPS</span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
+				<label for="sky-tab4"><span><span><i class="fa fa-cogs"></i>BUSINESS SERVICE PROVIDERS</span></span></label>
+				
+				<ul>
+					<li class="sky-tab-content-1">					
+						<div class="typography" id="expand">
+	
+   <div style="float:left; margin-left:10px;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i1.png"></center></span></p></center><center><strong>Who We Are</strong></center></br><center>Trade promotion arm of ITA</center></a></div><div style="float:left;margin-right:25px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/i2.png"></center></span></p>
+   </center><center><strong>Our Services</strong></center></br><center>Export and Expand Markets</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/newspaper.png"></center></span></p></center><center><strong>Press Room</strong></center></br><center>International Trade environment</center></a></div><img  src="images/CS_logo color.png" style="float:right">
+  
+  </div>
+					</li>
+					
+					<li class="sky-tab-content-2">
+						<div class="typography" id="expand">
+<div style="float:left; margin-left:50px;margin-right:40px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/talk.png"></center></span></p></center><center><strong>Tell Us About You</strong></center></br><center>Assist Export Ready</center></a></div><div style="float:left;margin-right:40px;margin-top:25px;font-size:20px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/megafone2.png"></center></span></p>
+   </center><center><strong>Share Your Success</strong></center></br><center>Reporting International Success</center></a></div><div style="float:left;margin-top:25px;font-size:20px;"><a href="#"><center> <p class="subtitle fanci"><span><center><img  src="images/business_contact.png"></center></span></p></center><center><strong>Office Contacts</strong></center></br><center>Office Director</center></a></div><img  src="images/CS_logo color.png" style="float:right">
+  
  </div>
-  <ul class="tags">
-  <li><a href="atlanta.html" class="tag">Get certified training on AESPcLink</a></li>
-  <li><a href="nashville.html" class="tag">Protect Your IP Rights Abroad</a></li>
-  <li><a href="seattle.html" class="tag">Export Control Training</a></li>
-  <li><a href="westchester.html" class="tag">Export Compliance Training</a></li>
+					</li>
+					
+					<li class="sky-tab-content-3">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:30px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/intern.png"></center></span></p></center><center><strong>Internship Opportunities</strong></center><p style="width:500px;">Internships at the U.S. Commercial Service provide students with an opportunity to gain real world professional experience by working with professionals in the field of international trade and business.</p></a></div>
+<img  src="images/CS_logo color.png" style="float:right"></div>
+					</li>
+					
+					<li class="sky-tab-content-4">
+						<div class="typography" id="expand">
+	  <div style="float:left; margin-left:30px;"><a href="#"><center><p class="subtitle fanci"><span><center><img  src="images/shop.png"></center></span></p></center><center><strong>Business Service Providers</strong></center><p style="width:500px;">The Business Service Provider directory is intended to provide an additional resource to the U.S. exporting client-base in the Minneapolis USEAC region.</p>
+
+</a></div><img  src="images/CS_logo color.png" style="float:right">
+</div>
+					</li>
+					
+									
+				</ul>
+			</div>
+			<!--/ tabs -->
+			
+		</div>
+	</body>
+</html>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+<div class="clearfix">
+<ul id="main4" style="width:400px;margin-right:125px;">
+<style>
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+</style>
+
+<h4>Latest Articles</h4>
+
+<p><a id="title" href="http://export.gov/minnesota/discoverglobalmarketshealthcareandlifesciences/index.asp">Discover Global Markets:  Healthcare and Life Sciences</a></br>
+Join the U.S. Commercial Service, the Minnesota District Export Council & LifeScience Alley at the premier health-focused export event of the year</p>
+
+</br>
+<p><a id="title" href="http://export.gov/minnesota/certificateoforigin/index.asp">Certificate of Origin</a></br>
+Find nearest chamber of commerce where you can obtain a certificate of origin.</p>
+
+
+</br>
+<p><a id="title" href="http://export.gov/minnesota/mntourismdestination/index.asp">Promoting of Minnesota as an International Tourism Destination</a></br>
+Learn how the U.S. Commercial Service supports international tourism</p> 
+
+
+</br>
+<p>
+<a id="title" href="http://export.gov/minnesota/eg_us_mn_046019.asp">Testimonials</a></br>
+Here is what Minnesota businesses are saying about the U.S. Commercial Service</p>
+
+</br>
+
+<a  style="display:inline-block; padding:5px;background-color:#d9d9d9;"href="#"id="title" href="articlelist.html">View Full List of Articles</a>
+
+</br></br></br>
+
+
+
 </ul>
- 
+<ul id="main4" style="width:550px; ">
+<style>
+
+#event{
+font-size: 12px;
+}
+
+#title a {
+font-weight: bold;
+font-size: 16px;
+  color: #212121;
+}
+
+#title a: hover {
+  text-decoration:underline;
+}
+
+#ind {
+font-style: italic;
+}
+
+#circle {
+text-align:center;
+width:50px;
+height:50px;
+background: #d9d9d9;
+-moz-broder-radius:50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+float:left;
+}
+
+</style>
+<div id="event">
+<h4>Attend a Trade Event</h4>
+
+<div class="clearfix">
+<div id="circle">AUG</br><strong>19</strong></div>
+<ul id="main3">
+
+<p id="title"><a href="#">"Bridges to Canada"</a></p>
+
+<p>CA</p>
+
+<p>"Bridges to Canada" is designed by the U.S. Commercial Service in Canada to serve as a gateway into the Canadian market for small and medium sized U.S. Manufacturers. At "Bridges to Canada" we will provide a market briefing seminar on "Doing Business in Canada" </p>
+
+<p id="ind"></p>
+
+
+</ul>
+
+
+<div id="circle">AUG</br><strong>19</strong></div>
+<ul id="main3">
+<p id="title"><a href="#">ISA Expo Control</a></p>
+
+<p>MX</p>
+
+<p>The International Automation Society, Mexico Chapter, coordinates this exhibition to showcase the most innovative and relevant products, services and technologies of the automation, robotics and process controls sectors.</p>
+
+<p id="ind">Process Controls - Industrial</p>
+</ul>
+</div>
+<div class="clearfix">
+<div id="circle">AUG</br><strong>20</strong></div>
+<ul id="main3">
+
+<p id="title"><a href="#">IWF Atlanta - IBP</a></p>
+
+<p>GA, US</p>
+
+<p>International Woodworking Fair® is the trade show where furniture manufacturing, cabinetry, architectural woodworking, material processing  https://www.iwfatlanta.com/ </p>
+
+<p id="ind">Forestry/Woodworking Machinery,Furniture</p>
+
+</ul>
+
+
+<div id="circle">AUG</br><strong>20</strong></div>
+<ul id="main3">
+
+<p id="title"><a href="#">International Woodworking Machinery and Furniture Supply Fair 2014</a></p>
+
+<p>GA, US</p>
+
+<p>Held biennially, the International Woodworking Fair is one of the world's largest trade shows for </p>
+
+<p id="ind">Forestry/Woodworking Machinery</p>
+
+</ul>
+
+<!--<ul id="main3">
+
+<p id="title"><a href="#">2014-03-19 U.S. Pavilion at MITT 2014</a></p>
+
+<p>Moscow, RU</p>
+
+<p>MITT is one of the world's most influential exhibitions serving the travel \u0026 tourism (T\u0026T) industry and the largest event of its kind in Russia.</p>
+
+<p id="ind">Travel and Tourism Industries</p>
+
+</ul>-->
+
+</div>
+<a style="display:inline-block; padding:5px;background-color:#d9d9d9;font-size:14px;"href="events.html">View all Events</a>
+
+
+</ul>
+
+</div>
+<div class="clearfix" style="margin-bottom:25px;">
+<ul id="main2" style="width:500px;margin-right: 100px;">
+<h4>Our Global Network at Work</h4>
+
+<ul > 
+<li style="color:#212121;">Doing Business in Africa = <a href="#">Learn more about the campaign</a></li>
+<li style="color:#212121;">Sign Up for an <a href="#">Up Coming Trade Mission</a></li>
+<li style="color:#212121;">See the list of Newly Announced <a href="#">2014 International Buyer Program Trade Shows</a></li>
+</ul>
+</br></br></br>
+<style>
+
+#join {
+background-color: #d9d9d9;
+border:thin solid #c1c1c1;
+width:175px;
+padding: 20px;
+
+}
+
+</style>
+
+
+<div id="join">
+  <h4>JOIN MY EXPORT</h4>
+
+<p style="font-size:12px;font-style:italic;">Get the latest info about events, market research and opportunities tailored to your industry and interests</p></br>
+
+<a href="#" class="btn-blue" style="text-decoration:none;">Sign Up Now!</a>
+
+</div>
+
+</ul>
+<ul id="main2"><style>
+.list {
+
+  margin:0;
+  padding:20px 0 0;
+}
+.list > li {
+  display:block;
+  padding:1px;
+  box-shadow: inset 0 1px 0 #fff;
+  border: 1px;
+  border-color:#c0c0c0;
+}
+.avatar {
+  max-width: 150px;
+}
+img {
+  max-width: 100%;
+}
+h3 {
+  font-size: 16px;
+  margin:0 0 0.3rem;
+  font-weight: normal;
+  font-weight:bold;
+}
+p {
+  margin:0;
+}
+
+input {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+input:focus {
+  outline:none;
+  border-color:#aaa;
+}
+.sort {
+  padding:4px 10px;
+  border-radius: 6px;
+  border:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration: none;
+  background-color: #C0C0C0;
+  height:26px;
+}
+.sort:hover {
+  text-decoration: none;
+  background-color:#000;
+}
+.sort:focus {
+  outline:none;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+
+.nav {margin-bottom:30px;}
+
+.name a{  color:#212121;
+  font-size: 13px;text-decoration: none; font-weight:normal;}
+  
+.name a:hover { text-decoration: underline;}
+
+.container {min-height:450px; }
+</style>
+
+<div class="container">
+  
+
+  
+<h4>Frequently Asked Questions</h4>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  
+  <!-- Tab 1 -->
+  <div class="tab-pane active" id="home">
+    <div id="hacker-list">  <!-- List ID -->
+        <!-- Search / Sort buttons -->
+<input class="search"  />
+<button class="sort" data-sort="name">Search</button>
+    <ul class="list">
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">1.  What's the difference between the Schedule B codes (for exports) and the Harmonized Tariff Schedule (HTS) codes (for imports)?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">2.  How can I locate importers, distributors, sales reps, etc. in an overseas market?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">3.  How can I find export financing?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121;font-weight:normal;text-decoartion:none;">4.  What do all of these Free Trade Agreements do for me?</a></h5></li>
+    <li><h5 class="name"><a href="#" style="font-size: 14px;
+  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  color:#212121; font-weight:normal;text-decoartion:none;">5.  How can I determine the tariff rate for my product?</a></h5></li>
+    </ul> 
+    </div>
+  </div> <!-- /!Tab 1 -->
+  
+  
+ </div> <!-- /!Tabs -->
+    
+   <ul>
+  </br>
+  <a style="display:inline-block; padding:5px;background-color:#d9d9d9;" href="faqs.html">See All Questions</a>
+  </div> <!-- /container -->
+  
+  
+  <script src="javascripts/list.js"></script>
+  
+  <script>
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list', options);
+
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+  var options = {
+    valueNames: [ 'name' ]
+};
+
+var hackerList = new List('hacker-list-2', options);
+  
+  
+})
+  </script></ul>
+</div>
+
+</section>
+</div>
+<style>
+
+#promo {
+width:100%
+height:100%;
+padding: 10px;
+border-top:thin solid #c1c1c1;
+border-bottom:thin solid #c1c1c1;
+}
+
+</style>
+
+<div id="promo">
+
+<div class="clearfix">
+<ul id="main" >
+<img  src="images/thumb.png">
+</ul>
+
+<ul id="main" style="width:600px; font-size: 14px;">
+<h3>Here’s What China is Saying About the 
+U.S. Commercial Service</h3>
+</br>
+
+The U.S. Commercial Service in China offers valuable assistance to American businesses exporting goods and services to China. Our office is part of a global network of trade specialists dedicated to assisting U.S. commercial interests worldwide.
+
+Trade specialists at each of our regional locations in China, including the U.S. Embassy in Beijing and four Consulates in Shanghai, Guangzhou, Chengdu and Shenyang, are happy to help identify trade opportunities and local potential trading partners within their perspective regions, as well as provide invaluable information across a variety of different industry sectors.
+</ul>
+</div>
+</div>
+<script type="text/javascript" src="http://q4socialstream.q4web.com/SocialBuilder/js/jqueryQ4.min.js"></script><div id="SocialStream"></div><script type="text/javascript" src="javascripts/socialstream.js"></script><script type="text/javascript">var Q4$ = jQuery.noConflict();Q4$("#SocialStream").SocialWidget({"SocialStreams":{"twitter":{"label":"Twitter","url":"FCSChina"},"youtube":{"label":"Youtube","url":"TradeGov"},"blog":{"label":"Blog","url":"http://blog.trade.gov/feed/"}},"selector":"#SocialStream","theme":{"name":"SocialLight","shell":{"background":"#ffffff","color":"#000000","links":"#333333","height":"150"},"tweets":{"background":"none","color":"#333","links":"#333"}},"widgetTitle":"Social Stream"});</script>
+
 </section>
 
     <div id="footer_wrap2" class="outer">
@@ -492,6 +1126,3 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
 
   </body>
 </html>
- 
- 
- 
