@@ -46,7 +46,7 @@
 					var list = "<p class='results-title'></p>";
 					for (var i=0; i<=results.length-1; i++){
 						var csl = results[i];
-						var addresses = csl.addresses;
+						var city = csl.city;
 						var alt_names = csl.alt_names;
 						var citizenships = csl.citizenships;
 						var dates_of_birth = csl.dates_of_birth;
@@ -65,7 +65,7 @@
 						
 						
 						 
-						list += "<p class='results-legend'>" + "<table> <tr>Addresses</td><td>" + addresses + "</td></tr> <tr><td>Alternate Names</td><td>" +  alt_names + "</td></tr> <tr><td>Citizenships</td><td>" +  citizenships + "</td></tr> <tr><td>Dates of Birth</td><td>" +  dates_of_birth + "</td></tr> <tr><td>Entity Number</td><td>" +  entity_number + "</td></tr> <tr><td>IDs</td><td>" +  ids + "</td></tr> <tr><td>Name</td><td>" +  name + "</td></tr> <tr><td>Nationalities</td><td>" +  nationalities + "</td></tr> <tr><td>Places of Birth</td><td>" +  places_of_birth + "</td></tr> <tr><td>Programs</td><td>" +  programs + "</td></tr> <tr><td>Remarks</td><td>" +  remarks + "</td></tr> <tr><td>SDN Type</td><td>" +  sdn_type + "</td></tr> <tr><td>Source</td><td>" +  source + "</td></tr> <tr><td>Source List URL</td><td> <a href=" + source_list_url + " target='_blank'>" + source_list_url +  "</a></td></tr> <tr><td>title</td><td>" +  title + "</td></tr>   </table> </br></br></br></br>" 
+						list += "<p class='results-legend'>" + "<table> <tr>city</td><td>" + city + "</td></tr> <tr><td>Alternate Names</td><td>" +  alt_names + "</td></tr> <tr><td>Citizenships</td><td>" +  citizenships + "</td></tr> <tr><td>Dates of Birth</td><td>" +  dates_of_birth + "</td></tr> <tr><td>Entity Number</td><td>" +  entity_number + "</td></tr> <tr><td>IDs</td><td>" +  ids + "</td></tr> <tr><td>Name</td><td>" +  name + "</td></tr> <tr><td>Nationalities</td><td>" +  nationalities + "</td></tr> <tr><td>Places of Birth</td><td>" +  places_of_birth + "</td></tr> <tr><td>Programs</td><td>" +  programs + "</td></tr> <tr><td>Remarks</td><td>" +  remarks + "</td></tr> <tr><td>SDN Type</td><td>" +  sdn_type + "</td></tr> <tr><td>Source</td><td>" +  source + "</td></tr> <tr><td>Source List URL</td><td> <a href=" + source_list_url + " target='_blank'>" + source_list_url +  "</a></td></tr> <tr><td>title</td><td>" +  title + "</td></tr>   </table> </br></br></br></br>" 
 						
 					}
 				}
