@@ -7,10 +7,7 @@
 <head>
   <meta charset="utf-8">
   <title>Trade.gov/Export</title>
-  <meta name="author" content="John Keith">
 
-  
-  <meta name="description" content="Launch Academy has come to an end. It was an incredible 10 weeks, but I already want to jump into a new project while beginning my developer job &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,14 +16,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://johnk.herokuapp.com">
-  
-  <link href="http://www.johnkeith.us/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="http://www.johnkeith.us/atom.xml" rel="alternate" title="John Keith" type="application/atom+xml">
-  <script src="http://www.johnkeith.us/javascripts/modernizr-2.0.js"></script>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="http://www.johnkeith.us/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+     	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/javascripts/pure.js"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -50,7 +46,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/"><img  src="http://internationaltradeadministration.github.io/office/images/horizontal_emblem_blue.jpg" width="250" ></a> <h2 style="font-size:16px;float:right;">A bureau within the U.S. Department of Commerce</h2></h1>
+  <h1><a href="/"><img  src="/images/horizontal_emblem_blue.jpg" width="250" ></a> <h2 style="font-size:16px;float:right;">A bureau within the U.S. Department of Commerce</h2></h1>
   
     
   
@@ -86,40 +82,31 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="#">Motorola Wins $310 Million Telecommunication Contract in China</a></h1>
-    
+      <div class="articles50" >
+<dl class="article50" >
+    <h1 class="entry-title"><a href="#"><dd class="title"></dd></a></h1>
+</dl>
+</div>
     
       <p class="meta">
         
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-23T09:02:38-04:00" pubdate data-updated="true">APR 30<span>th</span>, 2013</time>
+<div class="articles51">
+<dl class="article51" >
+    <dd class="pub_date" datetime="2014-07-23T09:02:38-04:00" pubdate data-updated="true"></dd>
+</dl>
+</div>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>The Department of Commerce's International Trade Administration's (ITA) helped Illinois- based Motorola Inc. in 2009-10 ensure that China's bidding process for the rollout of its 3G network would not discriminate against foreign participants, enabling Motorola to win a $310 million contract in China.</p>
-
-<p><strong>Why it Matters:</strong> If the United States Government had not helped ensure that the bidding process for China's 3G network, for which investment is expected to result in $66 billion in contracts, did not discriminate against foreign companies, the Chinese bidding process would have effectively inhibited U.S. companies from winning any bids.</p>
-
-<p><strong>The Problem:</strong> The Chinese Government intended to favor several domestic, state-owned enterprises in developing its 3G network.</p>
-
-<p><strong>The Solution:</strong> Between January 2009 and September 2010, a team of ITA specialists worked with several key Chinese ministries to ensure that bids would be awarded in a fair and transparent manner, technologically neutral, based on commercial considerations, and consistent with China's WTO commitments. As a result, Motorola reported positive news in the 3G bidding process, with the company winning a $310 million contract.</p>
-
-<p><img src="http://export.gov/build/groups/public/@eg_main/documents/webcontent/~export/eg_main_055871~1~DCT_Center_Content_2col/163433-1.jpg" alt="flag of China" width="361" height="205"></p>
-
-<p>Working closely with U.S. companies, ITA creates, expands, and defends market access for U.S. goods and services overseas through the Trade Agreements Compliance Program. "We promote policy that develops a more favorable business climate for U.S. companies in global markets; we employ commercial diplomacy to resolve trade barriers; and we leverage our bilateral and multilateral trade agreements to ensure our trading partners live up to their commitments so that our businesses can compete on a level playing-field." - Assistant Secretary of Commerce for Market Access and Compliance, Michael C. Camuñez.</p>
+  <div class="entry-content"><div class="articles52">
+<dl class="article52" >
+    <p><dd class="content"></dd></p>
+</dl>
+</div>
 
 </div>
   
@@ -128,39 +115,28 @@
 
     </article>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+
 </div>
 <aside class="sidebar">
    
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:johnk.herokuapp.com" />
+    <input type="hidden" name="q" value="http://trade.gov/" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
   
-  
+        <div class="articles53">
+<dl class="article53" >
     <section>
   <h1>Related Topics</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="#">Market Intelligence</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Trade Counseling</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Trade Problems</a>
+          
+
+     <li class="post">
+        <a href="#"><dd class="topic"></dd></a>
       </li>  
+
   </ul>
 </section>
 
@@ -168,54 +144,11 @@
   <h1>Related Industries</h1>
  <ul id="recent_posts">
     
-      <li class="post">
-        <a href="#">Aerospace &amp; Defense</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Agribusiness</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Architecture &amp; Engineering</a>
-      </li> 
-       <li class="post">
-        <a href="#">Automotive &amp; Ground Transportation</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Construction Building &amp; Heavy Equipment</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Consumer Goods &amp; Home Furnishings</a>
-      </li> 
-       <li class="post">
-        <a href="#">Education</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Energy &amp; Mining</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Environmental Technologies</a>
-      </li> 
-      
-            <li class="post">
-        <a href="#">Food Processing &amp; Packaging</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Health Technologies</a>
-      </li> 
-       <li class="post">
-        <a href="#">Industrial Equipment &amp; Supplies</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Services</a>
-      </li>
+
+     <li class="post">
+        <a href="#"><dd class="industry"></dd></a>
+      </li>  
+
   
   </ul>
   
@@ -227,50 +160,23 @@
   <h1>Related Countries</h1>
   <ul id="recent_posts">
     
-      <li class="post">
-        <a href="#">Bahrain</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Bangladesh</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Chile</a>
-      </li> 
-       <li class="post">
-        <a href="#">China</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">India</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Japan</a>
-      </li> 
-       <li class="post">
-        <a href="#">Taiwan</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Thailand</a>
-      </li>
-    
-      <li class="post">
-        <a href="#">Turkey</a>
-      </li> 
+
+     <li class="post">
+        <a href="#"><dd class="country"></dd></a>
+      </li>  
+
   </ul>
 </section>
-
+</dl>
+</div>
 
 
 
 
   
-<div class="th-ad">
+<!--<div class="th-ad">
   <a href="http://referrals.trhou.se/johnkeith" target="_blank"><img src="https://new.export.gov/system/community_engine/photos/photos/000/000/045/medium/default_avatar.gif?1357918379"/></a>
-</div>
+</div>-->
 </aside>
 
 
@@ -293,9 +199,210 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
 
 </footer>
   
+  
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles50, article50, i, _i, _len, _results;
+    articles50 = data.results;
+    directive = {
+      '.article50': {
+        'article50 <- articles50': {
+          '.title': 'article50.title',
+          
+		
+        }
+      }
+    };
+    rfn = $p('.articles50').compile(directive);
+    return $p('.articles50').render({ articles50: articles50 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles51, article51, i, _i, _len, _results;
+    articles51 = data.results;
+    directive = {
+      '.article51': {
+        'article51 <- articles51': {
+          '.pub_date': 'article51.pub_date',
+          
+		
+        }
+      }
+    };
+    rfn = $p('.articles51').compile(directive);
+    return $p('.articles51').render({ articles51: articles51 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles52, article52, i, _i, _len, _results;
+    articles52 = data.results;
+    directive = {
+      '.article52': {
+        'article52 <- articles52': {
+          '.content': 'article52.content',
+          
+		
+        }
+      }
+    };
+    rfn = $p('.articles52').compile(directive);
+    return $p('.articles52').render({ articles52: articles52 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+
+
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles53, article53, i, _i, _len, _results;
+    articles53 = data.results;
+    directive = {
+      '.article53': {
+        'article53 <- articles53': {
+          '.topic': 'article53.topic',
+          '.industry': 'article53.industry',
+          '.country': 'article53.country'
+		
+        }
+      }
+    };
+    rfn = $p('.articles53').compile(directive);
+    return $p('.articles53').render({ articles53: articles53 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+
+
+
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles54, article54, i, _i, _len, _results;
+    articles54 = data.results;
+    directive = {
+      '.article54': {
+        'article54 <- articles54': {
+          '.industry': 'article54.industry',
+          
+		
+        }
+      }
+    };
+    rfn = $p('.articles54').compile(directive);
+    return $p('.articles54').render({ articles54: articles54 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+
+
+
+
+
+  <script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles55, article55, i, _i, _len, _results;
+    articles55 = data.results;
+    directive = {
+      '.article55': {
+        'article55 <- articles55': {
+          '.country': 'article55.country',
+          
+		
+        }
+      }
+    };
+    rfn = $p('.articles55').compile(directive);
+    return $p('.articles55').render({ articles55: articles55 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+
+
+
 
 <script type="text/javascript">
-      var disqus_shortname = 'johnkeith';
+      var disqus_shortname = 'ITA';
       
         
         var disqus_script = 'count.js';
@@ -347,52 +454,7 @@ A <a href="http://get.adobe.com/reader">PDF reader</a> is available from Adobe S
   });  
 </script>
 
-<script>
-th_username = "johnkeith";
-th_show_all_badges = false;
-th_number_badges_visible = (9 - 1);
 
-$(document).ready(function() {
-
-  if(th_username == "" || th_show_all_badges == false && th_number_badges_visible == -1){
-    $(".badges-box").hide();
-  } else {
-
-  $.getJSON("http://teamtreehouse.com/" + th_username +".json", function(data) {
-    var items = [];
-    var number_of_badges = data.badges.length;
-    var total_points = data.points.total;
-    $.each(data.badges, function(k, v) {
-       items.push( "<a href='" + v.url + "'><img src='" + v.icon_url + "' alt='" + v.name + "' title='" + v.name + "'/></a>");
-    });
-   
-    $(".badges-box").append("<p>I've earned <strong>" + number_of_badges + " badges</strong> for a total of <strong>" + total_points + " points</strong> at <a href='http://www.teamtreehouse.com'>Treehouse!</a></p>");
-   
-    $( "<ul/>", {
-      "class": "badge-image-list",
-      html: items.reverse().join( "" )
-    }).appendTo( ".badges-box" ).hide().fadeIn(500);
-   
-    if(th_show_all_badges == false) {
-      $( ".badge-image-list img:gt(" + th_number_badges_visible + ")").hide();
-
-      $(".badges-box").append("<button id='show-all'>See all badges</button>");
-
-      $("#show-all").click(function() {
-        $( ".badge-image-list img:gt(" + th_number_badges_visible + ")").toggle(0, "linear");
-        if($("#show-all").html() == "See all badges") {
-          $("#show-all").html("Hide badges");
-          $("#show-all").blur();
-        } else {
-          $("#show-all").html("See all badges");
-          $("#show-all").blur();
-        };
-      });
-    };
-  });
- };
-});
-</script>
 
 
 </body>

@@ -1,0 +1,54 @@
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://pure.github.io/pure/libs/pure.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+  
+<div class="articles50">
+<dl class="article50" >
+    <h4><dd class="title"></dd></h4>
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles50, article50, i, _i, _len, _results;
+    articles50 = data.results;
+    directive = {
+      '.article50': {
+        'article50 <- articles50': {
+          '.title': 'article50.title'
+		
+        }
+      }
+    };
+    rfn = $p('.articles50').compile(directive);
+    return $p('.articles50').render({ articles50: articles50 }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'http://api.trade.gov/trade_articles/search?callback=?&q=Success%20Story:%20Domes%20International';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+     </div>
+     
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
+
+ 
+ 
+ 

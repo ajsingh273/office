@@ -7,8 +7,8 @@
 </head>
 <body>
 
-<script src="javascripts/leads-script.js" type="text/javascript"></script>
-<div id="leads-container"></div>
+<script src="javascripts/csl-script.js" type="text/javascript"></script>
+<div id="csl-container"></div>
 
 
 </body>
