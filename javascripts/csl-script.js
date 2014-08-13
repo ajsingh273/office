@@ -46,7 +46,7 @@
 					var list = "<p class='results-title'></p>";
 					for (var i=0; i<=results.length-1; i++){
 						var csl = results[i];
-						var addresses {city:} = csl.addresses;
+						var addresses {city} = csl.addresses;
 						var alt_names = csl.alt_names;
 						var citizenships = csl.citizenships;
 						var dates_of_birth = csl.dates_of_birth;
